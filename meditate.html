@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Dhyana Meditate</title>
+<meta name="description" content="A guided breathing meditation with a mantra, a chant-along for learning mantras, and a verse for how you feel today. Part of Sanatan Dharma Saral, a simple guide to Hinduism.">
+<meta name="keywords" content="Hinduism, Hindu religion, Hindu dharma, Sanatan Dharma, Sanatana Dharma, Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata, Puranas, Hindu scriptures, Hindu philosophy, mantras, हिन्दू धर्म, सनातन धर्म, वेद, उपनिषद, भगवद्गीता">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Nunito:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.sr{position:absolute;left:-9999px}
+.med{display:flex;flex-direction:column;align-items:center;gap:1rem;background:var(--paper-2);border-radius:22px;padding:1.4rem 1rem}
+.med-controls{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
+.med select{font:inherit;font-size:.95rem;padding:.4rem .7rem;border-radius:12px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink)}
+.med-stage{display:flex;flex-direction:column;align-items:center;gap:.8rem;min-height:21rem;justify-content:center;width:100%}
+.med-circle{width:11rem;height:11rem;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle,color-mix(in srgb,var(--sattva) 34%,var(--paper)) 0%,color-mix(in srgb,var(--sattva) 12%,var(--paper)) 70%);
+  box-shadow:0 0 0 1.5rem color-mix(in srgb,var(--sattva) 8%,transparent);transform:scale(.72);transition:transform 4s ease-in-out}
+.med-circle span{font-size:.95rem;color:var(--ink-2);letter-spacing:.06em}
+.med-line{font-family:var(--f-skt);font-size:1.7rem;text-align:center;min-height:2.4rem;transition:opacity .8s}
+.med-tr{color:var(--ink-2);text-align:center;max-width:32rem;font-size:.98rem}
+.med-buttons{display:flex;gap:.8rem;align-items:center}
+.med-btn{font:inherit;font-weight:600;border:0;border-radius:99px;padding:.6rem 1.6rem;background:var(--indigo);color:var(--paper);cursor:pointer}
+.med-btn.ghost{background:transparent;color:var(--ink-2);border:1.5px solid var(--line)}
+.med-time{font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.chant-lines{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem;text-align:center}
+.chant-lines li{font-family:var(--f-skt);font-size:1.45rem;padding:.3rem 1rem;border-radius:12px;color:var(--ink-2);transition:all .5s}
+.chant-lines li.now{background:var(--paper);color:var(--ink);box-shadow:0 0 0 2px var(--sattva)}
+.feel-list .tip{font-size:.95rem;padding:.35rem .9rem}
+@media (prefers-reduced-motion:reduce){.med-circle{transition:none}}
+</style>
+<link rel="canonical" href="https://sanatan.space/meditate.html">
+<meta property="og:url" content="https://sanatan.space/meditate.html">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap has-art">
+    <div>
+      <p class="kicker">ध्यान · Meditation</p>
+      <h1><span class="en">Meditate and chant</span><span class="hi">ध्यान और पाठ</span></h1>
+      <p class="lede en">A guided breathing meditation with a mantra, a chant-along for learning mantras, and a verse for how you feel today.</p>
+      <p class="lede hi">मन्त्र के साथ निर्देशित श्वास-ध्यान, मन्त्र सीखने के लिए साथ-साथ पाठ, और आज की भावना के लिए एक मन्त्र।</p>
+    </div>
+    <div class="hero-art"><svg viewBox="0 0 200 200" role="img" aria-label="Meditating figure"><g fill="none" stroke="var(--hero-gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="100" cy="100" r="88"/><circle cx="100" cy="62" r="12"/><path d="M100 76 V112"/><path d="M100 86 C 86 92, 78 104, 74 116 M100 86 C 114 92, 122 104, 126 116"/>
+<path d="M60 136 C 80 120, 120 120, 140 136 C 120 146, 80 146, 60 136 Z"/><circle cx="100" cy="62" r="24" opacity=".4"/></g></svg></div>
+  </div>
+</header>
+<div class="bar">
+  <div class="wrap">
+    <nav class="topnav" aria-label="Main"><a href="index.html"><span class="en">Home</span><span class="hi">मुख्य</span></a><a href="index.html#vedas"><span class="en">Vedas</span><span class="hi">वेद</span></a><a href="gita.html"><span class="en">Gita</span><span class="hi">गीता</span></a><a href="meditate.html" aria-current="page"><span class="en">Meditate</span><span class="hi">ध्यान</span></a><a href="kids.html"><span class="en">Kids</span><span class="hi">बच्चे</span></a><a href="ask.html"><span class="en">Ask</span><span class="hi">पूछें</span></a></nav><details class="menu"><summary aria-label="All pages"><span class="menu-ic" aria-hidden="true"></span><span class="en">All pages</span><span class="hi">सभी पृष्ठ</span></summary><div class="menu-panel"><div class="menu-group"><p class="menu-h"><span class="en">Scriptures</span><span class="hi">ग्रन्थ</span></p><a href="index.html#vedas"><span class="en">The four Vedas</span><span class="hi">चार वेद</span></a><a href="rigveda.html"><span class="en">Rigveda</span><span class="hi">ऋग्वेद</span></a><a href="yajurveda.html"><span class="en">Yajurveda</span><span class="hi">यजुर्वेद</span></a><a href="samaveda.html"><span class="en">Samaveda</span><span class="hi">सामवेद</span></a><a href="atharvaveda.html"><span class="en">Atharvaveda</span><span class="hi">अथर्ववेद</span></a><a href="upanishads.html"><span class="en">Upanishads</span><span class="hi">उपनिषद</span></a><a href="gita.html"><span class="en">Bhagavad Gita</span><span class="hi">भगवद्गीता</span></a><a href="epics.html"><span class="en">Ramayana &amp; Mahabharata</span><span class="hi">रामायण-महाभारत</span></a><a href="puranas.html"><span class="en">Puranas &amp; avatars</span><span class="hi">पुराण व अवतार</span></a></div><div class="menu-group"><p class="menu-h"><span class="en">Explore</span><span class="hi">जानें</span></p><a href="maps.html"><span class="en">Maps</span><span class="hi">नक्शे</span></a><a href="symbols.html"><span class="en">Symbols</span><span class="hi">प्रतीक</span></a><a href="calendar.html"><span class="en">Festival calendar</span><span class="hi">पर्व-पंचांग</span></a><a href="meditate.html" aria-current="page"><span class="en">Meditate</span><span class="hi">ध्यान</span></a><a href="index.html#ideas"><span class="en">Core ideas</span><span class="hi">मूल विचार</span></a></div><div class="menu-group"><p class="menu-h"><span class="en">Learn</span><span class="hi">सीखें</span></p><a href="kids.html"><span class="en">Stories for children</span><span class="hi">बच्चों की कहानियाँ</span></a><a href="plans.html"><span class="en">Daily reading plans</span><span class="hi">दैनिक पाठ-योजना</span></a><a href="saved.html"><span class="en">My saved verses</span><span class="hi">मेरे सहेजे मन्त्र</span></a><a href="learn.html"><span class="en">Quiz &amp; flashcards</span><span class="hi">प्रश्नोत्तरी</span></a><a href="search.html"><span class="en">Search</span><span class="hi">खोजें</span></a><a href="ask.html"><span class="en">Ask a question</span><span class="hi">प्रश्न पूछें</span></a><a href="booklet.pdf"><span class="en">Mantra booklet (PDF)</span><span class="hi">मन्त्र-पुस्तिका (PDF)</span></a></div><div class="menu-size"><span class="en">Text size</span><span class="hi">अक्षर का आकार</span><button type="button" data-size="s" aria-label="Small text" style="font-size:.85rem">A</button><button type="button" data-size="m" aria-label="Normal text">A</button><button type="button" data-size="l" aria-label="Large text" style="font-size:1.15rem">A</button><button type="button" data-size="xl" aria-label="Extra large text" style="font-size:1.3rem">A</button></div></div></details>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="btn-en" data-set="en" aria-label="English"><span class="lf">English</span><span class="ls">EN</span></button>
+      <button type="button" id="btn-hi" data-set="hi" aria-label="हिन्दी"><span class="lf">हिन्दी</span><span class="ls">हिं</span></button>
+    </div>
+  </div>
+</div>
+<main class="wrap">
+<section id="breathe">
+<div class="sec-head">
+<p class="eyebrow"><span class="en">Guided meditation</span><span class="hi">निर्देशित ध्यान</span></p>
+<h2><span class="en">Breathe with a mantra</span><span class="hi">मन्त्र के साथ श्वास</span></h2>
+<p class="en">Choose a mantra and a length, then press Start. Breathe in as the circle grows, hold briefly, and breathe out slowly as it shrinks, saying or thinking one line on each breath. Sit comfortably with your back straight. Sound is not needed.</p><p class="hi">मन्त्र और समय चुनें, फिर आरम्भ दबाएँ। घेरा बढ़े तो श्वास लें, थोड़ा रुकें, और घेरा सिकुड़े तो धीरे-धीरे श्वास छोड़ें, हर श्वास पर एक पंक्ति बोलते या मन में दोहराते हुए। आराम से, पीठ सीधी रखकर बैठें। ध्वनि की आवश्यकता नहीं है।</p>
+</div>
+<div class="med">
+  <div class="med-controls">
+    <label for="m-mantra" class="sr">Mantra</label>
+    <select id="m-mantra"><option value="om">Om · ॐ</option><option value="gayatri">Gayatri Mantra · गायत्री मन्त्र</option><option value="mrityunjaya">Mahamrityunjaya Mantra · महामृत्युंजय मन्त्र</option><option value="asato">Asato ma sad gamaya · असतो मा सद्गमय</option><option value="shanti">Peace prayer · शान्ति पाठ</option></select>
+    <label for="m-len" class="sr">Length</label>
+    <select id="m-len"><option value="120">2 min</option><option value="300">5 min</option><option value="600">10 min</option></select>
+  </div>
+  <div class="med-stage" aria-live="polite">
+    <div class="med-circle" id="m-circle"><span id="m-phase"></span></div>
+    <p class="med-line" id="m-line">ॐ</p>
+    <p class="med-tr" id="m-tr"></p>
+  </div>
+  <div class="med-buttons">
+    <button type="button" id="m-start" class="med-btn"><span class="en">Start</span><span class="hi">आरम्भ</span></button>
+    <button type="button" id="m-stop" class="med-btn ghost" hidden><span class="en">Stop</span><span class="hi">रोकें</span></button>
+    <span id="m-time" class="med-time">2:00</span>
+  </div>
+  <p class="ix-hint"><span class="en">Rhythm: breathe in 4 seconds, hold 2, breathe out 6. If you feel dizzy, stop and breathe normally.</span><span class="hi">लय: 4 सेकण्ड श्वास लें, 2 रुकें, 6 में छोड़ें। चक्कर लगे तो रुककर सामान्य श्वास लें।</span></p>
+</div>
+</section><section id="chant">
+<div class="sec-head">
+<p class="eyebrow"><span class="en">Chant along</span><span class="hi">साथ में पाठ</span></p>
+<h2><span class="en">Recite at your own pace</span><span class="hi">अपनी गति से पाठ</span></h2>
+<p class="en">Each line lights up in turn so you can recite with it. Choose a speed that suits you; slow is best for learning. For correct pronunciation, listen to a teacher or a recording using the listen links on each verse.</p><p class="hi">हर पंक्ति बारी-बारी से चमकती है ताकि आप साथ में पढ़ सकें। अपनी सुविधा की गति चुनें; सीखने के लिए धीमी गति सबसे अच्छी है। सही उच्चारण के लिए हर मन्त्र के "पाठ सुनें" लिंक से किसी गुरु या रिकॉर्डिंग को सुनें।</p>
+</div>
+<div class="med">
+  <div class="med-controls">
+    <label for="c-mantra" class="sr">Mantra</label>
+    <select id="c-mantra"><option value="gayatri">Gayatri Mantra · गायत्री मन्त्र</option><option value="mrityunjaya">Mahamrityunjaya Mantra · महामृत्युंजय मन्त्र</option><option value="asato">Asato ma sad gamaya · असतो मा सद्गमय</option><option value="shanti">Peace prayer · शान्ति पाठ</option></select>
+    <label for="c-speed" class="sr">Speed</label>
+    <select id="c-speed"><option value="6000">Slow</option><option value="4000" selected>Medium</option><option value="2600">Fast</option></select>
+    <label for="c-rep" class="sr">Repeats</label>
+    <select id="c-rep"><option value="1">×1</option><option value="3" selected>×3</option><option value="11">×11</option><option value="108">×108</option></select>
+  </div>
+  <ol class="chant-lines" id="c-lines"></ol>
+  <div class="med-buttons">
+    <button type="button" id="c-start" class="med-btn"><span class="en">Start</span><span class="hi">आरम्भ</span></button>
+    <button type="button" id="c-stop" class="med-btn ghost" hidden><span class="en">Stop</span><span class="hi">रोकें</span></button>
+    <span id="c-count" class="med-time"></span>
+  </div>
+</div>
+</section><section id="feelings">
+<div class="sec-head">
+<p class="eyebrow"><span class="en">A verse for your day</span><span class="hi">आज के लिए एक मन्त्र</span></p>
+<h2><span class="en">How are you feeling?</span><span class="hi">आप कैसा महसूस कर रहे हैं?</span></h2>
+<p class="en">Pick what is closest to how you feel. You'll get a verse from the scriptures that speaks to it, with a link to the full explanation.</p><p class="hi">जो आपकी भावना के सबसे निकट हो, उसे चुनें। आपको शास्त्रों से एक मन्त्र मिलेगा जो उसी बात पर है, पूरी व्याख्या के लिंक के साथ।</p>
+</div>
+<div class="ix"><div class="ix-list feel-list"><button type="button" class="tip" data-ten="Worried about results" data-thi="परिणाम की चिन्ता" data-ien="Gita 2.47: Your right is to the work, not its fruit. Do your best and let the result go." data-ihi="गीता 2.47: तुम्हारा अधिकार कर्म में है, फल में नहीं। अपना सर्वश्रेष्ठ करो और परिणाम छोड़ दो।" data-link="gita.html#v-gita-2-47"><span class="en">Worried about results</span><span class="hi">परिणाम की चिन्ता</span></button><button type="button" class="tip" data-ten="Restless mind" data-thi="बेचैन मन" data-ien="Gita 6.35: Even Krishna agrees the mind is hard to steady. Practice and gentle detachment work, slowly." data-ihi="गीता 6.35: स्वयं कृष्ण मानते हैं कि मन को स्थिर करना कठिन है। अभ्यास और वैराग्य धीरे-धीरे काम करते हैं।" data-link="gita.html#v-gita-6-35"><span class="en">Restless mind</span><span class="hi">बेचैन मन</span></button><button type="button" class="tip" data-ten="Grieving someone" data-thi="किसी को खोने का दुःख" data-ien="Gita 2.20: The soul is never born and never dies. The one you love is not destroyed." data-ihi="गीता 2.20: आत्मा न जन्मती है, न मरती है। जिसे आप प्रेम करते हैं, वह नष्ट नहीं होता।" data-link="gita.html#v-gita-2-20"><span class="en">Grieving someone</span><span class="hi">किसी को खोने का दुःख</span></button><button type="button" class="tip" data-ten="Angry" data-thi="क्रोध" data-ien="Gita 16.21: Desire, anger and greed are three gates to self-harm. Notice anger as a door you can choose not to walk through." data-ihi="गीता 16.21: काम, क्रोध और लोभ आत्म-विनाश के तीन द्वार हैं। क्रोध को ऐसा द्वार मानो जिससे गुज़रना ज़रूरी नहीं।" data-link="gita.html#v-gita-16-21"><span class="en">Angry</span><span class="hi">क्रोध</span></button><button type="button" class="tip" data-ten="Afraid" data-thi="डर" data-ien="Atharvaveda 19.15.6: A prayer for fearlessness from friend and foe, the known and the unknown, by night and by day." data-ihi="अथर्ववेद 19.15.6: मित्र और शत्रु से, ज्ञात और अज्ञात से, रात और दिन में अभय की प्रार्थना।" data-link="atharvaveda.html#v-atharvaveda-19-15-6"><span class="en">Afraid</span><span class="hi">डर</span></button><button type="button" class="tip" data-ten="Low on confidence" data-thi="आत्मविश्वास की कमी" data-ien="Gita 6.5: Lift yourself by yourself. Your own mind can be your best friend." data-ihi="गीता 6.5: अपना उद्धार स्वयं करो। आपका अपना मन आपका सबसे अच्छा मित्र बन सकता है।" data-link="gita.html#v-gita-6-5"><span class="en">Low on confidence</span><span class="hi">आत्मविश्वास की कमी</span></button><button type="button" class="tip" data-ten="Lonely" data-thi="अकेलापन" data-ien="Gita 10.20: "I am the Self seated in the heart of all beings." You are never truly alone." data-ihi="गीता 10.20: "मैं सब प्राणियों के हृदय में स्थित आत्मा हूँ।" आप कभी सचमुच अकेले नहीं हैं।" data-link="gita.html#v-gita-10-20"><span class="en">Lonely</span><span class="hi">अकेलापन</span></button><button type="button" class="tip" data-ten="Facing a hard choice" data-thi="कठिन निर्णय" data-ien="Katha Upanishad 1.2.2: Tell apart what is good for you from what is merely pleasant, and choose the good." data-ihi="कठोपनिषद 1.2.2: जो कल्याणकारी है और जो केवल प्रिय लगता है, उनमें भेद करो, और कल्याणकारी चुनो।" data-link="upanishads.html#v-katha-upanishad-1-2-2"><span class="en">Facing a hard choice</span><span class="hi">कठिन निर्णय</span></button><button type="button" class="tip" data-ten="Family tension" data-thi="परिवार में तनाव" data-ien="Atharvaveda 3.30: One heart, one mind, no hatred: love one another as a cow loves her newborn calf." data-ihi="अथर्ववेद 3.30: एक हृदय, एक मन, कोई द्वेष नहीं: एक-दूसरे से वैसे प्रेम करो जैसे गाय नवजात बछड़े से।" data-link="atharvaveda.html#v-atharvaveda-3-30-1-and-3-30-3"><span class="en">Family tension</span><span class="hi">परिवार में तनाव</span></button><button type="button" class="tip" data-ten="Feeling grateful" data-thi="कृतज्ञता" data-ien="Gita 9.26: A leaf, a flower, a fruit or a little water offered with love is enough." data-ihi="गीता 9.26: प्रेम से अर्पित एक पत्ता, फूल, फल या थोड़ा जल पर्याप्त है।" data-link="gita.html#v-gita-9-26"><span class="en">Feeling grateful</span><span class="hi">कृतज्ञता</span></button><button type="button" class="tip" data-ten="Wanting peace" data-thi="शान्ति की चाह" data-ien="Yajurveda 36.17: Peace in the sky, the earth, the waters and the plants, and then peace within me." data-ihi="यजुर्वेद 36.17: आकाश, पृथ्वी, जल और वनस्पतियों में शान्ति, और फिर मुझमें शान्ति।" data-link="yajurveda.html#v-shukla-yajurveda-36-17"><span class="en">Wanting peace</span><span class="hi">शान्ति की चाह</span></button><button type="button" class="tip" data-ten="Overwhelmed" data-thi="बोझ से दबे हुए" data-ien="Gita 18.66: "Take refuge in me. Do not grieve." You do not have to carry everything alone." data-ihi="गीता 18.66: "मेरी शरण में आओ। शोक मत करो।" सब कुछ अकेले नहीं उठाना है।" data-link="gita.html#v-gita-18-66"><span class="en">Overwhelmed</span><span class="hi">बोझ से दबे हुए</span></button></div><div class="ix-panel" aria-live="polite"></div><p><a class="more" id="feel-link" href="gita.html#v-gita-2-47"><span class="en">Read this verse in full →</span><span class="hi">यह मन्त्र पूरा पढ़ें →</span></a></p></div><p class="note" style="margin-top:1rem"><span class="en">These verses can comfort, but they are not a substitute for help. If you are struggling, please talk to someone you trust or a professional.</span><span class="hi">ये मन्त्र सान्त्वना दे सकते हैं, पर सहायता का विकल्प नहीं हैं। यदि आप कठिनाई में हैं, तो किसी भरोसेमन्द व्यक्ति या विशेषज्ञ से बात करें।</span></p>
+</section>
+</main>
+<footer class="wrap">
+  <p class="aka"><span class="en"><b>Sanatan Dharma</b> is also known as <b>Hinduism</b> or the Hindu religion (हिन्दू धर्म). This site is a simple guide to Hinduism: its scriptures, beliefs, practices and festivals.</span><span class="hi"><b>सनातन धर्म</b> को <b>हिन्दू धर्म</b> (Hinduism) भी कहा जाता है। यह साइट हिन्दू धर्म की सरल मार्गदर्शिका है: इसके ग्रन्थ, मान्यताएँ, आचरण और पर्व।</span></p>
+  <p class="en">Translations are simplified for understanding. For worship and study, learn correct pronunciation from a qualified teacher and read a full commentary.</p><p class="hi">अनुवाद समझाने के लिए सरल किए गए हैं। पूजा और अध्ययन के लिए सही उच्चारण किसी योग्य गुरु से सीखें और पूरा भाष्य पढ़ें।</p>
+  <p class="foot-mantra">सर्वे भवन्तु सुखिनः । सर्वे सन्तु निरामयाः ॥</p>
+  <p class="foot-nav"><a href="index.html"><span class="en">← Back to the main guide</span><span class="hi">← मुख्य मार्गदर्शिका पर लौटें</span></a></p>
+</footer>
+<script src="lang.js"></script><script>
+(function(){
+  var M={"om": {"en": "Om", "hi": "ॐ", "lines": ["ॐ"], "tr": ["Om: the sound of the whole of reality.", "ॐ: सम्पूर्ण सत्य की ध्वनि।"]}, "gayatri": {"en": "Gayatri Mantra", "hi": "गायत्री मन्त्र", "lines": ["ॐ भूर्भुवः स्वः", "तत्सवितुर्वरेण्यं", "भर्गो देवस्य धीमहि", "धियो यो नः प्रचोदयात्"], "tr": ["We meditate on the radiant light of the divine Sun. May it inspire our minds.", "हम सविता देव के श्रेष्ठ तेज का ध्यान करते हैं। वह हमारी बुद्धि को प्रेरित करे।"]}, "mrityunjaya": {"en": "Mahamrityunjaya Mantra", "hi": "महामृत्युंजय मन्त्र", "lines": ["त्र्यम्बकं यजामहे", "सुगन्धिं पुष्टिवर्धनम्", "उर्वारुकमिव बन्धनान्", "मृत्योर्मुक्षीय माऽमृतात्"], "tr": ["We worship the three-eyed Lord. As a ripe fruit leaves its vine, may we be freed from death, not from immortality.", "हम त्र्यम्बक शिव की उपासना करते हैं। जैसे पका फल बेल से अलग होता है, वैसे ही हम मृत्यु से मुक्त हों, अमृत से नहीं।"]}, "asato": {"en": "Asato ma sad gamaya", "hi": "असतो मा सद्गमय", "lines": ["असतो मा सद्गमय", "तमसो मा ज्योतिर्गमय", "मृत्योर्मा अमृतं गमय"], "tr": ["Lead me from the unreal to the real, from darkness to light, from death to immortality.", "मुझे असत्य से सत्य, अन्धकार से प्रकाश, और मृत्यु से अमरता की ओर ले चलो।"]}, "shanti": {"en": "Peace prayer", "hi": "शान्ति पाठ", "lines": ["ॐ सह नाववतु", "सह नौ भुनक्तु", "सह वीर्यं करवावहै", "तेजस्वि नावधीतमस्तु", "मा विद्विषावहै", "ॐ शान्तिः शान्तिः शान्तिः"], "tr": ["May we be protected and nourished together, work with energy, learn brightly, and never hate. Om, peace, peace, peace.", "हम साथ रक्षित और पोषित हों, साथ पराक्रम करें, तेजस्वी विद्या पाएँ, और कभी द्वेष न करें। ॐ शान्ति, शान्ति, शान्ति।"]}};
+  function L(){return document.documentElement.getAttribute('data-lang')==='hi'?1:0}
+  function $(i){return document.getElementById(i)}
+  /* breathing */
+  var timer=null, endAt=0, phaseT=null, idx=0;
+  var PH=[['in',4000,'Breathe in','श्वास लें'],['hold',2000,'Hold','रुकें'],['out',6000,'Breathe out','श्वास छोड़ें']];
+  function setMantra(){var m=M[$('m-mantra').value];$('m-line').textContent=m.lines[0];$('m-tr').textContent=m.tr[L()]}
+  function step(p){
+    var m=M[$('m-mantra').value], c=$('m-circle');
+    var ph=PH[p%3]; $('m-phase').textContent=ph[2+L()];
+    if(ph[0]==='in'){c.style.transitionDuration='4s';c.style.transform='scale(1)';idx=(idx+1)%m.lines.length;$('m-line').style.opacity=0;setTimeout(function(){$('m-line').textContent=m.lines[idx];$('m-line').style.opacity=1},400)}
+    if(ph[0]==='out'){c.style.transitionDuration='6s';c.style.transform='scale(.72)'}
+    phaseT=setTimeout(function(){step(p+1)},ph[1]);
+  }
+  function tick(){var s=Math.max(0,Math.round((endAt-Date.now())/1000));$('m-time').textContent=Math.floor(s/60)+':'+String(s%60).padStart(2,'0');if(s<=0)stop(true)}
+  function start(){idx=-1;endAt=Date.now()+(+$('m-len').value)*1000;tick();timer=setInterval(tick,500);step(0);$('m-start').hidden=true;$('m-stop').hidden=false}
+  function stop(done){clearInterval(timer);clearTimeout(phaseT);$('m-circle').style.transform='scale(.72)';$('m-phase').textContent=done?(L()?'ॐ शान्ति':'Om shanti'):'';$('m-start').hidden=false;$('m-stop').hidden=true;var s=+$('m-len').value;$('m-time').textContent=Math.floor(s/60)+':00'}
+  $('m-start').addEventListener('click',start);$('m-stop').addEventListener('click',function(){stop(false)});
+  $('m-mantra').addEventListener('change',setMantra);$('m-len').addEventListener('change',function(){if($('m-start').hidden===false){var s=+this.value;$('m-time').textContent=Math.floor(s/60)+':00'}});
+  setMantra();
+  /* chant along */
+  var ct=null, li=0, rep=0;
+  function drawLines(){var m=M[$('c-mantra').value];$('c-lines').innerHTML=m.lines.map(function(l){return '<li>'+l+'</li>'}).join('');$('c-count').textContent=''}
+  function cstep(){
+    var items=$('c-lines').children, total=+$('c-rep').value;
+    for(var i=0;i<items.length;i++)items[i].classList.toggle('now',i===li);
+    $('c-count').textContent=(rep+1)+' / '+total;
+    ct=setTimeout(function(){li++;if(li>=items.length){li=0;rep++;if(rep>=total){cstop();return}}cstep()},+$('c-speed').value);
+  }
+  function cstart(){li=0;rep=0;cstep();$('c-start').hidden=true;$('c-stop').hidden=false}
+  function cstop(){clearTimeout(ct);Array.prototype.forEach.call($('c-lines').children,function(x){x.classList.remove('now')});$('c-start').hidden=false;$('c-stop').hidden=true}
+  $('c-start').addEventListener('click',cstart);$('c-stop').addEventListener('click',cstop);
+  $('c-mantra').addEventListener('change',function(){cstop();drawLines()});
+  drawLines();
+  /* feelings link */
+  document.querySelectorAll('.feel-list .tip').forEach(function(b){b.addEventListener('click',function(){$('feel-link').setAttribute('href',b.dataset.link)})});
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setTimeout(setMantra,0)})});
+})();
+</script>
+<script src="share.js"></script>
+<script src="interactive.js"></script>
+<script src="verse-tools.js"></script>
+</body>
+</html>
