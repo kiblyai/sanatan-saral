@@ -302,3 +302,7 @@ h1,h2,h3{font-weight:600}
  .topnav .nav-home .en,.topnav .nav-home .hi{display:none!important}
  .topnav .nav-home .home-ic{display:inline-block}
 }
+
+.foot-write{margin:1rem 0;padding:.8rem 1rem;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.foot-write a{font-weight:700;white-space:nowrap}
+@media print{.foot-write{display:none}}

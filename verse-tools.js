@@ -198,3 +198,16 @@
     d.parentNode.insertBefore(box,d);
   });
 })();
+
+/* Report a mistake: links each verse to the contact page with the reference filled in. */
+(function(){
+  document.querySelectorAll('.verse .listen').forEach(function(row){
+    if(row.querySelector('.v-report'))return;
+    var card=row.closest('.verse'), src=card&&card.querySelector('.src .en');
+    var ref=(src?src.textContent.trim():'')+(card&&card.id?' ('+(location.pathname.split('/').pop()||'index.html')+'#'+card.id+')':'');
+    var a=document.createElement('a'); a.className='v-report'; a.href='contact.html?topic=correction&ref='+encodeURIComponent(ref);
+    a.innerHTML='<span class="en">⚑ Report a mistake</span><span class="hi">⚑ त्रुटि बताएँ</span>';
+    row.appendChild(a);
+  });
+  var st=document.createElement('style');st.textContent='.listen .v-report{font-size:.9rem;color:var(--ink-2);text-decoration:none}.listen .v-report:hover{color:var(--kumkum)}@media print{.v-report{display:none!important}}';document.head.appendChild(st);
+})();
