@@ -294,3 +294,11 @@ h1,h2,h3{font-weight:600}
 .menu-size{grid-column:1/-1;display:flex;align-items:center;gap:.5rem;border-top:1px solid var(--line);padding-top:.7rem;margin-top:.3rem;font-size:.9rem;color:var(--ink-2)}
 .menu-size button{font:inherit;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;padding:.15rem .6rem;cursor:pointer;line-height:1.2}
 .menu-size button[aria-pressed="true"]{border-color:var(--indigo);color:var(--indigo);font-weight:700}
+
+/* phone: seven top links fit by shrinking padding and showing Home as an icon */
+.nav-home .home-ic{display:none;vertical-align:-3px}
+@media (max-width:560px){
+ .bar .topnav a{font-size:.84rem;padding:.3rem .2rem}
+ .topnav .nav-home .en,.topnav .nav-home .hi{display:none!important}
+ .topnav .nav-home .home-ic{display:inline-block}
+}

@@ -121,3 +121,80 @@
     po.textContent='Sanatan Dharma Saral · सनातन धर्म सरल — '+location.href.replace(/^https?:\/\//,'').split('#')[0];
     foot.appendChild(po)}
 })();
+
+/* Read aloud with the device's own voice (Sanskrit, then the meaning). Pronunciation depends on the phone. */
+(function(){
+  if(!('speechSynthesis' in window))return;
+  var synth=window.speechSynthesis, current=null, toastShown=false;
+  function L(){return document.documentElement.getAttribute('data-lang')==='hi'?1:0}
+  function pick(langs){var vs=synth.getVoices();for(var i=0;i<langs.length;i++){var v=vs.find(function(x){return x.lang&&x.lang.replace('_','-').toLowerCase().indexOf(langs[i])===0});if(v)return v}return null}
+  function clean(t){return t.replace(/[।॥|]+/g,'. ').replace(/[०-९0-9]+/g,' ').replace(/\s+/g,' ').trim()}
+  function label(b,on){b.innerHTML=on?'<span class="en">■ Stop</span><span class="hi">■ रोकें</span>':'<span class="en">🔊 Read aloud</span><span class="hi">🔊 सुनाएँ</span>';b.setAttribute('aria-pressed',on)}
+  function toast(){if(toastShown)return;toastShown=true;var t=document.createElement('div');t.className='ra-toast';t.setAttribute('role','status');
+    t.innerHTML='<span class="en">Using your phone\'s voice. Sanskrit pronunciation may not be exact; learn chanting from a teacher.</span><span class="hi">आपके फ़ोन की आवाज़ से। संस्कृत उच्चारण पूरी तरह सही न भी हो; पाठ किसी गुरु से सीखें।</span>';
+    document.body.appendChild(t);setTimeout(function(){t.remove()},6000)}
+  function stop(){synth.cancel();if(current){label(current,false);current=null}}
+  function speak(btn){
+    var card=btn.closest('.verse');if(!card)return;
+    if(current===btn){stop();return}
+    stop();current=btn;label(btn,true);toast();
+    var skt=Array.prototype.map.call(card.querySelectorAll('.skt'),function(p){return p.innerText}).join(' ');
+    var trDiv=Array.prototype.find.call(card.children,function(d){return d.tagName==='DIV'&&!d.classList.contains('simple')&&d.querySelector('.label')});
+    var l=L(), tr='';
+    if(trDiv)tr=Array.prototype.map.call(trDiv.querySelectorAll(l?'p.hi':'p.en'),function(p){return p.textContent}).filter(function(s){return s.indexOf('→')<0}).join(' ');
+    var parts=[[clean(skt),['sa','hi','mr','ne'],.82],[tr,l?['hi']:['en-in','en'],.95]];
+    var queue=parts.filter(function(p){return p[0]}).map(function(p){var u=new SpeechSynthesisUtterance(p[0]);var v=pick(p[1]);if(v){u.voice=v;u.lang=v.lang}else{u.lang=p[1][0]==='sa'?'hi-IN':(l?'hi-IN':'en-IN')}u.rate=p[2];return u});
+    if(!queue.length){stop();return}
+    queue[queue.length-1].onend=function(){if(current===btn){label(btn,false);current=null}};
+    queue.forEach(function(u){u.onerror=function(){if(current===btn){label(btn,false);current=null}};synth.speak(u)});
+  }
+  var st=document.createElement('style');
+  st.textContent='.listen .v-say{font:inherit;font-size:.9rem;border:0;background:none;padding:0;color:var(--ink-2);cursor:pointer}.listen .v-say:hover,.listen .v-say[aria-pressed="true"]{color:var(--kumkum)}'+
+    '.ra-toast{position:fixed;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:70;max-width:min(92vw,440px);background:var(--ink,#20363A);color:var(--paper,#fff);padding:.65rem 1rem;border-radius:14px;font-size:.88rem;box-shadow:0 8px 24px rgba(0,0,0,.2)}'+
+    '@media print{.v-say,.ra-toast{display:none!important}}';
+  document.head.appendChild(st);
+  document.querySelectorAll('.verse .listen').forEach(function(row){
+    if(row.querySelector('.v-say'))return;
+    var b=document.createElement('button');b.type='button';b.className='v-say';label(b,false);
+    b.title='Uses your device voice';
+    row.insertBefore(b,row.firstChild);
+  });
+  document.addEventListener('click',function(e){var b=e.target.closest('.v-say');if(b)speak(b)});
+  if(synth.onvoiceschanged!==undefined)synth.onvoiceschanged=function(){};
+  addEventListener('pagehide',stop);
+})();
+
+/* Tap a word: turns each verse's word-by-word list into tappable Sanskrit words. */
+(function(){
+  function L(){return document.documentElement.getAttribute('data-lang')==='hi'?1:0}
+  var st=document.createElement('style');
+  st.textContent='.wbw{margin:.2rem 0 .6rem}.wbw-h{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--gold);margin:0 0 .35rem}'+
+   '.wbw-row{display:flex;flex-wrap:wrap;gap:.3rem}.wbw-row button{font:inherit;font-family:var(--f-skt,"Tiro Devanagari Sanskrit",serif);font-size:1.05rem;line-height:1.3;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;padding:.12rem .55rem;cursor:pointer}'+
+   '.wbw-row button[aria-pressed="true"]{background:var(--indigo);border-color:var(--indigo);color:var(--paper)}'+
+   '.wbw-out{margin:.45rem 0 0;padding:.55rem .8rem;border-radius:12px;background:var(--paper-2);font-size:.98rem;min-height:2.4rem}.wbw-out b{font-family:var(--f-skt,"Tiro Devanagari Sanskrit",serif);font-weight:400;font-size:1.1rem;margin-right:.4rem}'+
+   '.wbw-all{font:inherit;font-size:.85rem;border:0;background:none;color:var(--ink-2);text-decoration:underline;cursor:pointer;padding:0;margin-top:.35rem}'+
+   '.verse details.words.wbw-src{display:none}.verse details.words.wbw-src.wbw-show{display:block}'+
+   '@media print{.wbw{display:none!important}.verse details.words.wbw-src{display:block!important}}';
+  document.head.appendChild(st);
+  document.querySelectorAll('.verse details.words').forEach(function(d){
+    var dts=d.querySelectorAll('dt'); if(!dts.length)return;
+    var box=document.createElement('div'); box.className='wbw';
+    box.innerHTML='<p class="wbw-h"><span class="en">Tap a word for its meaning</span><span class="hi">अर्थ जानने के लिए शब्द छुएँ</span></p><div class="wbw-row"></div><p class="wbw-out" aria-live="polite"><span class="en">Tap any Sanskrit word above.</span><span class="hi">ऊपर किसी भी संस्कृत शब्द को छुएँ।</span></p><button type="button" class="wbw-all"><span class="en">Show the full word list</span><span class="hi">पूरी शब्द-सूची दिखाएँ</span></button>';
+    var row=box.querySelector('.wbw-row'), out=box.querySelector('.wbw-out');
+    dts.forEach(function(dt){
+      var dd=dt.nextElementSibling; var b=document.createElement('button'); b.type='button'; b.textContent=dt.textContent; b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){
+        row.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')}); b.setAttribute('aria-pressed','true');
+        var en=dd&&dd.querySelector('.en'), hi=dd&&dd.querySelector('.hi');
+        out.innerHTML='<b></b><span class="en"></span><span class="hi"></span>';
+        out.querySelector('b').textContent=dt.textContent;
+        out.querySelector('.en').textContent=(en?en.textContent:(dd?dd.textContent:''));
+        out.querySelector('.hi').textContent=(hi?hi.textContent:(dd?dd.textContent:''));
+      });
+      row.appendChild(b);
+    });
+    box.querySelector('.wbw-all').addEventListener('click',function(){d.classList.toggle('wbw-show');d.open=d.classList.contains('wbw-show')});
+    d.classList.add('wbw-src');
+    d.parentNode.insertBefore(box,d);
+  });
+})();
