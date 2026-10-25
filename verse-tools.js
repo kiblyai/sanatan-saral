@@ -82,3 +82,42 @@
   paintSaved();
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setTimeout(paintSaved,0)})});
 })();
+
+/* Print: a button in the top bar, a link in the footer, and print-friendly styles. */
+(function(){
+  var css='.print-btn{flex-shrink:0;display:inline-flex;align-items:center;gap:.3rem;font:inherit;font-size:.92rem;color:var(--ink,#20363A);background:var(--paper,#fff);border:1.5px solid var(--line,#ccd);border-radius:99px;padding:.26rem .7rem;cursor:pointer;white-space:nowrap}'+
+  '.print-btn:hover{border-color:var(--indigo,#3C6C72)}.print-btn svg{width:16px;height:16px}'+
+  '@media (max-width:560px){.print-btn .pl{display:none}.print-btn{padding:.3rem .5rem;order:3}}'+
+  '.print-foot{margin:.6rem 0}.print-foot a{cursor:pointer}'+
+  '.print-only{display:none}'+
+  '@media print{'+
+   '@page{margin:16mm 14mm}'+
+   'html,body{background:#fff!important;color:#111!important}'+
+   '.bar,.topnav,.menu,.lang,.print-btn,.print-foot,.listen,.conn,.v-save,.v-img,.vt-modal,.share,.chat,.ask-box,form,nav,button,.toc,div[style*="space-between"]:has(> a.more),p:has(> a.more:only-child),.read-btn,[data-read-id],.no-print{display:none!important}'+
+   '*{box-shadow:none!important;text-shadow:none!important;animation:none!important;transition:none!important}'+
+   '.hero{background:none!important;padding:0 0 8mm!important;color:#111!important}'+
+   '.verse,.card,figure,table,.tldr{break-inside:avoid;page-break-inside:avoid;background:#fff!important;border-color:#bbb!important}'+
+   'h1,h2,h3{break-after:avoid;color:#111!important}'+
+   'a{color:#111!important;text-decoration:none!important}'+
+   '.wrap{max-width:none!important}'+
+   '.print-only{display:block!important;font-size:10pt;color:#555!important;border-top:1px solid #bbb;margin-top:8mm;padding-top:3mm}'+
+  '}';
+  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
+  var ic='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></svg>';
+  var opened=[];
+  function doPrint(){window.print()}
+  window.addEventListener('beforeprint',function(){opened=[];document.querySelectorAll('main details:not([open])').forEach(function(d){d.open=true;opened.push(d)})});
+  window.addEventListener('afterprint',function(){opened.forEach(function(d){d.open=false});opened=[]});
+  var bar=document.querySelector('.bar .wrap');
+  if(bar){var b=document.createElement('button');b.type='button';b.className='print-btn';b.setAttribute('aria-label','Print this page');
+    b.innerHTML=ic+'<span class="pl"><span class="en">Print</span><span class="hi">प्रिंट</span></span>';b.addEventListener('click',doPrint);
+    var lang=bar.querySelector('.lang');bar.insertBefore(b,lang||null)}
+  var foot=document.querySelector('footer');
+  if(foot){var p=document.createElement('p');p.className='print-foot';
+    p.innerHTML='<a role="button" tabindex="0">'+'<span class="en">🖨 Print this page</span><span class="hi">🖨 यह पृष्ठ प्रिंट करें</span></a>';
+    var a=p.querySelector('a');a.addEventListener('click',doPrint);a.addEventListener('keydown',function(e){if(e.key==='Enter')doPrint()});
+    foot.insertBefore(p,foot.firstChild);
+    var po=document.createElement('p');po.className='print-only';
+    po.textContent='Sanatan Dharma Saral · सनातन धर्म सरल — '+location.href.replace(/^https?:\/\//,'').split('#')[0];
+    foot.appendChild(po)}
+})();
