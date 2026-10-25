@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sanatan Dharma Saral</title>
 <meta name="description" content="A simple guide to Hinduism (Sanatan Dharma) in English and Hindi: the Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata and Puranas, with every mantra in Sanskrit, its meaning and a plain explanation.">
 <meta name="keywords" content="Hinduism, Hindu religion, Hindu dharma, Sanatan Dharma, Sanatana Dharma, Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata, Puranas, Hindu scriptures, Hindu philosophy, mantras, हिन्दू धर्म, सनातन धर्म, वेद, उपनिषद, भगवद्गीता">
@@ -325,6 +330,45 @@ h1,h2,h3{font-weight:600}
 @media print{.foot-write{display:none}}
 </style>
 
+<link rel="canonical" href="https://sanatan.space/">
+<meta property="og:url" content="https://sanatan.space/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sanatan Dharma Saral">
+<meta property="og:title" content="Sanatan Dharma Saral · Hinduism in simple words">
+<meta property="og:description" content="A simple guide to Hinduism (Sanatan Dharma) in English and Hindi: the Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata and Puranas, with every mantra in Sanskrit, its meaning and a plain explanation.">
+<meta property="og:image" content="https://sanatan.space/og/index.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sanatan.space/og/index.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#3C6C72">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Sanatan Saral">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CG3165QMS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-4CG3165QMS',{site_language:(function(){try{return localStorage.getItem('sd-lang')||'en'}catch(e){return 'en'}})()});
+document.addEventListener('click',function(e){
+  var t=e.target.closest('button,a');if(!t)return;
+  var v=t.closest('.verse,[id^="v-"]'),vid=v&&v.id||'';
+  var ev=function(n,p){try{gtag('event',n,p||{})}catch(_){}};
+  if(t.classList.contains('v-say'))ev('listen_verse',{verse_id:vid});
+  else if(t.classList.contains('v-save'))ev('save_verse',{verse_id:vid});
+  else if(t.classList.contains('v-img'))ev('picture_card',{verse_id:vid});
+  else if(t.classList.contains('print-btn'))ev('print_page');
+  else if(t.dataset&&t.dataset.set&&t.closest('.lang'))ev('switch_language',{language:t.dataset.set});
+  else if(t.tagName==='A'&&/wa\.me\//.test(t.href))ev('share',{method:'whatsapp'});
+  else if(t.tagName==='A'&&/contact\.html\?topic=correction/.test(t.getAttribute('href')||''))ev('report_mistake',{verse_id:vid});
+  else if(t.classList.contains('ct-send'))ev('contact_open_email');
+},true);
+</script>
+</head>
+<body>
 <header class="hero">
   <div class="wrap">
     <div>
@@ -1185,3 +1229,7 @@ h1,h2,h3{font-weight:600}
 <script src="share.js"></script>
 <script src="interactive.js"></script>
 <script src="verse-tools.js"></script>
+
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})}</script>
+</body>
+</html>

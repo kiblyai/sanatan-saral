@@ -45,6 +45,25 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Sanatan Saral">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CG3165QMS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-4CG3165QMS',{site_language:(function(){try{return localStorage.getItem('sd-lang')||'en'}catch(e){return 'en'}})()});
+document.addEventListener('click',function(e){
+  var t=e.target.closest('button,a');if(!t)return;
+  var v=t.closest('.verse,[id^="v-"]'),vid=v&&v.id||'';
+  var ev=function(n,p){try{gtag('event',n,p||{})}catch(_){}};
+  if(t.classList.contains('v-say'))ev('listen_verse',{verse_id:vid});
+  else if(t.classList.contains('v-save'))ev('save_verse',{verse_id:vid});
+  else if(t.classList.contains('v-img'))ev('picture_card',{verse_id:vid});
+  else if(t.classList.contains('print-btn'))ev('print_page');
+  else if(t.dataset&&t.dataset.set&&t.closest('.lang'))ev('switch_language',{language:t.dataset.set});
+  else if(t.tagName==='A'&&/wa\.me\//.test(t.href))ev('share',{method:'whatsapp'});
+  else if(t.tagName==='A'&&/contact\.html\?topic=correction/.test(t.getAttribute('href')||''))ev('report_mistake',{verse_id:vid});
+  else if(t.classList.contains('ct-send'))ev('contact_open_email');
+},true);
+</script>
 </head>
 <body>
 <header class="hero">

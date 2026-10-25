@@ -30,6 +30,25 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Sanatan Saral">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CG3165QMS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-4CG3165QMS',{site_language:(function(){try{return localStorage.getItem('sd-lang')||'en'}catch(e){return 'en'}})()});
+document.addEventListener('click',function(e){
+  var t=e.target.closest('button,a');if(!t)return;
+  var v=t.closest('.verse,[id^="v-"]'),vid=v&&v.id||'';
+  var ev=function(n,p){try{gtag('event',n,p||{})}catch(_){}};
+  if(t.classList.contains('v-say'))ev('listen_verse',{verse_id:vid});
+  else if(t.classList.contains('v-save'))ev('save_verse',{verse_id:vid});
+  else if(t.classList.contains('v-img'))ev('picture_card',{verse_id:vid});
+  else if(t.classList.contains('print-btn'))ev('print_page');
+  else if(t.dataset&&t.dataset.set&&t.closest('.lang'))ev('switch_language',{language:t.dataset.set});
+  else if(t.tagName==='A'&&/wa\.me\//.test(t.href))ev('share',{method:'whatsapp'});
+  else if(t.tagName==='A'&&/contact\.html\?topic=correction/.test(t.getAttribute('href')||''))ev('report_mistake',{verse_id:vid});
+  else if(t.classList.contains('ct-send'))ev('contact_open_email');
+},true);
+</script>
 </head>
 <body>
 <header class="hero">
@@ -74,7 +93,7 @@
 <h2><span class="en">Free, always</span><span class="hi">सदा निःशुल्क</span></h2>
 
 </div>
-<ul class="en"><li>Free for everyone to use.</li><li>Not linked to any organisation, sampradaya, temple or political group.</li><li>Made with care as seva (service). If you spot a mistake, please <a href="contact.html?topic=correction">write to us</a>. Every correction is checked against the original texts.</li></ul><ul class="hi"><li>सभी के लिए निःशुल्क।</li><li>किसी संस्था, सम्प्रदाय, मन्दिर या राजनीतिक समूह से जुड़ा नहीं।</li><li>सेवा भाव से बनाया गया। कोई त्रुटि दिखे तो कृपया <a href="contact.html?topic=correction">हमें लिखें</a>। हर सुधार मूल ग्रन्थों से मिलाकर किया जाता है।</li></ul><p><a class="ab-btn" href="contact.html"><span class="en">✉ Write to us</span><span class="hi">✉ हमें लिखें</span></a></p>
+<ul class="en"><li>Free for everyone to use.</li><li>Not linked to any organisation, sampradaya, temple or political group.</li><li>We use Google Analytics to count visits and see which pages help most. It does not tell us who you are, and we never sell or share data.</li><li>Made with care as seva (service). If you spot a mistake, please <a href="contact.html?topic=correction">write to us</a>. Every correction is checked against the original texts.</li></ul><ul class="hi"><li>सभी के लिए निःशुल्क।</li><li>किसी संस्था, सम्प्रदाय, मन्दिर या राजनीतिक समूह से जुड़ा नहीं।</li><li>कौन-से पृष्ठ सबसे उपयोगी हैं, यह जानने के लिए हम Google Analytics से विज़िट गिनते हैं। इससे आपकी पहचान नहीं होती, और हम कोई डेटा न बेचते हैं न साझा करते हैं।</li><li>सेवा भाव से बनाया गया। कोई त्रुटि दिखे तो कृपया <a href="contact.html?topic=correction">हमें लिखें</a>। हर सुधार मूल ग्रन्थों से मिलाकर किया जाता है।</li></ul><p><a class="ab-btn" href="contact.html"><span class="en">✉ Write to us</span><span class="hi">✉ हमें लिखें</span></a></p>
 </section>
 </main>
 <footer class="wrap">
