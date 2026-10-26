@@ -18,6 +18,14 @@
 .kz h2{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:clamp(1.6rem,5vw,2.2rem);margin:0;color:var(--o)}
 .hero:has(+ .bar){}
 .k-hello{display:flex;gap:1rem;align-items:center}
+.k-hindi{display:flex;align-items:center;gap:1rem;margin:1.2rem 0;padding:1rem 1.2rem;background:#2a2a8f;color:#fff;border:var(--edge);border-radius:22px;box-shadow:var(--drop);text-decoration:none;transition:transform .12s,box-shadow .12s}
+.k-hindi:hover,.k-hindi:focus-visible{transform:translateY(-2px)}
+.k-hindi:active{transform:translateY(3px);box-shadow:0 2px 0 var(--ink)}
+.k-hindi-ic{font-size:2.6rem;flex:none}
+.k-hindi-t{display:flex;flex-direction:column;gap:.2rem;min-width:0}
+.k-hindi-t b{font-size:1.3rem;color:#FFD23F}
+.k-hindi-t small{font-size:.95rem;line-height:1.35;color:#e8e5ff}
+.k-hindi-go{margin-left:auto;font-size:1.6rem;font-weight:800;flex:none}
 .deepu{width:96px;height:96px;flex-shrink:0;animation:bob 3s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-6px) rotate(3deg)}}
 .k-bubble{position:relative;background:#fff;border:var(--edge);border-radius:22px;box-shadow:var(--drop);padding:.9rem 1.1rem;font-size:1.08rem;line-height:1.4;min-width:0}
@@ -168,6 +176,13 @@ document.addEventListener('click',function(e){
     <p><span class="en">Pick a story. Read it or listen to it, then answer 2 questions to win stars ⭐</span><span class="hi">एक कहानी चुनो। पढ़ो या सुनो, फिर 2 सवालों के जवाब देकर तारे जीतो ⭐</span></p>
   </div>
 </section>
+
+<a class="k-hindi" href="kids/hindi/">
+  <span class="k-hindi-ic" aria-hidden="true">🚀</span>
+  <span class="k-hindi-t"><b><span class="en">Hindi Space Mission</span><span class="hi">हिंदी अंतरिक्ष मिशन</span></b>
+  <small><span class="en">Learn Hindi with Timtim the star: matras, stories, grammar games and daily speaking practice, for Books 1–4.</span><span class="hi">टिमटिम तारे के साथ हिंदी सीखो: मात्राएँ, कहानियाँ, व्याकरण के खेल और रोज़ बोलने का अभ्यास, पुस्तक 1–4 के लिए।</span></small></span>
+  <span class="k-hindi-go" aria-hidden="true">→</span>
+</a>
 
 <section class="k-score" aria-label="Your stars">
   <div class="k-total"><b id="k-total">0</b><span><span class="en">stars</span><span class="hi">तारे</span></span></div>
