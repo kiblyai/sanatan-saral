@@ -7,8 +7,8 @@
     ix.querySelectorAll('.tip.on').forEach(function(t){t.classList.remove('on');t.setAttribute('aria-pressed','false')});
     tip.classList.add('on'); tip.setAttribute('aria-pressed','true');
     var d=tip.dataset;
-    panel.innerHTML='<b><span class="en">'+esc(d.ten)+'</span><span class="hi">'+esc(d.thi||d.ten)+'</span></b>'+
-      '<span class="en">'+esc(d.ien)+'</span><span class="hi">'+esc(d.ihi||d.ien)+'</span>';
+    panel.innerHTML='<b><span class="en'+(d.tgu?' xg':'')+'">'+esc(d.ten)+'</span><span class="hi">'+esc(d.thi||d.ten)+'</span>'+(d.tgu?'<span class="gu">'+esc(d.tgu)+'</span>':'')+'</b>'+
+      '<span class="en'+(d.igu?' xg':'')+'">'+esc(d.ien)+'</span><span class="hi">'+esc(d.ihi||d.ien)+'</span>'+(d.igu?'<span class="gu">'+esc(d.igu)+'</span>':'');
   }
   document.querySelectorAll('.ix .tip').forEach(function(t){
     t.setAttribute('tabindex','0'); t.setAttribute('role','button'); t.setAttribute('aria-pressed','false');
