@@ -393,7 +393,9 @@ if(n<-3){el.remove();return}var b=document.getElementById('fest-t');
 if(n>1)b.innerHTML='<span class="en xg">🪔 Diwali in '+n+' days</span><span class="hi">🪔 दीपावली में '+n+' दिन</span><span class="gu">🪔 દિવાળીને '+n+' દિવસ બાકી</span>';
 else if(n===1)b.innerHTML='<span class="en xg">🪔 Diwali is tomorrow!</span><span class="hi">🪔 कल दीपावली है!</span><span class="gu">🪔 આવતી કાલે દિવાળી છે!</span>';
 else if(n===0)b.innerHTML='<span class="en xg">🪔 Happy Diwali!</span><span class="hi">🪔 शुभ दीपावली!</span><span class="gu">🪔 શુભ દિવાળી!</span>';
-else b.innerHTML='<span class="en xg">🪔 The Diwali festival continues</span><span class="hi">🪔 दीपावली उत्सव जारी है</span><span class="gu">🪔 દિવાળીનો ઉત્સવ ચાલુ છે</span>';})();</script>
+else if(n===-1)b.innerHTML='<span class="en xg">🪔 Tomorrow: Govardhan Puja and Gujarati New Year</span><span class="hi">🪔 कल: गोवर्धन पूजा और गुजराती नववर्ष</span><span class="gu">🪔 આવતી કાલે બેસતું વર્ષ!</span>';
+else if(n===-2)b.innerHTML='<span class="en xg">🎉 Saal Mubarak! Happy Gujarati New Year</span><span class="hi">🎉 गोवर्धन पूजा और नववर्ष की शुभकामनाएँ</span><span class="gu">🎉 નૂતન વર્ષાભિનંદન! સાલ મુબારક</span>';
+else b.innerHTML='<span class="en xg">🪔 Happy Bhai Dooj!</span><span class="hi">🪔 भाई दूज की शुभकामनाएँ!</span><span class="gu">🪔 ભાઈબીજની શુભેચ્છાઓ!</span>';})();</script>
 <!-- /fest-banner -->
 <style id="lang-top-css">
 .hero{position:relative}
