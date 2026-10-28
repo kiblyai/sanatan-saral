@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Nunito:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap">
 <style>
 .gc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.6rem;align-items:start}
 @media (max-width:760px){.gc-grid{grid-template-columns:1fr}}
@@ -32,6 +33,7 @@
 .gc-msg span{display:block;border:1.5px solid var(--line);border-radius:14px;padding:.55rem .8rem;background:var(--paper);font-size:.95rem;line-height:1.45}
 .gc-msg .gc-men{display:block;color:var(--ink-2);font-size:.88rem}
 .gc-msg .gc-mhi{display:block}
+.gc-kid{display:inline-block;font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;background:#ffe27a;color:#3b1d6e;border-radius:99px;padding:.05rem .5rem;margin-bottom:.25rem}
 .gc-l{display:block;font-size:.92rem;margin:.5rem 0 .25rem}
 .gc-in,#gc-custom{width:100%;box-sizing:border-box;font:inherit;padding:.6rem .8rem;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}
 .gc-received{text-align:center;background:var(--paper-2);border-radius:16px;padding:.9rem;margin-bottom:1rem}
@@ -129,9 +131,11 @@ document.addEventListener('click',function(e){
 <label><input type="radio" name="gc-d" value="0" checked><span><span class="en">🪔 Diyas</span><span class="hi">🪔 दीये</span></span></label>
 <label><input type="radio" name="gc-d" value="1"><span><span class="en">🌸 Rangoli</span><span class="hi">🌸 रंगोली</span></span></label>
 <label><input type="radio" name="gc-d" value="2"><span><span class="en">🏯 Ayodhya</span><span class="hi">🏯 अयोध्या</span></span></label>
+<label><input type="radio" name="gc-d" value="3"><span><span class="en">🧒 Happy diyas (kids)</span><span class="hi">🧒 मुस्कुराते दीये (बच्चे)</span></span></label>
+<label><input type="radio" name="gc-d" value="4"><span><span class="en">🚀 Space Diwali (kids)</span><span class="hi">🚀 अन्तरिक्ष दीपावली (बच्चे)</span></span></label>
 </div></fieldset>
 <fieldset><legend><span class="en">3. Message</span><span class="hi">3. सन्देश</span></legend>
-<div class="gc-msgs"><label class="gc-msg"><input type="radio" name="gc-m" value="0" checked><span><span class="gc-mhi">दीपों की रोशनी आपके घर को खुशियों, स्वास्थ्य और समृद्धि से भर दे।</span><span class="gc-men">May the light of the diyas fill your home with joy, health and prosperity.</span></span></label><label class="gc-msg"><input type="radio" name="gc-m" value="1"><span><span class="gc-mhi">आपको और आपके परिवार को प्रकाश, प्रेम और मुस्कान से भरी दीपावली की शुभकामनाएँ।</span><span class="gc-men">Wishing you and your family a Diwali full of light, love and laughter.</span></span></label><label class="gc-msg"><input type="radio" name="gc-m" value="2"><span><span class="gc-mhi">जैसे अयोध्या ने दीप जलाकर श्रीराम का स्वागत किया, वैसे ही आज हर दीप आपके जीवन में खुशियों का स्वागत करे।</span><span class="gc-men">As Ayodhya lit lamps to welcome Shri Ram, may every lamp today welcome happiness into your life.</span></span></label><label class="gc-msg"><input type="radio" name="gc-m" value="3"><span><span class="gc-mhi">माँ लक्ष्मी आपके घर को सुख-शान्ति और समृद्धि से भर दें।</span><span class="gc-men">May Maa Lakshmi bless your home with peace and plenty.</span></span></label>
+<div class="gc-msgs"><label class="gc-msg"><input type="radio" name="gc-m" value="0" checked><span><span class="gc-mhi">दीपों की रोशनी आपके घर को खुशियों, स्वास्थ्य और समृद्धि से भर दे।</span><span class="gc-men">May the light of the diyas fill your home with joy, health and prosperity.</span></span></label><label class="gc-msg"><input type="radio" name="gc-m" value="1"><span><span class="gc-mhi">आपको और आपके परिवार को प्रकाश, प्रेम और मुस्कान से भरी दीपावली की शुभकामनाएँ।</span><span class="gc-men">Wishing you and your family a Diwali full of light, love and laughter.</span></span></label><label class="gc-msg"><input type="radio" name="gc-m" value="2"><span><span class="gc-mhi">जैसे अयोध्या ने दीप जलाकर श्रीराम का स्वागत किया, वैसे ही आज हर दीप आपके जीवन में खुशियों का स्वागत करे।</span><span class="gc-men">As Ayodhya lit lamps to welcome Shri Ram, may every lamp today welcome happiness into your life.</span></span></label><label class="gc-msg"><input type="radio" name="gc-m" value="3"><span><span class="gc-mhi">माँ लक्ष्मी आपके घर को सुख-शान्ति और समृद्धि से भर दें।</span><span class="gc-men">May Maa Lakshmi bless your home with peace and plenty.</span></span></label><label class="gc-msg"><input type="radio" name="gc-m" value="4"><span><b class="gc-kid"><span class="en">For kids</span><span class="hi">बच्चों के लिए</span></b><span class="gc-mhi">शुभ दीपावली! आओ, दुनिया को रोशनी, मिठाई और मुस्कान से भर दें!</span><span class="gc-men">Happy Diwali! Let's fill the world with light, sweets and smiles!</span></span></label><label class="gc-msg"><input type="radio" name="gc-m" value="5"><span><b class="gc-kid"><span class="en">For kids</span><span class="hi">बच्चों के लिए</span></b><span class="gc-mhi">आपकी दीपावली हज़ार दीयों से भी ज़्यादा चमके!</span><span class="gc-men">May your Diwali sparkle brighter than a thousand diyas!</span></span></label>
 <label class="gc-msg"><input type="radio" name="gc-m" value="c"><span><span class="en">✏️ Write my own</span><span class="hi">✏️ अपना सन्देश लिखें</span></span></label>
 <textarea id="gc-custom" maxlength="160" rows="3" hidden aria-label="Your own message"></textarea>
 </div></fieldset>
@@ -159,14 +163,14 @@ document.addEventListener('click',function(e){
 <script src="verse-tools.js"></script>
 <script>
 (function(){
-var MEN=["May the light of the diyas fill your home with joy, health and prosperity.", "Wishing you and your family a Diwali full of light, love and laughter.", "As Ayodhya lit lamps to welcome Shri Ram, may every lamp today welcome happiness into your life.", "May Maa Lakshmi bless your home with peace and plenty."], MHI=["दीपों की रोशनी आपके घर को खुशियों, स्वास्थ्य और समृद्धि से भर दे।", "आपको और आपके परिवार को प्रकाश, प्रेम और मुस्कान से भरी दीपावली की शुभकामनाएँ।", "जैसे अयोध्या ने दीप जलाकर श्रीराम का स्वागत किया, वैसे ही आज हर दीप आपके जीवन में खुशियों का स्वागत करे।", "माँ लक्ष्मी आपके घर को सुख-शान्ति और समृद्धि से भर दें।"];
+var MEN=["May the light of the diyas fill your home with joy, health and prosperity.", "Wishing you and your family a Diwali full of light, love and laughter.", "As Ayodhya lit lamps to welcome Shri Ram, may every lamp today welcome happiness into your life.", "May Maa Lakshmi bless your home with peace and plenty.", "Happy Diwali! Let's fill the world with light, sweets and smiles!", "May your Diwali sparkle brighter than a thousand diyas!"], MHI=["दीपों की रोशनी आपके घर को खुशियों, स्वास्थ्य और समृद्धि से भर दे।", "आपको और आपके परिवार को प्रकाश, प्रेम और मुस्कान से भरी दीपावली की शुभकामनाएँ।", "जैसे अयोध्या ने दीप जलाकर श्रीराम का स्वागत किया, वैसे ही आज हर दीप आपके जीवन में खुशियों का स्वागत करे।", "माँ लक्ष्मी आपके घर को सुख-शान्ति और समृद्धि से भर दें।", "शुभ दीपावली! आओ, दुनिया को रोशनी, मिठाई और मुस्कान से भर दें!", "आपकी दीपावली हज़ार दीयों से भी ज़्यादा चमके!"];
 var cv=document.getElementById('gc-canvas'), ctx=cv.getContext('2d'), W=1080, H=1350;
 var $=function(i){return document.getElementById(i)};
 function val(n){var r=document.querySelector('input[name="'+n+'"]:checked');return r?r.value:''}
 function setVal(n,v){var r=document.querySelector('input[name="'+n+'"][value="'+v+'"]');if(r)r.checked=true}
 function ev(n,p){try{gtag('event',n,p||{})}catch(e){}}
 function rng(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}}
-var SKT='"Tiro Devanagari Hindi","Noto Serif Devanagari",serif', EN='"Cormorant Garamond",Georgia,serif', BODY='"Nunito","Noto Sans Devanagari",sans-serif';
+var KID='"Baloo 2","Nunito","Noto Sans Devanagari",sans-serif';var SKT='"Tiro Devanagari Hindi","Noto Serif Devanagari",serif', EN='"Cormorant Garamond",Georgia,serif', BODY='"Nunito","Noto Sans Devanagari",sans-serif';
 
 function stars(n,maxY,seed){var r=rng(seed);for(var i=0;i<n;i++){var x=r()*W,y=r()*maxY,s=r()*2.6+.6;ctx.globalAlpha=.35+r()*.6;ctx.fillStyle='#fff7d6';ctx.beginPath();ctx.arc(x,y,s,0,7);ctx.fill()}ctx.globalAlpha=1}
 function glow(x,y,r,c){var g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,c);g.addColorStop(1,'rgba(255,170,60,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fill()}
@@ -200,7 +204,33 @@ var DESIGNS=[
    [[290,790],[640,690],[950,790],[470,832]].forEach(function(p){ctx.fillStyle='#e9a23b';ctx.fillRect(p[0]-3,p[1]-34,6,34);ctx.fillStyle='#ff9d2e';ctx.beginPath();ctx.moveTo(p[0]+3,p[1]-34);ctx.lineTo(p[0]+30,p[1]-26);ctx.lineTo(p[0]+3,p[1]-18);ctx.fill()});
    for(var i=0;i<46;i++){var x=24+i*23.5,y=955+(i%2)*4;glow(x,y,16,'rgba(255,200,100,.55)');ctx.fillStyle='#ffe28a';ctx.beginPath();ctx.arc(x,y,4,0,7);ctx.fill()}
    for(var row=0;row<4;row++){var yy=1040+row*70;ctx.fillStyle='rgba(255,255,255,.04)';ctx.fillRect(0,yy,W,4);for(var j=0;j<9;j++){var x2=70+j*118+(row%2)*59;diya(x2,yy+40,20+row*4)}}
-   ctx.strokeStyle='rgba(255,213,107,.55)';ctx.lineWidth=3;ctx.strokeRect(36,36,W-72,H-72)}}
+   ctx.strokeStyle='rgba(255,213,107,.55)';ctx.lineWidth=3;ctx.strokeRect(36,36,W-72,H-72)}},
+ {top:250,bottom:1000,kid:true,ink:'#3b1d6e',sub:'#5a3d8f',gold:'#e8336d',stroke:'#ffffff',draw:function(){
+   var g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#fff3b0');g.addColorStop(.6,'#ffd1e3');g.addColorStop(1,'#ffb38a');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+   var r=rng(11),cc=['#ff4d8d','#ffb703','#3ac7c1','#7b5cff','#ff7a1a','#2fbf71'];
+   for(var i=0;i<90;i++){ctx.save();ctx.translate(r()*W,r()*H);ctx.rotate(r()*6.28);ctx.fillStyle=cc[i%cc.length];ctx.globalAlpha=.75;if(i%3)ctx.fillRect(-9,-4,18,8);else{ctx.beginPath();ctx.arc(0,0,7,0,7);ctx.fill()}ctx.restore()}
+   ctx.strokeStyle='#7b5cff';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(40,120);ctx.quadraticCurveTo(W/2,210,W-40,120);ctx.stroke();
+   for(var j=0;j<11;j++){var tt=(j+.5)/11,bx=(1-tt)*(1-tt)*40+2*(1-tt)*tt*(W/2)+tt*tt*(W-40),by=(1-tt)*(1-tt)*120+2*(1-tt)*tt*210+tt*tt*120;ctx.fillStyle=cc[j%cc.length];ctx.beginPath();ctx.moveTo(bx-30,by);ctx.lineTo(bx+30,by);ctx.lineTo(bx,by+62);ctx.closePath();ctx.fill()}
+   function happy(x,y,s){diya(x,y,s);ctx.fillStyle='#3b1d6e';ctx.beginPath();ctx.arc(x-s*.32,y+s*.32,s*.08,0,7);ctx.arc(x+s*.32,y+s*.32,s*.08,0,7);ctx.fill();
+     ctx.strokeStyle='#3b1d6e';ctx.lineWidth=s*.06;ctx.lineCap='round';ctx.beginPath();ctx.arc(x,y+s*.42,s*.18,.2,Math.PI-.2);ctx.stroke();
+     ctx.fillStyle='rgba(255,90,140,.55)';ctx.beginPath();ctx.arc(x-s*.56,y+s*.46,s*.1,0,7);ctx.arc(x+s*.56,y+s*.46,s*.1,0,7);ctx.fill()}
+   happy(230,1180,95);happy(540,1150,130);happy(850,1180,95);
+   for(var k=0;k<14;k++){var sx=80+r()*920,sy=1000+r()*80,ss=10+r()*10;ctx.fillStyle='#ffb703';ctx.beginPath();for(var q=0;q<10;q++){var ang=q*Math.PI/5-Math.PI/2,rr=q%2?ss*.45:ss;ctx.lineTo(sx+Math.cos(ang)*rr,sy+Math.sin(ang)*rr)}ctx.closePath();ctx.fill()}
+   ctx.strokeStyle='#7b5cff';ctx.lineWidth=6;if(ctx.roundRect){ctx.beginPath();ctx.roundRect(30,30,W-60,H-60,48);ctx.stroke()}}},
+ {top:200,bottom:900,kid:true,ink:'#ffffff',gold:'#ffe27a',stroke:'#2a1a6b',draw:function(){
+   var g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#0b1a4a');g.addColorStop(.6,'#3a1f8a');g.addColorStop(1,'#6b2fa8');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+   stars(170,H,33);
+   ctx.save();ctx.translate(860,1000);ctx.fillStyle='#ff8fb1';ctx.beginPath();ctx.arc(0,0,110,0,7);ctx.fill();ctx.strokeStyle='#ffe27a';ctx.lineWidth=14;ctx.beginPath();ctx.ellipse(0,0,190,46,-.35,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#ff6f9a';ctx.beginPath();ctx.arc(-30,-25,22,0,7);ctx.arc(35,30,14,0,7);ctx.fill();ctx.restore();
+   ctx.fillStyle='#3ac7c1';ctx.beginPath();ctx.arc(210,1190,120,0,7);ctx.fill();ctx.fillStyle='#2aa7a2';ctx.beginPath();ctx.arc(170,1150,26,0,7);ctx.arc(250,1230,18,0,7);ctx.fill();
+   diya(210,1080,60);
+   ctx.save();ctx.translate(560,1060);ctx.rotate(-.5);
+   var fg=ctx.createLinearGradient(0,90,0,230);fg.addColorStop(0,'#ffe27a');fg.addColorStop(1,'rgba(255,122,26,0)');ctx.fillStyle=fg;ctx.beginPath();ctx.moveTo(-34,90);ctx.quadraticCurveTo(0,260,34,90);ctx.fill();
+   ctx.fillStyle='#f4f1ff';ctx.beginPath();ctx.moveTo(0,-140);ctx.quadraticCurveTo(70,-60,50,90);ctx.lineTo(-50,90);ctx.quadraticCurveTo(-70,-60,0,-140);ctx.fill();
+   ctx.fillStyle='#e8336d';ctx.beginPath();ctx.moveTo(-50,40);ctx.lineTo(-90,110);ctx.lineTo(-48,90);ctx.fill();ctx.beginPath();ctx.moveTo(50,40);ctx.lineTo(90,110);ctx.lineTo(48,90);ctx.fill();
+   ctx.fillStyle='#3ac7c1';ctx.strokeStyle='#2a1a6b';ctx.lineWidth=8;ctx.beginPath();ctx.arc(0,-30,28,0,7);ctx.fill();ctx.stroke();ctx.restore();
+   ctx.save();ctx.translate(250,330);ctx.fillStyle='#ffe27a';ctx.beginPath();for(var q=0;q<10;q++){var a=q*Math.PI/5-Math.PI/2,rr=q%2?34:80;ctx.lineTo(Math.cos(a)*rr,Math.sin(a)*rr)}ctx.closePath();ctx.fill();
+   ctx.fillStyle='#2a1a6b';ctx.beginPath();ctx.arc(-14,-6,6,0,7);ctx.arc(14,-6,6,0,7);ctx.fill();ctx.strokeStyle='#2a1a6b';ctx.lineWidth=5;ctx.lineCap='round';ctx.beginPath();ctx.arc(0,6,12,.25,Math.PI-.25);ctx.stroke();ctx.restore();
+   ctx.strokeStyle='#ffe27a';ctx.lineWidth=6;if(ctx.roundRect){ctx.beginPath();ctx.roundRect(30,30,W-60,H-60,48);ctx.stroke()}}}
 ];
 
 function wrap(text,font,maxW){ctx.font=font;var words=String(text).split(/\s+/),lines=[],cur='';words.forEach(function(w){var t=cur?cur+' '+w:w;if(ctx.measureText(t).width>maxW&&cur){lines.push(cur);cur=w}else cur=t});if(cur)lines.push(cur);return lines}
@@ -209,6 +239,7 @@ function draw(){
   var lang=val('gc-l')||'hi', d=DESIGNS[+val('gc-d')||0], m=val('gc-m'), to=$('gc-to').value.trim(), from=$('gc-from').value.trim();
   var custom=$('gc-custom').value.trim();
   d.draw();
+  var _S=SKT,_E=EN,_B=BODY;if(d.kid){SKT=EN=BODY=KID}
   var items=[];var k=1;
   for(var tries=0;tries<6;tries++){
     items=[];var maxW=860;
@@ -219,15 +250,17 @@ function draw(){
     if(m==='c'){if(custom)wrap(custom,Math.round(44*k)+'px '+BODY,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(44*k)+'px '+BODY,c:d.ink,gap:i===a.length-1?34*k:10*k})})}
     else{
       if(lang!=='en')wrap(mh,Math.round(46*k)+'px '+SKT,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(46*k)+'px '+SKT,c:d.ink,gap:i===a.length-1?(lang==='both'?20*k:34*k):10*k})});
-      if(lang!=='hi'){var sz=lang==='both'?36:46;wrap(me,Math.round(sz*k)+'px '+BODY,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(sz*k)+'px '+BODY,c:lang==='both'?'rgba(255,247,230,.82)':d.ink,gap:i===a.length-1?34*k:8*k})})}
+      if(lang!=='hi'){var sz=lang==='both'?36:46;wrap(me,Math.round(sz*k)+'px '+BODY,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(sz*k)+'px '+BODY,c:lang==='both'?(d.sub||'rgba(255,247,230,.82)'):d.ink,gap:i===a.length-1?34*k:8*k})})}
     }
     if(from){var fl=lang==='en'?'With love, '+from:(lang==='hi'?'शुभकामनाओं सहित, '+from:'शुभकामनाओं सहित · With love, '+from);wrap(fl,'600 '+Math.round(46*k)+'px '+(lang==='en'?BODY:SKT),maxW).forEach(function(l){items.push({t:l,f:'600 '+Math.round(46*k)+'px '+(lang==='en'?BODY:SKT),c:d.gold,gap:6*k})})}
     var hgt=0;items.forEach(function(it){it.h=parseInt(it.f.match(/(\d+)px/)[1],10)*1.18;hgt+=it.h+it.gap});
     if(hgt<=d.bottom-d.top)break;k*=.88;
   }
+  if(d.kid)items.forEach(function(it){var px=it.f.match(/(\d+)px/)[1];it.f=((it.t==='शुभ दीपावली'||it.t==='Happy Diwali')?'800 ':'700 ')+px+'px '+KID});
+  SKT=_S;EN=_E;BODY=_B;
   var y=d.top+((d.bottom-d.top)-hgt)/2;
   ctx.textAlign='center';ctx.textBaseline='alphabetic';
-  items.forEach(function(it){ctx.font=it.f;ctx.fillStyle=it.c;ctx.shadowColor='rgba(0,0,0,.35)';ctx.shadowBlur=12;ctx.fillText(it.t,W/2,y+it.h*.82);ctx.shadowBlur=0;y+=it.h+it.gap});
+  items.forEach(function(it){ctx.font=it.f;ctx.fillStyle=it.c;if(d.stroke){ctx.lineJoin='round';ctx.lineWidth=Math.max(8,it.h*.12);ctx.strokeStyle=d.stroke;ctx.strokeText(it.t,W/2,y+it.h*.82)}ctx.shadowColor=d.kid?'rgba(0,0,0,0)':'rgba(0,0,0,.35)';ctx.shadowBlur=12;ctx.fillText(it.t,W/2,y+it.h*.82);ctx.shadowBlur=0;y+=it.h+it.gap});
   ctx.font='600 30px '+BODY;var ww=ctx.measureText('sanatan.space/diwali').width+56;ctx.fillStyle='rgba(15,8,30,.72)';ctx.beginPath();if(ctx.roundRect)ctx.roundRect(W/2-ww/2,H-104,ww,58,29);else ctx.rect(W/2-ww/2,H-104,ww,58);ctx.fill();ctx.fillStyle='#fff7e6';ctx.fillText('sanatan.space/diwali',W/2,H-64);
 }
 
@@ -246,6 +279,7 @@ $('gc-dl').addEventListener('click',function(){blob().then(function(b){dl(b);say
 $('gc-link').addEventListener('click',function(){var u=linkURL(),from=$('gc-from').value.trim();var t=(isHi()?'🪔 '+(from?from+' की ओर से ':'')+'आपके लिए एक दीपावली शुभकामना कार्ड: ':'🪔 A Diwali greeting card for you'+(from?' from '+from:'')+': ')+u;
   if(navigator.share){navigator.share({text:t}).catch(function(){})}else{window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank','noopener')}ev('card_link_share')});
 
+document.querySelectorAll('input[name="gc-d"]').forEach(function(r){r.addEventListener('change',function(){var m=val('gc-m');if(+r.value>=3&&m!=='c'&&+m<4)setVal('gc-m','4');if(+r.value<3&&+m>=4)setVal('gc-m','0')})});
 document.querySelectorAll('#gc-form input,#gc-form textarea').forEach(function(el){el.addEventListener('input',function(){$('gc-custom').hidden=val('gc-m')!=='c';draw()});el.addEventListener('change',function(){$('gc-custom').hidden=val('gc-m')!=='c';draw()})});
 
 var q=new URLSearchParams(location.search);
