@@ -243,7 +243,9 @@ var DESIGNS=[
    ctx.strokeStyle='#ffe27a';ctx.lineWidth=6;if(ctx.roundRect){ctx.beginPath();ctx.roundRect(30,30,W-60,H-60,48);ctx.stroke()}}}
 ];
 
-function wrap(text,font,maxW){ctx.font=font;var words=String(text).split(/\s+/),lines=[],cur='';words.forEach(function(w){var t=cur?cur+' '+w:w;if(ctx.measureText(t).width>maxW&&cur){lines.push(cur);cur=w}else cur=t});if(cur)lines.push(cur);return lines}
+var MS=document.createElement('span');MS.setAttribute('aria-hidden','true');MS.style.cssText='position:absolute;left:-99999px;top:0;white-space:pre;visibility:hidden;line-height:1;letter-spacing:0;word-spacing:0;font-kerning:normal';document.body.appendChild(MS);
+function mw(t,font){MS.style.font=font;MS.textContent=t;return MS.getBoundingClientRect().width}
+function wrap(text,font,maxW){ctx.font=font;var words=String(text).split(/\s+/),lines=[],cur='';words.forEach(function(w){var t=cur?cur+' '+w:w;if(mw(t,font)>maxW&&cur){lines.push(cur);cur=w}else cur=t});if(cur)lines.push(cur);return lines}
 
 function draw(){
   var lang=val('gc-l')||'hi', d=DESIGNS[+val('gc-d')||0], m=val('gc-m'), to=$('gc-to').value.trim(), from=$('gc-from').value.trim();
@@ -269,9 +271,9 @@ function draw(){
   if(d.kid)items.forEach(function(it){var px=it.f.match(/(\d+)px/)[1];it.f=((it.t==='शुभ दीपावली'||it.t==='Happy Diwali')?'800 ':'700 ')+px+'px '+KID});
   SKT=_S;EN=_E;BODY=_B;
   var y=d.top+((d.bottom-d.top)-hgt)/2;
-  ctx.textAlign='center';ctx.textBaseline='alphabetic';
-  items.forEach(function(it){ctx.font=it.f;ctx.fillStyle=it.c;if(d.stroke){ctx.lineJoin='round';ctx.lineWidth=Math.max(8,it.h*.12);ctx.strokeStyle=d.stroke;ctx.strokeText(it.t,W/2,y+it.h*.82)}ctx.shadowColor=d.kid?'rgba(0,0,0,0)':'rgba(0,0,0,.35)';ctx.shadowBlur=12;ctx.fillText(it.t,W/2,y+it.h*.82);ctx.shadowBlur=0;y+=it.h+it.gap});
-  ctx.font='600 30px '+BODY;var ww=ctx.measureText('sanatan.space/diwali').width+56;ctx.fillStyle='rgba(15,8,30,.72)';ctx.beginPath();if(ctx.roundRect)ctx.roundRect(W/2-ww/2,H-104,ww,58,29);else ctx.rect(W/2-ww/2,H-104,ww,58);ctx.fill();ctx.fillStyle='#fff7e6';ctx.fillText('sanatan.space/diwali',W/2,H-64);
+  ctx.textAlign='left';ctx.textBaseline='alphabetic';
+  items.forEach(function(it){ctx.font=it.f;var x=W/2-mw(it.t,it.f)/2;ctx.fillStyle=it.c;if(d.stroke){ctx.lineJoin='round';ctx.lineWidth=Math.max(8,it.h*.12);ctx.strokeStyle=d.stroke;ctx.strokeText(it.t,x,y+it.h*.82)}ctx.shadowColor=d.kid?'rgba(0,0,0,0)':'rgba(0,0,0,.35)';ctx.shadowBlur=12;ctx.fillText(it.t,x,y+it.h*.82);ctx.shadowBlur=0;y+=it.h+it.gap});
+  ctx.textAlign='center';ctx.font='600 30px '+BODY;var ww=ctx.measureText('sanatan.space/diwali').width+56;ctx.fillStyle='rgba(15,8,30,.72)';ctx.beginPath();if(ctx.roundRect)ctx.roundRect(W/2-ww/2,H-104,ww,58,29);else ctx.rect(W/2-ww/2,H-104,ww,58);ctx.fill();ctx.fillStyle='#fff7e6';ctx.fillText('sanatan.space/diwali',W/2,H-64);
 }
 
 function params(){return {l:val('gc-l'),d:val('gc-d'),m:val('gc-m'),to:$('gc-to').value.trim(),from:$('gc-from').value.trim(),c:val('gc-m')==='c'?$('gc-custom').value.trim():''}}
