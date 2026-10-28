@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <meta content="cover" name="claude:viewport-fit-sides"/>
 <title>Diwali Greeting Card</title>
-<meta content="Make a beautiful Diwali card in Hindi, Gujarati or English (or a language plus English), with your family's name, and share it on WhatsApp. Part of Sanatan Dharma Saral, a simple guide to Hinduism." name="description"/>
+<meta content="Make a beautiful Diwali card in Hindi, Gujarati or English, with your family's name, and share it on WhatsApp. Part of Sanatan Dharma Saral, a simple guide to Hinduism." name="description"/>
 <meta content="Hinduism, Hindu religion, Hindu dharma, Sanatan Dharma, Sanatana Dharma, Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata, Puranas, Hindu scriptures, Hindu philosophy, mantras, हिन्दू धर्म, सनातन धर्म, वेद, उपनिषद, भगवद्गीता" name="keywords"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&amp;family=Nunito:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600&amp;family=Tiro+Devanagari+Hindi&amp;family=Tiro+Devanagari+Sanskrit:ital@0;1&amp;family=Hind+Vadodara:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -133,8 +133,8 @@ document.addEventListener('click',function(e){
 <div>
 <p class="kicker">दीपावली कार्ड · Diwali card</p>
 <h1><span class="en xg">Diwali greeting card maker</span><span class="hi">दीपावली शुभकामना कार्ड</span><span class="gu">દિવાળી શુભેચ્છા કાર્ડ</span></h1>
-<p class="lede en xg">Make a beautiful Diwali card in Hindi, Gujarati or English (or a language plus English), with your family's name, and share it on WhatsApp.</p>
-<p class="lede hi">हिन्दी, गुजराती या अंग्रेज़ी में (या किसी भाषा के साथ अंग्रेज़ी में), अपने परिवार के नाम के साथ सुन्दर दीपावली कार्ड बनाएँ और WhatsApp पर भेजें।</p><p class="lede gu">ગુજરાતી, હિન્દી કે અંગ્રેજીમાં (અથવા કોઈ ભાષા સાથે અંગ્રેજીમાં), તમારા પરિવારના નામ સાથે સુંદર દિવાળી કાર્ડ બનાવો અને WhatsApp પર મોકલો.</p>
+<p class="lede en xg">Make a beautiful Diwali card in Hindi, Gujarati or English, with your family's name, and share it on WhatsApp.</p>
+<p class="lede hi">हिन्दी, गुजराती या अंग्रेज़ी में, अपने परिवार के नाम के साथ सुन्दर दीपावली कार्ड बनाएँ और WhatsApp पर भेजें।</p><p class="lede gu">ગુજરાતી, હિન્દી કે અંગ્રેજીમાં, તમારા પરિવારના નામ સાથે સુંદર દિવાળી કાર્ડ બનાવો અને WhatsApp પર મોકલો.</p>
 </div>
 <div class="hero-art"><svg aria-label="Greeting card" role="img" viewbox="0 0 200 200"><g fill="none" stroke="var(--hero-gold)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
 <circle cx="100" cy="100" r="88"></circle><rect height="104" rx="6" width="76" x="62" y="48"></rect><path d="M80 118 Q100 136 120 118 Z"></path><path d="M100 112 C93 102 96 92 100 84 C104 92 107 102 100 112 Z"></path><path d="M78 68 H122 M86 78 H114"></path></g></svg></div>
@@ -168,9 +168,7 @@ document.addEventListener('click',function(e){
 <div class="gc-pills">
 <label><input checked="" name="gc-l" type="radio" value="hi"/><span>हिन्दी</span></label>
 <label><input name="gc-l" type="radio" value="en"/><span>English</span></label>
-<label><input name="gc-l" type="radio" value="both"/><span>हिन्दी + English</span></label>
 <label><input name="gc-l" type="radio" value="gu"/><span lang="gu">ગુજરાતી</span></label>
-<label><input name="gc-l" type="radio" value="gu-en"/><span><span lang="gu">ગુજરાતી</span> + English</span></label>
 </div></fieldset>
 <fieldset><legend><span class="en xg">2. Design</span><span class="hi">2. डिज़ाइन</span><span class="gu">2. ડિઝાઇન</span></legend>
 <div class="gc-pills">
@@ -346,7 +344,7 @@ document.querySelectorAll('#gc-form input,#gc-form textarea').forEach(function(e
 
 document.querySelectorAll('[data-proxy]').forEach(function(b){b.addEventListener('click',function(){$(b.dataset.proxy).click()})});
 var q=new URLSearchParams(location.search);
-if(q.get('d')||q.get('from')){if(q.get('l'))setVal('gc-l',q.get('l'));if(q.get('d'))setVal('gc-d',q.get('d'));if(q.get('m'))setVal('gc-m',q.get('m'));
+if(q.get('d')||q.get('from')){if(q.get('l'))setVal('gc-l',({both:'hi','gu-en':'gu'})[q.get('l')]||q.get('l'));if(q.get('d'))setVal('gc-d',q.get('d'));if(q.get('m'))setVal('gc-m',q.get('m'));
   $('gc-to').value=(q.get('to')||'').slice(0,40);$('gc-from').value=(q.get('from')||'').slice(0,40);$('gc-custom').value=(q.get('c')||'').slice(0,160);$('gc-custom').hidden=val('gc-m')!=='c';
   var f=$('gc-from').value;$('gc-received').hidden=false;$('gc-received-line').textContent=recvLine(f);ev('card_opened')}
 else if(SL()==='gu')setVal('gc-l','gu');
