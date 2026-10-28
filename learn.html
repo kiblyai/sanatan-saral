@@ -1,15 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="claude:viewport-fit-sides" content="cover">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="cover" name="claude:viewport-fit-sides"/>
 <title>Sanatan Quiz</title>
-<meta name="description" content="Test what you have learned and memorise mantras, one card at a time. Good for families, children and study groups. Part of Sanatan Dharma Saral, a simple guide to Hinduism.">
-<meta name="keywords" content="Hinduism, Hindu religion, Hindu dharma, Sanatan Dharma, Sanatana Dharma, Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata, Puranas, Hindu scriptures, Hindu philosophy, mantras, हिन्दू धर्म, सनातन धर्म, वेद, उपनिषद, भगवद्गीता">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Nunito:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap">
-<link rel="stylesheet" href="style.css">
+<meta content="Test what you have learned and memorise mantras, one card at a time. Good for families, children and study groups. Part of Sanatan Dharma Saral, a simple guide to Hinduism." name="description"/>
+<meta content="Hinduism, Hindu religion, Hindu dharma, Sanatan Dharma, Sanatana Dharma, Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata, Puranas, Hindu scriptures, Hindu philosophy, mantras, हिन्दू धर्म, सनातन धर्म, वेद, उपनिषद, भगवद्गीता" name="keywords"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&amp;family=Nunito:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600&amp;family=Tiro+Devanagari+Hindi&amp;family=Tiro+Devanagari+Sanskrit:ital@0;1&amp;family=Hind+Vadodara:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 <style>
 .qopt{font:inherit;text-align:left;padding:.6rem .9rem;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);cursor:pointer}
 .qopt:hover:not(:disabled){border-color:var(--gold)}
@@ -18,12 +19,18 @@
 .qopt:disabled{cursor:default}
 #topics a[aria-pressed="true"]{background:var(--indigo);color:var(--paper);border-color:var(--indigo)}
 </style>
+<style id="gu-css">
+:root:not([data-lang="gu"]) .gu{display:none!important}
+:root[data-lang="gu"] .xg{display:none!important}
+:root[data-lang="gu"] .menu summary .hi{display:none!important}
+:root[data-lang="gu"]{--f-body:"Hind Vadodara","Nunito","Noto Sans Gujarati",system-ui,sans-serif;--f-display:"Hind Vadodara","Cormorant Garamond","Noto Serif Gujarati",Georgia,serif}
+</style>
 <link rel="canonical" href="https://sanatan.space/learn.html">
 <meta property="og:url" content="https://sanatan.space/learn.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sanatan Dharma Saral">
 <meta property="og:title" content="Quiz and flashcards · Sanatan Dharma Saral">
-<meta property="og:description" content="Test what you have learned and memorise mantras, one card at a time. Good for families, children and study groups. Part of Sanatan Dharma Saral, a simple guide to Hinduism.">
+<meta property="og:description" content="A simple guide to Hinduism in Hindi and English.">
 <meta property="og:image" content="https://sanatan.space/og/learn.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -58,41 +65,42 @@ document.addEventListener('click',function(e){
 </head>
 <body>
 <header class="hero">
-  <div class="wrap has-art">
-    <div>
-      <p class="kicker">अभ्यास · Practice</p>
-      <h1><span class="en">Quiz and flashcards</span><span class="hi">प्रश्नोत्तरी और फ़्लैशकार्ड</span></h1>
-      <p class="lede en">Test what you have learned and memorise mantras, one card at a time. Good for families, children and study groups.</p>
-      <p class="lede hi">जो सीखा उसे परखें और एक-एक कार्ड से मन्त्र याद करें। परिवार, बच्चों और अध्ययन-मण्डलियों के लिए उपयोगी।</p>
-    </div>
-    <div class="hero-art"><svg viewBox="0 0 200 200" role="img" aria-label="Lamp"><g fill="none" stroke="var(--hero-gold)" stroke-width="3" stroke-linecap="round">
-<circle cx="100" cy="100" r="88"/><path d="M50 120 Q100 170 150 120 Z" fill="color-mix(in srgb,var(--hero-gold) 25%,transparent)"/>
-<path d="M150 120 L165 112"/><path d="M100 112 C 88 92, 96 70, 100 52 C 104 70, 112 92, 100 112 Z" fill="var(--hero-gold)"/></g></svg></div>
-  </div>
+<div class="wrap has-art">
+<div>
+<p class="kicker">अभ्यास · Practice</p>
+<h1><span class="en">Quiz and flashcards</span><span class="hi">प्रश्नोत्तरी और फ़्लैशकार्ड</span></h1>
+<p class="lede en">Test what you have learned and memorise mantras, one card at a time. Good for families, children and study groups.</p>
+<p class="lede hi">जो सीखा उसे परखें और एक-एक कार्ड से मन्त्र याद करें। परिवार, बच्चों और अध्ययन-मण्डलियों के लिए उपयोगी।</p>
+</div>
+<div class="hero-art"><svg aria-label="Lamp" role="img" viewbox="0 0 200 200"><g fill="none" stroke="var(--hero-gold)" stroke-linecap="round" stroke-width="3">
+<circle cx="100" cy="100" r="88"></circle><path d="M50 120 Q100 170 150 120 Z" fill="color-mix(in srgb,var(--hero-gold) 25%,transparent)"></path>
+<path d="M150 120 L165 112"></path><path d="M100 112 C 88 92, 96 70, 100 52 C 104 70, 112 92, 100 112 Z" fill="var(--hero-gold)"></path></g></svg></div>
+</div>
 </header>
 <div class="bar">
-  <div class="wrap">
-    <nav class="topnav" aria-label="Main"><a href="index.html" class="nav-home" aria-label="Home"><svg class="home-ic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/></svg><span class="en">Home</span><span class="hi">मुख्य</span></a><a href="index.html#vedas"><span class="en">Vedas</span><span class="hi">वेद</span></a><a href="gita.html"><span class="en">Gita</span><span class="hi">गीता</span></a><a href="temples.html"><span class="en">Temples</span><span class="hi">मन्दिर</span></a><a href="meditate.html"><span class="en">Meditate</span><span class="hi">ध्यान</span></a><a href="kids.html"><span class="en">Kids</span><span class="hi">बच्चे</span></a><a href="ask.html"><span class="en">Ask</span><span class="hi">पूछें</span></a></nav><details class="menu"><summary aria-label="All pages"><span class="menu-ic" aria-hidden="true"></span><span class="en">All pages</span><span class="hi">सभी पृष्ठ</span></summary><div class="menu-panel"><div class="menu-group"><p class="menu-h"><span class="en">Scriptures</span><span class="hi">ग्रन्थ</span></p><a href="index.html#vedas"><span class="en">The four Vedas</span><span class="hi">चार वेद</span></a><a href="rigveda.html"><span class="en">Rigveda</span><span class="hi">ऋग्वेद</span></a><a href="yajurveda.html"><span class="en">Yajurveda</span><span class="hi">यजुर्वेद</span></a><a href="samaveda.html"><span class="en">Samaveda</span><span class="hi">सामवेद</span></a><a href="atharvaveda.html"><span class="en">Atharvaveda</span><span class="hi">अथर्ववेद</span></a><a href="upanishads.html"><span class="en">Upanishads</span><span class="hi">उपनिषद</span></a><a href="gita.html"><span class="en">Bhagavad Gita</span><span class="hi">भगवद्गीता</span></a><a href="epics.html"><span class="en">Ramayana &amp; Mahabharata</span><span class="hi">रामायण-महाभारत</span></a><a href="puranas.html"><span class="en">Puranas &amp; avatars</span><span class="hi">पुराण व अवतार</span></a></div><div class="menu-group"><p class="menu-h"><span class="en">Explore</span><span class="hi">जानें</span></p><a href="temples.html"><span class="en">Temples</span><span class="hi">मन्दिर</span></a><a href="tirthas.html"><span class="en">Pilgrimage circuits</span><span class="hi">तीर्थ परिक्रमा</span></a><a href="maps.html"><span class="en">Maps</span><span class="hi">नक्शे</span></a><a href="symbols.html"><span class="en">Symbols</span><span class="hi">प्रतीक</span></a><a href="calendar.html"><span class="en">Festival calendar</span><span class="hi">पर्व-पंचांग</span></a><a href="diwali.html"><span class="en">Diwali</span><span class="hi">दीपावली</span></a><a href="diwali-card.html"><span class="en">Diwali greeting card</span><span class="hi">दीपावली कार्ड</span></a><a href="diwali-colouring.html"><span class="en">Diwali colouring pages</span><span class="hi">दीपावली रंग भरें</span></a><a href="meditate.html"><span class="en">Meditate</span><span class="hi">ध्यान</span></a><a href="index.html#ideas"><span class="en">Core ideas</span><span class="hi">मूल विचार</span></a></div><div class="menu-group"><p class="menu-h"><span class="en">Learn</span><span class="hi">सीखें</span></p><a href="kids.html"><span class="en">Stories for children</span><span class="hi">बच्चों की कहानियाँ</span></a><a href="plans.html"><span class="en">Daily reading plans</span><span class="hi">दैनिक पाठ-योजना</span></a><a href="saved.html"><span class="en">My saved verses</span><span class="hi">मेरे सहेजे मन्त्र</span></a><a href="learn.html" aria-current="page"><span class="en">Quiz &amp; flashcards</span><span class="hi">प्रश्नोत्तरी</span></a><a href="search.html"><span class="en">Search</span><span class="hi">खोजें</span></a><a href="ask.html"><span class="en">Ask a question</span><span class="hi">प्रश्न पूछें</span></a><a href="booklet.pdf"><span class="en">Mantra booklet (PDF)</span><span class="hi">मन्त्र-पुस्तिका (PDF)</span></a><a href="about.html"><span class="en">About us</span><span class="hi">हमारे बारे में</span></a><a href="contact.html"><span class="en">Write to us</span><span class="hi">हमें लिखें</span></a></div><div class="menu-size"><span class="en">Text size</span><span class="hi">अक्षर का आकार</span><button type="button" data-size="s" aria-label="Small text" style="font-size:.85rem">A</button><button type="button" data-size="m" aria-label="Normal text">A</button><button type="button" data-size="l" aria-label="Large text" style="font-size:1.15rem">A</button><button type="button" data-size="xl" aria-label="Extra large text" style="font-size:1.3rem">A</button></div></div></details>
-    <div class="lang" role="group" aria-label="Language">
-      <button type="button" id="btn-en" data-set="en" aria-label="English"><span class="lf">English</span><span class="ls">EN</span></button>
-      <button type="button" id="btn-hi" data-set="hi" aria-label="हिन्दी"><span class="lf">हिन्दी</span><span class="ls">हिं</span></button>
-    </div>
-  </div>
+<div class="wrap">
+<nav aria-label="Main" class="topnav"><a aria-label="Home" class="nav-home" href="index.html"><svg aria-hidden="true" class="home-ic" fill="none" height="18" stroke="currentColor" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M3 11 12 4l9 7"></path><path d="M5.5 9.5V20h13V9.5"></path><path d="M10 20v-5h4v5"></path></svg><span class="en xg">Home</span><span class="hi">मुख्य</span><span class="gu">મુખ્ય</span></a><a href="index.html#vedas"><span class="en xg">Vedas</span><span class="hi">वेद</span><span class="gu">વેદ</span></a><a href="gita.html"><span class="en xg">Gita</span><span class="hi">गीता</span><span class="gu">ગીતા</span></a><a href="temples.html"><span class="en xg">Temples</span><span class="hi">मन्दिर</span><span class="gu">મંદિર</span></a><a href="meditate.html"><span class="en xg">Meditate</span><span class="hi">ध्यान</span><span class="gu">ધ્યાન</span></a><a href="kids.html"><span class="en xg">Kids</span><span class="hi">बच्चे</span><span class="gu">બાળકો</span></a><a href="ask.html"><span class="en xg">Ask</span><span class="hi">पूछें</span><span class="gu">પૂછો</span></a></nav><details class="menu"><summary aria-label="All pages"><span aria-hidden="true" class="menu-ic"></span><span class="en xg">All pages</span><span class="hi">सभी पृष्ठ</span><span class="gu">બધાં પૃષ્ઠ</span></summary><div class="menu-panel"><div class="menu-group"><p class="menu-h"><span class="en xg">Scriptures</span><span class="hi">ग्रन्थ</span><span class="gu">ગ્રંથ</span></p><a href="index.html#vedas"><span class="en xg">The four Vedas</span><span class="hi">चार वेद</span><span class="gu">ચાર વેદ</span></a><a href="rigveda.html"><span class="en xg">Rigveda</span><span class="hi">ऋग्वेद</span><span class="gu">ઋગ્વેદ</span></a><a href="yajurveda.html"><span class="en xg">Yajurveda</span><span class="hi">यजुर्वेद</span><span class="gu">યજુર્વેદ</span></a><a href="samaveda.html"><span class="en xg">Samaveda</span><span class="hi">सामवेद</span><span class="gu">સામવેદ</span></a><a href="atharvaveda.html"><span class="en xg">Atharvaveda</span><span class="hi">अथर्ववेद</span><span class="gu">અથર્વવેદ</span></a><a href="upanishads.html"><span class="en xg">Upanishads</span><span class="hi">उपनिषद</span><span class="gu">ઉપનિષદ</span></a><a href="gita.html"><span class="en xg">Bhagavad Gita</span><span class="hi">भगवद्गीता</span><span class="gu">ભગવદ્ ગીતા</span></a><a href="epics.html"><span class="en xg">Ramayana &amp; Mahabharata</span><span class="hi">रामायण-महाभारत</span><span class="gu">રામાયણ-મહાભારત</span></a><a href="puranas.html"><span class="en xg">Puranas &amp; avatars</span><span class="hi">पुराण व अवतार</span><span class="gu">પુરાણ અને અવતાર</span></a></div><div class="menu-group"><p class="menu-h"><span class="en xg">Explore</span><span class="hi">जानें</span><span class="gu">જાણો</span></p><a href="temples.html"><span class="en xg">Temples</span><span class="hi">मन्दिर</span><span class="gu">મંદિર</span></a><a href="tirthas.html"><span class="en xg">Pilgrimage circuits</span><span class="hi">तीर्थ परिक्रमा</span><span class="gu">તીર્થ પરિક્રમા</span></a><a href="maps.html"><span class="en xg">Maps</span><span class="hi">नक्शे</span><span class="gu">નકશા</span></a><a href="symbols.html"><span class="en xg">Symbols</span><span class="hi">प्रतीक</span><span class="gu">પ્રતીક</span></a><a href="calendar.html"><span class="en xg">Festival calendar</span><span class="hi">पर्व-पंचांग</span><span class="gu">તહેવાર-પંચાંગ</span></a><a href="diwali.html"><span class="en xg">Diwali</span><span class="hi">दीपावली</span><span class="gu">દિવાળી</span></a><a href="diwali-card.html"><span class="en xg">Diwali greeting card</span><span class="hi">दीपावली कार्ड</span><span class="gu">દિવાળી કાર્ડ</span></a><a href="diwali-colouring.html"><span class="en xg">Diwali colouring pages</span><span class="hi">दीपावली रंग भरें</span><span class="gu">દિવાળી રંગપૂરણી</span></a><a href="meditate.html"><span class="en xg">Meditate</span><span class="hi">ध्यान</span><span class="gu">ધ્યાન</span></a><a href="index.html#ideas"><span class="en xg">Core ideas</span><span class="hi">मूल विचार</span><span class="gu">મૂળ વિચારો</span></a></div><div class="menu-group"><p class="menu-h"><span class="en xg">Learn</span><span class="hi">सीखें</span><span class="gu">શીખો</span></p><a href="kids.html"><span class="en xg">Stories for children</span><span class="hi">बच्चों की कहानियाँ</span><span class="gu">બાળકોની વાર્તાઓ</span></a><a href="plans.html"><span class="en xg">Daily reading plans</span><span class="hi">दैनिक पाठ-योजना</span><span class="gu">દૈનિક પાઠ-યોજના</span></a><a href="saved.html"><span class="en xg">My saved verses</span><span class="hi">मेरे सहेजे मन्त्र</span><span class="gu">મારા સાચવેલા મંત્રો</span></a><a aria-current="page" href="learn.html"><span class="en xg">Quiz &amp; flashcards</span><span class="hi">प्रश्नोत्तरी</span><span class="gu">પ્રશ્નોત્તરી</span></a><a href="search.html"><span class="en xg">Search</span><span class="hi">खोजें</span><span class="gu">શોધો</span></a><a href="ask.html"><span class="en xg">Ask a question</span><span class="hi">प्रश्न पूछें</span><span class="gu">પ્રશ્ન પૂછો</span></a><a href="booklet.pdf"><span class="en xg">Mantra booklet (PDF)</span><span class="hi">मन्त्र-पुस्तिका (PDF)</span><span class="gu">મંત્ર-પુસ્તિકા (PDF)</span></a><a href="about.html"><span class="en xg">About us</span><span class="hi">हमारे बारे में</span><span class="gu">અમારા વિશે</span></a><a href="contact.html"><span class="en xg">Write to us</span><span class="hi">हमें लिखें</span><span class="gu">અમને લખો</span></a></div><div class="menu-size"><span class="en xg">Text size</span><span class="hi">अक्षर का आकार</span><span class="gu">અક્ષરનું કદ</span><button aria-label="Small text" data-size="s" style="font-size:.85rem" type="button">A</button><button aria-label="Normal text" data-size="m" type="button">A</button><button aria-label="Large text" data-size="l" style="font-size:1.15rem" type="button">A</button><button aria-label="Extra large text" data-size="xl" style="font-size:1.3rem" type="button">A</button></div></div></details>
+<div aria-label="Language" class="lang" role="group">
+<button aria-label="English" data-set="en" id="btn-en" type="button"><span class="lf">English</span><span class="ls">EN</span></button>
+<button aria-label="हिन्दी" data-set="hi" id="btn-hi" type="button"><span class="lf">हिन्दी</span><span class="ls">हिं</span></button>
+<button aria-label="ગુજરાતી" data-set="gu" id="btn-gu" type="button"><span class="lf">ગુજરાતી</span><span class="ls">ગુ</span></button>
+</div>
+</div>
 </div>
 <main class="wrap">
 <section id="quiz">
 <div class="sec-head">
 <p class="eyebrow"><span class="en">Test yourself</span><span class="hi">स्वयं को परखें</span></p>
-<h2><span class="en">Quiz</span><span class="hi">प्रश्नोत्तरी</span></h2>
+<h2><span class="en xg">Quiz</span><span class="hi">प्रश्नोत्तरी</span><span class="gu">પ્રશ્નોત્તરી</span></h2>
 <p class="en">34 questions across six topics. Choose a topic, then pick an answer to see whether you're right and why.</p><p class="hi">छह विषयों में 34 प्रश्न। विषय चुनें, फिर उत्तर चुनें और देखें कि आप सही हैं या नहीं, और क्यों।</p>
 </div>
-<div class="toc" id="topics"><a href="#" data-t="all" aria-pressed="true"><span class="en">All topics</span><span class="hi">सभी विषय</span></a><a href="#" data-t="vedas"><span class="en">Vedas</span><span class="hi">वेद</span></a><a href="#" data-t="upan"><span class="en">Upanishads</span><span class="hi">उपनिषद</span></a><a href="#" data-t="gita"><span class="en">Gita</span><span class="hi">गीता</span></a><a href="#" data-t="epics"><span class="en">Epics</span><span class="hi">महाकाव्य</span></a><a href="#" data-t="puranas"><span class="en">Puranas</span><span class="hi">पुराण</span></a><a href="#" data-t="ideas"><span class="en">Core ideas</span><span class="hi">मूल विचार</span></a></div>
+<div class="toc" id="topics"><a aria-pressed="true" data-t="all" href="#"><span class="en">All topics</span><span class="hi">सभी विषय</span></a><a data-t="vedas" href="#"><span class="en xg">Vedas</span><span class="hi">वेद</span><span class="gu">વેદ</span></a><a data-t="upan" href="#"><span class="en xg">Upanishads</span><span class="hi">उपनिषद</span><span class="gu">ઉપનિષદ</span></a><a data-t="gita" href="#"><span class="en xg">Gita</span><span class="hi">गीता</span><span class="gu">ગીતા</span></a><a data-t="epics" href="#"><span class="en">Epics</span><span class="hi">महाकाव्य</span></a><a data-t="puranas" href="#"><span class="en">Puranas</span><span class="hi">पुराण</span></a><a data-t="ideas" href="#"><span class="en xg">Core ideas</span><span class="hi">मूल विचार</span><span class="gu">મૂળ વિચારો</span></a></div>
 <div class="verse" id="qcard" style="margin-top:1rem">
-  <div class="v-head"><span class="src" id="qprog"></span><span class="src" id="qscore"></span></div>
-  <h3 id="qtext" style="font-size:1.35rem"></h3>
-  <div id="qopts" style="display:grid;gap:.5rem"></div>
-  <p id="qex" style="color:var(--ink-2)" hidden></p>
-  <p><button type="button" class="next-btn" id="qnext" style="margin-left:0"><span class="en">Next question →</span><span class="hi">अगला प्रश्न →</span></button></p>
+<div class="v-head"><span class="src" id="qprog"></span><span class="src" id="qscore"></span></div>
+<h3 id="qtext" style="font-size:1.35rem"></h3>
+<div id="qopts" style="display:grid;gap:.5rem"></div>
+<p hidden="" id="qex" style="color:var(--ink-2)"></p>
+<p><button class="next-btn" id="qnext" style="margin-left:0" type="button"><span class="en">Next question →</span><span class="hi">अगला प्रश्न →</span></button></p>
 </div>
 </section><section id="flashcards">
 <div class="sec-head">
@@ -100,26 +108,26 @@ document.addEventListener('click',function(e){
 <h2><span class="en">Flashcards</span><span class="hi">फ़्लैशकार्ड</span></h2>
 <p class="en">Each card shows a mantra or verse from this site. Try to recall its meaning, then flip the card. Use them to memorise a verse a day.</p><p class="hi">हर कार्ड पर इस साइट का एक मन्त्र या श्लोक है। उसका अर्थ याद करने की कोशिश करें, फिर कार्ड पलटें। रोज़ एक श्लोक याद करने के लिए इनका प्रयोग करें।</p>
 </div>
-<div class="verse" id="fcard" style="min-height:14rem;cursor:pointer" tabindex="0" role="button" aria-label="Flip card">
-  <div class="v-head"><span class="src" id="fprog"></span><span class="src" id="fref"></span></div>
-  <div id="ffront"><p class="skt" id="fskt"></p><p class="iast" id="fiast"></p></div>
-  <div id="fback" hidden><span class="label" id="ftitle"></span><p id="ftr"></p></div>
-  <p class="listen" id="fhint"></p>
+<div aria-label="Flip card" class="verse" id="fcard" role="button" style="min-height:14rem;cursor:pointer" tabindex="0">
+<div class="v-head"><span class="src" id="fprog"></span><span class="src" id="fref"></span></div>
+<div id="ffront"><p class="skt" id="fskt"></p><p class="iast" id="fiast"></p></div>
+<div hidden="" id="fback"><span class="label" id="ftitle"></span><p id="ftr"></p></div>
+<p class="listen" id="fhint"></p>
 </div>
 <p style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem">
-<button type="button" class="next-btn" id="fprev" style="margin-left:0"><span class="en">← Previous</span><span class="hi">← पिछला</span></button>
-<button type="button" class="next-btn" id="fflip" style="margin-left:0"><span class="en">Flip</span><span class="hi">पलटें</span></button>
-<button type="button" class="next-btn" id="fnext" style="margin-left:0"><span class="en">Next →</span><span class="hi">अगला →</span></button>
-<button type="button" class="next-btn" id="fshuf" style="margin-left:0"><span class="en">Shuffle</span><span class="hi">फेंटें</span></button>
-<a class="next-btn" id="fopen" href="#" style="margin-left:0;text-decoration:none"><span class="en">Open full explanation ↗</span><span class="hi">पूरी व्याख्या ↗</span></a></p>
+<button class="next-btn" id="fprev" style="margin-left:0" type="button"><span class="en">← Previous</span><span class="hi">← पिछला</span></button>
+<button class="next-btn" id="fflip" style="margin-left:0" type="button"><span class="en">Flip</span><span class="hi">पलटें</span></button>
+<button class="next-btn" id="fnext" style="margin-left:0" type="button"><span class="en">Next →</span><span class="hi">अगला →</span></button>
+<button class="next-btn" id="fshuf" style="margin-left:0" type="button"><span class="en">Shuffle</span><span class="hi">फेंटें</span></button>
+<a class="next-btn" href="#" id="fopen" style="margin-left:0;text-decoration:none"><span class="en">Open full explanation ↗</span><span class="hi">पूरी व्याख्या ↗</span></a></p>
 </section>
 </main>
 <footer class="wrap">
-  <p class="aka"><span class="en"><b>Sanatan Dharma</b> is also known as <b>Hinduism</b> or the Hindu religion (हिन्दू धर्म). This site is a simple guide to Hinduism: its scriptures, beliefs, practices and festivals.</span><span class="hi"><b>सनातन धर्म</b> को <b>हिन्दू धर्म</b> (Hinduism) भी कहा जाता है। यह साइट हिन्दू धर्म की सरल मार्गदर्शिका है: इसके ग्रन्थ, मान्यताएँ, आचरण और पर्व।</span></p>
-  <p class="en">Translations are simplified for understanding. For worship and study, learn correct pronunciation from a qualified teacher and read a full commentary.</p><p class="hi">अनुवाद समझाने के लिए सरल किए गए हैं। पूजा और अध्ययन के लिए सही उच्चारण किसी योग्य गुरु से सीखें और पूरा भाष्य पढ़ें।</p>
-  <p class="foot-mantra">सर्वे भवन्तु सुखिनः । सर्वे सन्तु निरामयाः ॥</p>
-  <p class="foot-write"><span class="en">Found a mistake, have a question or a photo to share?</span><span class="hi">कोई त्रुटि मिली, कोई प्रश्न है या तस्वीर भेजनी है?</span> <a href="contact.html"><span class="en">✉ Write to us</span><span class="hi">✉ हमें लिखें</span></a> · <a href="about.html"><span class="en">About us</span><span class="hi">हमारे बारे में</span></a></p>
-  <p class="foot-nav"><a href="index.html"><span class="en">← Back to the main guide</span><span class="hi">← मुख्य मार्गदर्शिका पर लौटें</span></a></p>
+<p class="aka"><span class="en xg"><b>Sanatan Dharma</b> is also known as <b>Hinduism</b> or the Hindu religion (हिन्दू धर्म). This site is a simple guide to Hinduism: its scriptures, beliefs, practices and festivals.</span><span class="hi"><b>सनातन धर्म</b> को <b>हिन्दू धर्म</b> (Hinduism) भी कहा जाता है। यह साइट हिन्दू धर्म की सरल मार्गदर्शिका है: इसके ग्रन्थ, मान्यताएँ, आचरण और पर्व।</span><span class="gu"><b>સનાતન ધર્મ</b>ને <b>હિન્દુ ધર્મ</b> (Hinduism) પણ કહેવાય છે. આ સાઇટ હિન્દુ ધર્મની સરળ માર્ગદર્શિકા છે: તેના ગ્રંથો, માન્યતાઓ, આચરણ અને તહેવારો.</span></p>
+<p class="en xg">Translations are simplified for understanding. For worship and study, learn correct pronunciation from a qualified teacher and read a full commentary.</p><p class="hi">अनुवाद समझाने के लिए सरल किए गए हैं। पूजा और अध्ययन के लिए सही उच्चारण किसी योग्य गुरु से सीखें और पूरा भाष्य पढ़ें।</p><p class="gu">અનુવાદો સમજાવવા માટે સરળ બનાવાયા છે. પૂજા અને અભ્યાસ માટે સાચો ઉચ્ચાર કોઈ યોગ્ય ગુરુ પાસેથી શીખો અને સંપૂર્ણ ભાષ્ય વાંચો.</p>
+<p class="foot-mantra">सर्वे भवन्तु सुखिनः । सर्वे सन्तु निरामयाः ॥</p>
+<p class="foot-write"><span class="en xg">Found a mistake, have a question or a photo to share?</span><span class="hi">कोई त्रुटि मिली, कोई प्रश्न है या तस्वीर भेजनी है?</span><span class="gu">કોઈ ભૂલ મળી, કોઈ પ્રશ્ન છે કે ફોટો મોકલવો છે?</span> <a href="contact.html"><span class="en xg">✉ Write to us</span><span class="hi">✉ हमें लिखें</span><span class="gu">✉ અમને લખો</span></a> · <a href="about.html"><span class="en xg">About us</span><span class="hi">हमारे बारे में</span><span class="gu">અમારા વિશે</span></a></p>
+<p class="foot-nav"><a href="index.html"><span class="en xg">← Back to the main guide</span><span class="hi">← मुख्य मार्गदर्शिका पर लौटें</span><span class="gu">← મુખ્ય માર્ગદર્શિકા પર પાછા જાઓ</span></a></p>
 </footer>
 <script src="lang.js"></script><script src="search-index.js"></script>
 <script>
