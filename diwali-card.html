@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <meta content="cover" name="claude:viewport-fit-sides"/>
 <title>Diwali Greeting Card</title>
-<meta content="Make a beautiful Diwali card in Hindi, English or both, with your family's name, and share it on WhatsApp. Part of Sanatan Dharma Saral, a simple guide to Hinduism." name="description"/>
+<meta content="Make a beautiful Diwali card in Hindi, Gujarati or English (or a language plus English), with your family's name, and share it on WhatsApp. Part of Sanatan Dharma Saral, a simple guide to Hinduism." name="description"/>
 <meta content="Hinduism, Hindu religion, Hindu dharma, Sanatan Dharma, Sanatana Dharma, Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata, Puranas, Hindu scriptures, Hindu philosophy, mantras, हिन्दू धर्म, सनातन धर्म, वेद, उपनिषद, भगवद्गीता" name="keywords"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&amp;family=Nunito:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600&amp;family=Tiro+Devanagari+Hindi&amp;family=Tiro+Devanagari+Sanskrit:ital@0;1&amp;family=Hind+Vadodara:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -21,6 +21,10 @@
 @font-face{font-family:CardSerif;font-weight:700;src:url(fonts/card/cormorant-garamond-latin-700-normal.woff2) format("woff2")}
 @font-face{font-family:CardDeva;src:url(fonts/card/tiro-devanagari-hindi-devanagari-400-normal.woff2) format("woff2");unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF}
 @font-face{font-family:CardDeva;src:url(fonts/card/tiro-devanagari-hindi-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:CardDeva;font-weight:100 500;src:url(fonts/card/rasa-gujarati-500-normal.woff2) format("woff2");unicode-range:U+0A80-0AFF,U+200C-200D,U+25CC,U+A830-A839}
+@font-face{font-family:CardDeva;font-weight:600 900;src:url(fonts/card/rasa-gujarati-700-normal.woff2) format("woff2");unicode-range:U+0A80-0AFF,U+200C-200D,U+25CC,U+A830-A839}
+@font-face{font-family:CardKid;font-weight:700;src:url(fonts/card/baloo-bhai-2-gujarati-700-normal.woff2) format("woff2");unicode-range:U+0A80-0AFF,U+200C-200D,U+25CC,U+A830-A839}
+@font-face{font-family:CardKid;font-weight:800;src:url(fonts/card/baloo-bhai-2-gujarati-800-normal.woff2) format("woff2");unicode-range:U+0A80-0AFF,U+200C-200D,U+25CC,U+A830-A839}
 </style>
 <style>
 .gc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.6rem;align-items:start}
@@ -43,6 +47,9 @@
 .gc-msgs{display:grid;gap:.45rem}
 .gc-msg span{display:block;border:1.5px solid var(--line);border-radius:14px;padding:.55rem .8rem;background:var(--paper);font-size:.95rem;line-height:1.45}
 .gc-msg .gc-men{display:block;color:var(--ink-2);font-size:.88rem}
+.gc-msg .gc-mgu{display:none;font-family:"Hind Vadodara",sans-serif}
+.gc-form[data-cl="gu"] .gc-mhi,.gc-form[data-cl="gu-en"] .gc-mhi{display:none}
+.gc-form[data-cl="gu"] .gc-mgu,.gc-form[data-cl="gu-en"] .gc-mgu{display:block}
 .gc-msg .gc-mhi{display:block}
 .gc-kid{display:inline-block;font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;background:#ffe27a;color:#3b1d6e;border-radius:99px;padding:.05rem .5rem;margin-bottom:.25rem}
 .gc-l{display:block;font-size:.92rem;margin:.5rem 0 .25rem}
@@ -102,8 +109,8 @@ document.addEventListener('click',function(e){
 <div>
 <p class="kicker">दीपावली कार्ड · Diwali card</p>
 <h1><span class="en xg">Diwali greeting card maker</span><span class="hi">दीपावली शुभकामना कार्ड</span><span class="gu">દિવાળી શુભેચ્છા કાર્ડ</span></h1>
-<p class="lede en xg">Make a beautiful Diwali card in Hindi, English or both, with your family's name, and share it on WhatsApp.</p>
-<p class="lede hi">हिन्दी, अंग्रेज़ी या दोनों में, अपने परिवार के नाम के साथ सुन्दर दीपावली कार्ड बनाएँ और WhatsApp पर भेजें।</p><p class="lede gu">હિન્દી, અંગ્રેજી કે બંનેમાં, તમારા પરિવારના નામ સાથે સુંદર દિવાળી કાર્ડ બનાવો અને WhatsApp પર મોકલો.</p>
+<p class="lede en xg">Make a beautiful Diwali card in Hindi, Gujarati or English (or a language plus English), with your family's name, and share it on WhatsApp.</p>
+<p class="lede hi">हिन्दी, गुजराती या अंग्रेज़ी में (या किसी भाषा के साथ अंग्रेज़ी में), अपने परिवार के नाम के साथ सुन्दर दीपावली कार्ड बनाएँ और WhatsApp पर भेजें।</p><p class="lede gu">ગુજરાતી, હિન્દી કે અંગ્રેજીમાં (અથવા કોઈ ભાષા સાથે અંગ્રેજીમાં), તમારા પરિવારના નામ સાથે સુંદર દિવાળી કાર્ડ બનાવો અને WhatsApp પર મોકલો.</p>
 </div>
 <div class="hero-art"><svg aria-label="Greeting card" role="img" viewbox="0 0 200 200"><g fill="none" stroke="var(--hero-gold)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
 <circle cx="100" cy="100" r="88"></circle><rect height="104" rx="6" width="76" x="62" y="48"></rect><path d="M80 118 Q100 136 120 118 Z"></path><path d="M100 112 C93 102 96 92 100 84 C104 92 107 102 100 112 Z"></path><path d="M78 68 H122 M86 78 H114"></path></g></svg></div>
@@ -142,7 +149,9 @@ document.addEventListener('click',function(e){
 <div class="gc-pills">
 <label><input checked="" name="gc-l" type="radio" value="hi"/><span>हिन्दी</span></label>
 <label><input name="gc-l" type="radio" value="en"/><span>English</span></label>
-<label><input name="gc-l" type="radio" value="both"/><span><span class="en xg">Both</span><span class="hi">दोनों</span><span class="gu">બંને</span></span></label>
+<label><input name="gc-l" type="radio" value="both"/><span>हिन्दी + English</span></label>
+<label><input name="gc-l" type="radio" value="gu"/><span lang="gu">ગુજરાતી</span></label>
+<label><input name="gc-l" type="radio" value="gu-en"/><span><span lang="gu">ગુજરાતી</span> + English</span></label>
 </div></fieldset>
 <fieldset><legend><span class="en xg">2. Design</span><span class="hi">2. डिज़ाइन</span><span class="gu">2. ડિઝાઇન</span></legend>
 <div class="gc-pills">
@@ -153,13 +162,13 @@ document.addEventListener('click',function(e){
 <label><input name="gc-d" type="radio" value="4"/><span><span class="en xg">🚀 Space Diwali (kids)</span><span class="hi">🚀 अन्तरिक्ष दीपावली (बच्चे)</span><span class="gu">🚀 અવકાશ દિવાળી (બાળકો)</span></span></label>
 </div></fieldset>
 <fieldset><legend><span class="en xg">3. Message</span><span class="hi">3. सन्देश</span><span class="gu">3. સંદેશ</span></legend>
-<div class="gc-msgs"><label class="gc-msg"><input checked="" name="gc-m" type="radio" value="0"/><span><span class="gc-mhi">दीपों की रोशनी आपके घर को खुशियों, स्वास्थ्य और समृद्धि से भर दे।</span><span class="gc-men">May the light of the diyas fill your home with joy, health and prosperity.</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="1"/><span><span class="gc-mhi">आपको और आपके परिवार को प्रकाश, प्रेम और मुस्कान से भरी दीपावली की शुभकामनाएँ।</span><span class="gc-men">Wishing you and your family a Diwali full of light, love and laughter.</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="2"/><span><span class="gc-mhi">जैसे अयोध्या ने दीप जलाकर श्रीराम का स्वागत किया, वैसे ही आज हर दीप आपके जीवन में खुशियों का स्वागत करे।</span><span class="gc-men">As Ayodhya lit lamps to welcome Shri Ram, may every lamp today welcome happiness into your life.</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="3"/><span><span class="gc-mhi">माँ लक्ष्मी आपके घर को सुख-शान्ति और समृद्धि से भर दें।</span><span class="gc-men">May Maa Lakshmi bless your home with peace and plenty.</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="4"/><span><b class="gc-kid"><span class="en xg">For kids</span><span class="hi">बच्चों के लिए</span><span class="gu">બાળકો માટે</span></b><span class="gc-mhi">शुभ दीपावली! आओ, दुनिया को रोशनी, मिठाई और मुस्कान से भर दें!</span><span class="gc-men">Happy Diwali! Let's fill the world with light, sweets and smiles!</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="5"/><span><b class="gc-kid"><span class="en xg">For kids</span><span class="hi">बच्चों के लिए</span><span class="gu">બાળકો માટે</span></b><span class="gc-mhi">आपकी दीपावली हज़ार दीयों से भी ज़्यादा चमके!</span><span class="gc-men">May your Diwali sparkle brighter than a thousand diyas!</span></span></label>
+<div class="gc-msgs"><label class="gc-msg"><input checked="" name="gc-m" type="radio" value="0"/><span><span class="gc-mhi">दीपों की रोशनी आपके घर को खुशियों, स्वास्थ्य और समृद्धि से भर दे।</span><span class="gc-mgu" lang="gu">દીવાઓનો પ્રકાશ તમારા ઘરને આનંદ, આરોગ્ય અને સમૃદ્ધિથી ભરી દે.</span><span class="gc-men">May the light of the diyas fill your home with joy, health and prosperity.</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="1"/><span><span class="gc-mhi">आपको और आपके परिवार को प्रकाश, प्रेम और मुस्कान से भरी दीपावली की शुभकामनाएँ।</span><span class="gc-mgu" lang="gu">તમને અને તમારા પરિવારને પ્રકાશ, પ્રેમ અને હાસ્યથી ભરેલી દિવાળીની શુભેચ્છાઓ.</span><span class="gc-men">Wishing you and your family a Diwali full of light, love and laughter.</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="2"/><span><span class="gc-mhi">जैसे अयोध्या ने दीप जलाकर श्रीराम का स्वागत किया, वैसे ही आज हर दीप आपके जीवन में खुशियों का स्वागत करे।</span><span class="gc-mgu" lang="gu">જેમ અયોધ્યાએ દીવા પ્રગટાવીને શ્રીરામનું સ્વાગત કર્યું, તેમ આજે દરેક દીવો તમારા જીવનમાં ખુશીઓનું સ્વાગત કરે.</span><span class="gc-men">As Ayodhya lit lamps to welcome Shri Ram, may every lamp today welcome happiness into your life.</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="3"/><span><span class="gc-mhi">माँ लक्ष्मी आपके घर को सुख-शान्ति और समृद्धि से भर दें।</span><span class="gc-mgu" lang="gu">મા લક્ષ્મી તમારા ઘરને સુખ-શાંતિ અને સમૃદ્ધિથી ભરી દે.</span><span class="gc-men">May Maa Lakshmi bless your home with peace and plenty.</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="4"/><span><b class="gc-kid"><span class="en xg">For kids</span><span class="hi">बच्चों के लिए</span><span class="gu">બાળકો માટે</span></b><span class="gc-mhi">शुभ दीपावली! आओ, दुनिया को रोशनी, मिठाई और मुस्कान से भर दें!</span><span class="gc-mgu" lang="gu">શુભ દિવાળી! ચાલો, દુનિયાને પ્રકાશ, મીઠાઈ અને સ્મિતથી ભરી દઈએ!</span><span class="gc-men">Happy Diwali! Let's fill the world with light, sweets and smiles!</span></span></label><label class="gc-msg"><input name="gc-m" type="radio" value="5"/><span><b class="gc-kid"><span class="en xg">For kids</span><span class="hi">बच्चों के लिए</span><span class="gu">બાળકો માટે</span></b><span class="gc-mhi">आपकी दीपावली हज़ार दीयों से भी ज़्यादा चमके!</span><span class="gc-mgu" lang="gu">તમારી દિવાળી હજાર દીવાઓ કરતાં પણ વધુ ઝગમગે!</span><span class="gc-men">May your Diwali sparkle brighter than a thousand diyas!</span></span></label>
 <label class="gc-msg"><input name="gc-m" type="radio" value="c"/><span><span class="en xg">✏️ Write my own</span><span class="hi">✏️ अपना सन्देश लिखें</span><span class="gu">✏️ મારો સંદેશ લખો</span></span></label>
 <textarea aria-label="Your own message" hidden="" id="gc-custom" maxlength="160" rows="3"></textarea>
 </div></fieldset>
 <fieldset><legend><span class="en xg">4. Names</span><span class="hi">4. नाम</span><span class="gu">4. નામ</span></legend>
 <label class="gc-l" for="gc-to"><span class="en xg">To (optional)</span><span class="hi">किसके लिए (वैकल्पिक)</span><span class="gu">કોના માટે (વૈકલ્પિક)</span></label>
-<input class="gc-in" id="gc-to" maxlength="40" placeholder="Sharma family / शर्मा परिवार" type="text"/>
+<input class="gc-in" id="gc-to" maxlength="40" placeholder="Sharma family / शर्मा परिवार / શાહ પરિવાર" type="text"/>
 <label class="gc-l" for="gc-from"><span class="en xg">From</span><span class="hi">किसकी ओर से</span><span class="gu">કોના તરફથી</span></label>
 <input class="gc-in" id="gc-from" maxlength="40" placeholder="Mohan, Priya &amp; kids" type="text"/>
 </fieldset>
@@ -181,7 +190,9 @@ document.addEventListener('click',function(e){
 <script src="verse-tools.js"></script>
 <script>
 (function(){
-var MEN=["May the light of the diyas fill your home with joy, health and prosperity.", "Wishing you and your family a Diwali full of light, love and laughter.", "As Ayodhya lit lamps to welcome Shri Ram, may every lamp today welcome happiness into your life.", "May Maa Lakshmi bless your home with peace and plenty.", "Happy Diwali! Let's fill the world with light, sweets and smiles!", "May your Diwali sparkle brighter than a thousand diyas!"], MHI=["दीपों की रोशनी आपके घर को खुशियों, स्वास्थ्य और समृद्धि से भर दे।", "आपको और आपके परिवार को प्रकाश, प्रेम और मुस्कान से भरी दीपावली की शुभकामनाएँ।", "जैसे अयोध्या ने दीप जलाकर श्रीराम का स्वागत किया, वैसे ही आज हर दीप आपके जीवन में खुशियों का स्वागत करे।", "माँ लक्ष्मी आपके घर को सुख-शान्ति और समृद्धि से भर दें।", "शुभ दीपावली! आओ, दुनिया को रोशनी, मिठाई और मुस्कान से भर दें!", "आपकी दीपावली हज़ार दीयों से भी ज़्यादा चमके!"];
+var MEN=["May the light of the diyas fill your home with joy, health and prosperity.", "Wishing you and your family a Diwali full of light, love and laughter.", "As Ayodhya lit lamps to welcome Shri Ram, may every lamp today welcome happiness into your life.", "May Maa Lakshmi bless your home with peace and plenty.", "Happy Diwali! Let's fill the world with light, sweets and smiles!", "May your Diwali sparkle brighter than a thousand diyas!"], MHI=["दीपों की रोशनी आपके घर को खुशियों, स्वास्थ्य और समृद्धि से भर दे।", "आपको और आपके परिवार को प्रकाश, प्रेम और मुस्कान से भरी दीपावली की शुभकामनाएँ।", "जैसे अयोध्या ने दीप जलाकर श्रीराम का स्वागत किया, वैसे ही आज हर दीप आपके जीवन में खुशियों का स्वागत करे।", "माँ लक्ष्मी आपके घर को सुख-शान्ति और समृद्धि से भर दें।", "शुभ दीपावली! आओ, दुनिया को रोशनी, मिठाई और मुस्कान से भर दें!", "आपकी दीपावली हज़ार दीयों से भी ज़्यादा चमके!"], MGU=["દીવાઓનો પ્રકાશ તમારા ઘરને આનંદ, આરોગ્ય અને સમૃદ્ધિથી ભરી દે.", "તમને અને તમારા પરિવારને પ્રકાશ, પ્રેમ અને હાસ્યથી ભરેલી દિવાળીની શુભેચ્છાઓ.", "જેમ અયોધ્યાએ દીવા પ્રગટાવીને શ્રીરામનું સ્વાગત કર્યું, તેમ આજે દરેક દીવો તમારા જીવનમાં ખુશીઓનું સ્વાગત કરે.", "મા લક્ષ્મી તમારા ઘરને સુખ-શાંતિ અને સમૃદ્ધિથી ભરી દે.", "શુભ દિવાળી! ચાલો, દુનિયાને પ્રકાશ, મીઠાઈ અને સ્મિતથી ભરી દઈએ!", "તમારી દિવાળી હજાર દીવાઓ કરતાં પણ વધુ ઝગમગે!"];
+function SL(){return document.documentElement.getAttribute('data-lang')||'en'}
+function T(en,hi,gu){var l=SL();return l==='gu'?gu:(l==='hi'?hi:en)}
 var cv=document.getElementById('gc-canvas'), ctx=cv.getContext('2d'), W=1080, H=1350;
 var $=function(i){return document.getElementById(i)};
 function val(n){var r=document.querySelector('input[name="'+n+'"]:checked');return r?r.value:''}
@@ -256,27 +267,29 @@ function mw(t,font){MS.style.font=font;MS.textContent=t;return MS.getBoundingCli
 function wrap(text,font,maxW){ctx.font=font;var words=String(text).split(/\s+/),lines=[],cur='';words.forEach(function(w){var t=cur?cur+' '+w:w;if(mw(t,font)>maxW&&cur){lines.push(cur);cur=w}else cur=t});if(cur)lines.push(cur);return lines}
 
 function draw(){
-  var lang=val('gc-l')||'hi', d=DESIGNS[+val('gc-d')||0], m=val('gc-m'), to=$('gc-to').value.trim(), from=$('gc-from').value.trim();
+  var lang=val('gc-l')||'hi';$('gc-form').setAttribute('data-cl',lang);var d=DESIGNS[+val('gc-d')||0], m=val('gc-m'), to=$('gc-to').value.trim(), from=$('gc-from').value.trim();
   var custom=$('gc-custom').value.trim();
   d.draw();
   var _S=SKT,_E=EN,_B=BODY;if(d.kid){SKT=EN=BODY=KID}
   var items=[];var k=1;
   for(var tries=0;tries<6;tries++){
     items=[];var maxW=860;
-    if(to)items.push({t:(lang==='en'?'Dear '+to+',':'प्रिय '+to+','),f:(lang==='en'?'700 ':'')+Math.round(48*k)+'px '+(lang==='en'?EN:SKT),c:d.ink,gap:22*k});
-    if(lang==='hi'||lang==='both')items.push({t:'शुभ दीपावली',f:Math.round(128*k)+'px '+SKT,c:d.gold,gap:lang==='both'?6*k:30*k});
-    if(lang==='en'||lang==='both')items.push({t:'Happy Diwali',f:'700 '+Math.round((lang==='both'?72:118)*k)+'px '+EN,c:d.gold,gap:30*k});
-    var mh=m==='c'?custom:MHI[+m||0], me=m==='c'?custom:MEN[+m||0];
+    var G=lang==='gu'||lang==='gu-en', TWO=lang==='both'||lang==='gu-en', SHOWEN=lang==='en'||TWO;
+    if(to)items.push({t:(lang==='en'?'Dear '+to+',':(G?'પ્રિય ':'प्रिय ')+to+','),f:(lang==='en'?'700 ':'')+Math.round(48*k)+'px '+(lang==='en'?EN:SKT),c:d.ink,gap:22*k});
+    if(lang==='hi'||lang==='both')items.push({t:'शुभ दीपावली',f:Math.round(128*k)+'px '+SKT,c:d.gold,gap:TWO?6*k:30*k});
+    if(G){items.push({t:'શુભ દિવાળી',f:'600 '+Math.round(124*k)+'px '+SKT,c:d.gold,gap:4*k});items.push({t:'નૂતન વર્ષાભિનંદન',f:'600 '+Math.round(56*k)+'px '+SKT,c:d.gold,gap:TWO?10*k:30*k})}
+    if(SHOWEN)items.push({t:lang==='gu-en'?'Happy Diwali & New Year':'Happy Diwali',f:'700 '+Math.round((TWO?(lang==='gu-en'?60:72):118)*k)+'px '+EN,c:d.gold,gap:30*k});
+    var mn=m==='c'?custom:(G?MGU:MHI)[+m||0], me=m==='c'?custom:MEN[+m||0];
     if(m==='c'){if(custom)wrap(custom,Math.round(44*k)+'px '+BODY,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(44*k)+'px '+BODY,c:d.ink,gap:i===a.length-1?34*k:10*k})})}
     else{
-      if(lang!=='en')wrap(mh,Math.round(46*k)+'px '+SKT,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(46*k)+'px '+SKT,c:d.ink,gap:i===a.length-1?(lang==='both'?20*k:34*k):10*k})});
-      if(lang!=='hi'){var sz=lang==='both'?36:46;wrap(me,Math.round(sz*k)+'px '+BODY,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(sz*k)+'px '+BODY,c:lang==='both'?(d.sub||'rgba(255,247,230,.82)'):d.ink,gap:i===a.length-1?34*k:8*k})})}
+      if(lang!=='en')wrap(mn,Math.round(46*k)+'px '+SKT,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(46*k)+'px '+SKT,c:d.ink,gap:i===a.length-1?(TWO?20*k:34*k):10*k})});
+      if(SHOWEN){var sz=TWO?36:46;wrap(me,Math.round(sz*k)+'px '+BODY,maxW).forEach(function(l,i,a){items.push({t:l,f:Math.round(sz*k)+'px '+BODY,c:TWO?(d.sub||'rgba(255,247,230,.82)'):d.ink,gap:i===a.length-1?34*k:8*k})})}
     }
-    if(from){var fl=lang==='en'?'With love, '+from:(lang==='hi'?'शुभकामनाओं सहित, '+from:'शुभकामनाओं सहित · With love, '+from);wrap(fl,'600 '+Math.round(46*k)+'px '+(lang==='en'?BODY:SKT),maxW).forEach(function(l){items.push({t:l,f:'600 '+Math.round(46*k)+'px '+(lang==='en'?BODY:SKT),c:d.gold,gap:6*k})})}
+    if(from){var fl={en:'With love, ',hi:'शुभकामनाओं सहित, ',both:'शुभकामनाओं सहित · With love, ',gu:'શુભેચ્છાઓ સાથે, ','gu-en':'શુભેચ્છાઓ સાથે · With love, '}[lang]+from;wrap(fl,'600 '+Math.round(46*k)+'px '+(lang==='en'?BODY:SKT),maxW).forEach(function(l){items.push({t:l,f:'600 '+Math.round(46*k)+'px '+(lang==='en'?BODY:SKT),c:d.gold,gap:6*k})})}
     var hgt=0;items.forEach(function(it){it.h=parseInt(it.f.match(/(\d+)px/)[1],10)*1.18;hgt+=it.h+it.gap});
     if(hgt<=d.bottom-d.top)break;k*=.88;
   }
-  if(d.kid)items.forEach(function(it){var px=it.f.match(/(\d+)px/)[1];it.f=((it.t==='शुभ दीपावली'||it.t==='Happy Diwali')?'800 ':'700 ')+px+'px '+KID});
+  if(d.kid)items.forEach(function(it){var px=it.f.match(/(\d+)px/)[1];it.f=((it.t==='शुभ दीपावली'||it.t==='Happy Diwali'||it.t==='શુભ દિવાળી')?'800 ':'700 ')+px+'px '+KID});
   SKT=_S;EN=_E;BODY=_B;
   var y=d.top+((d.bottom-d.top)-hgt)/2;
   ctx.textAlign='left';ctx.textBaseline='alphabetic';
@@ -287,16 +300,16 @@ function draw(){
 function params(){return {l:val('gc-l'),d:val('gc-d'),m:val('gc-m'),to:$('gc-to').value.trim(),from:$('gc-from').value.trim(),c:val('gc-m')==='c'?$('gc-custom').value.trim():''}}
 function linkURL(){var p=params(),q=new URLSearchParams();Object.keys(p).forEach(function(k){if(p[k])q.set(k,p[k])});q.set('utm_source','card');return 'https://sanatan.space/diwali-card.html?'+q.toString()}
 function blob(){return new Promise(function(res){cv.toBlob(res,'image/png')})}
-function isHi(){return document.documentElement.getAttribute('data-lang')==='hi'}
-function say(en,hi){$('gc-status').textContent=isHi()?hi:en}
-function shareText(){return (isHi()?'🪔 शुभ दीपावली! अपना कार्ड बनाएँ: ':'🪔 Happy Diwali! Make your own card: ')+'https://sanatan.space/diwali-card.html'}
+function say(en,hi,gu){$('gc-status').textContent=T(en,hi,gu||en)}
+function shareText(){return T('🪔 Happy Diwali! Make your own card: ','🪔 शुभ दीपावली! अपना कार्ड बनाएँ: ','🪔 શુભ દિવાળી અને નૂતન વર્ષાભિનંદન! તમારું કાર્ડ બનાવો: ')+'https://sanatan.space/diwali-card.html'}
+function recvLine(f){return f?T('🪔 '+f+' sent you a Diwali greeting!','🪔 '+f+' ने आपको दीपावली की शुभकामनाएँ भेजी हैं!','🪔 '+f+'એ તમને દિવાળીની શુભેચ્છા મોકલી છે!'):T('🪔 A Diwali greeting for you!','🪔 आपके लिए एक दीपावली शुभकामना!','🪔 તમારા માટે દિવાળીની શુભેચ્છા!')}
 
 $('gc-share').addEventListener('click',function(){blob().then(function(b){var f=new File([b],'diwali-greeting.png',{type:'image/png'});
   if(navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:shareText()}).then(function(){ev('card_share',{method:'native',language:val('gc-l'),design:val('gc-d')})}).catch(function(){})}
-  else{dl(b);window.open('https://wa.me/?text='+encodeURIComponent(shareText()),'_blank','noopener');say('Image downloaded. Attach it in WhatsApp.','चित्र डाउनलोड हो गया। इसे WhatsApp में जोड़ें।');ev('card_share',{method:'download_whatsapp'})}})});
+  else{dl(b);window.open('https://wa.me/?text='+encodeURIComponent(shareText()),'_blank','noopener');say('Image downloaded. Attach it in WhatsApp.','चित्र डाउनलोड हो गया। इसे WhatsApp में जोड़ें।','ચિત્ર ડાઉનલોડ થઈ ગયું. તેને WhatsAppમાં જોડો.');ev('card_share',{method:'download_whatsapp'})}})});
 function dl(b){var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='diwali-greeting.png';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500)}
-$('gc-dl').addEventListener('click',function(){blob().then(function(b){dl(b);say('Saved to your downloads.','डाउनलोड में सहेजा गया।');ev('card_download',{language:val('gc-l'),design:val('gc-d')})})});
-$('gc-link').addEventListener('click',function(){var u=linkURL(),from=$('gc-from').value.trim();var t=(isHi()?'🪔 '+(from?from+' की ओर से ':'')+'आपके लिए एक दीपावली शुभकामना कार्ड: ':'🪔 A Diwali greeting card for you'+(from?' from '+from:'')+': ')+u;
+$('gc-dl').addEventListener('click',function(){blob().then(function(b){dl(b);say('Saved to your downloads.','डाउनलोड में सहेजा गया।','ડાઉનલોડમાં સાચવ્યું.');ev('card_download',{language:val('gc-l'),design:val('gc-d')})})});
+$('gc-link').addEventListener('click',function(){var u=linkURL(),from=$('gc-from').value.trim();var t=T('🪔 A Diwali greeting card for you'+(from?' from '+from:'')+': ','🪔 '+(from?from+' की ओर से ':'')+'आपके लिए एक दीपावली शुभकामना कार्ड: ','🪔 '+(from?from+' તરફથી ':'')+'તમારા માટે દિવાળીનું શુભેચ્છા કાર્ડ: ')+u;
   if(navigator.share){navigator.share({text:t}).catch(function(){})}else{window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank','noopener')}ev('card_link_share')});
 
 document.querySelectorAll('input[name="gc-d"]').forEach(function(r){r.addEventListener('change',function(){var m=val('gc-m');if(+r.value>=3&&m!=='c'&&+m<4)setVal('gc-m','4');if(+r.value<3&&+m>=4)setVal('gc-m','0')})});
@@ -305,11 +318,12 @@ document.querySelectorAll('#gc-form input,#gc-form textarea').forEach(function(e
 var q=new URLSearchParams(location.search);
 if(q.get('d')||q.get('from')){if(q.get('l'))setVal('gc-l',q.get('l'));if(q.get('d'))setVal('gc-d',q.get('d'));if(q.get('m'))setVal('gc-m',q.get('m'));
   $('gc-to').value=(q.get('to')||'').slice(0,40);$('gc-from').value=(q.get('from')||'').slice(0,40);$('gc-custom').value=(q.get('c')||'').slice(0,160);$('gc-custom').hidden=val('gc-m')!=='c';
-  var f=$('gc-from').value;$('gc-received').hidden=false;$('gc-received-line').textContent=f?(isHi()?'🪔 '+f+' ने आपको दीपावली की शुभकामनाएँ भेजी हैं!':'🪔 '+f+' sent you a Diwali greeting!'):(isHi()?'🪔 आपके लिए एक दीपावली शुभकामना!':'🪔 A Diwali greeting for you!');ev('card_opened')}
+  var f=$('gc-from').value;$('gc-received').hidden=false;$('gc-received-line').textContent=recvLine(f);ev('card_opened')}
+else if(SL()==='gu')setVal('gc-l','gu');
 var first=true;function go(){draw();if(first){first=false}}
-if(document.fonts&&document.fonts.load){Promise.all(['400 128px CardDeva','700 118px CardSerif','600 46px CardSans','700 46px CardSans','700 46px CardKid','800 100px CardKid'].map(function(f){return document.fonts.load(f,'शुभ दीपावली Happy')})).then(go,go);setTimeout(draw,1500)}else go();
+if(document.fonts&&document.fonts.load){Promise.all(['400 128px CardDeva','700 118px CardSerif','600 46px CardSans','700 46px CardSans','700 46px CardKid','800 100px CardKid','600 124px CardDeva'].map(function(f){return document.fonts.load(f,'शुभ दीपावली Happy શુભ દિવાળી')})).then(go,go);setTimeout(draw,1500)}else go();
 draw();
-new MutationObserver(function(){if(!$('gc-received').hidden){var f=$('gc-from').value;$('gc-received-line').textContent=f?(isHi()?'🪔 '+f+' ने आपको दीपावली की शुभकामनाएँ भेजी हैं!':'🪔 '+f+' sent you a Diwali greeting!'):(isHi()?'🪔 आपके लिए एक दीपावली शुभकामना!':'🪔 A Diwali greeting for you!')}}).observe(document.documentElement,{attributes:true,attributeFilter:['data-lang']});
+new MutationObserver(function(){if(!$('gc-received').hidden){var f=$('gc-from').value;$('gc-received-line').textContent=recvLine(f)}}).observe(document.documentElement,{attributes:true,attributeFilter:['data-lang']});
 })();
 </script>
 <script src="/install.js" defer></script>
