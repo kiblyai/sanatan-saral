@@ -369,6 +369,27 @@ document.addEventListener('click',function(e){
 </script>
 </head>
 <body>
+<!-- fest-banner -->
+<style>
+.fest{margin:0 -16px;background:linear-gradient(90deg,#2a1452,#5a1f4e 60%,#7a2a2a);color:#fff7e6;padding:.7rem max(16px,env(safe-area-inset-left,0px));display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.5rem .9rem;text-align:center}
+.fest b{font-size:1.05rem;color:#ffd56b}
+.fest a{display:inline-flex;align-items:center;min-height:40px;padding:.3rem .9rem;border-radius:99px;font-weight:700;font-size:.92rem;text-decoration:none;background:#ffd56b;color:#2a1452}
+.fest a.alt{background:transparent;color:#fff7e6;border:1.5px solid rgba(255,247,230,.6)}
+.fest a:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media print{.fest{display:none}}
+</style>
+<div class="fest" id="fest" role="region" aria-label="Diwali">
+<b id="fest-t"><span class="en">🪔 Diwali is on 8 November</span><span class="hi">🪔 दीपावली 8 नवम्बर को है</span></b>
+<a href="diwali-card.html"><span class="en">Make a greeting card</span><span class="hi">शुभकामना कार्ड बनाएँ</span></a>
+<a class="alt" href="diwali.html#watch"><span class="en">▶ Watch: why we light diyas</span><span class="hi">▶ देखें: हम दीप क्यों जलाते हैं</span></a>
+</div>
+<script>(function(){var el=document.getElementById('fest');if(!el)return;var t=new Date(),d=new Date(2026,10,8),day=new Date(t.getFullYear(),t.getMonth(),t.getDate()),n=Math.round((d-day)/864e5);
+if(n<-3){el.remove();return}var b=document.getElementById('fest-t');
+if(n>1)b.innerHTML='<span class="en">🪔 Diwali in '+n+' days</span><span class="hi">🪔 दीपावली में '+n+' दिन</span>';
+else if(n===1)b.innerHTML='<span class="en">🪔 Diwali is tomorrow!</span><span class="hi">🪔 कल दीपावली है!</span>';
+else if(n===0)b.innerHTML='<span class="en">🪔 Happy Diwali!</span><span class="hi">🪔 शुभ दीपावली!</span>';
+else b.innerHTML='<span class="en">🪔 The Diwali festival continues</span><span class="hi">🪔 दीपावली उत्सव जारी है</span>';})();</script>
+<!-- /fest-banner -->
 <header class="hero">
   <div class="wrap">
     <div>

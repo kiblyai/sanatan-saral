@@ -10,7 +10,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Nunito:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap">
+<style>
+@font-face{font-family:CardKid;font-weight:700;src:url(fonts/card/poppins-devanagari-700-normal.woff2) format("woff2");unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF}
+@font-face{font-family:CardKid;font-weight:800;src:url(fonts/card/poppins-devanagari-800-normal.woff2) format("woff2");unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF}
+@font-face{font-family:CardKid;font-weight:700;src:url(fonts/card/poppins-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:CardKid;font-weight:800;src:url(fonts/card/poppins-latin-800-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:CardSans;font-weight:600;src:url(fonts/card/nunito-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:CardSans;font-weight:700;src:url(fonts/card/nunito-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:CardSerif;font-weight:700;src:url(fonts/card/cormorant-garamond-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:CardDeva;src:url(fonts/card/tiro-devanagari-hindi-devanagari-400-normal.woff2) format("woff2");unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF}
+@font-face{font-family:CardDeva;src:url(fonts/card/tiro-devanagari-hindi-latin-400-normal.woff2) format("woff2")}
+</style>
 <style>
 .gc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.6rem;align-items:start}
 @media (max-width:760px){.gc-grid{grid-template-columns:1fr}}
@@ -170,7 +180,7 @@ function val(n){var r=document.querySelector('input[name="'+n+'"]:checked');retu
 function setVal(n,v){var r=document.querySelector('input[name="'+n+'"][value="'+v+'"]');if(r)r.checked=true}
 function ev(n,p){try{gtag('event',n,p||{})}catch(e){}}
 function rng(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}}
-var KID='"Baloo 2","Nunito","Noto Sans Devanagari",sans-serif';var SKT='"Tiro Devanagari Hindi","Noto Serif Devanagari",serif', EN='"Cormorant Garamond",Georgia,serif', BODY='"Nunito","Noto Sans Devanagari",sans-serif';
+var KID='CardKid,sans-serif';var SKT='CardDeva,serif', EN='CardSerif,Georgia,serif', BODY='CardSans,CardDeva,sans-serif';
 
 function stars(n,maxY,seed){var r=rng(seed);for(var i=0;i<n;i++){var x=r()*W,y=r()*maxY,s=r()*2.6+.6;ctx.globalAlpha=.35+r()*.6;ctx.fillStyle='#fff7d6';ctx.beginPath();ctx.arc(x,y,s,0,7);ctx.fill()}ctx.globalAlpha=1}
 function glow(x,y,r,c){var g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,c);g.addColorStop(1,'rgba(255,170,60,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fill()}
@@ -217,7 +227,7 @@ var DESIGNS=[
    happy(230,1180,95);happy(540,1150,130);happy(850,1180,95);
    for(var k=0;k<14;k++){var sx=80+r()*920,sy=1000+r()*80,ss=10+r()*10;ctx.fillStyle='#ffb703';ctx.beginPath();for(var q=0;q<10;q++){var ang=q*Math.PI/5-Math.PI/2,rr=q%2?ss*.45:ss;ctx.lineTo(sx+Math.cos(ang)*rr,sy+Math.sin(ang)*rr)}ctx.closePath();ctx.fill()}
    ctx.strokeStyle='#7b5cff';ctx.lineWidth=6;if(ctx.roundRect){ctx.beginPath();ctx.roundRect(30,30,W-60,H-60,48);ctx.stroke()}}},
- {top:200,bottom:900,kid:true,ink:'#ffffff',gold:'#ffe27a',stroke:'#2a1a6b',draw:function(){
+ {top:270,bottom:930,kid:true,ink:'#ffffff',gold:'#ffe27a',stroke:'#2a1a6b',draw:function(){
    var g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#0b1a4a');g.addColorStop(.6,'#3a1f8a');g.addColorStop(1,'#6b2fa8');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
    stars(170,H,33);
    ctx.save();ctx.translate(860,1000);ctx.fillStyle='#ff8fb1';ctx.beginPath();ctx.arc(0,0,110,0,7);ctx.fill();ctx.strokeStyle='#ffe27a';ctx.lineWidth=14;ctx.beginPath();ctx.ellipse(0,0,190,46,-.35,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#ff6f9a';ctx.beginPath();ctx.arc(-30,-25,22,0,7);ctx.arc(35,30,14,0,7);ctx.fill();ctx.restore();
@@ -228,7 +238,7 @@ var DESIGNS=[
    ctx.fillStyle='#f4f1ff';ctx.beginPath();ctx.moveTo(0,-140);ctx.quadraticCurveTo(70,-60,50,90);ctx.lineTo(-50,90);ctx.quadraticCurveTo(-70,-60,0,-140);ctx.fill();
    ctx.fillStyle='#e8336d';ctx.beginPath();ctx.moveTo(-50,40);ctx.lineTo(-90,110);ctx.lineTo(-48,90);ctx.fill();ctx.beginPath();ctx.moveTo(50,40);ctx.lineTo(90,110);ctx.lineTo(48,90);ctx.fill();
    ctx.fillStyle='#3ac7c1';ctx.strokeStyle='#2a1a6b';ctx.lineWidth=8;ctx.beginPath();ctx.arc(0,-30,28,0,7);ctx.fill();ctx.stroke();ctx.restore();
-   ctx.save();ctx.translate(250,330);ctx.fillStyle='#ffe27a';ctx.beginPath();for(var q=0;q<10;q++){var a=q*Math.PI/5-Math.PI/2,rr=q%2?34:80;ctx.lineTo(Math.cos(a)*rr,Math.sin(a)*rr)}ctx.closePath();ctx.fill();
+   ctx.save();ctx.translate(160,160);ctx.scale(.75,.75);ctx.fillStyle='#ffe27a';ctx.beginPath();for(var q=0;q<10;q++){var a=q*Math.PI/5-Math.PI/2,rr=q%2?34:80;ctx.lineTo(Math.cos(a)*rr,Math.sin(a)*rr)}ctx.closePath();ctx.fill();
    ctx.fillStyle='#2a1a6b';ctx.beginPath();ctx.arc(-14,-6,6,0,7);ctx.arc(14,-6,6,0,7);ctx.fill();ctx.strokeStyle='#2a1a6b';ctx.lineWidth=5;ctx.lineCap='round';ctx.beginPath();ctx.arc(0,6,12,.25,Math.PI-.25);ctx.stroke();ctx.restore();
    ctx.strokeStyle='#ffe27a';ctx.lineWidth=6;if(ctx.roundRect){ctx.beginPath();ctx.roundRect(30,30,W-60,H-60,48);ctx.stroke()}}}
 ];
@@ -243,7 +253,7 @@ function draw(){
   var items=[];var k=1;
   for(var tries=0;tries<6;tries++){
     items=[];var maxW=860;
-    if(to)items.push({t:(lang==='en'?'Dear '+to+',':'प्रिय '+to+','),f:(lang==='en'?'italic 600 ':'')+Math.round(48*k)+'px '+(lang==='en'?EN:SKT),c:d.ink,gap:22*k});
+    if(to)items.push({t:(lang==='en'?'Dear '+to+',':'प्रिय '+to+','),f:(lang==='en'?'700 ':'')+Math.round(48*k)+'px '+(lang==='en'?EN:SKT),c:d.ink,gap:22*k});
     if(lang==='hi'||lang==='both')items.push({t:'शुभ दीपावली',f:Math.round(128*k)+'px '+SKT,c:d.gold,gap:lang==='both'?6*k:30*k});
     if(lang==='en'||lang==='both')items.push({t:'Happy Diwali',f:'700 '+Math.round((lang==='both'?72:118)*k)+'px '+EN,c:d.gold,gap:30*k});
     var mh=m==='c'?custom:MHI[+m||0], me=m==='c'?custom:MEN[+m||0];
@@ -287,7 +297,7 @@ if(q.get('d')||q.get('from')){if(q.get('l'))setVal('gc-l',q.get('l'));if(q.get('
   $('gc-to').value=(q.get('to')||'').slice(0,40);$('gc-from').value=(q.get('from')||'').slice(0,40);$('gc-custom').value=(q.get('c')||'').slice(0,160);$('gc-custom').hidden=val('gc-m')!=='c';
   var f=$('gc-from').value;$('gc-received').hidden=false;$('gc-received-line').textContent=f?(isHi()?'🪔 '+f+' ने आपको दीपावली की शुभकामनाएँ भेजी हैं!':'🪔 '+f+' sent you a Diwali greeting!'):(isHi()?'🪔 आपके लिए एक दीपावली शुभकामना!':'🪔 A Diwali greeting for you!');ev('card_opened')}
 var first=true;function go(){draw();if(first){first=false}}
-if(document.fonts&&document.fonts.load){Promise.all([document.fonts.load('128px "Tiro Devanagari Hindi"','शुभ'),document.fonts.load('700 118px "Cormorant Garamond"'),document.fonts.load('46px "Nunito"')]).then(go,go);setTimeout(draw,1500)}else go();
+if(document.fonts&&document.fonts.load){Promise.all(['400 128px CardDeva','700 118px CardSerif','600 46px CardSans','700 46px CardSans','700 46px CardKid','800 100px CardKid'].map(function(f){return document.fonts.load(f,'शुभ दीपावली Happy')})).then(go,go);setTimeout(draw,1500)}else go();
 draw();
 new MutationObserver(function(){if(!$('gc-received').hidden){var f=$('gc-from').value;$('gc-received-line').textContent=f?(isHi()?'🪔 '+f+' ने आपको दीपावली की शुभकामनाएँ भेजी हैं!':'🪔 '+f+' sent you a Diwali greeting!'):(isHi()?'🪔 आपके लिए एक दीपावली शुभकामना!':'🪔 A Diwali greeting for you!')}}).observe(document.documentElement,{attributes:true,attributeFilter:['data-lang']});
 })();
