@@ -35,6 +35,11 @@
 .gc-actions{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:.9rem}
 .gc-btn{font:inherit;font-weight:700;border:0;border-radius:99px;padding:.65rem 1.2rem;min-height:44px;background:var(--indigo);color:var(--paper);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
 .gc-ghost{background:var(--paper);color:var(--ink);border:1.5px solid var(--line)}
+.gc-send-row{display:flex;gap:1rem;align-items:center}
+#gc-mini{width:108px;height:auto;border-radius:10px;box-shadow:0 2px 10px rgba(30,20,60,.18);flex-shrink:0}
+.gc-send-btns{display:flex;flex-direction:column;gap:.5rem;flex:1;min-width:0}
+.gc-send-btns .gc-btn{justify-content:center}
+.gc-send .gc-status{text-align:left;margin-top:.5rem}
 .gc-status{text-align:center;font-size:.92rem;color:var(--indigo);min-height:1.3rem}
 .gc-form fieldset{border:0;padding:0;margin:0 0 1.1rem}
 .gc-form legend{font-weight:700;margin-bottom:.45rem}
@@ -186,6 +191,15 @@ document.addEventListener('click',function(e){
 <label class="gc-l" for="gc-from"><span class="en xg">From</span><span class="hi">किसकी ओर से</span><span class="gu">કોના તરફથી</span></label>
 <input class="gc-in" id="gc-from" maxlength="40" placeholder="Mohan, Priya &amp; kids" type="text"/>
 </fieldset>
+<fieldset class="gc-send"><legend><span class="en xg">5. Send your card</span><span class="hi">5. अपना कार्ड भेजें</span><span class="gu">5. તમારું કાર્ડ મોકલો</span></legend>
+<div class="gc-send-row"><canvas aria-hidden="true" height="270" id="gc-mini" width="216"></canvas>
+<div class="gc-send-btns">
+<button class="gc-btn" data-proxy="gc-share" type="button"><span class="en xg">📤 Share the card</span><span class="hi">📤 कार्ड भेजें</span><span class="gu">📤 કાર્ડ મોકલો</span></button>
+<button class="gc-btn gc-ghost" data-proxy="gc-dl" type="button"><span class="en xg">⬇ Download image</span><span class="hi">⬇ चित्र डाउनलोड करें</span><span class="gu">⬇ ચિત્ર ડાઉનલોડ કરો</span></button>
+<button class="gc-btn gc-ghost" data-proxy="gc-link" type="button"><span class="en xg">🔗 Send as a link</span><span class="hi">🔗 लिंक के रूप में भेजें</span><span class="gu">🔗 લિંક તરીકે મોકલો</span></button>
+</div></div>
+<p aria-live="polite" class="gc-status" id="gc-status2"></p>
+</fieldset>
 </div>
 </div>
 </div><p class="gc-more"><span class="en xg">Want to know what the five days mean?</span><span class="hi">पाँचों दिनों का अर्थ जानना चाहते हैं?</span><span class="gu">પાંચેય દિવસનો અર્થ જાણવો છે?</span> <a href="diwali.html"><span class="en xg">Read the Diwali guide →</span><span class="hi">दीपावली गाइड पढ़ें →</span><span class="gu">દિવાળી માર્ગદર્શિકા વાંચો →</span></a></p>
@@ -309,12 +323,13 @@ function draw(){
   ctx.textAlign='left';ctx.textBaseline='alphabetic';
   items.forEach(function(it){ctx.font=it.f;var x=W/2-mw(it.t,it.f)/2;ctx.fillStyle=it.c;if(d.stroke){ctx.lineJoin='round';ctx.lineWidth=Math.max(8,it.h*.12);ctx.strokeStyle=d.stroke;ctx.strokeText(it.t,x,y+it.h*.82)}ctx.shadowColor=d.kid?'rgba(0,0,0,0)':'rgba(0,0,0,.35)';ctx.shadowBlur=12;ctx.fillText(it.t,x,y+it.h*.82);ctx.shadowBlur=0;y+=it.h+it.gap});
   ctx.textAlign='center';ctx.font='600 30px '+BODY;var ww=ctx.measureText('sanatan.space/diwali').width+56;ctx.fillStyle='rgba(15,8,30,.72)';ctx.beginPath();if(ctx.roundRect)ctx.roundRect(W/2-ww/2,H-104,ww,58,29);else ctx.rect(W/2-ww/2,H-104,ww,58);ctx.fill();ctx.fillStyle='#fff7e6';ctx.fillText('sanatan.space/diwali',W/2,H-64);
+  var mc=$('gc-mini');if(mc){var mx=mc.getContext('2d');mx.clearRect(0,0,216,270);mx.drawImage(cv,0,0,216,270)}
 }
 
 function params(){return {l:val('gc-l'),d:val('gc-d'),m:val('gc-m'),to:$('gc-to').value.trim(),from:$('gc-from').value.trim(),c:val('gc-m')==='c'?$('gc-custom').value.trim():''}}
 function linkURL(){var p=params(),q=new URLSearchParams();Object.keys(p).forEach(function(k){if(p[k])q.set(k,p[k])});q.set('utm_source','card');return 'https://sanatan.space/diwali-card.html?'+q.toString()}
 function blob(){return new Promise(function(res){cv.toBlob(res,'image/png')})}
-function say(en,hi,gu){$('gc-status').textContent=T(en,hi,gu||en)}
+function say(en,hi,gu){$('gc-status').textContent=$('gc-status2').textContent=T(en,hi,gu||en)}
 function shareText(){return T('🪔 Happy Diwali! Make your own card: ','🪔 शुभ दीपावली! अपना कार्ड बनाएँ: ','🪔 શુભ દિવાળી અને નૂતન વર્ષાભિનંદન! તમારું કાર્ડ બનાવો: ')+'https://sanatan.space/diwali-card.html'}
 function recvLine(f){return f?T('🪔 '+f+' sent you a Diwali greeting!','🪔 '+f+' ने आपको दीपावली की शुभकामनाएँ भेजी हैं!','🪔 '+f+'એ તમને દિવાળીની શુભેચ્છા મોકલી છે!'):T('🪔 A Diwali greeting for you!','🪔 आपके लिए एक दीपावली शुभकामना!','🪔 તમારા માટે દિવાળીની શુભેચ્છા!')}
 
@@ -329,6 +344,7 @@ $('gc-link').addEventListener('click',function(){var u=linkURL(),from=$('gc-from
 document.querySelectorAll('input[name="gc-d"]').forEach(function(r){r.addEventListener('change',function(){var m=val('gc-m');if(+r.value>=3&&m!=='c'&&+m<4)setVal('gc-m','4');if(+r.value<3&&+m>=4)setVal('gc-m','0')})});
 document.querySelectorAll('#gc-form input,#gc-form textarea').forEach(function(el){el.addEventListener('input',function(){$('gc-custom').hidden=val('gc-m')!=='c';draw()});el.addEventListener('change',function(){$('gc-custom').hidden=val('gc-m')!=='c';draw()})});
 
+document.querySelectorAll('[data-proxy]').forEach(function(b){b.addEventListener('click',function(){$(b.dataset.proxy).click()})});
 var q=new URLSearchParams(location.search);
 if(q.get('d')||q.get('from')){if(q.get('l'))setVal('gc-l',q.get('l'));if(q.get('d'))setVal('gc-d',q.get('d'));if(q.get('m'))setVal('gc-m',q.get('m'));
   $('gc-to').value=(q.get('to')||'').slice(0,40);$('gc-from').value=(q.get('from')||'').slice(0,40);$('gc-custom').value=(q.get('c')||'').slice(0,160);$('gc-custom').hidden=val('gc-m')!=='c';
