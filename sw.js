@@ -1,5 +1,5 @@
-/* Offline support: pages you open are saved so they work without internet. Version 20261027205125. */
-const V = 'saral-20261027205125';
+/* Offline support: pages you open are saved so they work without internet. Version 20261027205537. */
+const V = 'saral-20261027205537';
 const CORE = ["/", "/style.css", "/lang.js", "/share.js", "/interactive.js", "/verse-tools.js", "/manifest.webmanifest", "/icon-192.png"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V && !k.startsWith('sd-')).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
@@ -10,6 +10,7 @@ self.addEventListener('fetch', e => {
   const same = u.origin === location.origin;
   const fonts = /fonts\.(googleapis|gstatic)\.com$/.test(u.hostname);
   if (!same && !fonts) return;
+  if (/\.(mp4|webm)$/.test(u.pathname)) return;
   if (r.mode === 'navigate' || (same && u.pathname.endsWith('.html'))) {
     e.respondWith(fetch(r).then(res => { const c = res.clone(); caches.open(V).then(x => x.put(r, c)); return res; })
       .catch(() => caches.match(r, {ignoreSearch: true}).then(m => m || caches.match('/'))));
