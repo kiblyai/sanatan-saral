@@ -351,6 +351,7 @@ var q=new URLSearchParams(location.search);
 if(q.get('d')||q.get('from')){if(q.get('l'))setVal('gc-l',({both:'hi','gu-en':'gu'})[q.get('l')]||q.get('l'));if(q.get('d'))setVal('gc-d',q.get('d'));if(q.get('m'))setVal('gc-m',q.get('m'));
   $('gc-to').value=(q.get('to')||'').slice(0,40);$('gc-from').value=(q.get('from')||'').slice(0,40);$('gc-custom').value=(q.get('c')||'').slice(0,160);$('gc-custom').hidden=val('gc-m')!=='c';
   var f=$('gc-from').value;$('gc-received').hidden=false;$('gc-received-line').textContent=recvLine(f);ev('card_opened')}
+else if(q.get('l'))setVal('gc-l',({both:'hi','gu-en':'gu'})[q.get('l')]||q.get('l'));
 else if(SL()==='gu')setVal('gc-l','gu');
 var first=true;function go(){draw();if(first){first=false}}
 if(document.fonts&&document.fonts.load){Promise.all(['400 128px CardDeva','700 118px CardSerif','600 46px CardSans','700 46px CardSans','700 46px CardKid','800 100px CardKid','600 124px CardDeva'].map(function(f){return document.fonts.load(f,'शुभ दीपावली Happy શુભ દિવાળી')})).then(go,go);setTimeout(draw,1500)}else go();
