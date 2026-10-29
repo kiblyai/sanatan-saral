@@ -390,6 +390,7 @@ document.addEventListener('click',function(e){
 </div>
 <script>(function(){var el=document.getElementById('fest');if(!el)return;var t=new Date(),d=new Date(2026,10,8),day=new Date(t.getFullYear(),t.getMonth(),t.getDate()),n=Math.round((d-day)/864e5);
 if(n<-3){el.remove();return}var b=document.getElementById('fest-t');
+var al=el.querySelector('a.alt');if(al&&(n===-1||n===-2)){al.href='diwali.html#govardhan';al.innerHTML='<span class="en xg">🙏 Govardhan &amp; New Year</span><span class="hi">🙏 गोवर्धन और नववर्ष</span><span class="gu">🙏 ગોવર્ધન અને નવું વર્ષ</span>'}
 if(n>1)b.innerHTML='<span class="en xg">🪔 Diwali in '+n+' days</span><span class="hi">🪔 दीपावली में '+n+' दिन</span><span class="gu">🪔 દિવાળીને '+n+' દિવસ બાકી</span>';
 else if(n===1)b.innerHTML='<span class="en xg">🪔 Diwali is tomorrow!</span><span class="hi">🪔 कल दीपावली है!</span><span class="gu">🪔 આવતી કાલે દિવાળી છે!</span>';
 else if(n===0)b.innerHTML='<span class="en xg">🪔 Happy Diwali!</span><span class="hi">🪔 शुभ दीपावली!</span><span class="gu">🪔 શુભ દિવાળી!</span>';
@@ -405,6 +406,8 @@ else b.innerHTML='<span class="en xg">🪔 Happy Bhai Dooj!</span><span class="h
 .hero>.lang .lf{display:inline}.hero>.lang .ls{display:none}
 @media (max-width:560px){.hero{padding-top:3.4rem}.hero>.lang{top:10px}.hero>.lang button{padding:.2rem .6rem}}
 @media print{.hero>.lang{display:none}}
+main [id],section[id]{scroll-margin-top:5.5rem}
+@media (max-width:560px){main [id],section[id]{scroll-margin-top:7.6rem}}
 .bar .topnav a{font-size:1.06rem;font-weight:650;color:var(--ink)}
 .bar .topnav a[aria-current="page"]{font-weight:800}
 .bar .menu summary{font-size:1.02rem;font-weight:700}
