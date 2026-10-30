@@ -101,6 +101,8 @@ const STRINGS = {
     language: 'Language',
     sound: 'Sound effects',
     readAloud: 'Read Hindi words aloud',
+    unlockAll: 'Unlock all levels',
+    unlockAllHint: 'Lets your child jump to any level without earning stars on the one before.',
     voiceOk: 'Hindi voice: {v}',
     voiceOnline: 'This voice uses an online speech service from the device maker.',
     voiceMissing:
@@ -227,6 +229,8 @@ const STRINGS = {
     language: 'भाषा',
     sound: 'खेल की आवाज़ें',
     readAloud: 'हिंदी शब्द पढ़कर सुनाएँ',
+    unlockAll: 'सारे स्तर खोलें',
+    unlockAllHint: 'बच्चा पिछले स्तर पर तारे जीते बिना किसी भी स्तर पर जा सकता है।',
     voiceOk: 'हिंदी आवाज़: {v}',
     voiceOnline: 'यह आवाज़ डिवाइस बनाने वाली कंपनी की ऑनलाइन सेवा से चलती है।',
     voiceMissing:

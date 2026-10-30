@@ -1,5 +1,5 @@
-/* Offline support: pages you open are saved so they work without internet. Version 20261029163937. */
-const V = 'saral-20261029163937';
+/* Offline support: pages you open are saved so they work without internet. Version 20261029211119. */
+const V = 'saral-20261029211119';
 const CORE = ["/", "/style.css", "/lang.js", "/share.js", "/interactive.js", "/verse-tools.js", "/manifest.webmanifest", "/icon-192.png"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V && !k.startsWith('sd-')).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

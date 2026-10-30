@@ -52,7 +52,7 @@ function go(path, replace = false) {
 // Levels open one after another. On book planets every chapter's first level is open,
 // so a child can jump to the chapter being taught in class.
 function isUnlocked(planet, index) {
-  if (index === 0) return true;
+  if (index === 0 || store.get().unlockAll) return true;
   const level = planet.levels[index];
   const prev = planet.levels[index - 1];
   if (level.rank) return talkRankOpen(level.rank);
@@ -63,7 +63,7 @@ function isUnlocked(planet, index) {
 // A talk level opens once RANK_UNLOCK conversations in the level below are done.
 function talkRankOpen(rankId) {
   const i = TALK.ranks.findIndex((r) => r.id === rankId);
-  if (i <= 0) return true;
+  if (i <= 0 || store.get().unlockAll) return true;
   const below = TALK.ranks[i - 1].scenes.filter((s) => store.level(s.id).stars > 0).length;
   return below >= TALK.rankUnlock;
 }
@@ -506,6 +506,8 @@ function parents() {
         <div class="setting"><span>${t('language')}</span>${langToggle()}</div>
         <label class="setting"><span>${t('sound')}</span><input type="checkbox" class="switch" data-set="sound" ${s.sound ? 'checked' : ''}></label>
         <label class="setting"><span>${t('readAloud')}</span><input type="checkbox" class="switch" data-set="speech" ${s.speech ? 'checked' : ''}></label>
+        <label class="setting"><span>🔓 ${t('unlockAll')}</span><input type="checkbox" class="switch" data-set="unlockAll" ${s.unlockAll ? 'checked' : ''}></label>
+        <p class="muted">${t('unlockAllHint')}</p>
         ${voiceHtml}
         <form class="setting name-row" data-name>
           <label for="pn">${t('childName')}</label>
@@ -544,7 +546,7 @@ function parents() {
         ${ios ? `<p class="muted">📲 ${t('installIos')}</p>` : ''}
         <button class="btn btn-danger" type="button" data-reset>🗑️ ${t('reset')}</button>
       </div>
-      <p class="fine center">${t('appName')} · ${t('version')} 0.10</p>
+      <p class="fine center">${t('appName')} · ${t('version')} 0.11</p>
     </section>`;
 
   app.querySelectorAll('[data-set]').forEach((el) => {

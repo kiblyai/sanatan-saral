@@ -7,6 +7,7 @@ function defaults() {
     lang: 'en',
     sound: true,
     speech: true,
+    unlockAll: false, // parents can open every level (settings)
     introSeen: false,
     book: null, // 'b1'–'b4', chosen on the book picker
     talkForm: null, // 'm' or 'f': which verb forms Talk Station answers use (जाता / जाती)
