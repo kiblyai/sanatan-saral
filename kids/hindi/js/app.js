@@ -546,7 +546,7 @@ function parents() {
         ${ios ? `<p class="muted">📲 ${t('installIos')}</p>` : ''}
         <button class="btn btn-danger" type="button" data-reset>🗑️ ${t('reset')}</button>
       </div>
-      <p class="fine center">${t('appName')} · ${t('version')} 0.16</p>
+      <p class="fine center">${t('appName')} · ${t('version')} 0.17</p>
     </section>`;
 
   app.querySelectorAll('[data-set]').forEach((el) => {

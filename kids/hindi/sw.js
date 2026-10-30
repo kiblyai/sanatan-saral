@@ -1,6 +1,6 @@
 // Offline support. Network first so a new version shows up straight away;
 // the cache keeps the app playable with no internet.
-const CACHE = 'hsm-v17';
+const CACHE = 'hsm-v18';
 const ASSETS = [
   './',
   'index.html',
