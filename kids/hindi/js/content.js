@@ -1,7 +1,7 @@
 // All questions are original, written for Book-3-level Hindi (Class 5, English-medium).
 // Book chapters live in chapters.js; to add a planet, write its three chapters there and
 // pass them to bookPlanet() below.
-import { CH1, CH2, CH3, CH4, CH5, CH6, CH7, CH8, CH9, CH10, CH11, CH12 } from './chapters.js';
+import { CH1, CH2, CH3, CH4, CH5, CH6, CH7, CH8, CH9, CH10, CH11, CH12, CH13 } from './chapters.js';
 import { B1C1, B1C2, B1C3, B2C1, B2C2, B2C3, B4C1, B4C2, B4C3 } from './books.js';
 import { RANKS, RANK_UNLOCK } from './talk.js';
 
@@ -337,8 +337,11 @@ const BOOK3_PLANETS = [
     id: 'guru', name: { en: 'Planet Brihaspati', hi: 'बृहस्पति ग्रह' }, from: 10, c1: '#b9a6ff', c2: '#b5838d',
     chapters: [CH10, CH11, CH12],
   }),
-  // Chapters 13–18 still to build.
-  bookPlanet({ id: 'shani', name: { en: 'Planet Shani', hi: 'शनि ग्रह' }, from: 13, c1: '#9dff8a', c2: '#e09f3e' }),
+  // Chapters 14–18 still to build; Shani opens with chapter 13 and grows as chapters are added.
+  bookPlanet({
+    id: 'shani', name: { en: 'Planet Shani', hi: 'शनि ग्रह' }, from: 13, c1: '#9dff8a', c2: '#e09f3e',
+    chapters: [CH13],
+  }),
   bookPlanet({ id: 'varun', name: { en: 'Planet Varun', hi: 'वरुण ग्रह' }, from: 16, c1: '#5fa8ff', c2: '#3f37c9' }),
 ];
 
