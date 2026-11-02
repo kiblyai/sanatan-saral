@@ -8,7 +8,7 @@
   }
   var saved=null;
   try{saved=localStorage.getItem('sd-lang')}catch(err){}
-  if(!saved){var nl=(navigator.language||'').toLowerCase();saved=nl.indexOf('hi')===0?'hi':(nl.indexOf('gu')===0?'gu':'en')}
+  if(!saved){var nl=(navigator.language||'').toLowerCase();saved=nl.indexOf('hi')===0?'hi':(nl.indexOf('gu')===0?'gu':(nl.indexOf('te')===0?'te':'en'))}
   setLang(saved);
   document.querySelectorAll('.lang button').forEach(function(b){
     b.addEventListener('click',function(){setLang(b.getAttribute('data-set'))});
