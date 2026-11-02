@@ -21,7 +21,7 @@
   document.head.appendChild(st);
 
   var buttons = [];
-  function label(on) { return on ? '<span class="en xg xt">🔔 Daily shloka is on · turn off</span><span class="hi">🔔 दैनिक श्लोक चालू है · बन्द करें</span><span class="gu">🔔 દૈનિક શ્લોક ચાલુ છે · બંધ કરો</span><span class="te">🔔 రోజువారీ శ్లోకం ఆన్‌లో ఉంది · ఆపండి</span>' : '<span class="en xg xt">🔔 Get a daily shloka on your phone</span><span class="hi">🔔 फ़ोन पर रोज़ एक श्लोक पाएँ</span><span class="gu">🔔 ફોન પર રોજ એક શ્લોક મેળવો</span><span class="te">🔔 ఫోన్‌లో రోజూ ఒక శ్లోకం పొందండి</span>'; }
+  function label(on) { return on ? '<span class="en xg xt xm">🔔 Daily shloka is on · turn off</span><span class="hi">🔔 दैनिक श्लोक चालू है · बन्द करें</span><span class="gu">🔔 દૈનિક શ્લોક ચાલુ છે · બંધ કરો</span><span class="te">🔔 రోజువారీ శ్లోకం ఆన్‌లో ఉంది · ఆపండి</span><span class="mr">🔔 दैनिक श्लोक चालू आहे · बंद करा</span>' : '<span class="en xg xt xm">🔔 Get a daily shloka on your phone</span><span class="hi">🔔 फ़ोन पर रोज़ एक श्लोक पाएँ</span><span class="gu">🔔 ફોન પર રોજ એક શ્લોક મેળવો</span><span class="te">🔔 ఫోన్‌లో రోజూ ఒక శ్లోకం పొందండి</span><span class="mr">🔔 फोनवर रोज एक श्लोक मिळवा</span>'; }
   function paint(on) { buttons.forEach(function (b) { b.innerHTML = label(on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); }); }
   function current() { return navigator.serviceWorker.ready.then(function (r) { return r.pushManager.getSubscription(); }); }
 
@@ -41,7 +41,7 @@
     }).then(function () { paint(false); ev('push_unsubscribed'); });
   }
   function alertLine() {
-    buttons.forEach(function (b) { var n = b.nextElementSibling; if (n && n.className === 'push-note') return; n = document.createElement('p'); n.className = 'push-note'; n.style.cssText = 'font-size:.88rem;color:var(--ink-2,#566B6D);margin:.2rem 0'; n.innerHTML = '<span class="en xg xt">Notifications are blocked. Allow them for this site in your phone settings, then try again.</span><span class="hi">सूचनाएँ बन्द हैं। फ़ोन की सेटिंग में इस साइट के लिए अनुमति दें, फिर दोबारा कोशिश करें।</span><span class="gu">સૂચનાઓ બંધ છે. ફોનના સેટિંગમાં આ સાઇટ માટે પરવાનગી આપો, પછી ફરી પ્રયત્ન કરો.</span><span class="te">నోటిఫికేషన్లు ఆపివేయబడ్డాయి. ఫోన్ సెట్టింగ్స్‌లో ఈ సైట్‌కు అనుమతి ఇచ్చి, మళ్ళీ ప్రయత్నించండి.</span>'; b.after(n); });
+    buttons.forEach(function (b) { var n = b.nextElementSibling; if (n && n.className === 'push-note') return; n = document.createElement('p'); n.className = 'push-note'; n.style.cssText = 'font-size:.88rem;color:var(--ink-2,#566B6D);margin:.2rem 0'; n.innerHTML = '<span class="en xg xt xm">Notifications are blocked. Allow them for this site in your phone settings, then try again.</span><span class="hi">सूचनाएँ बन्द हैं। फ़ोन की सेटिंग में इस साइट के लिए अनुमति दें, फिर दोबारा कोशिश करें।</span><span class="gu">સૂચનાઓ બંધ છે. ફોનના સેટિંગમાં આ સાઇટ માટે પરવાનગી આપો, પછી ફરી પ્રયત્ન કરો.</span><span class="te">నోటిఫికేషన్లు ఆపివేయబడ్డాయి. ఫోన్ సెట్టింగ్స్‌లో ఈ సైట్‌కు అనుమతి ఇచ్చి, మళ్ళీ ప్రయత్నించండి.</span><span class="mr">सूचना बंद आहेत. फोनच्या सेटिंगमध्ये या साइटसाठी परवानगी द्या, मग पुन्हा प्रयत्न करा.</span>'; b.after(n); });
   }
   function toggle() { current().then(function (sub) { return sub ? turnOff() : turnOn(); }); }
 
@@ -60,9 +60,9 @@
       current().then(function (sub) {
         if (sub || document.querySelector('.ins')) return;
         var c = document.createElement('div'); c.className = 'push-card'; c.setAttribute('role', 'dialog');
-        c.innerHTML = '<b><span class="en xg xt">A shloka a day, and festival reminders</span><span class="hi">रोज़ एक श्लोक, और पर्वों की याद</span><span class="gu">રોજ એક શ્લોક, અને તહેવારોની યાદ</span><span class="te">రోజుకో శ్లోకం, పండుగల గుర్తు</span></b><p><span class="en xg xt">One short notification each morning. Turn off any time.</span><span class="hi">हर सुबह एक छोटी सूचना। कभी भी बन्द करें।</span><span class="gu">દરરોજ સવારે એક નાની સૂચના. ગમે ત્યારે બંધ કરો.</span><span class="te">ప్రతి ఉదయం ఒక చిన్న నోటిఫికేషన్. ఎప్పుడైనా ఆపవచ్చు.</span></p>';
+        c.innerHTML = '<b><span class="en xg xt xm">A shloka a day, and festival reminders</span><span class="hi">रोज़ एक श्लोक, और पर्वों की याद</span><span class="gu">રોજ એક શ્લોક, અને તહેવારોની યાદ</span><span class="te">రోజుకో శ్లోకం, పండుగల గుర్తు</span><span class="mr">रोज एक श्लोक, आणि सणांची आठवण</span></b><p><span class="en xg xt xm">One short notification each morning. Turn off any time.</span><span class="hi">हर सुबह एक छोटी सूचना। कभी भी बन्द करें।</span><span class="gu">દરરોજ સવારે એક નાની સૂચના. ગમે ત્યારે બંધ કરો.</span><span class="te">ప్రతి ఉదయం ఒక చిన్న నోటిఫికేషన్. ఎప్పుడైనా ఆపవచ్చు.</span><span class="mr">दररोज सकाळी एक छोटी सूचना. केव्हाही बंद करा.</span></p>';
         addButton(c);
-        var no = document.createElement('button'); no.type = 'button'; no.className = 'no'; no.innerHTML = '<span class="en xg xt">Not now</span><span class="hi">अभी नहीं</span><span class="gu">હમણાં નહીં</span><span class="te">ఇప్పుడు కాదు</span>';
+        var no = document.createElement('button'); no.type = 'button'; no.className = 'no'; no.innerHTML = '<span class="en xg xt xm">Not now</span><span class="hi">अभी नहीं</span><span class="gu">હમણાં નહીં</span><span class="te">ఇప్పుడు కాదు</span><span class="mr">आता नाही</span>';
         no.onclick = function () { c.remove(); set('sd-push-asked', '1'); }; c.appendChild(no);
         c.querySelector('.pushb').addEventListener('click', function () { setTimeout(function () { c.remove(); }, 1200); });
         document.body.appendChild(c); paint(false); set('sd-push-asked', '1');

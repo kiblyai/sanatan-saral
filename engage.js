@@ -27,21 +27,21 @@
   document.head.appendChild(st);
 
   var G = { // hindi -> [gujarati, telugu]
-    'भेजें': ['મોકલો', 'పంపండి'],
-    'उपयोगी लगा? किसी परिवार को भेजें।': ['ઉપયોગી લાગ્યું? કોઈ પરિવારને મોકલો.', 'ఉపయోగపడిందా? ఏదైనా కుటుంబానికి పంపండి.'],
-    'WhatsApp पर भेजें': ['WhatsApp પર મોકલો', 'WhatsAppలో పంపండి'],
-    'लिंक कॉपी करें': ['લિંક કૉપિ કરો', 'లింక్ కాపీ చేయండి'],
-    'क्या यह पृष्ठ उपयोगी था?': ['શું આ પાનું ઉપયોગી હતું?', 'ఈ పేజీ ఉపయోగపడిందా?'],
-    'हाँ': ['હા', 'అవును'],
-    'ज़्यादा नहीं': ['ખાસ નહીં', 'అంతగా లేదు'],
-    'कॉपी हो गया ✓': ['કૉપિ થઈ ગયું ✓', 'కాపీ అయింది ✓'],
-    'धन्यवाद! 🙏': ['આભાર! 🙏', 'ధన్యవాదాలు! 🙏']
+    'भेजें': ['મોકલો', 'పంపండి', 'पाठवा'],
+    'उपयोगी लगा? किसी परिवार को भेजें।': ['ઉપયોગી લાગ્યું? કોઈ પરિવારને મોકલો.', 'ఉపయోగపడిందా? ఏదైనా కుటుంబానికి పంపండి.', 'उपयोगी वाटले? एखाद्या कुटुंबाला पाठवा.'],
+    'WhatsApp पर भेजें': ['WhatsApp પર મોકલો', 'WhatsAppలో పంపండి', 'WhatsApp वर पाठवा'],
+    'लिंक कॉपी करें': ['લિંક કૉપિ કરો', 'లింక్ కాపీ చేయండి', 'लिंक कॉपी करा'],
+    'क्या यह पृष्ठ उपयोगी था?': ['શું આ પાનું ઉપયોગી હતું?', 'ఈ పేజీ ఉపయోగపడిందా?', 'हे पान उपयोगी होते का?'],
+    'हाँ': ['હા', 'అవును', 'हो'],
+    'ज़्यादा नहीं': ['ખાસ નહીં', 'అంతగా లేదు', 'फारसे नाही'],
+    'कॉपी हो गया ✓': ['કૉપિ થઈ ગયું ✓', 'కాపీ అయింది ✓', 'कॉपी झाले ✓'],
+    'धन्यवाद! 🙏': ['આભાર! 🙏', 'ధన్యవాదాలు! 🙏', 'धन्यवाद! 🙏']
   };
-  function L(en, h, g, t) { // g, t: optional explicit Gujarati / Telugu (for strings built at run time)
+  function L(en, h, g, t, m) { // g, t: optional explicit Gujarati / Telugu (for strings built at run time)
     var x = G[h] || [];
-    g = g || x[0]; t = t || x[1];
-    return '<span class="en' + (g ? ' xg' : '') + (t ? ' xt' : '') + '">' + en + '</span><span class="hi">' + h + '</span>' +
-      (g ? '<span class="gu">' + g + '</span>' : '') + (t ? '<span class="te">' + t + '</span>' : '');
+    g = g || x[0]; t = t || x[1]; m = m || x[2];
+    return '<span class="en' + (g ? ' xg' : '') + (t ? ' xt' : '') + (m ? ' xm' : '') + '">' + en + '</span><span class="hi">' + h + '</span>' +
+      (g ? '<span class="gu">' + g + '</span>' : '') + (t ? '<span class="te">' + t + '</span>' : '') + (m ? '<span class="mr">' + m + '</span>' : '');
   }
 
   // top bar pill, next to Print
@@ -78,7 +78,7 @@
       var v = b.getAttribute('data-v');
       box.querySelectorAll('.pe-fb').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
       if (get('fb:' + page) !== v) { ev('page_feedback', { helpful: v, page_path: '/' + page }); set('fb:' + page, v); }
-      thanks.innerHTML = v === 'yes' ? L('Thank you! 🙏', 'धन्यवाद! 🙏') : L('Thanks. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">Tell us what was missing</a>', 'धन्यवाद। <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">बताइए क्या कमी थी</a>', 'આભાર. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">જણાવો શું ખૂટતું હતું</a>', 'ధన్యవాదాలు. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">ఏం లోపించిందో చెప్పండి</a>');
+      thanks.innerHTML = v === 'yes' ? L('Thank you! 🙏', 'धन्यवाद! 🙏') : L('Thanks. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">Tell us what was missing</a>', 'धन्यवाद। <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">बताइए क्या कमी थी</a>', 'આભાર. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">જણાવો શું ખૂટતું હતું</a>', 'ధన్యవాదాలు. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">ఏం లోపించిందో చెప్పండి</a>', 'धन्यवाद. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">काय कमी होते ते सांगा</a>');
     });
   });
   function place() {
