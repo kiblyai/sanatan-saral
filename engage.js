@@ -26,7 +26,23 @@
     '.pe-thanks{color:var(--ink-2,#566B6D);font-size:.95rem}@media print{.sp-btn,.pe{display:none!important}}';
   document.head.appendChild(st);
 
-  function L(en, h) { return '<span class="en">' + en + '</span><span class="hi">' + h + '</span>'; }
+  var G = { // hindi -> [gujarati, telugu]
+    'भेजें': ['મોકલો', 'పంపండి'],
+    'उपयोगी लगा? किसी परिवार को भेजें।': ['ઉપયોગી લાગ્યું? કોઈ પરિવારને મોકલો.', 'ఉపయోగపడిందా? ఏదైనా కుటుంబానికి పంపండి.'],
+    'WhatsApp पर भेजें': ['WhatsApp પર મોકલો', 'WhatsAppలో పంపండి'],
+    'लिंक कॉपी करें': ['લિંક કૉપિ કરો', 'లింక్ కాపీ చేయండి'],
+    'क्या यह पृष्ठ उपयोगी था?': ['શું આ પાનું ઉપયોગી હતું?', 'ఈ పేజీ ఉపయోగపడిందా?'],
+    'हाँ': ['હા', 'అవును'],
+    'ज़्यादा नहीं': ['ખાસ નહીં', 'అంతగా లేదు'],
+    'कॉपी हो गया ✓': ['કૉપિ થઈ ગયું ✓', 'కాపీ అయింది ✓'],
+    'धन्यवाद! 🙏': ['આભાર! 🙏', 'ధన్యవాదాలు! 🙏']
+  };
+  function L(en, h, g, t) { // g, t: optional explicit Gujarati / Telugu (for strings built at run time)
+    var x = G[h] || [];
+    g = g || x[0]; t = t || x[1];
+    return '<span class="en' + (g ? ' xg' : '') + (t ? ' xt' : '') + '">' + en + '</span><span class="hi">' + h + '</span>' +
+      (g ? '<span class="gu">' + g + '</span>' : '') + (t ? '<span class="te">' + t + '</span>' : '');
+  }
 
   // top bar pill, next to Print
   function addPill() {
@@ -62,7 +78,7 @@
       var v = b.getAttribute('data-v');
       box.querySelectorAll('.pe-fb').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
       if (get('fb:' + page) !== v) { ev('page_feedback', { helpful: v, page_path: '/' + page }); set('fb:' + page, v); }
-      thanks.innerHTML = v === 'yes' ? L('Thank you! 🙏', 'धन्यवाद! 🙏') : L('Thanks. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">Tell us what was missing</a>', 'धन्यवाद। <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">बताइए क्या कमी थी</a>');
+      thanks.innerHTML = v === 'yes' ? L('Thank you! 🙏', 'धन्यवाद! 🙏') : L('Thanks. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">Tell us what was missing</a>', 'धन्यवाद। <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">बताइए क्या कमी थी</a>', 'આભાર. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">જણાવો શું ખૂટતું હતું</a>', 'ధన్యవాదాలు. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">ఏం లోపించిందో చెప్పండి</a>');
     });
   });
   function place() {

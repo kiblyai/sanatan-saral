@@ -2,7 +2,7 @@
   var root=document.documentElement;
   function setLang(l){
     root.setAttribute('data-lang',l);
-    root.setAttribute('lang',l==='hi'?'hi':(l==='gu'?'gu':'en'));
+    root.setAttribute('lang',l==='hi'?'hi':(l==='gu'?'gu':(l==='te'?'te':'en')));
     document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set')===l)});
     try{localStorage.setItem('sd-lang',l)}catch(err){}
   }

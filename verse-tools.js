@@ -21,7 +21,7 @@
     document.querySelectorAll('.v-save').forEach(function(b){
       var c=b.closest('.verse'); var on=c&&!!s[pageName()+'#'+c.id];
       b.classList.toggle('on',on); b.setAttribute('aria-pressed',on);
-      b.innerHTML=on?'<span class="en">★ Saved</span><span class="hi">★ सहेजा</span>':'<span class="en">☆ Save</span><span class="hi">☆ सहेजें</span>';
+      b.innerHTML=on?'<span class="en xg xt">★ Saved</span><span class="hi">★ सहेजा</span><span class="gu">★ સાચવ્યું</span><span class="te">★ భద్రపరచబడింది</span>':'<span class="en xg xt">☆ Save</span><span class="hi">☆ सहेजें</span><span class="gu">☆ સાચવો</span><span class="te">☆ భద్రపరచండి</span>';
     });
   }
   /* ---------- picture card ---------- */
@@ -110,11 +110,11 @@
   window.addEventListener('afterprint',function(){opened.forEach(function(d){d.open=false});opened=[]});
   var bar=document.querySelector('.bar .wrap');
   if(bar){var b=document.createElement('button');b.type='button';b.className='print-btn';b.setAttribute('aria-label','Print this page');
-    b.innerHTML=ic+'<span class="pl"><span class="en">Print</span><span class="hi">प्रिंट</span></span>';b.addEventListener('click',doPrint);
+    b.innerHTML=ic+'<span class="pl"><span class="en xg xt">Print</span><span class="hi">प्रिंट</span><span class="gu">પ્રિન્ટ</span><span class="te">ప్రింట్</span></span>';b.addEventListener('click',doPrint);
     var lang=bar.querySelector('.lang');bar.insertBefore(b,lang||null)}
   var foot=document.querySelector('footer');
   if(foot){var p=document.createElement('p');p.className='print-foot';
-    p.innerHTML='<a role="button" tabindex="0">'+'<span class="en">🖨 Print this page</span><span class="hi">🖨 यह पृष्ठ प्रिंट करें</span></a>';
+    p.innerHTML='<a role="button" tabindex="0">'+'<span class="en xg xt">🖨 Print this page</span><span class="hi">🖨 यह पृष्ठ प्रिंट करें</span><span class="gu">🖨 આ પાનું પ્રિન્ટ કરો</span><span class="te">🖨 ఈ పేజీ ప్రింట్ చేయండి</span></a>';
     var a=p.querySelector('a');a.addEventListener('click',doPrint);a.addEventListener('keydown',function(e){if(e.key==='Enter')doPrint()});
     foot.insertBefore(p,foot.firstChild);
     var po=document.createElement('p');po.className='print-only';
@@ -129,9 +129,9 @@
   function L(){return document.documentElement.getAttribute('data-lang')==='hi'?1:0}
   function pick(langs){var vs=synth.getVoices();for(var i=0;i<langs.length;i++){var v=vs.find(function(x){return x.lang&&x.lang.replace('_','-').toLowerCase().indexOf(langs[i])===0});if(v)return v}return null}
   function clean(t){return t.replace(/[।॥|]+/g,'. ').replace(/[०-९0-9]+/g,' ').replace(/\s+/g,' ').trim()}
-  function label(b,on){b.innerHTML=on?'<span class="en">■ Stop</span><span class="hi">■ रोकें</span>':'<span class="en">🔊 Read aloud</span><span class="hi">🔊 सुनाएँ</span>';b.setAttribute('aria-pressed',on)}
+  function label(b,on){b.innerHTML=on?'<span class="en xg xt">■ Stop</span><span class="hi">■ रोकें</span><span class="gu">■ રોકો</span><span class="te">■ ఆపండి</span>':'<span class="en xg xt">🔊 Read aloud</span><span class="hi">🔊 सुनाएँ</span><span class="gu">🔊 સંભળાવો</span><span class="te">🔊 చదివి వినిపించు</span>';b.setAttribute('aria-pressed',on)}
   function toast(){if(toastShown)return;toastShown=true;var t=document.createElement('div');t.className='ra-toast';t.setAttribute('role','status');
-    t.innerHTML='<span class="en">Using your phone\'s voice. Sanskrit pronunciation may not be exact; learn chanting from a teacher.</span><span class="hi">आपके फ़ोन की आवाज़ से। संस्कृत उच्चारण पूरी तरह सही न भी हो; पाठ किसी गुरु से सीखें।</span>';
+    t.innerHTML='<span class="en xg xt">Using your phone\'s voice. Sanskrit pronunciation may not be exact; learn chanting from a teacher.</span><span class="hi">आपके फ़ोन की आवाज़ से। संस्कृत उच्चारण पूरी तरह सही न भी हो; पाठ किसी गुरु से सीखें।</span><span class="gu">તમારા ફોનના અવાજથી. સંસ્કૃત ઉચ્ચાર પૂરેપૂરો સાચો ન પણ હોય; પાઠ કોઈ ગુરુ પાસે શીખો.</span><span class="te">మీ ఫోన్ గొంతుతో. సంస్కృత ఉచ్చారణ పూర్తిగా సరిగ్గా ఉండకపోవచ్చు; పఠనాన్ని గురువు దగ్గర నేర్చుకోండి.</span>';
     document.body.appendChild(t);setTimeout(function(){t.remove()},6000)}
   function stop(){synth.cancel();if(current){label(current,false);current=null}}
   function speak(btn){
@@ -179,17 +179,19 @@
   document.querySelectorAll('.verse details.words').forEach(function(d){
     var dts=d.querySelectorAll('dt'); if(!dts.length)return;
     var box=document.createElement('div'); box.className='wbw';
-    box.innerHTML='<p class="wbw-h"><span class="en">Tap a word for its meaning</span><span class="hi">अर्थ जानने के लिए शब्द छुएँ</span></p><div class="wbw-row"></div><p class="wbw-out" aria-live="polite"><span class="en">Tap any Sanskrit word above.</span><span class="hi">ऊपर किसी भी संस्कृत शब्द को छुएँ।</span></p><button type="button" class="wbw-all"><span class="en">Show the full word list</span><span class="hi">पूरी शब्द-सूची दिखाएँ</span></button>';
+    box.innerHTML='<p class="wbw-h"><span class="en xg xt">Tap a word for its meaning</span><span class="hi">अर्थ जानने के लिए शब्द छुएँ</span><span class="gu">અર્થ જાણવા શબ્દને સ્પર્શો</span><span class="te">అర్థం కోసం పదాన్ని తాకండి</span></p><div class="wbw-row"></div><p class="wbw-out" aria-live="polite"><span class="en xg xt">Tap any Sanskrit word above.</span><span class="hi">ऊपर किसी भी संस्कृत शब्द को छुएँ।</span><span class="gu">ઉપરના કોઈ પણ સંસ્કૃત શબ્દને સ્પર્શો.</span><span class="te">పైన ఏ సంస్కృత పదాన్నైనా తాకండి.</span></p><button type="button" class="wbw-all"><span class="en xg xt">Show the full word list</span><span class="hi">पूरी शब्द-सूची दिखाएँ</span><span class="gu">આખી શબ્દ-સૂચિ બતાવો</span><span class="te">పూర్తి పదాల జాబితా చూపించు</span></button>';
     var row=box.querySelector('.wbw-row'), out=box.querySelector('.wbw-out');
     dts.forEach(function(dt){
       var dd=dt.nextElementSibling; var b=document.createElement('button'); b.type='button'; b.textContent=dt.textContent; b.setAttribute('aria-pressed','false');
       b.addEventListener('click',function(){
         row.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')}); b.setAttribute('aria-pressed','true');
-        var en=dd&&dd.querySelector('.en'), hi=dd&&dd.querySelector('.hi');
-        out.innerHTML='<b></b><span class="en"></span><span class="hi"></span>';
+        var en=dd&&dd.querySelector('.en'), hi=dd&&dd.querySelector('.hi'), gu=dd&&dd.querySelector('.gu'), te=dd&&dd.querySelector('.te');/*gu-te*/
+        out.innerHTML='<b></b><span class="en'+(gu?' xg':'')+(te?' xt':'')+'"></span><span class="hi"></span>'+(gu?'<span class="gu"></span>':'')+(te?'<span class="te"></span>':'');
         out.querySelector('b').textContent=dt.textContent;
         out.querySelector('.en').textContent=(en?en.textContent:(dd?dd.textContent:''));
         out.querySelector('.hi').textContent=(hi?hi.textContent:(dd?dd.textContent:''));
+        if(gu)out.querySelector('.gu').textContent=gu.textContent;
+        if(te)out.querySelector('.te').textContent=te.textContent;
       });
       row.appendChild(b);
     });
@@ -206,7 +208,7 @@
     var card=row.closest('.verse'), src=card&&card.querySelector('.src .en');
     var ref=(src?src.textContent.trim():'')+(card&&card.id?' ('+(location.pathname.split('/').pop()||'index.html')+'#'+card.id+')':'');
     var a=document.createElement('a'); a.className='v-report'; a.href='contact.html?topic=correction&ref='+encodeURIComponent(ref);
-    a.innerHTML='<span class="en">⚑ Report a mistake</span><span class="hi">⚑ त्रुटि बताएँ</span>';
+    a.innerHTML='<span class="en xg xt">⚑ Report a mistake</span><span class="hi">⚑ त्रुटि बताएँ</span><span class="gu">⚑ ભૂલ જણાવો</span><span class="te">⚑ తప్పు తెలియజేయండి</span>';
     row.appendChild(a);
   });
   var st=document.createElement('style');st.textContent='.listen .v-report{font-size:.9rem;color:var(--ink-2);text-decoration:none}.listen .v-report:hover{color:var(--kumkum)}@media print{.v-report{display:none!important}}';document.head.appendChild(st);
