@@ -16,3 +16,7 @@
 })();
 
 try{if(!location.hash){window.scrollTo(0,0)}}catch(e){}
+
+/* lang-fit: if the full language names do not fit the screen (large text settings, narrow windows), switch to short names */
+(function(){function fit(){document.querySelectorAll('.hero>.lang').forEach(function(g){g.classList.remove('lang-short');if(g.scrollWidth>g.clientWidth+1)g.classList.add('lang-short')})}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fit);else fit();addEventListener('resize',fit);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();

@@ -86,7 +86,10 @@ main .skt{overflow-wrap:anywhere}
 .hero>.lang button{font-weight:600}
 .hero>.lang .lf{display:inline}.hero>.lang .ls{display:none}
 @media (max-width:560px){.hero{padding-top:3.4rem}.hero>.lang{top:10px}.hero>.lang button{padding:.2rem .6rem}}
-@media (max-width:400px){.hero>.lang .lf{display:none}.hero>.lang .ls{display:inline}.hero>.lang button{padding:.2rem .5rem}}
+.hero>.lang{max-width:calc(100vw - 24px);overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}.hero>.lang::-webkit-scrollbar{display:none}.hero>.lang button{flex:0 0 auto}
+@media (max-width:760px){.hero>.lang .lf{display:none}.hero>.lang .ls{display:inline}.hero>.lang button{padding:.2rem .55rem}}
+.hero>.lang.lang-short .lf{display:none}.hero>.lang.lang-short .ls{display:inline}
+@media (max-width:360px){.hero>.lang button{padding:.2rem .45rem}}
 @media print{.hero>.lang{display:none}}
 main [id],section[id]{scroll-margin-top:5.5rem}
 @media (max-width:560px){main [id],section[id]{scroll-margin-top:7.6rem}}
