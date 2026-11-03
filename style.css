@@ -310,3 +310,5 @@ h1,h2,h3{font-weight:600}
 /* skt-wrap: long Sanskrit compounds must not widen small phones */
 .skt,.iast{overflow-wrap:anywhere}
 .verse,.verse *{min-width:0}
+/* bars-fit: leave room for the value label after the longest bar */
+.bars .track{margin-right:2.4rem}
