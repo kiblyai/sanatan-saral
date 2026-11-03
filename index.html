@@ -361,6 +361,31 @@ h1,h2,h3{font-weight:600}
 </style>
 <link rel="canonical" href="https://sanatan.space/">
 <meta property="og:url" content="https://sanatan.space/">
+<style id="om-breath-css">
+.hero svg.om-live{animation:none;overflow:visible}
+.om-live .om-ripples circle{opacity:0}
+.om-live .st{opacity:.55}
+@media (prefers-reduced-motion:no-preference){
+.om-live :is(.om-glyph,.om-ring,.om-rays,.om-halo,.om-stars,.om-ripples circle){transform-box:fill-box;transform-origin:50% 50%}
+.om-live .om-glyph{animation:om-swell 10s infinite}
+.om-live .om-ring{animation:om-ring 10s infinite}
+.om-live .om-halo{animation:om-halo 10s infinite}
+.om-live .om-rays{animation:om-rays 10s infinite}
+.om-live .om-stars{animation:om-stars 10s infinite}
+.om-live .om-ripples circle{animation:om-ripple 10s linear infinite}
+.om-live .om-ripples circle:nth-child(2){animation-delay:-3.33s}
+.om-live .om-ripples circle:nth-child(3){animation-delay:-6.66s}
+.om-live .st.tw1{animation:om-tw 3.1s ease-in-out infinite}
+.om-live .st.tw2{animation:om-tw 4.7s ease-in-out infinite -2s}
+@keyframes om-swell{0%{transform:scale(.86);animation-timing-function:cubic-bezier(.45,0,.3,1)}40%{transform:scale(1.16);animation-timing-function:ease-in-out}50%{transform:scale(1.14);animation-timing-function:cubic-bezier(.5,0,.4,1)}100%{transform:scale(.86)}}
+@keyframes om-ring{0%{transform:scale(.88);opacity:.7;animation-timing-function:cubic-bezier(.45,0,.3,1)}40%,50%{transform:scale(1.2);opacity:1;animation-timing-function:cubic-bezier(.5,0,.4,1)}100%{transform:scale(.88);opacity:.7}}
+@keyframes om-halo{0%{transform:scale(.7);opacity:.35;animation-timing-function:cubic-bezier(.45,0,.3,1)}40%,50%{transform:scale(1.35);opacity:1;animation-timing-function:cubic-bezier(.5,0,.4,1)}100%{transform:scale(.7);opacity:.35}}
+@keyframes om-rays{0%{transform:rotate(0deg) scale(.84);opacity:.45;animation-timing-function:cubic-bezier(.45,0,.3,1)}40%{transform:rotate(9deg) scale(1.14);opacity:.9}50%{transform:rotate(11deg) scale(1.13);opacity:.9;animation-timing-function:cubic-bezier(.5,0,.4,1)}100%{transform:rotate(22.5deg) scale(.84);opacity:.45}}
+@keyframes om-stars{0%{transform:rotate(0deg) scale(.62);opacity:.35;animation-timing-function:cubic-bezier(.45,0,.3,1)}40%,50%{transform:rotate(-6deg) scale(1.08);opacity:1;animation-timing-function:cubic-bezier(.5,0,.4,1)}100%{transform:rotate(-12deg) scale(.62);opacity:.35}}
+@keyframes om-ripple{0%{transform:scale(.9);opacity:0}12%{opacity:.5}100%{transform:scale(2.15);opacity:0}}
+@keyframes om-tw{0%,100%{opacity:.25}50%{opacity:1}}
+}
+</style>
 <style id="v-story-css">
 .v-story{margin:.9rem 0 .2rem;border:1px solid color-mix(in srgb,var(--indigo,#3C6C72) 25%,transparent);border-radius:12px;padding:.55rem .9rem;background:color-mix(in srgb,var(--indigo,#3C6C72) 5%,transparent)}
 .v-story summary{cursor:pointer;color:var(--indigo,#3C6C72);font-weight:600;font-size:1rem}
@@ -464,8 +489,12 @@ main [id],section[id]{scroll-margin-top:5.5rem}
 <p class="lede en xg xt xm xa">A plain-language guide to the Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata and Puranas. Every mantra is shown in Sanskrit, with its pronunciation, word-by-word meaning, translation, and what it means for daily life.</p>
 <p class="lede hi">वेद, उपनिषद, भगवद्गीता, रामायण, महाभारत और पुराणों की सरल परिचय-पुस्तिका। हर मन्त्र संस्कृत में, उच्चारण, शब्दार्थ, अनुवाद और रोज़मर्रा के जीवन में उसके अर्थ के साथ दिया गया है।</p><p class="lede gu">વેદ, ઉપનિષદ, ભગવદ્ગીતા, રામાયણ, મહાભારત અને પુરાણોની સરળ પરિચય-પુસ્તિકા. દરેક મંત્ર સંસ્કૃતમાં, ઉચ્ચાર, શબ્દાર્થ, અનુવાદ અને રોજિંદા જીવનમાં તેના અર્થ સાથે આપ્યો છે.</p><p class="lede te">వేదాలు, ఉపనిషత్తులు, భగవద్గీత, రామాయణం, మహాభారతం, పురాణాలకు సరళమైన పరిచయం. ప్రతి మంత్రం సంస్కృతంలో, ఉచ్చారణ, పదార్థం, అనువాదం, రోజువారీ జీవితంలో దాని అర్థంతో ఇవ్వబడింది.</p><p class="lede mr">वेद, उपनिषदे, भगवद्गीता, रामायण, महाभारत आणि पुराणांची सोपी परिचय-पुस्तिका. प्रत्येक मंत्र संस्कृतमध्ये, उच्चार, शब्दार्थ, अनुवाद आणि रोजच्या जीवनातील त्याच्या अर्थासह दिला आहे.</p><p class="lede ta">வேதங்கள், உபநிடதங்கள், பகவத் கீதை, ராமாயணம், மகாபாரதம் மற்றும் புராணங்களுக்கான எளிய அறிமுகக் கையேடு. ஒவ்வொரு மந்திரமும் சமஸ்கிருதத்தில், உச்சரிப்பு, சொற்பொருள், மொழிபெயர்ப்பு மற்றும் அன்றாட வாழ்வில் அதன் பொருளுடன் தரப்பட்டுள்ளது.</p>
 </div>
-<svg aria-label="Om symbol inside a rising sun" role="img" viewbox="0 0 220 220">
-<g class="rays" opacity=".75" stroke="var(--hero-gold)" stroke-linecap="round" stroke-width="3">
+<svg class="om-live" aria-label="Om symbol that slowly breathes in and out, like a balloon or the universe" role="img" viewBox="-30 -30 280 280">
+<defs><radialGradient id="om-glow"><stop offset="0" stop-color="var(--hero-gold)" stop-opacity=".55"/><stop offset=".55" stop-color="var(--hero-gold)" stop-opacity=".16"/><stop offset="1" stop-color="var(--hero-gold)" stop-opacity="0"/></radialGradient></defs>
+<g class="om-ripples" fill="none" stroke="var(--hero-gold)" stroke-width="1.4"><circle cx="110" cy="110" r="64"/><circle cx="110" cy="110" r="64"/><circle cx="110" cy="110" r="64"/></g>
+<g class="om-stars" fill="var(--hero-gold)"><circle cx="110" cy="110" r="140" fill="none"/><circle class="st tw2" cx="194.8" cy="100.6" r="1.8"/><circle class="st tw1" cx="52.5" cy="170.3" r="0.9"/><circle class="st" cx="110.2" cy="22.8" r="1.4"/><circle class="st" cx="171.9" cy="173.7" r="1.8"/><circle class="st" cx="13.3" cy="91.9" r="1.8"/><circle class="st tw2" cx="197.3" cy="59.0" r="0.9"/><circle class="st" cx="76.1" cy="209.1" r="1.8"/><circle class="st" cx="57.0" cy="18.6" r="1.1"/><circle class="st" cx="213.6" cy="148.2" r="1.1"/><circle class="st tw1" cx="6.9" cy="136.4" r="0.9"/><circle class="st tw2" cx="145.8" cy="9.8" r="1.8"/><circle class="st" cx="138.4" cy="214.4" r="1.1"/><circle class="st" cx="14.7" cy="51.0" r="0.9"/><circle class="st" cx="225.4" cy="95.0" r="1.8"/><circle class="st tw2" cx="54.9" cy="212.1" r="0.9"/><circle class="st tw1" cx="109.9" cy="-1.9" r="1.1"/><circle class="st" cx="200.7" cy="175.6" r="1.4"/><circle class="st tw1" cx="-2.5" cy="118.2" r="1.8"/><circle class="st" cx="203.7" cy="31.4" r="1.8"/><circle class="st tw1" cx="111.9" cy="229.4" r="1.8"/><circle class="st tw1" cx="26.2" cy="26.9" r="1.1"/><circle class="st" cx="236.6" cy="117.0" r="1.4"/><circle class="st" cx="10.5" cy="188.7" r="1.8"/><circle class="st tw2" cx="135.8" cy="-13.3" r="1.1"/><circle class="st" cx="170.0" cy="215.8" r="0.9"/><circle class="st tw1" cx="-10.0" cy="58.5" r="1.8"/><circle class="st" cx="230.4" cy="51.4" r="1.4"/><circle class="st" cx="48.3" cy="226.5" r="1.8"/><circle class="st tw2" cx="82.8" cy="-23.0" r="1.1"/><circle class="st tw2" cx="232.8" cy="170.6" r="1.8"/></g>
+<circle class="om-halo" cx="110" cy="110" r="78" fill="url(#om-glow)"/>
+<g class="om-rays" opacity=".75" stroke="var(--hero-gold)" stroke-linecap="round" stroke-width="3">
 <line x1="110" x2="110" y1="8" y2="34"></line><line x1="110" x2="110" y1="186" y2="212"></line>
 <line x1="8" x2="34" y1="110" y2="110"></line><line x1="186" x2="212" y1="110" y2="110"></line>
 <line x1="38" x2="56" y1="38" y2="56"></line><line x1="164" x2="182" y1="164" y2="182"></line>
@@ -475,8 +504,8 @@ main [id],section[id]{scroll-margin-top:5.5rem}
 <line x1="16" x2="39" y1="71" y2="80"></line><line x1="181" x2="204" y1="140" y2="149"></line>
 <line x1="204" x2="181" y1="71" y2="80"></line><line x1="39" x2="16" y1="140" y2="149"></line>
 </g>
-<circle cx="110" cy="110" fill="none" r="64" stroke="var(--hero-gold)" stroke-width="2"></circle>
-<text fill="var(--hero-gold)" font-family="Tiro Devanagari Sanskrit, serif" font-size="84" text-anchor="middle" x="110" y="138">ॐ</text>
+<circle class="om-ring" cx="110" cy="110" fill="none" r="64" stroke="var(--hero-gold)" stroke-width="2"/>
+<text class="om-glyph" fill="var(--hero-gold)" font-family="Tiro Devanagari Sanskrit, serif" font-size="84" text-anchor="middle" x="110" y="138">ॐ</text>
 </svg>
 </div>
 </header>
