@@ -8,6 +8,7 @@
   }
   var saved=null;
   try{saved=localStorage.getItem('sd-lang')}catch(err){}
+  try{var ql=(new URLSearchParams(location.search).get('lang')||'').toLowerCase();if(['en','hi','gu','te','mr','ta','bn'].indexOf(ql)>=0)saved=ql}catch(err){}/*lang-param*/
   if(!saved){var nl=(navigator.language||'').toLowerCase();saved=nl.indexOf('hi')===0?'hi':(nl.indexOf('gu')===0?'gu':(nl.indexOf('te')===0?'te':(nl.indexOf('mr')===0?'mr':(nl.indexOf('ta')===0?'ta':(nl.indexOf('bn')===0?'bn':'en')))))}
   setLang(saved);
   document.querySelectorAll('.lang button').forEach(function(b){
