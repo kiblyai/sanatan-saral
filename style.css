@@ -312,3 +312,7 @@ h1,h2,h3{font-weight:600}
 .verse,.verse *{min-width:0}
 /* bars-fit: leave room for the value label after the longest bar */
 .bars .track{margin-right:2.4rem}
+/* narrow-fit: long option names and source lines must not widen small phones */
+.med-controls,.med-controls select{max-width:100%;min-width:0}
+.med-controls select{width:100%}
+.v-head .src{white-space:normal;overflow-wrap:anywhere;min-width:0}
