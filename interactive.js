@@ -7,8 +7,8 @@
     ix.querySelectorAll('.tip.on').forEach(function(t){t.classList.remove('on');t.setAttribute('aria-pressed','false')});
     tip.classList.add('on'); tip.setAttribute('aria-pressed','true');
     var d=tip.dataset;
-    panel.innerHTML='<b><span class="en'+(d.tgu?' xg':'')+(d.tte?' xt':'')+(d.tmr?' xm':'')+'">'+esc(d.ten)+'</span><span class="hi">'+esc(d.thi||d.ten)+'</span>'+(d.tgu?'<span class="gu">'+esc(d.tgu)+'</span>':'')+(d.tte?'<span class="te">'+esc(d.tte)+'</span>':'')+(d.tmr?'<span class="mr">'+esc(d.tmr)+'</span>':'')+'</b>'+
-      '<span class="en'+(d.igu?' xg':'')+(d.ite?' xt':'')+(d.imr?' xm':'')+'">'+esc(d.ien)+'</span><span class="hi">'+esc(d.ihi||d.ien)+'</span>'+(d.igu?'<span class="gu">'+esc(d.igu)+'</span>':'')+(d.ite?'<span class="te">'+esc(d.ite)+'</span>':'')+(d.imr?'<span class="mr">'+esc(d.imr)+'</span>':'');
+    panel.innerHTML='<b><span class="en'+(d.tgu?' xg':'')+(d.tte?' xt':'')+(d.tmr?' xm':'')+(d.tta?' xa':'')+'">'+esc(d.ten)+'</span><span class="hi">'+esc(d.thi||d.ten)+'</span>'+(d.tgu?'<span class="gu">'+esc(d.tgu)+'</span>':'')+(d.tte?'<span class="te">'+esc(d.tte)+'</span>':'')+(d.tmr?'<span class="mr">'+esc(d.tmr)+'</span>':'')+(d.tta?'<span class="ta">'+esc(d.tta)+'</span>':'')+'</b>'+
+      '<span class="en'+(d.igu?' xg':'')+(d.ite?' xt':'')+(d.imr?' xm':'')+(d.ita?' xa':'')+'">'+esc(d.ien)+'</span><span class="hi">'+esc(d.ihi||d.ien)+'</span>'+(d.igu?'<span class="gu">'+esc(d.igu)+'</span>':'')+(d.ite?'<span class="te">'+esc(d.ite)+'</span>':'')+(d.imr?'<span class="mr">'+esc(d.imr)+'</span>':'')+(d.ita?'<span class="ta">'+esc(d.ita)+'</span>':'');
   }
   document.querySelectorAll('.ix .tip').forEach(function(t){
     t.setAttribute('tabindex','0'); t.setAttribute('role','button'); t.setAttribute('aria-pressed','false');

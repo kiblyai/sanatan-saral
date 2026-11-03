@@ -27,21 +27,21 @@
   document.head.appendChild(st);
 
   var G = { // hindi -> [gujarati, telugu]
-    'भेजें': ['મોકલો', 'పంపండి', 'पाठवा'],
-    'उपयोगी लगा? किसी परिवार को भेजें।': ['ઉપયોગી લાગ્યું? કોઈ પરિવારને મોકલો.', 'ఉపయోగపడిందా? ఏదైనా కుటుంబానికి పంపండి.', 'उपयोगी वाटले? एखाद्या कुटुंबाला पाठवा.'],
-    'WhatsApp पर भेजें': ['WhatsApp પર મોકલો', 'WhatsAppలో పంపండి', 'WhatsApp वर पाठवा'],
-    'लिंक कॉपी करें': ['લિંક કૉપિ કરો', 'లింక్ కాపీ చేయండి', 'लिंक कॉपी करा'],
-    'क्या यह पृष्ठ उपयोगी था?': ['શું આ પાનું ઉપયોગી હતું?', 'ఈ పేజీ ఉపయోగపడిందా?', 'हे पान उपयोगी होते का?'],
-    'हाँ': ['હા', 'అవును', 'हो'],
-    'ज़्यादा नहीं': ['ખાસ નહીં', 'అంతగా లేదు', 'फारसे नाही'],
-    'कॉपी हो गया ✓': ['કૉપિ થઈ ગયું ✓', 'కాపీ అయింది ✓', 'कॉपी झाले ✓'],
-    'धन्यवाद! 🙏': ['આભાર! 🙏', 'ధన్యవాదాలు! 🙏', 'धन्यवाद! 🙏']
+    'भेजें': ['મોકલો', 'పంపండి', 'पाठवा', 'அனுப்பு'],
+    'उपयोगी लगा? किसी परिवार को भेजें।': ['ઉપયોગી લાગ્યું? કોઈ પરિવારને મોકલો.', 'ఉపయోగపడిందా? ఏదైనా కుటుంబానికి పంపండి.', 'उपयोगी वाटले? एखाद्या कुटुंबाला पाठवा.', 'பயனுள்ளதாக இருந்ததா? ஒரு குடும்பத்திற்கு அனுப்புங்கள்.'],
+    'WhatsApp पर भेजें': ['WhatsApp પર મોકલો', 'WhatsAppలో పంపండి', 'WhatsApp वर पाठवा', 'WhatsApp-இல் அனுப்பு'],
+    'लिंक कॉपी करें': ['લિંક કૉપિ કરો', 'లింక్ కాపీ చేయండి', 'लिंक कॉपी करा', 'இணைப்பை நகலெடு'],
+    'क्या यह पृष्ठ उपयोगी था?': ['શું આ પાનું ઉપયોગી હતું?', 'ఈ పేజీ ఉపయోగపడిందా?', 'हे पान उपयोगी होते का?', 'இந்தப் பக்கம் பயனுள்ளதாக இருந்ததா?'],
+    'हाँ': ['હા', 'అవును', 'हो', 'ஆம்'],
+    'ज़्यादा नहीं': ['ખાસ નહીં', 'అంతగా లేదు', 'फारसे नाही', 'அவ்வளவாக இல்லை'],
+    'कॉपी हो गया ✓': ['કૉપિ થઈ ગયું ✓', 'కాపీ అయింది ✓', 'कॉपी झाले ✓', 'நகலெடுக்கப்பட்டது ✓'],
+    'धन्यवाद! 🙏': ['આભાર! 🙏', 'ధన్యవాదాలు! 🙏', 'धन्यवाद! 🙏', 'நன்றி! 🙏']
   };
-  function L(en, h, g, t, m) { // g, t: optional explicit Gujarati / Telugu (for strings built at run time)
+  function L(en, h, g, t, m, a) { // g, t: optional explicit Gujarati / Telugu (for strings built at run time)
     var x = G[h] || [];
-    g = g || x[0]; t = t || x[1]; m = m || x[2];
-    return '<span class="en' + (g ? ' xg' : '') + (t ? ' xt' : '') + (m ? ' xm' : '') + '">' + en + '</span><span class="hi">' + h + '</span>' +
-      (g ? '<span class="gu">' + g + '</span>' : '') + (t ? '<span class="te">' + t + '</span>' : '') + (m ? '<span class="mr">' + m + '</span>' : '');
+    g = g || x[0]; t = t || x[1]; m = m || x[2]; a = a || x[3];
+    return '<span class="en' + (g ? ' xg' : '') + (t ? ' xt' : '') + (m ? ' xm' : '') + (a ? ' xa' : '') + '">' + en + '</span><span class="hi">' + h + '</span>' +
+      (g ? '<span class="gu">' + g + '</span>' : '') + (t ? '<span class="te">' + t + '</span>' : '') + (m ? '<span class="mr">' + m + '</span>' : '') + (a ? '<span class="ta">' + a + '</span>' : '');
   }
 
   // top bar pill, next to Print
@@ -78,7 +78,7 @@
       var v = b.getAttribute('data-v');
       box.querySelectorAll('.pe-fb').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
       if (get('fb:' + page) !== v) { ev('page_feedback', { helpful: v, page_path: '/' + page }); set('fb:' + page, v); }
-      thanks.innerHTML = v === 'yes' ? L('Thank you! 🙏', 'धन्यवाद! 🙏') : L('Thanks. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">Tell us what was missing</a>', 'धन्यवाद। <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">बताइए क्या कमी थी</a>', 'આભાર. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">જણાવો શું ખૂટતું હતું</a>', 'ధన్యవాదాలు. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">ఏం లోపించిందో చెప్పండి</a>', 'धन्यवाद. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">काय कमी होते ते सांगा</a>');
+      thanks.innerHTML = v === 'yes' ? L('Thank you! 🙏', 'धन्यवाद! 🙏') : L('Thanks. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">Tell us what was missing</a>', 'धन्यवाद। <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">बताइए क्या कमी थी</a>', 'આભાર. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">જણાવો શું ખૂટતું હતું</a>', 'ధన్యవాదాలు. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">ఏం లోపించిందో చెప్పండి</a>', 'धन्यवाद. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">काय कमी होते ते सांगा</a>', 'நன்றி. <a href="contact.html?topic=suggestion&ref=' + encodeURIComponent(page) + '">என்ன குறைவாக இருந்தது என்று சொல்லுங்கள்</a>');
     });
   });
   function place() {
