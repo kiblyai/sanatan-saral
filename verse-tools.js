@@ -12,7 +12,11 @@
     var tr=['',''];
     if(trDiv){tr=[Array.prototype.map.call(trDiv.querySelectorAll('p.en'),txt).filter(function(s){return s.indexOf('→')<0}).join(' '),
                  Array.prototype.map.call(trDiv.querySelectorAll('p.hi'),txt).filter(function(s){return s.indexOf('→')<0}).join(' ')]}
-    return {key:pageName()+'#'+card.id,t:both(card,'.v-head h3'),r:both(card,'.src'),
+    var LC=document.documentElement.getAttribute('data-lang')||'en',cur=null;
+    if(LC!=='en'&&LC!=='hi'){var o=function(sel){var b=card.querySelector(sel);var e=b&&b.querySelector('.'+LC);return e?txt(e):''};
+      cur={t:o('.v-head h3'),r:o('.src'),tr:trDiv?Array.prototype.map.call(trDiv.querySelectorAll('p.'+LC),txt).filter(function(s){return s.indexOf('→')<0}).join(' '):''};
+      if(!cur.tr)cur=null}
+    return {key:pageName()+'#'+card.id,t:both(card,'.v-head h3'),r:both(card,'.src'),cur:cur,
       skt:Array.prototype.map.call(card.querySelectorAll('.skt'),function(p){return p.innerText.trim()}).join('\n'),tr:tr,at:Date.now()};
   }
   /* ---------- save ---------- */
@@ -28,24 +32,35 @@
   function wrap(ctx,text,max){var words=text.split(/\s+/),lines=[],cur='';words.forEach(function(w){var t=cur?cur+' '+w:w;if(ctx.measureText(t).width>max&&cur){lines.push(cur);cur=w}else cur=t});if(cur)lines.push(cur);return lines}
   async function makeCard(d){
     var W=1080,H=1350,c=document.createElement('canvas');c.width=W;c.height=H;var x=c.getContext('2d');
+    /* centre each line by measuring it (Safari can draw canvas text left-aligned from the middle when relying on textAlign) */
+    function ct(s,y){x.textAlign='left';x.direction='ltr';x.fillText(s,(W-x.measureText(s).width)/2,y)}
     try{await Promise.all(['500 54px "Tiro Devanagari Sanskrit"','600 44px "Cormorant Garamond"','400 34px Nunito','400 34px Poppins'].map(function(f){return document.fonts.load(f,'ॐ अ A')}))}catch(e){}
     var g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#D8E8E2');g.addColorStop(.55,'#E4E3F0');g.addColorStop(1,'#F4EDE1');x.fillStyle=g;x.fillRect(0,0,W,H);
     var rg=x.createRadialGradient(W*.85,H*.92,10,W*.85,H*.92,520);rg.addColorStop(0,'rgba(126,106,58,.22)');rg.addColorStop(1,'rgba(126,106,58,0)');x.fillStyle=rg;x.fillRect(0,0,W,H);
-    x.fillStyle='#7E6A3A';x.textAlign='center';x.font='400 86px "Tiro Devanagari Sanskrit", serif';x.fillText('ॐ',W/2,170);
+    x.fillStyle='#7E6A3A';x.textAlign='center';x.font='400 86px "Tiro Devanagari Sanskrit", serif';ct('ॐ',170);
     x.strokeStyle='rgba(126,106,58,.45)';x.lineWidth=2;x.beginPath();x.moveTo(W/2-120,215);x.lineTo(W/2+120,215);x.stroke();
     var l=L();
-    x.font='400 64px "Tiro Devanagari Sanskrit", serif';
-    var sl=[];d.skt.split('\n').slice(0,6).forEach(function(line){wrap(x,line,W-150).forEach(function(s){sl.push(s)})});
-    x.font=(l?'400 46px Poppins, sans-serif':'400 50px Nunito, sans-serif');
-    var tl=wrap(x,d.tr[l]||d.tr[0],W-180); if(tl.length>8){tl=tl.slice(0,8);tl[7]=tl[7].replace(/\s+\S*$/,'')+' …'}
-    var total=sl.length*96+90+tl.length*70, y=Math.max(300,(H-total)/2+40);
-    x.fillStyle='#20363A';x.font='400 64px "Tiro Devanagari Sanskrit", serif';
-    sl.forEach(function(s){x.fillText(s,W/2,y);y+=96});
-    y+=10;x.fillStyle='rgba(32,54,58,.25)';x.fillRect(W/2-40,y-30,80,3);y+=60;
-    x.fillStyle='#3C6C72';x.font=(l?'400 46px Poppins, sans-serif':'400 50px Nunito, sans-serif');
-    tl.forEach(function(s){x.fillText(s,W/2,y);y+=70});
-    x.fillStyle='#83672C';x.font='600 46px "Cormorant Garamond", serif';x.fillText(d.r[l]||d.r[0],W/2,H-140);
-    x.fillStyle='#566B6D';x.font='400 30px Nunito, sans-serif';x.fillText('Sanatan Dharma Saral · सनातन धर्म सरल',W/2,H-90);
+    var TR=d.cur?d.cur.tr:(d.tr[l]||d.tr[0]),REF=d.cur&&d.cur.r?d.cur.r:(d.r[l]||d.r[0]);
+    var TF=l&&!d.cur?'Poppins, sans-serif':'Nunito, "Noto Sans", sans-serif';
+    /* shrink until the verse and its meaning fit between the divider (y=260) and the reference (y=H-220) */
+    var k=1,sl,tl,total,TOP=260,BOT=H-220;
+    for(;k>=.55;k-=.05){
+      x.font='400 '+Math.round(64*k)+'px "Tiro Devanagari Sanskrit", serif';
+      sl=[];d.skt.split('\n').slice(0,6).forEach(function(line){wrap(x,line,W-150).forEach(function(s){sl.push(s)})});
+      x.font='400 '+Math.round((l&&!d.cur?46:50)*k)+'px '+TF;
+      tl=wrap(x,TR,W-180);
+      total=sl.length*96*k+90*k+tl.length*70*k;
+      if(total<=BOT-TOP)break;
+    }
+    if(k<.55){k=.55;var room=Math.max(2,Math.floor((BOT-TOP-sl.length*96*k-90*k)/(70*k)));if(tl.length>room){tl=tl.slice(0,room);tl[room-1]=tl[room-1].replace(/\s+\S*$/,'')+' …'}total=sl.length*96*k+90*k+tl.length*70*k}
+    var y=TOP+Math.max(0,(BOT-TOP-total)/2)+64*k;
+    x.fillStyle='#20363A';x.font='400 '+Math.round(64*k)+'px "Tiro Devanagari Sanskrit", serif';
+    sl.forEach(function(s){ct(s,y);y+=96*k});
+    y+=10*k;x.fillStyle='rgba(32,54,58,.25)';x.fillRect(W/2-40,y-30*k,80,3);y+=60*k;
+    x.fillStyle='#3C6C72';x.font='400 '+Math.round((l&&!d.cur?46:50)*k)+'px '+TF;
+    tl.forEach(function(s){ct(s,y);y+=70*k});
+    x.fillStyle='#83672C';x.font='600 46px "Cormorant Garamond", serif';ct(REF,H-140);
+    x.fillStyle='#566B6D';x.font='400 30px Nunito, sans-serif';ct('Sanatan Dharma Saral · सनातन धर्म सरल',H-90);
     return c;
   }
   var modal=null;
@@ -54,15 +69,25 @@
       modal.addEventListener('click',function(e){if(e.target===modal||e.target.classList.contains('vt-close'))modal.hidden=true});}
     var l=L(),url=canvas.toDataURL('image/png');
     modal.querySelector('img').src=url; modal.querySelector('img').alt=d.t[l];
-    modal.querySelector('.vt-close').textContent=l?'बन्द करें':'Close';
-    var sv=modal.querySelector('.vt-save'); sv.textContent=l?'चित्र सहेजें':'Save picture'; sv.hidden=false;
-    modal.querySelector('.vt-hint').textContent=l?'चित्र को दबाकर रखें और सहेजें या भेजें।':'Press and hold the picture to save or share it.';
+    var LC=document.documentElement.getAttribute('data-lang')||'en';
+    var S={en:['Close','Save picture','Press and hold the picture to save or share it.','Saved ✓'],
+      hi:['बन्द करें','चित्र सहेजें','चित्र को दबाकर रखें और सहेजें या भेजें।','सहेजा गया ✓'],
+      gu:['બંધ કરો','ચિત્ર સાચવો','ચિત્રને દબાવી રાખો અને સાચવો અથવા મોકલો.','સાચવ્યું ✓'],
+      te:['మూసివేయండి','చిత్రం భద్రపరచండి','భద్రపరచడానికి లేదా పంపడానికి చిత్రాన్ని నొక్కి పట్టుకోండి.','భద్రపరచబడింది ✓'],
+      mr:['बंद करा','चित्र जतन करा','चित्र दाबून धरा आणि जतन करा किंवा पाठवा.','जतन केले ✓'],
+      ta:['மூடு','படத்தைச் சேமி','சேமிக்க அல்லது அனுப்பப் படத்தை அழுத்திப் பிடியுங்கள்.','சேமிக்கப்பட்டது ✓'],
+      bn:['বন্ধ করুন','ছবি সংরক্ষণ করুন','সংরক্ষণ বা পাঠাতে ছবিটি চেপে ধরে রাখুন।','সংরক্ষিত ✓']}[LC]||null;
+    if(!S)S=l?['बन्द करें','चित्र सहेजें','चित्र को दबाकर रखें और सहेजें या भेजें।','सहेजा गया ✓']:['Close','Save picture','Press and hold the picture to save or share it.','Saved ✓'];
+    if(d.cur&&d.cur.t)modal.querySelector('img').alt=d.cur.t;
+    modal.querySelector('.vt-close').textContent=S[0];
+    var sv=modal.querySelector('.vt-save'); sv.textContent=S[1]; sv.hidden=false;
+    modal.querySelector('.vt-hint').textContent=S[2];
     sv.onclick=async function(){
       try{var dl=window.claude&&claude.use?await claude.use('downloads'):null;
         if(!dl){sv.hidden=true;return}
         var blob=await new Promise(function(r){canvas.toBlob(r,'image/png')});
         await dl.save({filename:(d.r[0]||'verse').replace(/[^\w.-]+/g,'-')+'.png',data:blob});
-        sv.textContent=l?'सहेजा गया ✓':'Saved ✓';
+        sv.textContent=S[3];
       }catch(e){if(e&&e.code==='declined')return; sv.hidden=true}
     };
     modal.hidden=false;
