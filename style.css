@@ -316,3 +316,5 @@ h1,h2,h3{font-weight:600}
 .med-controls,.med-controls select{max-width:100%;min-width:0}
 .med-controls select{width:100%}
 .v-head .src{white-space:normal;overflow-wrap:anywhere;min-width:0}
+
+/* vt-hidden */ .vt-modal[hidden],.vt-box [hidden]{display:none!important}

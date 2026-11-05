@@ -29,11 +29,13 @@
     });
   }
   /* ---------- picture card ---------- */
-  function wrap(ctx,text,max){var words=text.split(/\s+/),lines=[],cur='';words.forEach(function(w){var t=cur?cur+' '+w:w;if(ctx.measureText(t).width>max&&cur){lines.push(cur);cur=w}else cur=t});if(cur)lines.push(cur);return lines}
+  var MS=null;function mw(ctx,t){if(!MS){MS=document.createElement('span');MS.setAttribute('aria-hidden','true');MS.style.cssText='position:absolute;left:-99999px;top:0;white-space:pre;visibility:hidden;letter-spacing:0;word-spacing:0';document.body.appendChild(MS)}MS.style.font=ctx.font;MS.textContent=t;var w=MS.getBoundingClientRect().width;return w>0?w:ctx.measureText(t).width}
+  function wrap(ctx,text,max){var words=text.split(/\s+/),lines=[],cur='';words.forEach(function(w){var t=cur?cur+' '+w:w;if(mw(ctx,t)>max&&cur){lines.push(cur);cur=w}else cur=t});if(cur)lines.push(cur);return lines}
   async function makeCard(d){
     var W=1080,H=1350,c=document.createElement('canvas');c.width=W;c.height=H;var x=c.getContext('2d');
     /* centre each line by measuring it (Safari can draw canvas text left-aligned from the middle when relying on textAlign) */
-    function ct(s,y){x.textAlign='left';x.direction='ltr';x.fillText(s,(W-x.measureText(s).width)/2,y)}
+    /* measure with the page (Safari's canvas mis-measures web fonts), then draw from the left edge */
+    function ct(s,y){x.textAlign='left';x.direction='ltr';x.fillText(s,(W-mw(x,s))/2,y)}
     try{await Promise.all(['500 54px "Tiro Devanagari Sanskrit"','600 44px "Cormorant Garamond"','400 34px Nunito','400 34px Poppins'].map(function(f){return document.fonts.load(f,'ॐ अ A')}))}catch(e){}
     var g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#D8E8E2');g.addColorStop(.55,'#E4E3F0');g.addColorStop(1,'#F4EDE1');x.fillStyle=g;x.fillRect(0,0,W,H);
     var rg=x.createRadialGradient(W*.85,H*.92,10,W*.85,H*.92,520);rg.addColorStop(0,'rgba(126,106,58,.22)');rg.addColorStop(1,'rgba(126,106,58,0)');x.fillStyle=rg;x.fillRect(0,0,W,H);
@@ -66,7 +68,7 @@
   var modal=null;
   function showModal(canvas,d){
     if(!modal){modal=document.createElement('div');modal.className='vt-modal';modal.innerHTML='<div class="vt-box" role="dialog" aria-modal="true" aria-label="Verse picture"><img alt=""><p class="vt-hint"></p><div class="vt-row"><button type="button" class="vt-save"></button><button type="button" class="vt-close"></button></div></div>';document.body.appendChild(modal);
-      modal.addEventListener('click',function(e){if(e.target===modal||e.target.classList.contains('vt-close'))modal.hidden=true});}
+      modal.addEventListener('click',function(e){if(e.target===modal||e.target.classList.contains('vt-close'))modal.hidden=true});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal&&!modal.hidden)modal.hidden=true});}
     var l=L(),url=canvas.toDataURL('image/png');
     modal.querySelector('img').src=url; modal.querySelector('img').alt=d.t[l];
     var LC=document.documentElement.getAttribute('data-lang')||'en';
@@ -82,14 +84,10 @@
     modal.querySelector('.vt-close').textContent=S[0];
     var sv=modal.querySelector('.vt-save'); sv.textContent=S[1]; sv.hidden=false;
     modal.querySelector('.vt-hint').textContent=S[2];
-    sv.onclick=async function(){
-      try{var dl=window.claude&&claude.use?await claude.use('downloads'):null;
-        if(!dl){sv.hidden=true;return}
-        var blob=await new Promise(function(r){canvas.toBlob(r,'image/png')});
-        await dl.save({filename:(d.r[0]||'verse').replace(/[^\w.-]+/g,'-')+'.png',data:blob});
-        sv.textContent=S[3];
-      }catch(e){if(e&&e.code==='declined')return; sv.hidden=true}
-    };
+    sv.onclick=function(){canvas.toBlob(function(blob){var name=(d.r[0]||'verse').replace(/[^\w.-]+/g,'-')+'.png';
+        var f=window.File?new File([blob],name,{type:'image/png'}):null;
+        if(f&&navigator.canShare&&navigator.canShare({files:[f]})&&/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){navigator.share({files:[f]}).catch(function(){});return}
+        var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},800);sv.textContent=S[3]},'image/png')};
     modal.hidden=false;
   }
   document.addEventListener('click',async function(e){
