@@ -318,3 +318,5 @@ h1,h2,h3{font-weight:600}
 .v-head .src{white-space:normal;overflow-wrap:anywhere;min-width:0}
 
 /* vt-hidden */ .vt-modal[hidden],.vt-box [hidden]{display:none!important}
+
+a.src{color:inherit;text-decoration:none}a.src:hover{text-decoration:underline}.vpage .verse>div:not([class]){display:none}.vnav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.5rem 0 .5rem}.vnav a{text-decoration:none;color:var(--ink-2)}.vnav-next{margin-left:auto}.vback{margin:.5rem 0 2rem}
