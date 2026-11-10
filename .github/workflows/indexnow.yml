@@ -1,8 +1,10 @@
 name: IndexNow
 # Tells Bing (and other IndexNow search engines) which pages changed in each push.
+# Waits until the new deploy (and the key file) is live first. Run manually to submit every page.
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 jobs:
   ping:
     runs-on: ubuntu-latest
@@ -10,23 +12,42 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - name: Submit changed pages
+      - name: List pages to submit
         run: |
-          KEY=07e5648f012972fc351da8a346cf0c31
-          git diff --name-only HEAD~1 HEAD -- '*.html' 'sitemap.xml' > changed.txt || git ls-files '*.html' > changed.txt
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then git ls-files '*.html' > changed.txt;
+          else git diff --name-only HEAD~1 HEAD -- '*.html' > changed.txt || git ls-files '*.html' > changed.txt; fi
+          wc -l < changed.txt
+      - name: Submit to IndexNow
+        run: |
           python3 - <<'PY'
-          import json, urllib.request
+          import json, time, urllib.request, urllib.error
+          KEY = "07e5648f012972fc351da8a346cf0c31"
           urls = []
           for f in open("changed.txt").read().split():
               if f.endswith(".html") and not f.startswith("."):
                   urls.append("https://sanatan.space/" + ("" if f == "index.html" else f[:-10] if f.endswith("/index.html") else f))
           urls = sorted(set(urls))[:10000]
-          print(len(urls), "changed pages")
-          if urls:
-              body = json.dumps({"host": "sanatan.space", "key": "07e5648f012972fc351da8a346cf0c31",
-                                 "keyLocation": "https://sanatan.space/07e5648f012972fc351da8a346cf0c31.txt", "urlList": urls}).encode()
+          print(len(urls), "pages")
+          if not urls:
+              raise SystemExit(0)
+          for i in range(40):  # wait up to ~10 min for GitHub Pages to publish this commit
+              try:
+                  if urllib.request.urlopen(f"https://sanatan.space/{KEY}.txt?t={time.time()}").read().decode().strip() == KEY:
+                      break
+              except Exception:
+                  pass
+              time.sleep(15)
+          time.sleep(90)  # let the rest of the deploy settle
+          body = json.dumps({"host": "sanatan.space", "key": KEY, "keyLocation": f"https://sanatan.space/{KEY}.txt",
+                             "urlList": urls}).encode()
+          for attempt in range(4):
               req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
                                            headers={"Content-Type": "application/json; charset=utf-8"})
-              with urllib.request.urlopen(req) as r:
-                  print("IndexNow:", r.status)
+              try:
+                  with urllib.request.urlopen(req) as r:
+                      print("IndexNow:", r.status); break
+              except urllib.error.HTTPError as e:
+                  print("IndexNow:", e.code, e.read().decode()[:300])
+                  if attempt == 3: raise
+                  time.sleep(120)
           PY
