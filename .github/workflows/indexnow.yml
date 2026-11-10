@@ -1,0 +1,32 @@
+name: IndexNow
+# Tells Bing (and other IndexNow search engines) which pages changed in each push.
+on:
+  push:
+    branches: [main]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Submit changed pages
+        run: |
+          KEY=07e5648f012972fc351da8a346cf0c31
+          git diff --name-only HEAD~1 HEAD -- '*.html' 'sitemap.xml' > changed.txt || git ls-files '*.html' > changed.txt
+          python3 - <<'PY'
+          import json, urllib.request
+          urls = []
+          for f in open("changed.txt").read().split():
+              if f.endswith(".html") and not f.startswith("."):
+                  urls.append("https://sanatan.space/" + ("" if f == "index.html" else f[:-10] if f.endswith("/index.html") else f))
+          urls = sorted(set(urls))[:10000]
+          print(len(urls), "changed pages")
+          if urls:
+              body = json.dumps({"host": "sanatan.space", "key": "07e5648f012972fc351da8a346cf0c31",
+                                 "keyLocation": "https://sanatan.space/07e5648f012972fc351da8a346cf0c31.txt", "urlList": urls}).encode()
+              req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                           headers={"Content-Type": "application/json; charset=utf-8"})
+              with urllib.request.urlopen(req) as r:
+                  print("IndexNow:", r.status)
+          PY
