@@ -32,3 +32,12 @@ languages on one address. The last commit in that form is `719281e`.
 - The home pages keep their verse-of-the-day list inline; each language's home page holds only English plus its own language.
 - `style.css` and `lang.js` are linked as `?v=2`. Raise the number (in the pages, in `sw.js` and in `ASSET_V` in
   `split_languages.py`) whenever either file changes in a way old cached copies would break.
+
+## Kids' story pictures
+
+- `python3 tools/kids_art.py` draws the pictures for the fourteen stories on the kids page (three per story, one for each
+  page of the story) and writes them into the site: `kids-art.js` holds all of them, and each `kids.html` gets the cover
+  picture for every story card. Safe to run again.
+- `python3 tools/kids_art.py --sheet preview.html` writes a page showing every picture, for checking before publishing.
+- The characters and scenery are in `tools/kids_art_kit.py`. To change a picture, edit its scene in `tools/kids_art.py`.
+- Sad moments are drawn gently on purpose (no arrows in flight, no injuries).
