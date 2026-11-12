@@ -41,3 +41,22 @@ languages on one address. The last commit in that form is `719281e`.
 - `python3 tools/kids_art.py --sheet preview.html` writes a page showing every picture, for checking before publishing.
 - The characters and scenery are in `tools/kids_art_kit.py`. To change a picture, edit its scene in `tools/kids_art.py`.
 - Sad moments are drawn gently on purpose (no arrows in flight, no injuries).
+
+## Gita chapters 7 to 18
+
+Chapters 1 to 6 were written straight into their pages. From chapter 7 on, each chapter is built from a data file.
+
+- `tools/gita/content/cNN.py` holds what was written for the site: the chapter's name and outline, and for each verse the
+  speaker, the word-by-word list and the translation. Edit a meaning or a translation here.
+- `tools/gita/chNN.json` is that content joined with the Sanskrit. The Sanskrit is never typed by hand. It comes from an
+  open public-domain copy and is used only where three copies agree (see `tools/gita/sources.py` for which copies, and
+  `tools/gita/make_data.py` for the two typing faults it repairs). `--check-words` is a spelling check on the word lists.
+- `python3 tools/gita/build.py N`, then `python3 tools/split_languages.py`, writes `gita-N.html` and one page per verse,
+  links them from the chapter before, the Gita hub, the search index and the sitemap. Safe to run again.
+- The site follows the 700-verse numbering, in which chapter 13 has 34 verses. The three copies count 35 there, so
+  site verse 13.n is their 13.(n+1).
+- New chapters are in English only. Their pages list no other languages, and the language buttons leave the reader on
+  the English page.
+- To rebuild the data you need the three copies in one folder: `verse.json` from github.com/gita/gita (data/),
+  `B/<chapter>-<verse>.json` from github.com/vedicscriptures/bhagavad-gita (slok/), and `C/<chapter>.json` from
+  github.com/bhavykhatri/DharmicData (SrimadBhagvadGita/).
