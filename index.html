@@ -505,6 +505,15 @@ document.addEventListener('click',function(e){
 .lang.lang-pop .lf{display:inline!important}
 .lang.lang-pop .ls{display:none!important}
 </style>
+<style id="ico-css">/* ---- Illustrations, Nov 2026: a small gold line drawing above each section heading ---- */
+:root{--ico-lotus:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M24 11c5.500 6.500 5.500 15 0 23c-5.500-8-5.500-16.500 0-23z%22/%3E%3Cpath d=%22M24 34c-8-2-13.500-8-14.500-16.500c5 .7 8.500 3 10.800 6.500%22/%3E%3Cpath d=%22M24 34c8-2 13.500-8 14.500-16.500c-5 .7-8.500 3-10.800 6.500%22/%3E%3Cpath d=%22M24 35.500c-8.500 1-15.500-1.800-19.500-8c2.500-.5 4.800-.3 6.800 .3%22/%3E%3Cpath d=%22M24 35.500c8.500 1 15.500-1.800 19.500-8c-2.500-.5-4.800-.3-6.800 .3%22/%3E%3Cpath d=%22M13 40h22%22/%3E%3C/svg%3E");--ico-lamp:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M24 7c4 5 5.500 8.500 5.500 11a5.500 5.500 0 0 1-11 0c0-2.500 1.500-6 5.500-11z%22/%3E%3Cpath d=%22M7 27h34c0 8-7.500 12.500-17 12.500s-17-4.500-17-12.500z%22/%3E%3Cpath d=%22M41 27c2.500-.5 4-2 4.500-4%22/%3E%3Cpath d=%22M18 43h12%22/%3E%3C/svg%3E");--ico-chakra:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%2224%22 cy=%2224%22 r=%2218%22/%3E%3Ccircle cx=%2224%22 cy=%2224%22 r=%224.500%22/%3E%3Cpath d=%22M29.0 24.0L41.0 24.0M27.5 27.5L36.0 36.0M24.0 29.0L24.0 41.0M20.5 27.5L12.0 36.0M19.0 24.0L7.0 24.0M20.5 20.5L12.0 12.0M24.0 19.0L24.0 7.0M27.5 20.5L36.0 12.0%22/%3E%3C/svg%3E");--ico-temple:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M24 5v6%22/%3E%3Cpath d=%22M24 5.500l5 1.800-5 1.800%22/%3E%3Cpath d=%22M15 25c0-8 4-12 9-14c5 2 9 6 9 14%22/%3E%3Cpath d=%22M19 18h10M17 21.500h14%22/%3E%3Cpath d=%22M11 25h26v15H11z%22/%3E%3Cpath d=%22M20.500 40v-7a3.500 3.500 0 0 1 7 0v7%22/%3E%3Cpath d=%22M7 40h34%22/%3E%3C/svg%3E")}
+.sec-head::before{content:"";display:block;width:2.5rem;height:2.5rem;margin-bottom:.15rem;background:var(--gold);-webkit-mask:var(--ico,var(--ico-lotus)) center/contain no-repeat;mask:var(--ico,var(--ico-lotus)) center/contain no-repeat}
+#vedas .sec-head,#upanishads .sec-head,#practice .sec-head,#today .sec-head{--ico:var(--ico-lamp)}
+#texts .sec-head,#ideas .sec-head,#gita .sec-head{--ico:var(--ico-chakra)}
+#epics .sec-head,#read .sec-head,[id^="r-"] .sec-head,#map-india .sec-head,#etiquette .sec-head{--ico:var(--ico-temple)}
+.sec-head .eyebrow{color:var(--saffron)}
+@media print{.sec-head::before{display:none}}
+</style>
 </head>
 <body>
 <!-- fest-banner -->
