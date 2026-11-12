@@ -1,11 +1,15 @@
 (function(){
   var root=document.documentElement;
-  function setLang(l){
+  /* Pages now carry one language each (data-page-lang on <html>). On those pages the language is fixed
+     and the language buttons are links, handled by the small script in the page head. */
+  var pageLang=root.getAttribute('data-page-lang');
+  function setLang(l,keep){
     root.setAttribute('data-lang',l);
     root.setAttribute('lang',l==='hi'?'hi':(l==='gu'?'gu':(l==='te'?'te':(l==='mr'?'mr':(l==='ta'?'ta':(l==='bn'?'bn':(l==='kn'?'kn':(l==='ml'?'ml':'en'))))))));
     document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set')===l)});
-    try{localStorage.setItem('sd-lang',l)}catch(err){}
+    if(keep!==false){try{localStorage.setItem('sd-lang',l)}catch(err){}}
   }
+  if(pageLang){setLang(pageLang,false);return}
   var saved=null;
   try{saved=localStorage.getItem('sd-lang')}catch(err){}
   try{var ql=(new URLSearchParams(location.search).get('lang')||'').toLowerCase();if(['en','hi','gu','te','mr','ta','bn','kn','ml'].indexOf(ql)>=0)saved=ql}catch(err){}/*lang-param*/

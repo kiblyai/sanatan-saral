@@ -320,3 +320,59 @@ h1,h2,h3{font-weight:600}
 /* vt-hidden */ .vt-modal[hidden],.vt-box [hidden]{display:none!important}
 
 a.src{color:inherit;text-decoration:none}a.src:hover{text-decoration:underline}.vpage .verse>div:not([class]){display:none}.vnav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.5rem 0 .5rem}.vnav a{text-decoration:none;color:var(--ink-2)}.vnav-next{margin-left:auto}.vback{margin:.5rem 0 2rem}
+
+/* ---- Languages: each page carries one language. These rules hide other-language text that scripts add. A page in gu, te, mr, ta, bn, kn or ml also keeps its own <style id="xx-css"> block in its head, after its own styles, so its font rules win as before. ---- */
+/* gu */
+:root:not([data-lang="gu"]) .gu{display:none!important}
+:root[data-lang="gu"] .xg{display:none!important}
+:root[data-lang="gu"] .menu summary .hi{display:none!important}
+:root[data-lang="gu"]{--f-body:"Hind Vadodara","Nunito","Noto Sans Gujarati",system-ui,sans-serif;--f-display:"Hind Vadodara","Cormorant Garamond","Noto Serif Gujarati",Georgia,serif}
+/* te */
+:root:not([data-lang="te"]) .te{display:none!important}
+:root[data-lang="te"] .xt{display:none!important}
+:root[data-lang="te"] .menu summary .hi{display:none!important}
+:root[data-lang="te"]{--f-body:"Hind Guntur","Nunito","Noto Sans Telugu",system-ui,sans-serif;--f-display:"Hind Guntur","Cormorant Garamond","Noto Serif Telugu",Georgia,serif}
+:root[data-lang="te"] .te,:root[data-lang="te"] .te *{font-family:"Hind Guntur","Noto Sans Telugu",system-ui,sans-serif}
+:root[data-lang="te"] .te{letter-spacing:0!important}
+:root[data-lang="te"] .te{overflow-wrap:anywhere}
+/* mr */
+:root:not([data-lang="mr"]) .mr{display:none!important}
+:root[data-lang="mr"] .xm{display:none!important}
+:root[data-lang="mr"] .menu summary .hi{display:none!important}
+/* ta */
+:root:not([data-lang="ta"]) .ta{display:none!important}
+:root[data-lang="ta"] .xa{display:none!important}
+:root[data-lang="ta"] .menu summary .hi{display:none!important}
+:root[data-lang="ta"]{--f-body:"Hind Madurai","Nunito","Noto Sans Tamil",system-ui,sans-serif;--f-display:"Hind Madurai","Cormorant Garamond","Noto Serif Tamil",Georgia,serif}
+:root[data-lang="ta"] .ta,:root[data-lang="ta"] .ta *{font-family:"Hind Madurai","Noto Sans Tamil",system-ui,sans-serif}
+:root[data-lang="ta"] .ta{letter-spacing:0!important}
+:root[data-lang="ta"] .ta{overflow-wrap:anywhere}
+:root[data-lang="ta"] .src{white-space:normal}
+@media (max-width:400px){:root[data-lang="ta"] h1{font-size:min(2rem,8.6vw)!important}:root[data-lang="ta"] h2{font-size:min(1.5rem,7vw)}}
+/* bn */
+:root:not([data-lang="bn"]) .bn{display:none!important}
+:root[data-lang="bn"] .xb{display:none!important}
+:root[data-lang="bn"] .menu summary .hi{display:none!important}
+:root[data-lang="bn"]{--f-body:"Hind Siliguri","Nunito","Noto Sans Bengali",system-ui,sans-serif;--f-display:"Hind Siliguri","Cormorant Garamond","Noto Serif Bengali",Georgia,serif}
+:root[data-lang="bn"] .bn,:root[data-lang="bn"] .bn *{font-family:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif}
+:root[data-lang="bn"] .bn{letter-spacing:0!important;overflow-wrap:anywhere}
+/* kn */
+:root:not([data-lang="kn"]) .kn{display:none!important}
+:root[data-lang="kn"] .xk{display:none!important}
+:root[data-lang="kn"] .menu summary .hi{display:none!important}
+:root[data-lang="kn"]{--f-body:"Noto Sans Kannada","Nunito",system-ui,sans-serif;--f-display:"Noto Serif Kannada","Noto Sans Kannada","Cormorant Garamond",Georgia,serif}
+:root[data-lang="kn"] .kn,:root[data-lang="kn"] .kn *{font-family:"Noto Sans Kannada",system-ui,sans-serif}
+:root[data-lang="kn"] h1 .kn,:root[data-lang="kn"] h2 .kn,:root[data-lang="kn"] h1.kn,:root[data-lang="kn"] h2.kn{font-family:"Noto Serif Kannada","Noto Sans Kannada",serif}
+:root[data-lang="kn"] .kn{letter-spacing:0!important;overflow-wrap:anywhere}
+:root[data-lang="kn"] .src{white-space:normal}
+@media (max-width:400px){:root[data-lang="kn"] h1{font-size:min(2rem,8.4vw)!important}:root[data-lang="kn"] h2{font-size:min(1.5rem,6.8vw)}}
+/* ml */
+:root:not([data-lang="ml"]) .ml{display:none!important}
+:root[data-lang="ml"] .xl{display:none!important}
+:root[data-lang="ml"] .menu summary .hi{display:none!important}
+:root[data-lang="ml"]{--f-body:"Noto Sans Malayalam","Nunito",system-ui,sans-serif;--f-display:"Noto Serif Malayalam","Noto Sans Malayalam","Cormorant Garamond",Georgia,serif}
+:root[data-lang="ml"] .ml,:root[data-lang="ml"] .ml *{font-family:"Noto Sans Malayalam",system-ui,sans-serif}
+:root[data-lang="ml"] h1 .ml,:root[data-lang="ml"] h2 .ml,:root[data-lang="ml"] h1.ml,:root[data-lang="ml"] h2.ml{font-family:"Noto Serif Malayalam","Noto Sans Malayalam",serif}
+:root[data-lang="ml"] .ml{letter-spacing:0!important;overflow-wrap:anywhere}
+:root[data-lang="ml"] .src{white-space:normal}
+@media (max-width:400px){:root[data-lang="ml"] h1{font-size:min(2rem,8.4vw)!important}:root[data-lang="ml"] h2{font-size:min(1.5rem,6.8vw)}}
