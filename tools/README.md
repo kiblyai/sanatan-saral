@@ -20,8 +20,6 @@ languages on one address. The last commit in that form is `719281e`.
 - `python3 tools/split_languages.py` cuts every page down to its own language, sets `<html lang>`, the canonical link and the
   head script. It is safe to run again and changes nothing on pages that are already split (`--check` only reports).
   If you paste in a page written in the old all-languages form, copy it to each language folder and run this tool.
-- `python3 tools/translation_notice.py` puts the "machine translation, checked only by the editor" notice in the footer of
-  every translated page. Safe to run again. Remove a language from `NOTICE` once a native reader has reviewed it.
 
 ## Things that still expect several languages
 
