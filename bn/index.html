@@ -3,7 +3,7 @@
 <html lang="bn" data-lang="bn" data-page-lang="bn">
 <head>
 <base href="/">
-<script>/*lang-page*/(function(){var L="bn",P="index.html",A=["hi", "gu", "te", "mr", "ta", "bn", "kn", "ml"],d=document.documentElement;d.setAttribute("data-lang",L);var q=P==="index.html"?"":P;function U(M){var h=M!=="en"&&A.indexOf(M)>=0,s=location.search.replace(/^\?/,"").split("&").filter(function(x){return x&&x.indexOf("lang=")!==0});if(M!=="en"&&!h)s.push("lang="+M);return(h?"/"+M+"/":"/")+q+(s.length?"?"+s.join("&"):"")+location.hash}if(L==="en"){var w=null;try{w=(new URLSearchParams(location.search).get("lang")||"").toLowerCase()||localStorage.getItem("sd-lang")}catch(e){}if(!w){var n=(navigator.language||"").toLowerCase().slice(0,2);if(A.indexOf(n)>=0)w=n}if(w&&w!=="en"&&A.indexOf(w)>=0){location.replace(U(w));return}}else{try{localStorage.setItem("sd-lang",L)}catch(e){}}document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(a&&document.querySelector("base")){var h=a.getAttribute("href")||"";if(h.charAt(0)==="#"&&h.length>1){e.preventDefault();var t=document.getElementById(decodeURIComponent(h.slice(1)));if(t){t.scrollIntoView();history.replaceState(null,"",location.pathname+h)}return}}var b=e.target.closest&&e.target.closest(".lang button[data-set]");if(!b)return;var M=b.getAttribute("data-set");if(M===L)return;e.preventDefault();e.stopImmediatePropagation();try{localStorage.setItem("sd-lang",M)}catch(x){}location.href=U(M)},true)})();</script>
+<script>/*lang-page*/(function(){var L="bn",P="index.html",A=["hi", "gu", "te", "mr", "ta", "bn", "kn", "ml"],d=document.documentElement;d.setAttribute("data-lang",L);d.classList.add("lm");var q=P==="index.html"?"":P;function U(M){var h=M!=="en"&&A.indexOf(M)>=0,s=location.search.replace(/^\?/,"").split("&").filter(function(x){return x&&x.indexOf("lang=")!==0});if(M!=="en"&&!h)s.push("lang="+M);return(h?"/"+M+"/":"/")+q+(s.length?"?"+s.join("&"):"")+location.hash}if(L==="en"){var w=null;try{w=(new URLSearchParams(location.search).get("lang")||"").toLowerCase()||localStorage.getItem("sd-lang")}catch(e){}if(!w){var n=(navigator.language||"").toLowerCase().slice(0,2);if(A.indexOf(n)>=0)w=n}if(w&&w!=="en"&&A.indexOf(w)>=0){location.replace(U(w));return}}else{try{localStorage.setItem("sd-lang",L)}catch(e){}}document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(a&&document.querySelector("base")){var h=a.getAttribute("href")||"";if(h.charAt(0)==="#"&&h.length>1){e.preventDefault();var t=document.getElementById(decodeURIComponent(h.slice(1)));if(t){t.scrollIntoView();history.replaceState(null,"",location.pathname+h)}return}}var b=e.target.closest&&e.target.closest(".lang button[data-set]");if(!b)return;var M=b.getAttribute("data-set");if(M===L)return;e.preventDefault();e.stopImmediatePropagation();try{localStorage.setItem("sd-lang",M)}catch(x){}location.href=U(M)},true)})();</script>
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -485,6 +485,28 @@ document.addEventListener('click',function(e){
 <link rel="alternate" hreflang="nl" href="https://sanatan.space/nl/" class="intl-alt">
 <link rel="alternate" hreflang="x-default" href="https://sanatan.space/">
 <style id="doors-css">.doors{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0 .5rem}.doors a{display:inline-flex;align-items:center;min-height:44px;padding:.45rem 1.1rem;border-radius:99px;font-weight:700;text-decoration:none;background:var(--indigo);color:var(--paper);border:1.5px solid var(--indigo)}.doors a+a{background:transparent;color:var(--ink)}.doors a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}@media print{.doors{display:none}}</style>
+<style id="theme2-css">/* ---- Theme, Nov 2026: one warm accent (saffron) for scripture, the Sanskrit verse leads, stronger secondary text,
+   and on phones the nine language buttons fold into one button that opens a list ---- */
+:root{--saffron:#A84A12;--ink-2:#4A5F61}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--saffron:#F0A765}}
+:root[data-theme="dark"]{--saffron:#F0A765}
+.eyebrow,.label{color:var(--saffron)}
+.verse{border-color:var(--saffron)}
+.verse .skt{font-size:1.55rem;line-height:1.8;background:color-mix(in srgb,var(--saffron) 8%,transparent);border-left:4px solid var(--saffron);border-radius:10px;margin-inline:-1rem;padding:.8rem 1rem .8rem calc(1rem - 4px)}
+@media (max-width:560px){.verse .skt{font-size:1.4rem;margin-inline:-.85rem;padding:.7rem .85rem .7rem calc(.85rem - 4px)}}
+@media (max-width:560px){
+ :root.lm .lang:not(.lang-pop) button{display:none}
+ :root.lm[data-lang="en"] .lang:not(.lang-pop) button[data-set="en"],:root.lm[data-lang="hi"] .lang:not(.lang-pop) button[data-set="hi"],:root.lm[data-lang="gu"] .lang:not(.lang-pop) button[data-set="gu"],:root.lm[data-lang="te"] .lang:not(.lang-pop) button[data-set="te"],:root.lm[data-lang="mr"] .lang:not(.lang-pop) button[data-set="mr"],:root.lm[data-lang="ta"] .lang:not(.lang-pop) button[data-set="ta"],:root.lm[data-lang="bn"] .lang:not(.lang-pop) button[data-set="bn"],:root.lm[data-lang="kn"] .lang:not(.lang-pop) button[data-set="kn"],:root.lm[data-lang="ml"] .lang:not(.lang-pop) button[data-set="ml"]{display:inline-flex;align-items:center;gap:.35rem}
+ :root.lm .lang:not(.lang-pop) button::after{content:"\25BE";font-size:.8em}
+ :root.lm .lang:not(.lang-pop) .lf{display:inline!important}
+ :root.lm .lang:not(.lang-pop) .ls{display:none!important}
+}
+.lang.lang-pop{position:fixed;z-index:50;display:flex;flex-direction:column;align-items:stretch;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:6px;margin:0;box-shadow:0 8px 28px rgba(20,30,40,.22);max-height:80vh;overflow:auto;transform:none}
+.lang.lang-pop button{font:inherit;font-size:1.05rem;text-align:left;border:0;background:transparent;color:var(--ink);padding:.5rem 1rem;border-radius:10px;cursor:pointer;min-height:44px}
+.lang.lang-pop button[aria-pressed="true"]{background:var(--indigo);color:var(--paper)}
+.lang.lang-pop .lf{display:inline!important}
+.lang.lang-pop .ls{display:none!important}
+</style>
 </head>
 <body>
 <!-- fest-banner -->
@@ -1383,5 +1405,27 @@ main [id],section[id]{scroll-margin-top:5.5rem}
 <script defer="" src="/push.js"></script>
 <script defer="" src="/engage.js"></script>
 <script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})}</script>
+<script id="langmenu">
+/* lang-menu: on phones the language bar shows only the current language; tapping it opens the full list */
+(function(){var mq=window.matchMedia('(max-width:560px)'),pop=null;
+function close(){if(pop){pop.remove();pop=null}}
+document.addEventListener('click',function(e){
+  var b=e.target.closest?e.target.closest('.lang button[data-set]'):null;
+  var cur=document.documentElement.getAttribute('data-lang');
+  if(b&&b.getAttribute('data-set')===cur){
+    if(b.closest('.lang-pop')||pop){close();return}
+    if(!mq.matches)return;
+    var r=b.getBoundingClientRect();
+    pop=document.createElement('div');pop.className='lang lang-pop';pop.setAttribute('role','group');pop.setAttribute('aria-label','Language');
+    Array.prototype.forEach.call(b.closest('.lang').querySelectorAll('button[data-set]'),function(x){var c=x.cloneNode(true);c.removeAttribute('id');c.setAttribute('aria-pressed',c.getAttribute('data-set')===cur);pop.appendChild(c)});
+    document.body.appendChild(pop);
+    pop.style.top=(r.bottom+6)+'px';pop.style.right=Math.max(8,window.innerWidth-r.right)+'px';
+    return}
+  if(pop&&!(b&&b.closest('.lang-pop')))close();
+});
+addEventListener('scroll',close,{passive:true});addEventListener('resize',close);
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+})();
+</script>
 </body>
 </html>

@@ -376,3 +376,24 @@ a.src{color:inherit;text-decoration:none}a.src:hover{text-decoration:underline}.
 :root[data-lang="ml"] .ml{letter-spacing:0!important;overflow-wrap:anywhere}
 :root[data-lang="ml"] .src{white-space:normal}
 @media (max-width:400px){:root[data-lang="ml"] h1{font-size:min(2rem,8.4vw)!important}:root[data-lang="ml"] h2{font-size:min(1.5rem,6.8vw)}}
+/* ---- Theme, Nov 2026: one warm accent (saffron) for scripture, the Sanskrit verse leads, stronger secondary text,
+   and on phones the nine language buttons fold into one button that opens a list ---- */
+:root{--saffron:#A84A12;--ink-2:#4A5F61}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--saffron:#F0A765}}
+:root[data-theme="dark"]{--saffron:#F0A765}
+.eyebrow,.label{color:var(--saffron)}
+.verse{border-color:var(--saffron)}
+.verse .skt{font-size:1.55rem;line-height:1.8;background:color-mix(in srgb,var(--saffron) 8%,transparent);border-left:4px solid var(--saffron);border-radius:10px;margin-inline:-1rem;padding:.8rem 1rem .8rem calc(1rem - 4px)}
+@media (max-width:560px){.verse .skt{font-size:1.4rem;margin-inline:-.85rem;padding:.7rem .85rem .7rem calc(.85rem - 4px)}}
+@media (max-width:560px){
+ :root.lm .lang:not(.lang-pop) button{display:none}
+ :root.lm[data-lang="en"] .lang:not(.lang-pop) button[data-set="en"],:root.lm[data-lang="hi"] .lang:not(.lang-pop) button[data-set="hi"],:root.lm[data-lang="gu"] .lang:not(.lang-pop) button[data-set="gu"],:root.lm[data-lang="te"] .lang:not(.lang-pop) button[data-set="te"],:root.lm[data-lang="mr"] .lang:not(.lang-pop) button[data-set="mr"],:root.lm[data-lang="ta"] .lang:not(.lang-pop) button[data-set="ta"],:root.lm[data-lang="bn"] .lang:not(.lang-pop) button[data-set="bn"],:root.lm[data-lang="kn"] .lang:not(.lang-pop) button[data-set="kn"],:root.lm[data-lang="ml"] .lang:not(.lang-pop) button[data-set="ml"]{display:inline-flex;align-items:center;gap:.35rem}
+ :root.lm .lang:not(.lang-pop) button::after{content:"\25BE";font-size:.8em}
+ :root.lm .lang:not(.lang-pop) .lf{display:inline!important}
+ :root.lm .lang:not(.lang-pop) .ls{display:none!important}
+}
+.lang.lang-pop{position:fixed;z-index:50;display:flex;flex-direction:column;align-items:stretch;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:6px;margin:0;box-shadow:0 8px 28px rgba(20,30,40,.22);max-height:80vh;overflow:auto;transform:none}
+.lang.lang-pop button{font:inherit;font-size:1.05rem;text-align:left;border:0;background:transparent;color:var(--ink);padding:.5rem 1rem;border-radius:10px;cursor:pointer;min-height:44px}
+.lang.lang-pop button[aria-pressed="true"]{background:var(--indigo);color:var(--paper)}
+.lang.lang-pop .lf{display:inline!important}
+.lang.lang-pop .ls{display:none!important}

@@ -103,7 +103,7 @@ def strip_hidden(html, lang, drop_lang_css=False):
 
 def lang_script(lang, page, available):
     """The small head script: sets the language, sends returning readers to their language, makes the language buttons links."""
-    return ('<script>/*lang-page*/(function(){var L=%s,P=%s,A=%s,d=document.documentElement;d.setAttribute("data-lang",L);'
+    return ('<script>/*lang-page*/(function(){var L=%s,P=%s,A=%s,d=document.documentElement;d.setAttribute("data-lang",L);d.classList.add("lm");'
             'var q=P==="index.html"?"":P;function U(M){var h=M!=="en"&&A.indexOf(M)>=0,s=location.search.replace(/^\\?/,"").split("&").filter(function(x){return x&&x.indexOf("lang=")!==0});'
             'if(M!=="en"&&!h)s.push("lang="+M);return(h?"/"+M+"/":"/")+q+(s.length?"?"+s.join("&"):"")+location.hash}'
             'if(L==="en"){var w=null;try{w=(new URLSearchParams(location.search).get("lang")||"").toLowerCase()||localStorage.getItem("sd-lang")}catch(e){}'
