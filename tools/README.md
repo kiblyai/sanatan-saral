@@ -62,8 +62,11 @@ Chapters 1 to 6 were written straight into their pages. From chapter 7 on, each 
   site verse 13.n is their 13.(n+1).
 - Verses that already had a page with a full explanation (two in most chapters, listed as `featured`) keep that page;
   only its previous/next links are updated.
-- New chapters are in English only. Their pages list no other languages, and the language buttons leave the reader on
-  the English page.
+- Chapters 7 to 18 are in English and Hindi. The Hindi translation of each verse is in `tools/gita/content/hNN.py`
+  (`T`, with the chapter's Hindi name and outline in `META`); a verse that already had a Hindi page keeps it and is left
+  out of `T`. When `hNN.py` exists, `build.py` also writes `hi/gita-N.html` and `hi/gita-N-V.html`, like chapters 1 to 6
+  in Hindi: Sanskrit, pronunciation and translation, with the word-by-word list on the English page. The other seven
+  languages have no pages for these chapters yet, and their language buttons leave the reader on the English page.
 - To rebuild the data you need the three copies in one folder: `verse.json` from github.com/gita/gita (data/),
   `B/<chapter>-<verse>.json` from github.com/vedicscriptures/bhagavad-gita (slok/), and `C/<chapter>.json` from
   github.com/bhavykhatri/DharmicData (SrimadBhagvadGita/).
