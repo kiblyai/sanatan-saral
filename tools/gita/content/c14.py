@@ -1,0 +1,68 @@
+META = dict(
+    n=14, featured=[5], name='The Three Gunas', skt_name='गुणत्रयविभागयोगः', roman_name='Gunatraya Vibhaga Yoga',
+    outline="Verses 1–4: the highest knowledge, with nature as the womb and Krishna as the father of all beings; 5–9: the three gunas, goodness, passion and dullness, and how each one binds; 10–13: how to tell which guna is strongest; 14–18: where each guna leads, at death and after; 19–20: going beyond the gunas; 21–27: the signs of a person who has gone beyond them, and devotion as the way.",
+)
+# Where the three copies differ, which one is followed and why.
+SETTLED = {
+    23: 'A',   # A and C read इत्येव, B reads इत्येवं. Both readings exist in print; two copies agree, and it is the Gita Press reading.
+}
+# Line breaks or spelling conventions only (the tool checks that no letter changes).
+LINES = {
+    21: ['कैर्लिङ्गैस्त्रीन्गुणानेतानतीतो भवति प्रभो', 'किमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते'],   # the copies spell लिङ्ग with an anusvara (लिंग)
+}
+V = {
+1: ("""परं भूयः प्रवक्ष्यामि = I shall tell you again the highest | ज्ञानानां ज्ञानम् उत्तमम् = the best of all knowledge | यत् ज्ञात्वा = knowing which | मुनयः सर्वे = all the sages | परां सिद्धिम् इतः गताः = have gone from here to the highest perfection""",
+    "Krishna said: I shall tell you once more the highest knowledge, the best of all knowledge. Knowing it, all the sages have gone from this world to the highest perfection."),
+2: ("""इदं ज्ञानम् उपाश्रित्य = taking refuge in this knowledge | मम साधर्म्यम् आगताः = they have come to share my nature | सर्गे अपि न उपजायन्ते = they are not born even at creation | प्रलये न व्यथन्ति च = and are not troubled at the dissolution""",
+    "Those who take refuge in this knowledge come to share my nature. They are not born when the world is created, and they are not troubled when it dissolves."),
+3: ("""मम योनिः महत् ब्रह्म = great nature is my womb | तस्मिन् गर्भं दधामि अहम् = in it I place the seed | सम्भवः सर्व-भूतानाम् = the birth of all beings | ततः भवति = comes from that | भारत = O descendant of Bharata (Arjuna)""",
+    "Great nature is my womb. In it I place the seed, and from that, Arjuna, all beings are born."),
+4: ("""सर्व-योनिषु = in all wombs | कौन्तेय = O son of Kunti (Arjuna) | मूर्तयः सम्भवन्ति याः = whatever forms are born | तासां ब्रह्म महत् योनिः = great nature is their womb | अहं बीज-प्रदः पिता = and I am the father who gives the seed""",
+    "Whatever forms are born in any womb, Arjuna, great nature is their womb and I am the father who gives the seed."),
+5: ("""सत्त्वं रजः तमः इति = goodness (sattva), passion (rajas) and dullness (tamas) | गुणाः प्रकृति-सम्भवाः = these gunas, born of nature | निबध्नन्ति = bind | महा-बाहो = O mighty-armed (Arjuna) | देहे देहिनम् अव्ययम् = the unchanging soul to the body""",
+    "Goodness, passion and dullness, the three gunas born of nature, bind the unchanging soul to the body, Arjuna."),
+6: ("""तत्र सत्त्वं निर्मलत्वात् = of these, goodness, being pure | प्रकाशकम् अनामयम् = gives light and is healthy | सुख-सङ्गेन बध्नाति = it binds by attachment to happiness | ज्ञान-सङ्गेन च = and by attachment to knowledge | अनघ = O sinless one (Arjuna)""",
+    "Of these, goodness is pure, and so it gives light and health. It binds by attachment to happiness and to knowledge, Arjuna."),
+7: ("""रजः राग-आत्मकं विद्धि = know that passion is of the nature of desire | तृष्णा-सङ्ग-समुद्भवम् = it gives rise to craving and attachment | तत् निबध्नाति देहिनम् = it binds the soul | कौन्तेय = O son of Kunti (Arjuna) | कर्म-सङ्गेन = by attachment to action""",
+    "Know that passion is of the nature of desire, and gives rise to craving and attachment. It binds the soul, Arjuna, by attachment to action."),
+8: ("""तमः तु अज्ञान-जं विद्धि = but know that dullness is born of ignorance | मोहनं सर्व-देहिनाम् = it deludes all embodied beings | प्रमाद-आलस्य-निद्राभिः = by carelessness, laziness and sleep | तत् निबध्नाति = it binds | भारत = O descendant of Bharata (Arjuna)""",
+    "But know that dullness is born of ignorance and deludes all beings. It binds, Arjuna, by carelessness, laziness and sleep."),
+9: ("""सत्त्वं सुखे सञ्जयति = goodness ties a person to happiness | रजः कर्मणि = passion to action | भारत = O descendant of Bharata (Arjuna) | ज्ञानम् आवृत्य तु तमः = but dullness, covering knowledge | प्रमादे सञ्जयति उत = ties a person to carelessness""",
+    "Goodness ties a person to happiness, Arjuna, and passion ties a person to action. But dullness covers knowledge and ties a person to carelessness."),
+10: ("""रजः तमः च अभिभूय = overpowering passion and dullness | सत्त्वं भवति = goodness rises | भारत = O descendant of Bharata (Arjuna) | रजः सत्त्वं तमः च एव = passion rises over goodness and dullness | तमः सत्त्वं रजः तथा = and dullness over goodness and passion""",
+    "Sometimes goodness rises, Arjuna, overpowering passion and dullness. Sometimes passion overpowers goodness and dullness, and sometimes dullness overpowers goodness and passion."),
+11: ("""सर्व-द्वारेषु देहे अस्मिन् = in all the gates of this body | प्रकाशः उपजायते ज्ञानम् = the light of knowledge shines | यदा = when | तदा विद्यात् = then one should know | विवृद्धं सत्त्वम् इति उत = that goodness has grown strong""",
+    "When the light of knowledge shines through all the gates of this body, know that goodness has grown strong."),
+12: ("""लोभः = greed | प्रवृत्तिः = constant activity | आरम्भः कर्मणाम् = starting many projects | अशमः = restlessness | स्पृहा = longing | रजसि एतानि जायन्ते विवृद्धे = these arise when passion grows strong | भरतर्षभ = O best of the Bharatas (Arjuna)""",
+    "Greed, constant activity, the starting of many projects, restlessness and longing: these arise, Arjuna, when passion grows strong."),
+13: ("""अप्रकाशः = darkness | अप्रवृत्तिः च = inactivity | प्रमादः = carelessness | मोहः एव च = and delusion | तमसि एतानि जायन्ते विवृद्धे = these arise when dullness grows strong | कुरु-नन्दन = O joy of the Kurus (Arjuna)""",
+    "Darkness, inactivity, carelessness and delusion: these arise, Arjuna, when dullness grows strong."),
+14: ("""यदा सत्त्वे प्रवृद्धे तु = when goodness is strong | प्रलयं याति देह-भृत् = and the embodied soul meets death | तदा उत्तम-विदां लोकान् अमलान् = then the pure worlds of those who know the highest | प्रतिपद्यते = it reaches""",
+    "If a person dies when goodness is strong, that soul reaches the pure worlds of those who know the highest."),
+15: ("""रजसि प्रलयं गत्वा = dying when passion is strong | कर्म-सङ्गिषु जायते = one is born among people attached to action | तथा प्रलीनः तमसि = and dying in dullness | मूढ-योनिषु जायते = one is born among the unthinking""",
+    "One who dies when passion is strong is born among people attached to action. One who dies in dullness is born among creatures without understanding."),
+16: ("""कर्मणः सुकृतस्य आहुः = they say that of good action | सात्त्विकं निर्मलं फलम् = the fruit is pure and of goodness | रजसः तु फलं दुःखम् = but the fruit of passion is pain | अज्ञानं तमसः फलम् = and the fruit of dullness is ignorance""",
+    "They say that the fruit of good action is pure and belongs to goodness. The fruit of passion is pain, and the fruit of dullness is ignorance."),
+17: ("""सत्त्वात् सञ्जायते ज्ञानम् = from goodness comes knowledge | रजसः लोभः एव च = from passion, greed | प्रमाद-मोहौ तमसः भवतः = from dullness come carelessness and delusion | अज्ञानम् एव च = and also ignorance""",
+    "From goodness comes knowledge, and from passion comes greed. From dullness come carelessness, delusion and ignorance."),
+18: ("""ऊर्ध्वं गच्छन्ति सत्त्व-स्थाः = those settled in goodness go upward | मध्ये तिष्ठन्ति राजसाः = those of passion stay in the middle | जघन्य-गुण-वृत्ति-स्थाः = settled in the ways of the lowest guna | अधः गच्छन्ति तामसाः = those of dullness go downward""",
+    "Those settled in goodness go upward. Those of passion stay in the middle. Those of dullness, settled in the ways of the lowest guna, go downward."),
+19: ("""न अन्यं गुणेभ्यः कर्तारम् = no doer other than the gunas | यदा द्रष्टा अनुपश्यति = when the one who sees perceives | गुणेभ्यः च परं वेत्ति = and knows what is beyond the gunas | मत्-भावं सः अधिगच्छति = that person reaches my state""",
+    "When the one who sees perceives that there is no doer other than the gunas, and knows what is beyond the gunas, that person reaches my state."),
+20: ("""गुणान् एतान् अतीत्य त्रीन् = going beyond these three gunas | देही = the embodied soul | देह-समुद्भवान् = from which the body arises | जन्म-मृत्यु-जरा-दुःखैः विमुक्तः = freed from birth, death, old age and sorrow | अमृतम् अश्नुते = reaches immortality""",
+    "When the soul goes beyond these three gunas, from which the body arises, it is freed from birth, death, old age and sorrow, and reaches immortality."),
+21: ("""कैः लिङ्गैः = by what signs | त्रीन् गुणान् एतान् अतीतः भवति = is one known to have gone beyond these three gunas | प्रभो = O Lord | किम्-आचारः = how does such a person behave | कथं च एतान् त्रीन् गुणान् अतिवर्तते = and how does one go beyond these three gunas""",
+    "Arjuna asked: Lord, what are the signs of a person who has gone beyond these three gunas? How does such a person behave, and how does one go beyond the three gunas?"),
+22: ("""प्रकाशं च प्रवृत्तिं च मोहम् एव च = light, activity and delusion | पाण्डव = O son of Pandu (Arjuna) | न द्वेष्टि सम्प्रवृत्तानि = one does not hate them when they are present | न निवृत्तानि काङ्क्षति = and does not long for them when they are gone""",
+    "Krishna said: Such a person, Arjuna, does not hate light, activity or delusion when they are present, and does not long for them when they are gone."),
+23: ("""उदासीनवत् आसीनः = seated like one who is not involved | गुणैः यः न विचाल्यते = who is not shaken by the gunas | गुणाः वर्तन्ते इति एव = knowing “it is only the gunas that act” | यः अवतिष्ठति न इङ्गते = who stands firm and does not waver""",
+    "Such a person sits like one who is not involved and is not shaken by the gunas. Knowing that it is only the gunas that act, that person stands firm and does not waver."),
+24: ("""सम-दुःख-सुखः = the same in pain and pleasure | स्व-स्थः = settled in the self | सम-लोष्ट-अश्म-काञ्चनः = to whom a lump of earth, a stone and gold are the same | तुल्य-प्रिय-अप्रियः = equal towards the pleasant and the unpleasant | धीरः = steady | तुल्य-निन्दा-आत्म-संस्तुतिः = to whom blame and praise of oneself are equal""",
+    "The same in pain and pleasure, settled in the self; seeing a lump of earth, a stone and gold as the same; steady, and equal towards the pleasant and the unpleasant, towards blame and praise;"),
+25: ("""मान-अपमानयोः तुल्यः = the same in honour and insult | तुल्यः मित्र-अरि-पक्षयोः = the same to the side of friend and of enemy | सर्व-आरम्भ-परित्यागी = who has given up all selfish undertakings | गुण-अतीतः सः उच्यते = that person is said to have gone beyond the gunas""",
+    "the same in honour and insult, the same to friend and enemy, and having given up all selfish undertakings: such a person is said to have gone beyond the gunas."),
+26: ("""मां च यः सेवते = and whoever serves me | अव्यभिचारेण भक्ति-योगेन = with the yoga of devotion that never strays | सः गुणान् समतीत्य एतान् = going beyond these gunas | ब्रह्म-भूयाय कल्पते = becomes fit to be one with Brahman""",
+    "And whoever serves me with unfailing devotion goes beyond these gunas and becomes fit to be one with Brahman."),
+27: ("""ब्रह्मणः हि प्रतिष्ठा अहम् = for I am the foundation of Brahman | अमृतस्य अव्ययस्य च = the immortal and unchanging | शाश्वतस्य च धर्मस्य = and of eternal dharma | सुखस्य ऐकान्तिकस्य च = and of perfect happiness""",
+    "For I am the foundation of Brahman, the immortal and unchanging, and of eternal dharma and perfect happiness."),
+}

@@ -1,0 +1,2331 @@
+{
+ "meta": {
+  "n": 18,
+  "featured": [
+   66,
+   78
+  ],
+  "name": "Liberation through Renunciation",
+  "skt_name": "मोक्षसंन्यासयोगः",
+  "roman_name": "Moksha Sannyasa Yoga",
+  "outline": "Verses 1–12: renunciation and letting go, and the three kinds of letting go; 13–18: the five causes of every action; 19–28: three kinds of knowledge, of action and of doer; 29–35: three kinds of understanding and of steadiness; 36–40: three kinds of happiness; 41–48: the duties born of each person's nature, and one's own work as worship; 49–56: from perfection to Brahman, and on to devotion; 57–66: the final teaching, to take refuge in Krishna alone; 67–72: who should be taught this, and what comes of studying it; 73: Arjuna's answer; 74–78: Sanjaya's closing words."
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Arjuna",
+   "opens": "अर्जुन उवाच",
+   "skt": [
+    "संन्यासस्य महाबाहो तत्त्वमिच्छामि वेदितुम्",
+    "त्यागस्य च हृषीकेश पृथक्केशिनिषूदन"
+   ],
+   "words": [
+    [
+     "संन्यासस्य तत्त्वम् इच्छामि वेदितुम्",
+     "I wish to know the truth about renunciation"
+    ],
+    [
+     "महा-बाहो",
+     "O mighty-armed (Krishna)"
+    ],
+    [
+     "त्यागस्य च पृथक्",
+     "and, separately, about letting go"
+    ],
+    [
+     "हृषीकेश",
+     "O Hrishikesha (Krishna)"
+    ],
+    [
+     "केशि-निषूदन",
+     "O slayer of Keshi (Krishna)"
+    ]
+   ],
+   "tr": "Arjuna said: Krishna, I wish to know the truth about renunciation, and also about letting go, and how the two differ."
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "काम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः",
+    "सर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः"
+   ],
+   "words": [
+    [
+     "काम्यानां कर्मणां न्यासम्",
+     "giving up actions done out of desire"
+    ],
+    [
+     "संन्यासं कवयः विदुः",
+     "the sages know as renunciation"
+    ],
+    [
+     "सर्व-कर्म-फल-त्यागम्",
+     "giving up the results of all actions"
+    ],
+    [
+     "प्राहुः त्यागं विचक्षणाः",
+     "the wise call letting go"
+    ]
+   ],
+   "tr": "Krishna said: The sages understand renunciation as giving up actions that are done out of desire. The wise call the giving up of the results of all actions letting go."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "त्याज्यं दोषवदित्येके कर्म प्राहुर्मनीषिणः",
+    "यज्ञदानतपःकर्म न त्याज्यमिति चापरे"
+   ],
+   "words": [
+    [
+     "त्याज्यं दोषवत् इति एके कर्म प्राहुः मनीषिणः",
+     "some thinkers say that action should be given up as a fault"
+    ],
+    [
+     "यज्ञ-दान-तपः-कर्म न त्याज्यम् इति च अपरे",
+     "others say that acts of sacrifice, giving and discipline should not be given up"
+    ]
+   ],
+   "tr": "Some thinkers say that all action is flawed and should be given up. Others say that acts of sacrifice, giving and self-discipline should not be given up."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "निश्चयं शृणु मे तत्र त्यागे भरतसत्तम",
+    "त्यागो हि पुरुषव्याघ्र त्रिविधः संप्रकीर्तितः"
+   ],
+   "words": [
+    [
+     "निश्चयं शृणु मे तत्र त्यागे",
+     "hear my conclusion about letting go"
+    ],
+    [
+     "भरत-सत्तम",
+     "O best of the Bharatas (Arjuna)"
+    ],
+    [
+     "त्यागः हि त्रिविधः संप्रकीर्तितः",
+     "for letting go is said to be of three kinds"
+    ],
+    [
+     "पुरुष-व्याघ्र",
+     "O tiger among men (Arjuna)"
+    ]
+   ],
+   "tr": "Hear my conclusion about letting go, Arjuna. Letting go is said to be of three kinds."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यज्ञदानतपःकर्म न त्याज्यं कार्यमेव तत्",
+    "यज्ञो दानं तपश्चैव पावनानि मनीषिणाम्"
+   ],
+   "words": [
+    [
+     "यज्ञ-दान-तपः-कर्म न त्याज्यम्",
+     "acts of sacrifice, giving and discipline should not be given up"
+    ],
+    [
+     "कार्यम् एव तत्",
+     "they should certainly be done"
+    ],
+    [
+     "यज्ञः दानं तपः च एव",
+     "sacrifice, giving and discipline"
+    ],
+    [
+     "पावनानि मनीषिणाम्",
+     "purify the wise"
+    ]
+   ],
+   "tr": "Acts of sacrifice, giving and self-discipline should not be given up. They should be done, for sacrifice, giving and discipline purify the wise."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "एतान्यपि तु कर्माणि सङ्गं त्यक्त्वा फलानि च",
+    "कर्तव्यानीति मे पार्थ निश्चितं मतमुत्तमम्"
+   ],
+   "words": [
+    [
+     "एतानि अपि तु कर्माणि",
+     "but even these actions"
+    ],
+    [
+     "सङ्गं त्यक्त्वा फलानि च",
+     "giving up attachment and the results"
+    ],
+    [
+     "कर्तव्यानि इति",
+     "should be done"
+    ],
+    [
+     "मे निश्चितं मतम् उत्तमम्",
+     "this is my firm and final view"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ]
+   ],
+   "tr": "But even these actions should be done without attachment and without a claim on their results. This, Arjuna, is my firm and final view."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नियतस्य तु संन्यासः कर्मणो नोपपद्यते",
+    "मोहात्तस्य परित्यागस्तामसः परिकीर्तितः"
+   ],
+   "words": [
+    [
+     "नियतस्य तु कर्मणः संन्यासः न उपपद्यते",
+     "it is not right to give up one's required duty"
+    ],
+    [
+     "मोहात् तस्य परित्यागः",
+     "giving it up out of delusion"
+    ],
+    [
+     "तामसः परिकीर्तितः",
+     "is said to be of dullness"
+    ]
+   ],
+   "tr": "It is not right to give up one's required duty. Giving it up out of delusion is said to be of dullness."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "दुःखमित्येव यत्कर्म कायक्लेशभयात्त्यजेत्",
+    "स कृत्वा राजसं त्यागं नैव त्यागफलं लभेत्"
+   ],
+   "words": [
+    [
+     "दुःखम् इति एव यत् कर्म त्यजेत्",
+     "whoever gives up an action just because it is painful"
+    ],
+    [
+     "काय-क्लेश-भयात्",
+     "out of fear of bodily trouble"
+    ],
+    [
+     "सः कृत्वा राजसं त्यागम्",
+     "having let go in the way of passion"
+    ],
+    [
+     "न एव त्याग-फलं लभेत्",
+     "does not gain the reward of letting go"
+    ]
+   ],
+   "tr": "Whoever gives up a duty just because it is painful, or out of fear of bodily trouble, lets go in the way of passion and gains none of the reward of letting go."
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कार्यमित्येव यत्कर्म नियतं क्रियतेऽर्जुन",
+    "सङ्गं त्यक्त्वा फलं चैव स त्यागः सात्त्विको मतः"
+   ],
+   "words": [
+    [
+     "कार्यम् इति एव यत् कर्म नियतं क्रियते",
+     "when a required duty is done just because it ought to be done"
+    ],
+    [
+     "अर्जुन",
+     "O Arjuna"
+    ],
+    [
+     "सङ्गं त्यक्त्वा फलं च एव",
+     "giving up attachment and also the result"
+    ],
+    [
+     "सः त्यागः सात्त्विकः मतः",
+     "that letting go is held to be of goodness"
+    ]
+   ],
+   "tr": "But when a required duty is done simply because it ought to be done, Arjuna, without attachment and without a claim on the result, that letting go is held to be of goodness."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न द्वेष्ट्यकुशलं कर्म कुशले नानुषज्जते",
+    "त्यागी सत्त्वसमाविष्टो मेधावी छिन्नसंशयः"
+   ],
+   "words": [
+    [
+     "न द्वेष्टि अकुशलं कर्म",
+     "does not hate unpleasant work"
+    ],
+    [
+     "कुशले न अनुषज्जते",
+     "and is not attached to pleasant work"
+    ],
+    [
+     "त्यागी सत्त्व-समाविष्टः",
+     "the one who lets go, filled with goodness"
+    ],
+    [
+     "मेधावी छिन्न-संशयः",
+     "wise, with doubts cut away"
+    ]
+   ],
+   "tr": "The one who lets go, filled with goodness, wise and free from doubt, does not hate unpleasant work and is not attached to pleasant work."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः",
+    "यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते"
+   ],
+   "words": [
+    [
+     "न हि देह-भृता शक्यम्",
+     "for one who has a body cannot"
+    ],
+    [
+     "त्यक्तुं कर्माणि अशेषतः",
+     "give up actions completely"
+    ],
+    [
+     "यः तु कर्म-फल-त्यागी",
+     "but whoever gives up the results of action"
+    ],
+    [
+     "सः त्यागी इति अभिधीयते",
+     "is said to have truly let go"
+    ]
+   ],
+   "tr": "No one who has a body can give up action completely. But whoever gives up the results of action is said to have truly let go."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अनिष्टमिष्टं मिश्रं च त्रिविधं कर्मणः फलम्",
+    "भवत्यत्यागिनां प्रेत्य न तु संन्यासिनां क्वचित्"
+   ],
+   "words": [
+    [
+     "अनिष्टम् इष्टं मिश्रं च",
+     "unwanted, wanted and mixed"
+    ],
+    [
+     "त्रिविधं कर्मणः फलम्",
+     "the result of action is of three kinds"
+    ],
+    [
+     "भवति अत्यागिनां प्रेत्य",
+     "it comes after death to those who have not let go"
+    ],
+    [
+     "न तु संन्यासिनां क्वचित्",
+     "but never to those who have renounced"
+    ]
+   ],
+   "tr": "The result of action is of three kinds: unwanted, wanted and mixed. It comes after death to those who have not let go, but never to those who have renounced."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "पञ्चैतानि महाबाहो कारणानि निबोध मे",
+    "सांख्ये कृतान्ते प्रोक्तानि सिद्धये सर्वकर्मणाम्"
+   ],
+   "words": [
+    [
+     "पञ्च एतानि कारणानि निबोध मे",
+     "learn from me these five causes"
+    ],
+    [
+     "महा-बाहो",
+     "O mighty-armed (Arjuna)"
+    ],
+    [
+     "सांख्ये कृतान्ते प्रोक्तानि",
+     "taught in the Sankhya teaching"
+    ],
+    [
+     "सिद्धये सर्व-कर्मणाम्",
+     "for the accomplishment of all actions"
+    ]
+   ],
+   "tr": "Learn from me, Arjuna, the five causes that the Sankhya teaching gives for the accomplishment of every action."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अधिष्ठानं तथा कर्ता करणं च पृथग्विधम्",
+    "विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम्"
+   ],
+   "words": [
+    [
+     "अधिष्ठानम्",
+     "the body"
+    ],
+    [
+     "तथा कर्ता",
+     "the doer"
+    ],
+    [
+     "करणं च पृथक्-विधम्",
+     "the different instruments, the senses"
+    ],
+    [
+     "विविधाः च पृथक् चेष्टाः",
+     "the various kinds of effort"
+    ],
+    [
+     "दैवं च एव अत्र पञ्चमम्",
+     "and the fifth of these, providence"
+    ]
+   ],
+   "tr": "They are the body, the doer, the various senses, the different kinds of effort, and the fifth, providence."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "शरीरवाङ्मनोभिर्यत्कर्म प्रारभते नरः",
+    "न्याय्यं वा विपरीतं वा पञ्चैते तस्य हेतवः"
+   ],
+   "words": [
+    [
+     "शरीर-वाक्-मनोभिः यत् कर्म प्रारभते नरः",
+     "whatever action a person begins with body, speech or mind"
+    ],
+    [
+     "न्याय्यं वा विपरीतं वा",
+     "whether right or wrong"
+    ],
+    [
+     "पञ्च एते तस्य हेतवः",
+     "these five are its causes"
+    ]
+   ],
+   "tr": "Whatever action a person begins with body, speech or mind, whether right or wrong, these five are its causes."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तत्रैवं सति कर्तारमात्मानं केवलं तु यः",
+    "पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः"
+   ],
+   "words": [
+    [
+     "तत्र एवं सति",
+     "this being so"
+    ],
+    [
+     "कर्तारम् आत्मानं केवलं तु यः पश्यति",
+     "whoever sees the Self alone as the doer"
+    ],
+    [
+     "अकृत-बुद्धित्वात्",
+     "because the understanding is not trained"
+    ],
+    [
+     "न सः पश्यति दुर्मतिः",
+     "that foolish person does not see"
+    ]
+   ],
+   "tr": "This being so, whoever sees the Self alone as the doer has an untrained understanding. That foolish person does not see."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यस्य नाहंकृतो भावो बुद्धिर्यस्य न लिप्यते",
+    "हत्वापि स इमाँल्लोकान्न हन्ति न निबध्यते"
+   ],
+   "words": [
+    [
+     "यस्य न अहंकृतः भावः",
+     "one who has no sense of “I am the doer”"
+    ],
+    [
+     "बुद्धिः यस्य न लिप्यते",
+     "whose understanding is not stained"
+    ],
+    [
+     "हत्वा अपि सः इमान् लोकान्",
+     "even if he kills these people"
+    ],
+    [
+     "न हन्ति न निबध्यते",
+     "does not kill and is not bound"
+    ]
+   ],
+   "tr": "One who is free from the sense of “I am the doer”, and whose understanding is not stained, does not kill and is not bound, even if he kills these people."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना",
+    "करणं कर्म कर्तेति त्रिविधः कर्मसंग्रहः"
+   ],
+   "words": [
+    [
+     "ज्ञानं ज्ञेयं परिज्ञाता",
+     "knowledge, the thing known and the knower"
+    ],
+    [
+     "त्रिविधा कर्म-चोदना",
+     "are the three things that prompt action"
+    ],
+    [
+     "करणं कर्म कर्ता इति",
+     "the instrument, the act and the doer"
+    ],
+    [
+     "त्रिविधः कर्म-संग्रहः",
+     "are the three parts of action"
+    ]
+   ],
+   "tr": "Knowledge, the thing known and the knower are the three things that prompt action. The instrument, the act and the doer are the three parts of an action."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदतः",
+    "प्रोच्यते गुणसंख्याने यथावच्छृणु तान्यपि"
+   ],
+   "words": [
+    [
+     "ज्ञानं कर्म च कर्ता च",
+     "knowledge, action and the doer"
+    ],
+    [
+     "त्रिधा एव गुण-भेदतः",
+     "are each of three kinds, according to the gunas"
+    ],
+    [
+     "प्रोच्यते गुण-संख्याने",
+     "so it is taught in the teaching on the gunas"
+    ],
+    [
+     "यथावत् शृणु तानि अपि",
+     "hear about these too, as they are"
+    ]
+   ],
+   "tr": "Knowledge, action and the doer are each of three kinds, according to the gunas. Hear about these too, as they are taught."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वभूतेषु येनैकं भावमव्ययमीक्षते",
+    "अविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्त्विकम्"
+   ],
+   "words": [
+    [
+     "सर्व-भूतेषु येन एकं भावम् अव्ययम् ईक्षते",
+     "by which one sees one unchanging reality in all beings"
+    ],
+    [
+     "अविभक्तं विभक्तेषु",
+     "undivided among the divided"
+    ],
+    [
+     "तत् ज्ञानं विद्धि सात्त्विकम्",
+     "know that knowledge to be of goodness"
+    ]
+   ],
+   "tr": "The knowledge by which a person sees one unchanging reality in all beings, undivided among the divided, know to be of goodness."
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "पृथक्त्वेन तु यज्ज्ञानं नानाभावान्पृथग्विधान्",
+    "वेत्ति सर्वेषु भूतेषु तज्ज्ञानं विद्धि राजसम्"
+   ],
+   "words": [
+    [
+     "पृथक्त्वेन तु यत् ज्ञानम्",
+     "but the knowledge that, because of their separateness"
+    ],
+    [
+     "नाना-भावान् पृथक्-विधान् वेत्ति",
+     "sees many different beings of different kinds"
+    ],
+    [
+     "सर्वेषु भूतेषु",
+     "in all creatures"
+    ],
+    [
+     "तत् ज्ञानं विद्धि राजसम्",
+     "know that knowledge to be of passion"
+    ]
+   ],
+   "tr": "But the knowledge that sees many separate beings of different kinds in all creatures, know to be of passion."
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यत्तु कृत्स्नवदेकस्मिन्कार्ये सक्तमहैतुकम्",
+    "अतत्त्वार्थवदल्पं च तत्तामसमुदाहृतम्"
+   ],
+   "words": [
+    [
+     "यत् तु कृत्स्नवत् एकस्मिन् कार्ये सक्तम्",
+     "but that which clings to one small thing as if it were the whole"
+    ],
+    [
+     "अहैतुकम्",
+     "without reason"
+    ],
+    [
+     "अतत्त्व-अर्थवत्",
+     "without grasp of the truth"
+    ],
+    [
+     "अल्पं च",
+     "and narrow"
+    ],
+    [
+     "तत् तामसम् उदाहृतम्",
+     "is said to be of dullness"
+    ]
+   ],
+   "tr": "And the knowledge that clings to one small thing as if it were everything, without reason, without grasp of the truth, and narrow, is said to be of dullness."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नियतं सङ्गरहितमरागद्वेषतः कृतम्",
+    "अफलप्रेप्सुना कर्म यत्तत्सात्त्विकमुच्यते"
+   ],
+   "words": [
+    [
+     "नियतं सङ्ग-रहितम्",
+     "required, free from attachment"
+    ],
+    [
+     "अराग-द्वेषतः कृतम्",
+     "done without liking or dislike"
+    ],
+    [
+     "अफल-प्रेप्सुना",
+     "by one who does not seek the result"
+    ],
+    [
+     "कर्म यत् तत् सात्त्विकम् उच्यते",
+     "that action is said to be of goodness"
+    ]
+   ],
+   "tr": "An action that is required, and is done without attachment, without liking or dislike, by someone who does not seek its result, is said to be of goodness."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यत्तु कामेप्सुना कर्म साहङ्कारेण वा पुनः",
+    "क्रियते बहुलायासं तद्राजसमुदाहृतम्"
+   ],
+   "words": [
+    [
+     "यत् तु काम-ईप्सुना कर्म",
+     "but action done by one who wants to satisfy desires"
+    ],
+    [
+     "स-अहङ्कारेण वा पुनः",
+     "or out of ego"
+    ],
+    [
+     "क्रियते बहुल-आयासम्",
+     "and with great strain"
+    ],
+    [
+     "तत् राजसम् उदाहृतम्",
+     "is said to be of passion"
+    ]
+   ],
+   "tr": "But an action done to satisfy desires, or out of ego, and with great strain, is said to be of passion."
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम्",
+    "मोहादारभ्यते कर्म यत्तत्तामसमुच्यते"
+   ],
+   "words": [
+    [
+     "अनुबन्धं क्षयं हिंसाम्",
+     "the consequences, the loss and the harm to others"
+    ],
+    [
+     "अनपेक्ष्य च पौरुषम्",
+     "and one's own ability, without regard for"
+    ],
+    [
+     "मोहात् आरभ्यते कर्म यत्",
+     "action that is begun out of delusion"
+    ],
+    [
+     "तत् तामसम् उच्यते",
+     "is said to be of dullness"
+    ]
+   ],
+   "tr": "An action begun out of delusion, with no thought for its consequences, the loss or harm it may cause, or one's own ability, is said to be of dullness."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मुक्तसङ्गोऽनहंवादी धृत्युत्साहसमन्वितः",
+    "सिद्ध्यसिद्ध्योर्निर्विकारः कर्ता सात्त्विक उच्यते"
+   ],
+   "words": [
+    [
+     "मुक्त-सङ्गः",
+     "free from attachment"
+    ],
+    [
+     "अनहं-वादी",
+     "who does not talk of “I”"
+    ],
+    [
+     "धृति-उत्साह-समन्वितः",
+     "full of steadiness and enthusiasm"
+    ],
+    [
+     "सिद्धि-असिद्ध्योः निर्विकारः",
+     "unchanged by success and failure"
+    ],
+    [
+     "कर्ता सात्त्विकः उच्यते",
+     "such a doer is said to be of goodness"
+    ]
+   ],
+   "tr": "A doer who is free from attachment and from talk of “I”, full of steadiness and enthusiasm, and unchanged by success or failure, is said to be of goodness."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "रागी कर्मफलप्रेप्सुर्लुब्धो हिंसात्मकोऽशुचिः",
+    "हर्षशोकान्वितः कर्ता राजसः परिकीर्तितः"
+   ],
+   "words": [
+    [
+     "रागी",
+     "full of craving"
+    ],
+    [
+     "कर्म-फल-प्रेप्सुः",
+     "eager for the results of action"
+    ],
+    [
+     "लुब्धः",
+     "greedy"
+    ],
+    [
+     "हिंसा-आत्मकः",
+     "harmful by nature"
+    ],
+    [
+     "अशुचिः",
+     "impure"
+    ],
+    [
+     "हर्ष-शोक-अन्वितः",
+     "swayed by joy and sorrow"
+    ],
+    [
+     "कर्ता राजसः परिकीर्तितः",
+     "such a doer is said to be of passion"
+    ]
+   ],
+   "tr": "A doer who is full of craving, eager for the results of action, greedy, harmful, impure and swayed by joy and sorrow is said to be of passion."
+  },
+  {
+   "v": 28,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अयुक्तः प्राकृतः स्तब्धः शठो नैष्कृतिकोऽलसः",
+    "विषादी दीर्घसूत्री च कर्ता तामस उच्यते"
+   ],
+   "words": [
+    [
+     "अयुक्तः",
+     "undisciplined"
+    ],
+    [
+     "प्राकृतः",
+     "crude"
+    ],
+    [
+     "स्तब्धः",
+     "stubborn"
+    ],
+    [
+     "शठः",
+     "deceitful"
+    ],
+    [
+     "नैष्कृतिकः",
+     "malicious"
+    ],
+    [
+     "अलसः",
+     "lazy"
+    ],
+    [
+     "विषादी",
+     "gloomy"
+    ],
+    [
+     "दीर्घ-सूत्री च",
+     "and always putting things off"
+    ],
+    [
+     "कर्ता तामसः उच्यते",
+     "such a doer is said to be of dullness"
+    ]
+   ],
+   "tr": "A doer who is undisciplined, crude, stubborn, deceitful, malicious, lazy, gloomy and always putting things off is said to be of dullness."
+  },
+  {
+   "v": 29,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "बुद्धेर्भेदं धृतेश्चैव गुणतस्त्रिविधं शृणु",
+    "प्रोच्यमानमशेषेण पृथक्त्वेन धनञ्जय"
+   ],
+   "words": [
+    [
+     "बुद्धेः भेदं धृतेः च एव",
+     "the division of understanding and of steadiness"
+    ],
+    [
+     "गुणतः त्रिविधं शृणु",
+     "into three kinds according to the gunas, hear"
+    ],
+    [
+     "प्रोच्यमानम् अशेषेण पृथक्त्वेन",
+     "as I explain it fully, one by one"
+    ],
+    [
+     "धनञ्जय",
+     "O Dhananjaya (Arjuna)"
+    ]
+   ],
+   "tr": "Now hear, Arjuna, as I explain fully and one by one, the three kinds of understanding and of steadiness, according to the gunas."
+  },
+  {
+   "v": 30,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये",
+    "बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी"
+   ],
+   "words": [
+    [
+     "प्रवृत्तिं च निवृत्तिं च",
+     "when to act and when to hold back"
+    ],
+    [
+     "कार्य-अकार्ये",
+     "what should and should not be done"
+    ],
+    [
+     "भय-अभये",
+     "what is to be feared and what is not"
+    ],
+    [
+     "बन्धं मोक्षं च या वेत्ति",
+     "which knows what binds and what frees"
+    ],
+    [
+     "बुद्धिः सा सात्त्विकी",
+     "that understanding is of goodness"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ]
+   ],
+   "tr": "The understanding that knows when to act and when to hold back, what should and should not be done, what is to be feared and what is not, what binds and what frees, Arjuna, is of goodness."
+  },
+  {
+   "v": 31,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यया धर्ममधर्मं च कार्यं चाकार्यमेव च",
+    "अयथावत्प्रजानाति बुद्धिः सा पार्थ राजसी"
+   ],
+   "words": [
+    [
+     "यया धर्मम् अधर्मं च",
+     "by which dharma and its opposite"
+    ],
+    [
+     "कार्यं च अकार्यम् एव च",
+     "and what should and should not be done"
+    ],
+    [
+     "अयथावत् प्रजानाति",
+     "one understands wrongly"
+    ],
+    [
+     "बुद्धिः सा राजसी",
+     "that understanding is of passion"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ]
+   ],
+   "tr": "The understanding that has a mistaken idea of dharma and its opposite, and of what should and should not be done, Arjuna, is of passion."
+  },
+  {
+   "v": 32,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अधर्मं धर्ममिति या मन्यते तमसाऽऽवृता",
+    "सर्वार्थान्विपरीतांश्च बुद्धिः सा पार्थ तामसी"
+   ],
+   "words": [
+    [
+     "अधर्मं धर्मम् इति या मन्यते",
+     "which takes what is against dharma to be dharma"
+    ],
+    [
+     "तमसा आवृता",
+     "being covered by darkness"
+    ],
+    [
+     "सर्व-अर्थान् विपरीतान् च",
+     "and sees all things the wrong way round"
+    ],
+    [
+     "बुद्धिः सा तामसी",
+     "that understanding is of dullness"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ]
+   ],
+   "tr": "The understanding that is covered by darkness, takes what is against dharma to be dharma, and sees everything the wrong way round, Arjuna, is of dullness."
+  },
+  {
+   "v": 33,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "धृत्या यया धारयते मनःप्राणेन्द्रियक्रियाः",
+    "योगेनाव्यभिचारिण्या धृतिः सा पार्थ सात्त्विकी"
+   ],
+   "words": [
+    [
+     "धृत्या यया धारयते",
+     "the steadiness by which one holds"
+    ],
+    [
+     "मनः-प्राण-इन्द्रिय-क्रियाः",
+     "the workings of the mind, the breath and the senses"
+    ],
+    [
+     "योगेन अव्यभिचारिण्या",
+     "unwavering, through yoga"
+    ],
+    [
+     "धृतिः सा सात्त्विकी",
+     "that steadiness is of goodness"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ]
+   ],
+   "tr": "The unwavering steadiness by which a person holds the workings of the mind, the breath and the senses through yoga, Arjuna, is of goodness."
+  },
+  {
+   "v": 34,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यया तु धर्मकामार्थान् धृत्या धारयतेऽर्जुन",
+    "प्रसङ्गेन फलाकाङ्क्षी धृतिः सा पार्थ राजसी"
+   ],
+   "words": [
+    [
+     "यया तु धृत्या धारयते",
+     "but the steadiness by which one holds on to"
+    ],
+    [
+     "धर्म-काम-अर्थान्",
+     "duty, pleasure and wealth"
+    ],
+    [
+     "अर्जुन",
+     "O Arjuna"
+    ],
+    [
+     "प्रसङ्गेन फल-आकाङ्क्षी",
+     "out of attachment, wanting the results"
+    ],
+    [
+     "धृतिः सा राजसी",
+     "that steadiness is of passion"
+    ],
+    [
+     "पार्थ",
+     "O Partha"
+    ]
+   ],
+   "tr": "But the steadiness by which a person holds on to duty, pleasure and wealth out of attachment, wanting their rewards, Arjuna, is of passion."
+  },
+  {
+   "v": 35,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यया स्वप्नं भयं शोकं विषादं मदमेव च",
+    "न विमुञ्चति दुर्मेधा धृतिः सा पार्थ तामसी"
+   ],
+   "words": [
+    [
+     "यया स्वप्नं भयं शोकम्",
+     "by which sleep, fear, grief"
+    ],
+    [
+     "विषादं मदम् एव च",
+     "gloom and also arrogance"
+    ],
+    [
+     "न विमुञ्चति दुर्मेधाः",
+     "a foolish person does not let go of"
+    ],
+    [
+     "धृतिः सा तामसी",
+     "that steadiness is of dullness"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ]
+   ],
+   "tr": "And the steadiness by which a foolish person refuses to let go of sleep, fear, grief, gloom and arrogance, Arjuna, is of dullness."
+  },
+  {
+   "v": 36,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सुखं त्विदानीं त्रिविधं शृणु मे भरतर्षभ",
+    "अभ्यासाद्रमते यत्र दुःखान्तं च निगच्छति"
+   ],
+   "words": [
+    [
+     "सुखं तु इदानीं त्रिविधं शृणु मे",
+     "now hear from me the three kinds of happiness"
+    ],
+    [
+     "भरतर्षभ",
+     "O best of the Bharatas (Arjuna)"
+    ],
+    [
+     "अभ्यासात् रमते यत्र",
+     "in which one comes to delight through practice"
+    ],
+    [
+     "दुःख-अन्तं च निगच्छति",
+     "and reaches the end of sorrow"
+    ]
+   ],
+   "tr": "Now hear from me, Arjuna, the three kinds of happiness. The happiness in which a person comes to delight through long practice, and in which sorrow ends,"
+  },
+  {
+   "v": 37,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यत्तदग्रे विषमिव परिणामेऽमृतोपमम्",
+    "तत्सुखं सात्त्विकं प्रोक्तमात्मबुद्धिप्रसादजम्"
+   ],
+   "words": [
+    [
+     "यत् तत् अग्रे विषम् इव",
+     "which is like poison at first"
+    ],
+    [
+     "परिणामे अमृत-उपमम्",
+     "but like nectar in the end"
+    ],
+    [
+     "तत् सुखं सात्त्विकं प्रोक्तम्",
+     "that happiness is said to be of goodness"
+    ],
+    [
+     "आत्म-बुद्धि-प्रसाद-जम्",
+     "born of the clearness of one's own understanding"
+    ]
+   ],
+   "tr": "which is like poison at first but like nectar in the end, and which is born of a clear understanding of the Self: that happiness is said to be of goodness."
+  },
+  {
+   "v": 38,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "विषयेन्द्रियसंयोगाद्यत्तदग्रेऽमृतोपमम्",
+    "परिणामे विषमिव तत्सुखं राजसं स्मृतम्"
+   ],
+   "words": [
+    [
+     "विषय-इन्द्रिय-संयोगात्",
+     "from the contact of the senses with their objects"
+    ],
+    [
+     "यत् तत् अग्रे अमृत-उपमम्",
+     "which is like nectar at first"
+    ],
+    [
+     "परिणामे विषम् इव",
+     "but like poison in the end"
+    ],
+    [
+     "तत् सुखं राजसं स्मृतम्",
+     "that happiness is held to be of passion"
+    ]
+   ],
+   "tr": "The happiness that comes from the contact of the senses with their objects, which is like nectar at first but like poison in the end, is held to be of passion."
+  },
+  {
+   "v": 39,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदग्रे चानुबन्धे च सुखं मोहनमात्मनः",
+    "निद्रालस्यप्रमादोत्थं तत्तामसमुदाहृतम्"
+   ],
+   "words": [
+    [
+     "यत् अग्रे च अनुबन्धे च",
+     "which at the beginning and at the end"
+    ],
+    [
+     "सुखं मोहनम् आत्मनः",
+     "is a happiness that deludes the self"
+    ],
+    [
+     "निद्रा-आलस्य-प्रमाद-उत्थम्",
+     "arising from sleep, laziness and carelessness"
+    ],
+    [
+     "तत् तामसम् उदाहृतम्",
+     "is said to be of dullness"
+    ]
+   ],
+   "tr": "And the happiness that deludes a person from beginning to end, and comes from sleep, laziness and carelessness, is said to be of dullness."
+  },
+  {
+   "v": 40,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न तदस्ति पृथिव्यां वा दिवि देवेषु वा पुनः",
+    "सत्त्वं प्रकृतिजैर्मुक्तं यदेभिः स्यात्त्रिभिर्गुणैः"
+   ],
+   "words": [
+    [
+     "न तत् अस्ति",
+     "there is no"
+    ],
+    [
+     "पृथिव्यां वा दिवि देवेषु वा पुनः",
+     "on earth, or in heaven among the gods"
+    ],
+    [
+     "सत्त्वम्",
+     "being"
+    ],
+    [
+     "प्रकृति-जैः मुक्तं यत् एभिः स्यात् त्रिभिः गुणैः",
+     "that is free from these three gunas born of nature"
+    ]
+   ],
+   "tr": "There is no being on earth, or in heaven among the gods, that is free from these three gunas born of nature."
+  },
+  {
+   "v": 41,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ब्राह्मणक्षत्रियविशां शूद्राणां च परंतप",
+    "कर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणैः"
+   ],
+   "words": [
+    [
+     "ब्राह्मण-क्षत्रिय-विशां शूद्राणां च",
+     "of brahmins, kshatriyas, vaishyas and shudras"
+    ],
+    [
+     "परन्तप",
+     "O scorcher of foes (Arjuna)"
+    ],
+    [
+     "कर्माणि प्रविभक्तानि",
+     "the duties are divided"
+    ],
+    [
+     "स्वभाव-प्रभवैः गुणैः",
+     "according to the qualities born of their own nature"
+    ]
+   ],
+   "tr": "The duties of brahmins, kshatriyas, vaishyas and shudras, Arjuna, are divided according to the qualities born of their own nature."
+  },
+  {
+   "v": 42,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "शमो दमस्तपः शौचं क्षान्तिरार्जवमेव च",
+    "ज्ञानं विज्ञानमास्तिक्यं ब्रह्मकर्म स्वभावजम्"
+   ],
+   "words": [
+    [
+     "शमः दमः तपः शौचम्",
+     "calmness, self-control, discipline, purity"
+    ],
+    [
+     "क्षान्तिः आर्जवम् एव च",
+     "patience and honesty"
+    ],
+    [
+     "ज्ञानं विज्ञानम् आस्तिक्यम्",
+     "knowledge, direct experience and faith"
+    ],
+    [
+     "ब्रह्म-कर्म स्वभाव-जम्",
+     "are the duties of a brahmin, born of his nature"
+    ]
+   ],
+   "tr": "Calmness, self-control, self-discipline, purity, patience, honesty, knowledge, direct experience and faith are the duties of a brahmin, born of his nature."
+  },
+  {
+   "v": 43,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "शौर्यं तेजो धृतिर्दाक्ष्यं युद्धे चाप्यपलायनम्",
+    "दानमीश्वरभावश्च क्षात्रं कर्म स्वभावजम्"
+   ],
+   "words": [
+    [
+     "शौर्यं तेजः धृतिः दाक्ष्यम्",
+     "courage, vigour, steadiness, skill"
+    ],
+    [
+     "युद्धे च अपि अपलायनम्",
+     "not fleeing in battle"
+    ],
+    [
+     "दानम् ईश्वर-भावः च",
+     "generosity and leadership"
+    ],
+    [
+     "क्षात्रं कर्म स्वभाव-जम्",
+     "are the duties of a kshatriya, born of his nature"
+    ]
+   ],
+   "tr": "Courage, vigour, steadiness, skill, not fleeing in battle, generosity and leadership are the duties of a kshatriya, born of his nature."
+  },
+  {
+   "v": 44,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कृषिगौरक्ष्यवाणिज्यं वैश्यकर्म स्वभावजम्",
+    "परिचर्यात्मकं कर्म शूद्रस्यापि स्वभावजम्"
+   ],
+   "words": [
+    [
+     "कृषि-गौरक्ष्य-वाणिज्यम्",
+     "farming, care of cows and trade"
+    ],
+    [
+     "वैश्य-कर्म स्वभाव-जम्",
+     "are the duties of a vaishya, born of his nature"
+    ],
+    [
+     "परिचर्या-आत्मकं कर्म",
+     "work that consists of service"
+    ],
+    [
+     "शूद्रस्य अपि स्वभाव-जम्",
+     "is the duty of a shudra, born of his nature"
+    ]
+   ],
+   "tr": "Farming, the care of cows and trade are the duties of a vaishya, born of his nature. Work that consists of service is the duty of a shudra, born of his nature."
+  },
+  {
+   "v": 45,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः",
+    "स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु"
+   ],
+   "words": [
+    [
+     "स्वे स्वे कर्मणि अभिरतः",
+     "devoted to his own work"
+    ],
+    [
+     "संसिद्धिं लभते नरः",
+     "a person reaches perfection"
+    ],
+    [
+     "स्व-कर्म-निरतः सिद्धिं यथा विन्दति",
+     "how one devoted to one's own work finds perfection"
+    ],
+    [
+     "तत् शृणु",
+     "hear that"
+    ]
+   ],
+   "tr": "A person reaches perfection by being devoted to their own work. Hear how one who is devoted to their own work finds perfection."
+  },
+  {
+   "v": 46,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम्",
+    "स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः"
+   ],
+   "words": [
+    [
+     "यतः प्रवृत्तिः भूतानाम्",
+     "from whom all beings come forth"
+    ],
+    [
+     "येन सर्वम् इदं ततम्",
+     "by whom all this is pervaded"
+    ],
+    [
+     "स्व-कर्मणा तम् अभ्यर्च्य",
+     "worshipping him through one's own work"
+    ],
+    [
+     "सिद्धिं विन्दति मानवः",
+     "a person finds perfection"
+    ]
+   ],
+   "tr": "A person finds perfection by worshipping, through their own work, the one from whom all beings come forth and who fills all of this."
+  },
+  {
+   "v": 47,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्",
+    "स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्"
+   ],
+   "words": [
+    [
+     "श्रेयान् स्व-धर्मः विगुणः",
+     "better is one's own dharma, though imperfect"
+    ],
+    [
+     "पर-धर्मात् सु-अनुष्ठितात्",
+     "than the dharma of another well performed"
+    ],
+    [
+     "स्वभाव-नियतं कर्म कुर्वन्",
+     "doing the work set by one's own nature"
+    ],
+    [
+     "न आप्नोति किल्बिषम्",
+     "one incurs no fault"
+    ]
+   ],
+   "tr": "It is better to do one's own duty imperfectly than to do another's duty well. One who does the work set by their own nature incurs no fault."
+  },
+  {
+   "v": 48,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत्",
+    "सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः"
+   ],
+   "words": [
+    [
+     "सहजं कर्म",
+     "the work one is born to"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "स-दोषम् अपि न त्यजेत्",
+     "one should not give up, even if it has faults"
+    ],
+    [
+     "सर्व-आरम्भाः हि दोषेण आवृताः",
+     "for all undertakings are covered by some fault"
+    ],
+    [
+     "धूमेन अग्निः इव",
+     "as fire is by smoke"
+    ]
+   ],
+   "tr": "One should not give up the work one is born to, Arjuna, even if it has faults. Every undertaking is clouded by some fault, as fire is by smoke."
+  },
+  {
+   "v": 49,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "असक्तबुद्धिः सर्वत्र जितात्मा विगतस्पृहः",
+    "नैष्कर्म्यसिद्धिं परमां संन्यासेनाधिगच्छति"
+   ],
+   "words": [
+    [
+     "असक्त-बुद्धिः सर्वत्र",
+     "with an understanding attached to nothing"
+    ],
+    [
+     "जित-आत्मा",
+     "self-controlled"
+    ],
+    [
+     "विगत-स्पृहः",
+     "free from longing"
+    ],
+    [
+     "नैष्कर्म्य-सिद्धिं परमाम्",
+     "the highest perfection of freedom from action"
+    ],
+    [
+     "संन्यासेन अधिगच्छति",
+     "one reaches by renunciation"
+    ]
+   ],
+   "tr": "One whose understanding is attached to nothing, who is self-controlled and free from longing, reaches by renunciation the highest perfection of freedom from action."
+  },
+  {
+   "v": 50,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सिद्धिं प्राप्तो यथा ब्रह्म तथाप्नोति निबोध मे",
+    "समासेनैव कौन्तेय निष्ठा ज्ञानस्य या परा"
+   ],
+   "words": [
+    [
+     "सिद्धिं प्राप्तः यथा ब्रह्म आप्नोति",
+     "how one who has reached perfection reaches Brahman"
+    ],
+    [
+     "तथा निबोध मे",
+     "learn that from me"
+    ],
+    [
+     "समासेन एव",
+     "in brief"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "निष्ठा ज्ञानस्य या परा",
+     "which is the highest state of knowledge"
+    ]
+   ],
+   "tr": "Learn from me in brief, Arjuna, how one who has reached this perfection reaches Brahman, the highest state of knowledge."
+  },
+  {
+   "v": 51,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "बुद्ध्या विशुद्धया युक्तो धृत्याऽऽत्मानं नियम्य च",
+    "शब्दादीन् विषयांस्त्यक्त्वा रागद्वेषौ व्युदस्य च"
+   ],
+   "words": [
+    [
+     "बुद्ध्या विशुद्धया युक्तः",
+     "with a pure understanding"
+    ],
+    [
+     "धृत्या आत्मानं नियम्य च",
+     "controlling oneself with steadiness"
+    ],
+    [
+     "शब्द-आदीन् विषयान् त्यक्त्वा",
+     "giving up sound and the other objects of the senses"
+    ],
+    [
+     "राग-द्वेषौ व्युदस्य च",
+     "and putting aside liking and dislike"
+    ]
+   ],
+   "tr": "With a pure understanding, controlling oneself with steadiness, giving up sound and the other objects of the senses, and putting aside liking and dislike;"
+  },
+  {
+   "v": 52,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "विविक्तसेवी लघ्वाशी यतवाक्कायमानसः",
+    "ध्यानयोगपरो नित्यं वैराग्यं समुपाश्रितः"
+   ],
+   "words": [
+    [
+     "विविक्त-सेवी",
+     "living in a quiet place"
+    ],
+    [
+     "लघु-आशी",
+     "eating lightly"
+    ],
+    [
+     "यत-वाक्-काय-मानसः",
+     "with speech, body and mind controlled"
+    ],
+    [
+     "ध्यान-योग-परः नित्यम्",
+     "always devoted to the yoga of meditation"
+    ],
+    [
+     "वैराग्यं समुपाश्रितः",
+     "resting in detachment"
+    ]
+   ],
+   "tr": "living in a quiet place, eating lightly, with speech, body and mind controlled, always devoted to the yoga of meditation and resting in detachment;"
+  },
+  {
+   "v": 53,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अहङ्कारं बलं दर्पं कामं क्रोधं परिग्रहम्",
+    "विमुच्य निर्ममः शान्तो ब्रह्मभूयाय कल्पते"
+   ],
+   "words": [
+    [
+     "अहङ्कारं बलं दर्पम्",
+     "ego, force, arrogance"
+    ],
+    [
+     "कामं क्रोधं परिग्रहम्",
+     "desire, anger and possessiveness"
+    ],
+    [
+     "विमुच्य",
+     "having given up"
+    ],
+    [
+     "निर्ममः शान्तः",
+     "free from “mine”, and at peace"
+    ],
+    [
+     "ब्रह्म-भूयाय कल्पते",
+     "one becomes fit to be one with Brahman"
+    ]
+   ],
+   "tr": "having given up ego, force, arrogance, desire, anger and possessiveness, free from the sense of “mine” and at peace: such a person becomes fit to be one with Brahman."
+  },
+  {
+   "v": 54,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ब्रह्मभूतः प्रसन्नात्मा न शोचति न काङ्क्षति",
+    "समः सर्वेषु भूतेषु मद्भक्तिं लभते पराम्"
+   ],
+   "words": [
+    [
+     "ब्रह्म-भूतः प्रसन्न-आत्मा",
+     "one with Brahman, serene in heart"
+    ],
+    [
+     "न शोचति न काङ्क्षति",
+     "neither grieves nor craves"
+    ],
+    [
+     "समः सर्वेषु भूतेषु",
+     "the same to all beings"
+    ],
+    [
+     "मत्-भक्तिं लभते पराम्",
+     "one gains the highest devotion to me"
+    ]
+   ],
+   "tr": "One with Brahman and serene in heart, that person neither grieves nor craves. The same to all beings, that person gains the highest devotion to me."
+  },
+  {
+   "v": 55,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः",
+    "ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम्"
+   ],
+   "words": [
+    [
+     "भक्त्या माम् अभिजानाति",
+     "by devotion one comes to know me"
+    ],
+    [
+     "यावान् यः च अस्मि तत्त्वतः",
+     "how great I am and who I truly am"
+    ],
+    [
+     "ततः मां तत्त्वतः ज्ञात्वा",
+     "then, knowing me truly"
+    ],
+    [
+     "विशते तत्-अनन्तरम्",
+     "one enters into me at once"
+    ]
+   ],
+   "tr": "By devotion a person comes to know me, how great I am and who I truly am. Knowing me truly, that person enters into me at once."
+  },
+  {
+   "v": 56,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वकर्माण्यपि सदा कुर्वाणो मद्व्यपाश्रयः",
+    "मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम्"
+   ],
+   "words": [
+    [
+     "सर्व-कर्माणि अपि सदा कुर्वाणः",
+     "though always doing all kinds of work"
+    ],
+    [
+     "मत्-व्यपाश्रयः",
+     "taking refuge in me"
+    ],
+    [
+     "मत्-प्रसादात् अवाप्नोति",
+     "by my grace one reaches"
+    ],
+    [
+     "शाश्वतं पदम् अव्ययम्",
+     "the eternal, unchanging home"
+    ]
+   ],
+   "tr": "Though always doing all kinds of work, one who takes refuge in me reaches, by my grace, the eternal and unchanging home."
+  },
+  {
+   "v": 57,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "चेतसा सर्वकर्माणि मयि संन्यस्य मत्परः",
+    "बुद्धियोगमुपाश्रित्य मच्चित्तः सततं भव"
+   ],
+   "words": [
+    [
+     "चेतसा सर्व-कर्माणि मयि संन्यस्य",
+     "in your mind giving up all actions to me"
+    ],
+    [
+     "मत्-परः",
+     "holding me as the highest"
+    ],
+    [
+     "बुद्धि-योगम् उपाश्रित्य",
+     "relying on the yoga of understanding"
+    ],
+    [
+     "मत्-चित्तः सततं भव",
+     "keep your mind always on me"
+    ]
+   ],
+   "tr": "In your mind, offer all your actions to me and hold me as your highest goal. Relying on the yoga of understanding, keep your mind always on me."
+  },
+  {
+   "v": 58,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मच्चित्तः सर्वदुर्गाणि मत्प्रसादात्तरिष्यसि",
+    "अथ चेत्त्वमहङ्कारान्न श्रोष्यसि विनङ्क्ष्यसि"
+   ],
+   "words": [
+    [
+     "मत्-चित्तः",
+     "with your mind on me"
+    ],
+    [
+     "सर्व-दुर्गाणि मत्-प्रसादात् तरिष्यसि",
+     "you will cross all difficulties by my grace"
+    ],
+    [
+     "अथ चेत् त्वम् अहङ्कारात् न श्रोष्यसि",
+     "but if, out of ego, you will not listen"
+    ],
+    [
+     "विनङ्क्ष्यसि",
+     "you will be lost"
+    ]
+   ],
+   "tr": "With your mind on me, you will cross all difficulties by my grace. But if, out of ego, you will not listen, you will be lost."
+  },
+  {
+   "v": 59,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदहङ्कारमाश्रित्य न योत्स्य इति मन्यसे",
+    "मिथ्यैष व्यवसायस्ते प्रकृतिस्त्वां नियोक्ष्यति"
+   ],
+   "words": [
+    [
+     "यत् अहङ्कारम् आश्रित्य",
+     "if, giving in to ego"
+    ],
+    [
+     "न योत्स्ये इति मन्यसे",
+     "you think “I will not fight”"
+    ],
+    [
+     "मिथ्या एषः व्यवसायः ते",
+     "this resolve of yours is useless"
+    ],
+    [
+     "प्रकृतिः त्वां नियोक्ष्यति",
+     "your nature will compel you"
+    ]
+   ],
+   "tr": "If you give in to ego and think, “I will not fight”, your resolve is useless. Your own nature will compel you."
+  },
+  {
+   "v": 60,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "स्वभावजेन कौन्तेय निबद्धः स्वेन कर्मणा",
+    "कर्तुं नेच्छसि यन्मोहात्करिष्यस्यवशोऽपि तत्"
+   ],
+   "words": [
+    [
+     "स्वभाव-जेन स्वेन कर्मणा निबद्धः",
+     "bound by your own duty, born of your nature"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "कर्तुं न इच्छसि यत् मोहात्",
+     "what you do not wish to do, out of delusion"
+    ],
+    [
+     "करिष्यसि अवशः अपि तत्",
+     "that you will do even against your will"
+    ]
+   ],
+   "tr": "Bound by your own duty, which is born of your nature, Arjuna, you will do, even against your will, the very thing that in your delusion you do not wish to do."
+  },
+  {
+   "v": 61,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति",
+    "भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया"
+   ],
+   "words": [
+    [
+     "ईश्वरः सर्व-भूतानां हृत्-देशे तिष्ठति",
+     "the Lord lives in the heart of all beings"
+    ],
+    [
+     "अर्जुन",
+     "O Arjuna"
+    ],
+    [
+     "भ्रामयन् सर्व-भूतानि",
+     "making all beings turn"
+    ],
+    [
+     "यन्त्र-आरूढानि",
+     "as if mounted on a machine"
+    ],
+    [
+     "मायया",
+     "by his maya"
+    ]
+   ],
+   "tr": "The Lord lives in the heart of all beings, Arjuna, and by his maya makes them all turn, as if they were mounted on a machine."
+  },
+  {
+   "v": 62,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तमेव शरणं गच्छ सर्वभावेन भारत",
+    "तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम्"
+   ],
+   "words": [
+    [
+     "तम् एव शरणं गच्छ",
+     "take refuge in him alone"
+    ],
+    [
+     "सर्व-भावेन",
+     "with your whole being"
+    ],
+    [
+     "भारत",
+     "O descendant of Bharata (Arjuna)"
+    ],
+    [
+     "तत्-प्रसादात्",
+     "by his grace"
+    ],
+    [
+     "परां शान्तिं स्थानं शाश्वतं प्राप्स्यसि",
+     "you will reach supreme peace and the eternal home"
+    ]
+   ],
+   "tr": "Take refuge in him alone, Arjuna, with your whole being. By his grace you will reach supreme peace and the eternal home."
+  },
+  {
+   "v": 63,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया",
+    "विमृश्यैतदशेषेण यथेच्छसि तथा कुरु"
+   ],
+   "words": [
+    [
+     "इति ते ज्ञानम् आख्यातं मया",
+     "so I have told you this knowledge"
+    ],
+    [
+     "गुह्यात् गुह्यतरम्",
+     "more secret than any secret"
+    ],
+    [
+     "विमृश्य एतत् अशेषेण",
+     "think it over fully"
+    ],
+    [
+     "यथा इच्छसि तथा कुरु",
+     "then do as you wish"
+    ]
+   ],
+   "tr": "So I have told you this knowledge, more secret than any secret. Think it over fully, and then do as you wish."
+  },
+  {
+   "v": 64,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वगुह्यतमं भूयः शृणु मे परमं वचः",
+    "इष्टोऽसि मे दृढमिति ततो वक्ष्यामि ते हितम्"
+   ],
+   "words": [
+    [
+     "सर्व-गुह्यतमं भूयः शृणु",
+     "hear once more the most secret of all"
+    ],
+    [
+     "मे परमं वचः",
+     "my highest word"
+    ],
+    [
+     "इष्टः असि मे दृढम् इति",
+     "because you are very dear to me"
+    ],
+    [
+     "ततः वक्ष्यामि ते हितम्",
+     "I shall tell you what is good for you"
+    ]
+   ],
+   "tr": "Hear once more my highest word, the most secret of all. You are very dear to me, and so I shall tell you what is good for you."
+  },
+  {
+   "v": 65,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु",
+    "मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे"
+   ],
+   "words": [
+    [
+     "मत्-मनाः भव",
+     "fix your mind on me"
+    ],
+    [
+     "मत्-भक्तः",
+     "be devoted to me"
+    ],
+    [
+     "मत्-याजी",
+     "worship me"
+    ],
+    [
+     "मां नमस्कुरु",
+     "bow to me"
+    ],
+    [
+     "माम् एव एष्यसि",
+     "you will come to me alone"
+    ],
+    [
+     "सत्यं ते प्रतिजाने",
+     "I promise you truly"
+    ],
+    [
+     "प्रियः असि मे",
+     "you are dear to me"
+    ]
+   ],
+   "tr": "Fix your mind on me, be devoted to me, worship me and bow to me. You will come to me. I promise you this truly, for you are dear to me."
+  },
+  {
+   "v": 66,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज",
+    "अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः"
+   ],
+   "words": [
+    [
+     "सर्व-धर्मान् परित्यज्य",
+     "giving up all dharmas"
+    ],
+    [
+     "माम् एकं शरणं व्रज",
+     "take refuge in me alone"
+    ],
+    [
+     "अहं त्वा सर्व-पापेभ्यः मोक्षयिष्यामि",
+     "I shall free you from all wrongs"
+    ],
+    [
+     "मा शुचः",
+     "do not grieve"
+    ]
+   ],
+   "tr": "Give up all dharmas and take refuge in me alone. I shall free you from all wrongs. Do not grieve."
+  },
+  {
+   "v": 67,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इदं ते नातपस्काय नाभक्ताय कदाचन",
+    "न चाशुश्रूषवे वाच्यं न च मां योऽभ्यसूयति"
+   ],
+   "words": [
+    [
+     "इदं ते न वाच्यं कदाचन",
+     "you should never tell this"
+    ],
+    [
+     "न अतपस्काय",
+     "to one without discipline"
+    ],
+    [
+     "न अभक्ताय",
+     "or without devotion"
+    ],
+    [
+     "न च अशुश्रूषवे",
+     "or who does not wish to hear"
+    ],
+    [
+     "न च मां यः अभ्यसूयति",
+     "or who finds fault with me"
+    ]
+   ],
+   "tr": "You should never tell this to anyone who has no self-discipline or devotion, who does not wish to hear it, or who finds fault with me."
+  },
+  {
+   "v": 68,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "य इमं परमं गुह्यं मद्भक्तेष्वभिधास्यति",
+    "भक्तिं मयि परां कृत्वा मामेवैष्यत्यसंशयः"
+   ],
+   "words": [
+    [
+     "यः इमं परमं गुह्यम्",
+     "whoever, this highest secret"
+    ],
+    [
+     "मत्-भक्तेषु अभिधास्यति",
+     "teaches among my devotees"
+    ],
+    [
+     "भक्तिं मयि परां कृत्वा",
+     "showing the highest devotion to me"
+    ],
+    [
+     "माम् एव एष्यति असंशयः",
+     "will come to me without doubt"
+    ]
+   ],
+   "tr": "Whoever teaches this highest secret to my devotees shows the highest devotion to me, and will come to me without doubt."
+  },
+  {
+   "v": 69,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न च तस्मान्मनुष्येषु कश्चिन्मे प्रियकृत्तमः",
+    "भविता न च मे तस्मादन्यः प्रियतरो भुवि"
+   ],
+   "words": [
+    [
+     "न च तस्मात् मनुष्येषु कश्चित्",
+     "and no one among people"
+    ],
+    [
+     "मे प्रिय-कृत्तमः",
+     "does what is dearer to me than he"
+    ],
+    [
+     "भविता न च मे तस्मात् अन्यः",
+     "nor will there be another"
+    ],
+    [
+     "प्रियतरः भुवि",
+     "dearer to me on earth"
+    ]
+   ],
+   "tr": "No one among people does anything dearer to me than this, and no one on earth will ever be dearer to me."
+  },
+  {
+   "v": 70,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अध्येष्यते च य इमं धर्म्यं संवादमावयोः",
+    "ज्ञानयज्ञेन तेनाहमिष्टः स्यामिति मे मतिः"
+   ],
+   "words": [
+    [
+     "अध्येष्यते च यः इमम्",
+     "and whoever studies this"
+    ],
+    [
+     "धर्म्यं संवादम् आवयोः",
+     "sacred conversation of ours"
+    ],
+    [
+     "ज्ञान-यज्ञेन तेन अहम् इष्टः स्याम्",
+     "by that person I shall be worshipped with the sacrifice of knowledge"
+    ],
+    [
+     "इति मे मतिः",
+     "that is my view"
+    ]
+   ],
+   "tr": "And whoever studies this sacred conversation of ours will be worshipping me with the sacrifice of knowledge. That is my view."
+  },
+  {
+   "v": 71,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "श्रद्धावाननसूयश्च शृणुयादपि यो नरः",
+    "सोऽपि मुक्तः शुभाँल्लोकान्प्राप्नुयात्पुण्यकर्मणाम्"
+   ],
+   "words": [
+    [
+     "श्रद्धावान् अनसूयः च",
+     "full of faith and not finding fault"
+    ],
+    [
+     "शृणुयात् अपि यः नरः",
+     "the person who even just listens"
+    ],
+    [
+     "सः अपि मुक्तः",
+     "that person too is freed"
+    ],
+    [
+     "शुभान् लोकान् प्राप्नुयात् पुण्य-कर्मणाम्",
+     "and reaches the happy worlds of those who do good"
+    ]
+   ],
+   "tr": "Even a person who simply listens to it, with faith and without finding fault, is freed and reaches the happy worlds of those who do good."
+  },
+  {
+   "v": 72,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा",
+    "कच्चिदज्ञानसंमोहः प्रनष्टस्ते धनञ्जय"
+   ],
+   "words": [
+    [
+     "कच्चित् एतत् श्रुतं त्वया",
+     "have you heard this"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "एक-अग्रेण चेतसा",
+     "with a mind fixed on one point"
+    ],
+    [
+     "कच्चित् अज्ञान-सम्मोहः प्रनष्टः ते",
+     "has your delusion, born of ignorance, been destroyed"
+    ],
+    [
+     "धनञ्जय",
+     "O Dhananjaya"
+    ]
+   ],
+   "tr": "Arjuna, have you heard this with your full attention? Has your delusion, born of ignorance, been destroyed?"
+  },
+  {
+   "v": 73,
+   "speaker": "Arjuna",
+   "opens": "अर्जुन उवाच",
+   "skt": [
+    "नष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत",
+    "स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव"
+   ],
+   "words": [
+    [
+     "नष्टः मोहः",
+     "my delusion is gone"
+    ],
+    [
+     "स्मृतिः लब्धा",
+     "I have recovered my memory"
+    ],
+    [
+     "त्वत्-प्रसादात् मया",
+     "by your grace"
+    ],
+    [
+     "अच्युत",
+     "O Achyuta (Krishna)"
+    ],
+    [
+     "स्थितः अस्मि गत-सन्देहः",
+     "I stand firm, my doubts gone"
+    ],
+    [
+     "करिष्ये वचनं तव",
+     "I shall do as you say"
+    ]
+   ],
+   "tr": "Arjuna said: My delusion is gone, Krishna, and by your grace I have recovered my understanding. I stand firm, my doubts are gone, and I shall do as you say."
+  },
+  {
+   "v": 74,
+   "speaker": "Sanjaya",
+   "opens": "सञ्जय उवाच",
+   "skt": [
+    "इत्यहं वासुदेवस्य पार्थस्य च महात्मनः",
+    "संवादमिममश्रौषमद्भुतं रोमहर्षणम्"
+   ],
+   "words": [
+    [
+     "इति अहं वासुदेवस्य पार्थस्य च महात्मनः",
+     "so I, of Vasudeva (Krishna) and of the great-souled Partha (Arjuna)"
+    ],
+    [
+     "संवादम् इमम् अश्रौषम्",
+     "heard this conversation"
+    ],
+    [
+     "अद्भुतं रोम-हर्षणम्",
+     "wonderful, making the hair stand on end"
+    ]
+   ],
+   "tr": "Sanjaya said: So I heard this wonderful conversation between Krishna and the great-souled Arjuna, which makes my hair stand on end."
+  },
+  {
+   "v": 75,
+   "speaker": "Sanjaya",
+   "opens": "",
+   "skt": [
+    "व्यासप्रसादाच्छ्रुतवानेतद्गुह्यमहं परम्",
+    "योगं योगेश्वरात्कृष्णात्साक्षात्कथयतः स्वयम्"
+   ],
+   "words": [
+    [
+     "व्यास-प्रसादात् श्रुतवान् अहम्",
+     "by the grace of Vyasa I heard"
+    ],
+    [
+     "एतत् गुह्यं परम्",
+     "this supreme secret"
+    ],
+    [
+     "योगम्",
+     "this yoga"
+    ],
+    [
+     "योग-ईश्वरात् कृष्णात्",
+     "from Krishna, the Lord of yoga"
+    ],
+    [
+     "साक्षात् कथयतः स्वयम्",
+     "as he himself taught it directly"
+    ]
+   ],
+   "tr": "By the grace of Vyasa I heard this supreme secret, this yoga, directly from Krishna, the Lord of yoga, as he himself taught it."
+  },
+  {
+   "v": 76,
+   "speaker": "Sanjaya",
+   "opens": "",
+   "skt": [
+    "राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम्",
+    "केशवार्जुनयोः पुण्यं हृष्यामि च मुहुर्मुहुः"
+   ],
+   "words": [
+    [
+     "राजन्",
+     "O King (Dhritarashtra)"
+    ],
+    [
+     "संस्मृत्य संस्मृत्य",
+     "remembering again and again"
+    ],
+    [
+     "संवादम् इमम् अद्भुतम्",
+     "this wonderful conversation"
+    ],
+    [
+     "केशव-अर्जुनयोः पुण्यम्",
+     "sacred, between Keshava (Krishna) and Arjuna"
+    ],
+    [
+     "हृष्यामि च मुहुः मुहुः",
+     "I rejoice again and again"
+    ]
+   ],
+   "tr": "O King, as I remember again and again this wonderful and sacred conversation between Krishna and Arjuna, I rejoice again and again."
+  },
+  {
+   "v": 77,
+   "speaker": "Sanjaya",
+   "opens": "",
+   "skt": [
+    "तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरेः",
+    "विस्मयो मे महान् राजन् हृष्यामि च पुनः पुनः"
+   ],
+   "words": [
+    [
+     "तत् च संस्मृत्य संस्मृत्य",
+     "and remembering again and again"
+    ],
+    [
+     "रूपम् अति-अद्भुतं हरेः",
+     "that most wonderful form of Hari (Krishna)"
+    ],
+    [
+     "विस्मयः मे महान्",
+     "my amazement is great"
+    ],
+    [
+     "राजन्",
+     "O King"
+    ],
+    [
+     "हृष्यामि च पुनः पुनः",
+     "and I rejoice again and again"
+    ]
+   ],
+   "tr": "And as I remember again and again that most wonderful form of Hari, O King, my amazement is great, and I rejoice again and again."
+  },
+  {
+   "v": 78,
+   "speaker": "Sanjaya",
+   "opens": "",
+   "skt": [
+    "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः",
+    "तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम"
+   ],
+   "words": [
+    [
+     "यत्र योग-ईश्वरः कृष्णः",
+     "where there is Krishna, the Lord of yoga"
+    ],
+    [
+     "यत्र पार्थः धनुः-धरः",
+     "and where there is Partha (Arjuna), the archer"
+    ],
+    [
+     "तत्र श्रीः विजयः भूतिः",
+     "there will be fortune, victory, well-being"
+    ],
+    [
+     "ध्रुवा नीतिः",
+     "and firm right conduct"
+    ],
+    [
+     "मतिः मम",
+     "that is my belief"
+    ]
+   ],
+   "tr": "Wherever there is Krishna, the Lord of yoga, and wherever there is Arjuna, the archer, there will surely be fortune, victory, well-being and right conduct. That is my belief."
+  }
+ ]
+}

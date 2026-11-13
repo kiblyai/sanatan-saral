@@ -265,6 +265,25 @@ def update_sitemap(urls):
     open(path, 'w', encoding='utf-8').write(s)
 
 
+def update_llms(c, meta, n):
+    """llms.txt lists every chapter page; add this one after the previous chapter's line."""
+    path = 'llms.txt'
+    s = open(path, encoding='utf-8').read()
+    if 'gita-%d.html' % c in s:
+        return
+    line = ('- [Bhagavad Gita Chapter %d in English: All %d Verses Explained](%sgita-%d.html): All %d verses of Bhagavad Gita '
+            'Chapter %d (%s) in Sanskrit with transliteration, English translation and a word-by-word meaning of each verse.'
+            % (c, n, SITE, c, n, c, meta['roman_name']))
+    out, done = [], False
+    for l in s.split('\n'):
+        out.append(l)
+        if '(%sgita-%d.html)' % (SITE, c - 1) in l:
+            out.append(line); done = True
+    if not done:
+        raise SystemExit('llms.txt: no line for chapter %d to follow' % (c - 1))
+    open(path, 'w', encoding='utf-8').write('\n'.join(out))
+
+
 def main():
     c = int(sys.argv[1])
     data = json.load(open(os.path.join(HERE, 'ch%02d.json' % c), encoding='utf-8'))
@@ -299,6 +318,7 @@ def main():
     link_previous_chapter(c)
     link_hub(c, len(verses))
     update_search(c, verses, featured)
+    update_llms(c, meta, len(verses))
     update_sitemap([SITE + 'gita-%d.html' % c] + ['%sgita-%d-%d.html' % (SITE, c, v['v']) for v in verses])
     print('chapter %d: %d verse pages written, %d featured pages relinked, chapter page written' % (c, made, len(featured)))
 

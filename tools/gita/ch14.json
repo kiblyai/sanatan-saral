@@ -1,0 +1,846 @@
+{
+ "meta": {
+  "n": 14,
+  "featured": [
+   5
+  ],
+  "name": "The Three Gunas",
+  "skt_name": "गुणत्रयविभागयोगः",
+  "roman_name": "Gunatraya Vibhaga Yoga",
+  "outline": "Verses 1–4: the highest knowledge, with nature as the womb and Krishna as the father of all beings; 5–9: the three gunas, goodness, passion and dullness, and how each one binds; 10–13: how to tell which guna is strongest; 14–18: where each guna leads, at death and after; 19–20: going beyond the gunas; 21–27: the signs of a person who has gone beyond them, and devotion as the way."
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "परं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम्",
+    "यज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः"
+   ],
+   "words": [
+    [
+     "परं भूयः प्रवक्ष्यामि",
+     "I shall tell you again the highest"
+    ],
+    [
+     "ज्ञानानां ज्ञानम् उत्तमम्",
+     "the best of all knowledge"
+    ],
+    [
+     "यत् ज्ञात्वा",
+     "knowing which"
+    ],
+    [
+     "मुनयः सर्वे",
+     "all the sages"
+    ],
+    [
+     "परां सिद्धिम् इतः गताः",
+     "have gone from here to the highest perfection"
+    ]
+   ],
+   "tr": "Krishna said: I shall tell you once more the highest knowledge, the best of all knowledge. Knowing it, all the sages have gone from this world to the highest perfection."
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः",
+    "सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च"
+   ],
+   "words": [
+    [
+     "इदं ज्ञानम् उपाश्रित्य",
+     "taking refuge in this knowledge"
+    ],
+    [
+     "मम साधर्म्यम् आगताः",
+     "they have come to share my nature"
+    ],
+    [
+     "सर्गे अपि न उपजायन्ते",
+     "they are not born even at creation"
+    ],
+    [
+     "प्रलये न व्यथन्ति च",
+     "and are not troubled at the dissolution"
+    ]
+   ],
+   "tr": "Those who take refuge in this knowledge come to share my nature. They are not born when the world is created, and they are not troubled when it dissolves."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मम योनिर्महद्ब्रह्म तस्मिन् गर्भं दधाम्यहम्",
+    "संभवः सर्वभूतानां ततो भवति भारत"
+   ],
+   "words": [
+    [
+     "मम योनिः महत् ब्रह्म",
+     "great nature is my womb"
+    ],
+    [
+     "तस्मिन् गर्भं दधामि अहम्",
+     "in it I place the seed"
+    ],
+    [
+     "सम्भवः सर्व-भूतानाम्",
+     "the birth of all beings"
+    ],
+    [
+     "ततः भवति",
+     "comes from that"
+    ],
+    [
+     "भारत",
+     "O descendant of Bharata (Arjuna)"
+    ]
+   ],
+   "tr": "Great nature is my womb. In it I place the seed, and from that, Arjuna, all beings are born."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः",
+    "तासां ब्रह्म महद्योनिरहं बीजप्रदः पिता"
+   ],
+   "words": [
+    [
+     "सर्व-योनिषु",
+     "in all wombs"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "मूर्तयः सम्भवन्ति याः",
+     "whatever forms are born"
+    ],
+    [
+     "तासां ब्रह्म महत् योनिः",
+     "great nature is their womb"
+    ],
+    [
+     "अहं बीज-प्रदः पिता",
+     "and I am the father who gives the seed"
+    ]
+   ],
+   "tr": "Whatever forms are born in any womb, Arjuna, great nature is their womb and I am the father who gives the seed."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सत्त्वं रजस्तम इति गुणाः प्रकृतिसंभवाः",
+    "निबध्नन्ति महाबाहो देहे देहिनमव्ययम्"
+   ],
+   "words": [
+    [
+     "सत्त्वं रजः तमः इति",
+     "goodness (sattva), passion (rajas) and dullness (tamas)"
+    ],
+    [
+     "गुणाः प्रकृति-सम्भवाः",
+     "these gunas, born of nature"
+    ],
+    [
+     "निबध्नन्ति",
+     "bind"
+    ],
+    [
+     "महा-बाहो",
+     "O mighty-armed (Arjuna)"
+    ],
+    [
+     "देहे देहिनम् अव्ययम्",
+     "the unchanging soul to the body"
+    ]
+   ],
+   "tr": "Goodness, passion and dullness, the three gunas born of nature, bind the unchanging soul to the body, Arjuna."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम्",
+    "सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ"
+   ],
+   "words": [
+    [
+     "तत्र सत्त्वं निर्मलत्वात्",
+     "of these, goodness, being pure"
+    ],
+    [
+     "प्रकाशकम् अनामयम्",
+     "gives light and is healthy"
+    ],
+    [
+     "सुख-सङ्गेन बध्नाति",
+     "it binds by attachment to happiness"
+    ],
+    [
+     "ज्ञान-सङ्गेन च",
+     "and by attachment to knowledge"
+    ],
+    [
+     "अनघ",
+     "O sinless one (Arjuna)"
+    ]
+   ],
+   "tr": "Of these, goodness is pure, and so it gives light and health. It binds by attachment to happiness and to knowledge, Arjuna."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम्",
+    "तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम्"
+   ],
+   "words": [
+    [
+     "रजः राग-आत्मकं विद्धि",
+     "know that passion is of the nature of desire"
+    ],
+    [
+     "तृष्णा-सङ्ग-समुद्भवम्",
+     "it gives rise to craving and attachment"
+    ],
+    [
+     "तत् निबध्नाति देहिनम्",
+     "it binds the soul"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "कर्म-सङ्गेन",
+     "by attachment to action"
+    ]
+   ],
+   "tr": "Know that passion is of the nature of desire, and gives rise to craving and attachment. It binds the soul, Arjuna, by attachment to action."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम्",
+    "प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत"
+   ],
+   "words": [
+    [
+     "तमः तु अज्ञान-जं विद्धि",
+     "but know that dullness is born of ignorance"
+    ],
+    [
+     "मोहनं सर्व-देहिनाम्",
+     "it deludes all embodied beings"
+    ],
+    [
+     "प्रमाद-आलस्य-निद्राभिः",
+     "by carelessness, laziness and sleep"
+    ],
+    [
+     "तत् निबध्नाति",
+     "it binds"
+    ],
+    [
+     "भारत",
+     "O descendant of Bharata (Arjuna)"
+    ]
+   ],
+   "tr": "But know that dullness is born of ignorance and deludes all beings. It binds, Arjuna, by carelessness, laziness and sleep."
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत",
+    "ज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत"
+   ],
+   "words": [
+    [
+     "सत्त्वं सुखे सञ्जयति",
+     "goodness ties a person to happiness"
+    ],
+    [
+     "रजः कर्मणि",
+     "passion to action"
+    ],
+    [
+     "भारत",
+     "O descendant of Bharata (Arjuna)"
+    ],
+    [
+     "ज्ञानम् आवृत्य तु तमः",
+     "but dullness, covering knowledge"
+    ],
+    [
+     "प्रमादे सञ्जयति उत",
+     "ties a person to carelessness"
+    ]
+   ],
+   "tr": "Goodness ties a person to happiness, Arjuna, and passion ties a person to action. But dullness covers knowledge and ties a person to carelessness."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "रजस्तमश्चाभिभूय सत्त्वं भवति भारत",
+    "रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा"
+   ],
+   "words": [
+    [
+     "रजः तमः च अभिभूय",
+     "overpowering passion and dullness"
+    ],
+    [
+     "सत्त्वं भवति",
+     "goodness rises"
+    ],
+    [
+     "भारत",
+     "O descendant of Bharata (Arjuna)"
+    ],
+    [
+     "रजः सत्त्वं तमः च एव",
+     "passion rises over goodness and dullness"
+    ],
+    [
+     "तमः सत्त्वं रजः तथा",
+     "and dullness over goodness and passion"
+    ]
+   ],
+   "tr": "Sometimes goodness rises, Arjuna, overpowering passion and dullness. Sometimes passion overpowers goodness and dullness, and sometimes dullness overpowers goodness and passion."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते",
+    "ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत"
+   ],
+   "words": [
+    [
+     "सर्व-द्वारेषु देहे अस्मिन्",
+     "in all the gates of this body"
+    ],
+    [
+     "प्रकाशः उपजायते ज्ञानम्",
+     "the light of knowledge shines"
+    ],
+    [
+     "यदा",
+     "when"
+    ],
+    [
+     "तदा विद्यात्",
+     "then one should know"
+    ],
+    [
+     "विवृद्धं सत्त्वम् इति उत",
+     "that goodness has grown strong"
+    ]
+   ],
+   "tr": "When the light of knowledge shines through all the gates of this body, know that goodness has grown strong."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा",
+    "रजस्येतानि जायन्ते विवृद्धे भरतर्षभ"
+   ],
+   "words": [
+    [
+     "लोभः",
+     "greed"
+    ],
+    [
+     "प्रवृत्तिः",
+     "constant activity"
+    ],
+    [
+     "आरम्भः कर्मणाम्",
+     "starting many projects"
+    ],
+    [
+     "अशमः",
+     "restlessness"
+    ],
+    [
+     "स्पृहा",
+     "longing"
+    ],
+    [
+     "रजसि एतानि जायन्ते विवृद्धे",
+     "these arise when passion grows strong"
+    ],
+    [
+     "भरतर्षभ",
+     "O best of the Bharatas (Arjuna)"
+    ]
+   ],
+   "tr": "Greed, constant activity, the starting of many projects, restlessness and longing: these arise, Arjuna, when passion grows strong."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च",
+    "तमस्येतानि जायन्ते विवृद्धे कुरुनन्दन"
+   ],
+   "words": [
+    [
+     "अप्रकाशः",
+     "darkness"
+    ],
+    [
+     "अप्रवृत्तिः च",
+     "inactivity"
+    ],
+    [
+     "प्रमादः",
+     "carelessness"
+    ],
+    [
+     "मोहः एव च",
+     "and delusion"
+    ],
+    [
+     "तमसि एतानि जायन्ते विवृद्धे",
+     "these arise when dullness grows strong"
+    ],
+    [
+     "कुरु-नन्दन",
+     "O joy of the Kurus (Arjuna)"
+    ]
+   ],
+   "tr": "Darkness, inactivity, carelessness and delusion: these arise, Arjuna, when dullness grows strong."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत्",
+    "तदोत्तमविदां लोकानमलान्प्रतिपद्यते"
+   ],
+   "words": [
+    [
+     "यदा सत्त्वे प्रवृद्धे तु",
+     "when goodness is strong"
+    ],
+    [
+     "प्रलयं याति देह-भृत्",
+     "and the embodied soul meets death"
+    ],
+    [
+     "तदा उत्तम-विदां लोकान् अमलान्",
+     "then the pure worlds of those who know the highest"
+    ],
+    [
+     "प्रतिपद्यते",
+     "it reaches"
+    ]
+   ],
+   "tr": "If a person dies when goodness is strong, that soul reaches the pure worlds of those who know the highest."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते",
+    "तथा प्रलीनस्तमसि मूढयोनिषु जायते"
+   ],
+   "words": [
+    [
+     "रजसि प्रलयं गत्वा",
+     "dying when passion is strong"
+    ],
+    [
+     "कर्म-सङ्गिषु जायते",
+     "one is born among people attached to action"
+    ],
+    [
+     "तथा प्रलीनः तमसि",
+     "and dying in dullness"
+    ],
+    [
+     "मूढ-योनिषु जायते",
+     "one is born among the unthinking"
+    ]
+   ],
+   "tr": "One who dies when passion is strong is born among people attached to action. One who dies in dullness is born among creatures without understanding."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम्",
+    "रजसस्तु फलं दुःखमज्ञानं तमसः फलम्"
+   ],
+   "words": [
+    [
+     "कर्मणः सुकृतस्य आहुः",
+     "they say that of good action"
+    ],
+    [
+     "सात्त्विकं निर्मलं फलम्",
+     "the fruit is pure and of goodness"
+    ],
+    [
+     "रजसः तु फलं दुःखम्",
+     "but the fruit of passion is pain"
+    ],
+    [
+     "अज्ञानं तमसः फलम्",
+     "and the fruit of dullness is ignorance"
+    ]
+   ],
+   "tr": "They say that the fruit of good action is pure and belongs to goodness. The fruit of passion is pain, and the fruit of dullness is ignorance."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च",
+    "प्रमादमोहौ तमसो भवतोऽज्ञानमेव च"
+   ],
+   "words": [
+    [
+     "सत्त्वात् सञ्जायते ज्ञानम्",
+     "from goodness comes knowledge"
+    ],
+    [
+     "रजसः लोभः एव च",
+     "from passion, greed"
+    ],
+    [
+     "प्रमाद-मोहौ तमसः भवतः",
+     "from dullness come carelessness and delusion"
+    ],
+    [
+     "अज्ञानम् एव च",
+     "and also ignorance"
+    ]
+   ],
+   "tr": "From goodness comes knowledge, and from passion comes greed. From dullness come carelessness, delusion and ignorance."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः",
+    "जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः"
+   ],
+   "words": [
+    [
+     "ऊर्ध्वं गच्छन्ति सत्त्व-स्थाः",
+     "those settled in goodness go upward"
+    ],
+    [
+     "मध्ये तिष्ठन्ति राजसाः",
+     "those of passion stay in the middle"
+    ],
+    [
+     "जघन्य-गुण-वृत्ति-स्थाः",
+     "settled in the ways of the lowest guna"
+    ],
+    [
+     "अधः गच्छन्ति तामसाः",
+     "those of dullness go downward"
+    ]
+   ],
+   "tr": "Those settled in goodness go upward. Those of passion stay in the middle. Those of dullness, settled in the ways of the lowest guna, go downward."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति",
+    "गुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति"
+   ],
+   "words": [
+    [
+     "न अन्यं गुणेभ्यः कर्तारम्",
+     "no doer other than the gunas"
+    ],
+    [
+     "यदा द्रष्टा अनुपश्यति",
+     "when the one who sees perceives"
+    ],
+    [
+     "गुणेभ्यः च परं वेत्ति",
+     "and knows what is beyond the gunas"
+    ],
+    [
+     "मत्-भावं सः अधिगच्छति",
+     "that person reaches my state"
+    ]
+   ],
+   "tr": "When the one who sees perceives that there is no doer other than the gunas, and knows what is beyond the gunas, that person reaches my state."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान्",
+    "जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते"
+   ],
+   "words": [
+    [
+     "गुणान् एतान् अतीत्य त्रीन्",
+     "going beyond these three gunas"
+    ],
+    [
+     "देही",
+     "the embodied soul"
+    ],
+    [
+     "देह-समुद्भवान्",
+     "from which the body arises"
+    ],
+    [
+     "जन्म-मृत्यु-जरा-दुःखैः विमुक्तः",
+     "freed from birth, death, old age and sorrow"
+    ],
+    [
+     "अमृतम् अश्नुते",
+     "reaches immortality"
+    ]
+   ],
+   "tr": "When the soul goes beyond these three gunas, from which the body arises, it is freed from birth, death, old age and sorrow, and reaches immortality."
+  },
+  {
+   "v": 21,
+   "speaker": "Arjuna",
+   "opens": "अर्जुन उवाच",
+   "skt": [
+    "कैर्लिङ्गैस्त्रीन्गुणानेतानतीतो भवति प्रभो",
+    "किमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते"
+   ],
+   "words": [
+    [
+     "कैः लिङ्गैः",
+     "by what signs"
+    ],
+    [
+     "त्रीन् गुणान् एतान् अतीतः भवति",
+     "is one known to have gone beyond these three gunas"
+    ],
+    [
+     "प्रभो",
+     "O Lord"
+    ],
+    [
+     "किम्-आचारः",
+     "how does such a person behave"
+    ],
+    [
+     "कथं च एतान् त्रीन् गुणान् अतिवर्तते",
+     "and how does one go beyond these three gunas"
+    ]
+   ],
+   "tr": "Arjuna asked: Lord, what are the signs of a person who has gone beyond these three gunas? How does such a person behave, and how does one go beyond the three gunas?"
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "प्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव",
+    "न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति"
+   ],
+   "words": [
+    [
+     "प्रकाशं च प्रवृत्तिं च मोहम् एव च",
+     "light, activity and delusion"
+    ],
+    [
+     "पाण्डव",
+     "O son of Pandu (Arjuna)"
+    ],
+    [
+     "न द्वेष्टि सम्प्रवृत्तानि",
+     "one does not hate them when they are present"
+    ],
+    [
+     "न निवृत्तानि काङ्क्षति",
+     "and does not long for them when they are gone"
+    ]
+   ],
+   "tr": "Krishna said: Such a person, Arjuna, does not hate light, activity or delusion when they are present, and does not long for them when they are gone."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "उदासीनवदासीनो गुणैर्यो न विचाल्यते",
+    "गुणा वर्तन्त इत्येव योऽवतिष्ठति नेङ्गते"
+   ],
+   "words": [
+    [
+     "उदासीनवत् आसीनः",
+     "seated like one who is not involved"
+    ],
+    [
+     "गुणैः यः न विचाल्यते",
+     "who is not shaken by the gunas"
+    ],
+    [
+     "गुणाः वर्तन्ते इति एव",
+     "knowing “it is only the gunas that act”"
+    ],
+    [
+     "यः अवतिष्ठति न इङ्गते",
+     "who stands firm and does not waver"
+    ]
+   ],
+   "tr": "Such a person sits like one who is not involved and is not shaken by the gunas. Knowing that it is only the gunas that act, that person stands firm and does not waver."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः",
+    "तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः"
+   ],
+   "words": [
+    [
+     "सम-दुःख-सुखः",
+     "the same in pain and pleasure"
+    ],
+    [
+     "स्व-स्थः",
+     "settled in the self"
+    ],
+    [
+     "सम-लोष्ट-अश्म-काञ्चनः",
+     "to whom a lump of earth, a stone and gold are the same"
+    ],
+    [
+     "तुल्य-प्रिय-अप्रियः",
+     "equal towards the pleasant and the unpleasant"
+    ],
+    [
+     "धीरः",
+     "steady"
+    ],
+    [
+     "तुल्य-निन्दा-आत्म-संस्तुतिः",
+     "to whom blame and praise of oneself are equal"
+    ]
+   ],
+   "tr": "The same in pain and pleasure, settled in the self; seeing a lump of earth, a stone and gold as the same; steady, and equal towards the pleasant and the unpleasant, towards blame and praise;"
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः",
+    "सर्वारम्भपरित्यागी गुणातीतः स उच्यते"
+   ],
+   "words": [
+    [
+     "मान-अपमानयोः तुल्यः",
+     "the same in honour and insult"
+    ],
+    [
+     "तुल्यः मित्र-अरि-पक्षयोः",
+     "the same to the side of friend and of enemy"
+    ],
+    [
+     "सर्व-आरम्भ-परित्यागी",
+     "who has given up all selfish undertakings"
+    ],
+    [
+     "गुण-अतीतः सः उच्यते",
+     "that person is said to have gone beyond the gunas"
+    ]
+   ],
+   "tr": "the same in honour and insult, the same to friend and enemy, and having given up all selfish undertakings: such a person is said to have gone beyond the gunas."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मां च योऽव्यभिचारेण भक्तियोगेन सेवते",
+    "स गुणान्समतीत्यैतान् ब्रह्मभूयाय कल्पते"
+   ],
+   "words": [
+    [
+     "मां च यः सेवते",
+     "and whoever serves me"
+    ],
+    [
+     "अव्यभिचारेण भक्ति-योगेन",
+     "with the yoga of devotion that never strays"
+    ],
+    [
+     "सः गुणान् समतीत्य एतान्",
+     "going beyond these gunas"
+    ],
+    [
+     "ब्रह्म-भूयाय कल्पते",
+     "becomes fit to be one with Brahman"
+    ]
+   ],
+   "tr": "And whoever serves me with unfailing devotion goes beyond these gunas and becomes fit to be one with Brahman."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ब्रह्मणो हि प्रतिष्ठाऽहममृतस्याव्ययस्य च",
+    "शाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च"
+   ],
+   "words": [
+    [
+     "ब्रह्मणः हि प्रतिष्ठा अहम्",
+     "for I am the foundation of Brahman"
+    ],
+    [
+     "अमृतस्य अव्ययस्य च",
+     "the immortal and unchanging"
+    ],
+    [
+     "शाश्वतस्य च धर्मस्य",
+     "and of eternal dharma"
+    ],
+    [
+     "सुखस्य ऐकान्तिकस्य च",
+     "and of perfect happiness"
+    ]
+   ],
+   "tr": "For I am the foundation of Brahman, the immortal and unchanging, and of eternal dharma and perfect happiness."
+  }
+ ]
+}

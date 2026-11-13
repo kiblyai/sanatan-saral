@@ -29,6 +29,20 @@ def copy_c(folder, c):
     return {x['verse']: x['text'] for x in d}
 
 
+def repair(t):
+    """Known faults that are not differences of reading.
+
+    Copies A and C: a short-i sign typed before or after the virama (श्िच for श्चि, त्ति्र for त्त्रि); ṝ typed as ṛ plus a nukta (पितृ़न्);
+    शृणु spelled श्रृणु. Copy B: hyphens marking where a line was broken, and editors' notes in brackets.
+    """
+    t = re.sub(r'्ि([क-ह])', r'्\1ि', t)
+    t = re.sub(r'ि्([क-ह])', r'्\1ि', t)
+    t = t.replace('ृ़', 'ॄ').replace('़', '').replace('श्रृ', 'शृ')
+    t = re.sub(r'\([^)]*\)', '', t)
+    t = re.sub(r'(?<=[\u0901-\u0963])-\s*(?=[\u0901-\u0963])', '', t)
+    return t
+
+
 def speaker(t):
     m = SPEAKER.search(t)
     return re.sub(r'\s+', '', m.group(1)) if m else ''
@@ -45,7 +59,7 @@ def lines(t):
 
 def key(t, loose=True):
     """For comparing: letters only; optionally treat a class nasal + virama like an anusvara."""
-    k = re.sub(r'[\s।॥|]', '', ' '.join(lines(t)))
+    k = re.sub(r'[\s।॥|-]', '', ' '.join(lines(t)))
     if loose:
         k = re.sub('[ङञणनम]्(?=[क-ह])', 'ं', k)
         k = k.replace('ऽ', '')
@@ -62,16 +76,19 @@ def diff(a, b):
 if __name__ == '__main__':
     folder = sys.argv[1]
     A = load(folder)
-    for c in map(int, sys.argv[2:]):
+    for c in map(int, [x for x in sys.argv[2:] if x.isdigit()]):
         C = copy_c(folder, c)
         n = max(v for (cc, v) in A if cc == c)
         same = 0
         for v in range(1, n + 1):
-            ka, kb, kc = key(A[(c, v)]), key(copy_b(folder, c, v)), key(C[v])
+            ka, kb, kc = key(repair(A[(c, v)])), key(repair(copy_b(folder, c, v))), key(repair(C[v]))
             if ka == kb == kc:
                 same += 1
                 continue
             odd = 'B' if ka == kc else ('A' if kb == kc else ('C' if ka == kb else 'all three'))
             x, y = diff(ka, kb) if ka != kb else diff(ka, kc)
             print('%d.%d  differs: %s   %s | %s' % (c, v, odd, x, y))
+            if '--full' in sys.argv:
+                print('   A: ' + ' / '.join(lines(repair(A[(c, v)]))))
+                print('   B: ' + ' / '.join(lines(repair(copy_b(folder, c, v)))))
         print('chapter %d: %d of %d verses agree in all three copies' % (c, same, n))

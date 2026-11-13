@@ -1,0 +1,803 @@
+{
+ "meta": {
+  "n": 16,
+  "featured": [
+   1,
+   21
+  ],
+  "name": "Divine and Demonic Qualities",
+  "skt_name": "दैवासुरसम्पद्विभागयोगः",
+  "roman_name": "Daivasura Sampad Vibhaga Yoga",
+  "outline": "Verses 1–3: twenty-six divine qualities; 4–5: the demonic qualities, and where each kind leads; 6–18: how demonic people think and act; 19–20: what becomes of them; 21–22: desire, anger and greed, the three gates to hell; 23–24: the scriptures as a guide to what should be done."
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः",
+    "दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्"
+   ],
+   "words": [
+    [
+     "अभयम्",
+     "fearlessness"
+    ],
+    [
+     "सत्त्व-संशुद्धिः",
+     "purity of heart"
+    ],
+    [
+     "ज्ञान-योग-व्यवस्थितिः",
+     "steadiness in knowledge and yoga"
+    ],
+    [
+     "दानम्",
+     "giving"
+    ],
+    [
+     "दमः च",
+     "self-control"
+    ],
+    [
+     "यज्ञः च",
+     "sacrifice"
+    ],
+    [
+     "स्वाध्यायः",
+     "study of the scriptures"
+    ],
+    [
+     "तपः",
+     "discipline"
+    ],
+    [
+     "आर्जवम्",
+     "honesty"
+    ]
+   ],
+   "tr": "Krishna said: Fearlessness, purity of heart, steadiness in knowledge and yoga, giving, self-control, sacrifice, study of the scriptures, self-discipline and honesty;"
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम्",
+    "दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम्"
+   ],
+   "words": [
+    [
+     "अहिंसा सत्यम्",
+     "non-violence, truthfulness"
+    ],
+    [
+     "अक्रोधः",
+     "freedom from anger"
+    ],
+    [
+     "त्यागः",
+     "letting go"
+    ],
+    [
+     "शान्तिः",
+     "peace"
+    ],
+    [
+     "अपैशुनम्",
+     "not speaking ill of others"
+    ],
+    [
+     "दया भूतेषु",
+     "kindness to all beings"
+    ],
+    [
+     "अलोलुप्त्वम्",
+     "freedom from greed"
+    ],
+    [
+     "मार्दवम्",
+     "gentleness"
+    ],
+    [
+     "ह्रीः",
+     "modesty"
+    ],
+    [
+     "अचापलम्",
+     "steadiness"
+    ]
+   ],
+   "tr": "non-violence, truthfulness, freedom from anger, letting go, peace, not speaking ill of others, kindness to all beings, freedom from greed, gentleness, modesty and steadiness;"
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता",
+    "भवन्ति सम्पदं दैवीमभिजातस्य भारत"
+   ],
+   "words": [
+    [
+     "तेजः",
+     "vigour"
+    ],
+    [
+     "क्षमा",
+     "forgiveness"
+    ],
+    [
+     "धृतिः",
+     "courage"
+    ],
+    [
+     "शौचम्",
+     "purity"
+    ],
+    [
+     "अद्रोहः",
+     "freedom from ill will"
+    ],
+    [
+     "न अतिमानिता",
+     "freedom from pride"
+    ],
+    [
+     "भवन्ति सम्पदं दैवीम् अभिजातस्य",
+     "these belong to one born with the divine qualities"
+    ],
+    [
+     "भारत",
+     "O descendant of Bharata (Arjuna)"
+    ]
+   ],
+   "tr": "vigour, forgiveness, courage, purity, freedom from ill will and from pride: these, Arjuna, belong to a person born with the divine qualities."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च",
+    "अज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम्"
+   ],
+   "words": [
+    [
+     "दम्भः",
+     "pretence"
+    ],
+    [
+     "दर्पः",
+     "arrogance"
+    ],
+    [
+     "अभिमानः च",
+     "and conceit"
+    ],
+    [
+     "क्रोधः",
+     "anger"
+    ],
+    [
+     "पारुष्यम् एव च",
+     "harshness"
+    ],
+    [
+     "अज्ञानं च",
+     "and ignorance"
+    ],
+    [
+     "अभिजातस्य सम्पदम् आसुरीम्",
+     "belong to one born with the demonic qualities"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ]
+   ],
+   "tr": "Pretence, arrogance, conceit, anger, harshness and ignorance: these, Arjuna, belong to a person born with the demonic qualities."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता",
+    "मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव"
+   ],
+   "words": [
+    [
+     "दैवी सम्पत् विमोक्षाय",
+     "the divine qualities lead to freedom"
+    ],
+    [
+     "निबन्धाय आसुरी मता",
+     "the demonic are held to lead to bondage"
+    ],
+    [
+     "मा शुचः",
+     "do not grieve"
+    ],
+    [
+     "सम्पदं दैवीम् अभिजातः असि",
+     "you are born with the divine qualities"
+    ],
+    [
+     "पाण्डव",
+     "O son of Pandu (Arjuna)"
+    ]
+   ],
+   "tr": "The divine qualities lead to freedom, and the demonic to bondage. Do not grieve, Arjuna: you are born with the divine qualities."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "द्वौ भूतसर्गौ लोकेऽस्मिन् दैव आसुर एव च",
+    "दैवो विस्तरशः प्रोक्त आसुरं पार्थ मे शृणु"
+   ],
+   "words": [
+    [
+     "द्वौ भूत-सर्गौ लोके अस्मिन्",
+     "there are two kinds of beings in this world"
+    ],
+    [
+     "दैवः आसुरः एव च",
+     "the divine and the demonic"
+    ],
+    [
+     "दैवः विस्तरशः प्रोक्तः",
+     "the divine has been described at length"
+    ],
+    [
+     "आसुरं मे शृणु",
+     "now hear from me about the demonic"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ]
+   ],
+   "tr": "There are two kinds of beings in this world, the divine and the demonic. I have described the divine at length. Now hear from me, Arjuna, about the demonic."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः",
+    "न शौचं नापि चाचारो न सत्यं तेषु विद्यते"
+   ],
+   "words": [
+    [
+     "प्रवृत्तिं च निवृत्तिं च",
+     "what to do and what not to do"
+    ],
+    [
+     "जनाः न विदुः आसुराः",
+     "demonic people do not know"
+    ],
+    [
+     "न शौचं न अपि च आचारः",
+     "neither purity nor good conduct"
+    ],
+    [
+     "न सत्यं तेषु विद्यते",
+     "nor truth is found in them"
+    ]
+   ],
+   "tr": "Demonic people do not know what should be done and what should not be done. Neither purity, nor good conduct, nor truth is found in them."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम्",
+    "अपरस्परसम्भूतं किमन्यत्कामहैतुकम्"
+   ],
+   "words": [
+    [
+     "असत्यम् अप्रतिष्ठं ते जगत् आहुः",
+     "they say the world has no truth and no foundation"
+    ],
+    [
+     "अनीश्वरम्",
+     "no Lord"
+    ],
+    [
+     "अपरस्पर-सम्भूतम्",
+     "that it is born of the union of male and female"
+    ],
+    [
+     "किम् अन्यत्",
+     "what else"
+    ],
+    [
+     "काम-हैतुकम्",
+     "that desire is its only cause"
+    ]
+   ],
+   "tr": "They say that the world has no truth, no foundation and no Lord, that it is born only of the union of male and female, and that desire is its only cause."
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धयः",
+    "प्रभवन्त्युग्रकर्माणः क्षयाय जगतोऽहिताः"
+   ],
+   "words": [
+    [
+     "एतां दृष्टिम् अवष्टभ्य",
+     "holding to this view"
+    ],
+    [
+     "नष्ट-आत्मानः",
+     "these lost souls"
+    ],
+    [
+     "अल्प-बुद्धयः",
+     "of little understanding"
+    ],
+    [
+     "प्रभवन्ति उग्र-कर्माणः",
+     "rise up, doing cruel deeds"
+    ],
+    [
+     "क्षयाय जगतः अहिताः",
+     "as enemies of the world, to destroy it"
+    ]
+   ],
+   "tr": "Holding to this view, these lost souls of little understanding do cruel deeds and rise up as enemies of the world, to destroy it."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः",
+    "मोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः"
+   ],
+   "words": [
+    [
+     "कामम् आश्रित्य दुष्पूरम्",
+     "giving themselves to desire that can never be filled"
+    ],
+    [
+     "दम्भ-मान-मद-अन्विताः",
+     "full of pretence, pride and arrogance"
+    ],
+    [
+     "मोहात् गृहीत्वा असत्-ग्राहान्",
+     "holding false ideas out of delusion"
+    ],
+    [
+     "प्रवर्तन्ते अशुचि-व्रताः",
+     "they act with impure aims"
+    ]
+   ],
+   "tr": "Giving themselves to desire that can never be filled, full of pretence, pride and arrogance, they hold on to false ideas out of delusion and act with impure aims."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिताः",
+    "कामोपभोगपरमा एतावदिति निश्चिताः"
+   ],
+   "words": [
+    [
+     "चिन्ताम् अपरिमेयां च",
+     "and with worries beyond measure"
+    ],
+    [
+     "प्रलय-अन्ताम् उपाश्रिताः",
+     "that end only at death"
+    ],
+    [
+     "काम-उपभोग-परमाः",
+     "they take the enjoyment of desires as the highest aim"
+    ],
+    [
+     "एतावत् इति निश्चिताः",
+     "sure that this is all there is"
+    ]
+   ],
+   "tr": "Burdened with endless worries that end only at death, they take the enjoyment of desires as the highest aim and are sure that this is all there is."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आशापाशशतैर्बद्धाः कामक्रोधपरायणाः",
+    "ईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान्"
+   ],
+   "words": [
+    [
+     "आशा-पाश-शतैः बद्धाः",
+     "bound by hundreds of ropes of hope"
+    ],
+    [
+     "काम-क्रोध-परायणाः",
+     "given over to desire and anger"
+    ],
+    [
+     "ईहन्ते",
+     "they strive"
+    ],
+    [
+     "काम-भोग-अर्थम्",
+     "for the sake of enjoying their desires"
+    ],
+    [
+     "अन्यायेन अर्थ-सञ्चयान्",
+     "to pile up wealth by unjust means"
+    ]
+   ],
+   "tr": "Bound by hundreds of ropes of hope, given over to desire and anger, they strive to pile up wealth by unjust means so as to enjoy their desires."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम्",
+    "इदमस्तीदमपि मे भविष्यति पुनर्धनम्"
+   ],
+   "words": [
+    [
+     "इदम् अद्य मया लब्धम्",
+     "this I have gained today"
+    ],
+    [
+     "इमं प्राप्स्ये मनोरथम्",
+     "this wish I shall fulfil next"
+    ],
+    [
+     "इदम् अस्ति",
+     "this is mine"
+    ],
+    [
+     "इदम् अपि मे भविष्यति पुनः धनम्",
+     "and this wealth too will be mine"
+    ]
+   ],
+   "tr": "“Today I have gained this, and next I shall get what I want. This is mine, and that wealth too will be mine.”"
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "असौ मया हतः शत्रुर्हनिष्ये चापरानपि",
+    "ईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी"
+   ],
+   "words": [
+    [
+     "असौ मया हतः शत्रुः",
+     "that enemy I have killed"
+    ],
+    [
+     "हनिष्ये च अपरान् अपि",
+     "and I shall kill the others too"
+    ],
+    [
+     "ईश्वरः अहम्",
+     "I am the lord"
+    ],
+    [
+     "अहं भोगी",
+     "I am the enjoyer"
+    ],
+    [
+     "सिद्धः अहं बलवान् सुखी",
+     "I am successful, strong and happy"
+    ]
+   ],
+   "tr": "“I have killed that enemy, and I shall kill the others too. I am the lord. I am the enjoyer. I am successful, strong and happy.”"
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया",
+    "यक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः"
+   ],
+   "words": [
+    [
+     "आढ्यः अभिजनवान् अस्मि",
+     "I am rich and well born"
+    ],
+    [
+     "कः अन्यः अस्ति सदृशः मया",
+     "who else is equal to me"
+    ],
+    [
+     "यक्ष्ये दास्यामि मोदिष्ये",
+     "I shall sacrifice, I shall give, I shall rejoice"
+    ],
+    [
+     "इति अज्ञान-विमोहिताः",
+     "so they think, deluded by ignorance"
+    ]
+   ],
+   "tr": "“I am rich and well born. Who is equal to me? I shall offer sacrifices, I shall give gifts, I shall rejoice.” So they think, deluded by ignorance."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अनेकचित्तविभ्रान्ता मोहजालसमावृताः",
+    "प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ"
+   ],
+   "words": [
+    [
+     "अनेक-चित्त-विभ्रान्ताः",
+     "confused by many thoughts"
+    ],
+    [
+     "मोह-जाल-समावृताः",
+     "caught in the net of delusion"
+    ],
+    [
+     "प्रसक्ताः काम-भोगेषु",
+     "addicted to the enjoyment of desires"
+    ],
+    [
+     "पतन्ति नरके अशुचौ",
+     "they fall into a foul hell"
+    ]
+   ],
+   "tr": "Confused by many thoughts, caught in the net of delusion and addicted to the enjoyment of their desires, they fall into a foul hell."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः",
+    "यजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम्"
+   ],
+   "words": [
+    [
+     "आत्म-सम्भाविताः",
+     "full of themselves"
+    ],
+    [
+     "स्तब्धाः",
+     "stubborn"
+    ],
+    [
+     "धन-मान-मद-अन्विताः",
+     "drunk with wealth and pride"
+    ],
+    [
+     "यजन्ते नाम-यज्ञैः ते",
+     "they perform sacrifices in name only"
+    ],
+    [
+     "दम्भेन",
+     "for show"
+    ],
+    [
+     "अविधि-पूर्वकम्",
+     "and not in the right way"
+    ]
+   ],
+   "tr": "Full of themselves, stubborn, and drunk with wealth and pride, they perform sacrifices in name only, for show and not in the right way."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः",
+    "मामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः"
+   ],
+   "words": [
+    [
+     "अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः",
+     "given over to ego, force, arrogance, desire and anger"
+    ],
+    [
+     "माम् आत्म-पर-देहेषु प्रद्विषन्तः",
+     "hating me in their own bodies and in the bodies of others"
+    ],
+    [
+     "अभ्यसूयकाः",
+     "these envious people"
+    ]
+   ],
+   "tr": "Given over to ego, force, arrogance, desire and anger, these envious people hate me, who live in their own bodies and in the bodies of others."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तानहं द्विषतः क्रूरान्संसारेषु नराधमान्",
+    "क्षिपाम्यजस्रमशुभानासुरीष्वेव योनिषु"
+   ],
+   "words": [
+    [
+     "तान् अहं द्विषतः क्रूरान्",
+     "those hateful, cruel ones"
+    ],
+    [
+     "संसारेषु नर-अधमान्",
+     "the lowest of people, in the cycle of rebirth"
+    ],
+    [
+     "क्षिपामि अजस्रम्",
+     "I throw again and again"
+    ],
+    [
+     "अशुभान्",
+     "these harmful ones"
+    ],
+    [
+     "आसुरीषु एव योनिषु",
+     "into demonic wombs"
+    ]
+   ],
+   "tr": "These hateful, cruel and harmful people, the lowest of humankind, I throw again and again into demonic births in the cycle of rebirth."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आसुरीं योनिमापन्ना मूढा जन्मनि जन्मनि",
+    "मामप्राप्यैव कौन्तेय ततो यान्त्यधमां गतिम्"
+   ],
+   "words": [
+    [
+     "आसुरीं योनिम् आपन्नाः",
+     "having fallen into demonic wombs"
+    ],
+    [
+     "मूढाः जन्मनि जन्मनि",
+     "deluded in birth after birth"
+    ],
+    [
+     "माम् अप्राप्य एव",
+     "never reaching me"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "ततः यान्ति अधमां गतिम्",
+     "they sink to the lowest state"
+    ]
+   ],
+   "tr": "Falling into demonic births and deluded in life after life, Arjuna, they never reach me, and they sink to the lowest state."
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः",
+    "कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्"
+   ],
+   "words": [
+    [
+     "त्रिविधं नरकस्य इदं द्वारम्",
+     "this gate of hell is of three kinds"
+    ],
+    [
+     "नाशनम् आत्मनः",
+     "and destroys the soul"
+    ],
+    [
+     "कामः क्रोधः तथा लोभः",
+     "desire, anger and greed"
+    ],
+    [
+     "तस्मात् एतत् त्रयं त्यजेत्",
+     "so one should give up these three"
+    ]
+   ],
+   "tr": "There are three gates to hell, which destroy the soul: desire, anger and greed. So give up these three."
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "एतैर्विमुक्तः कौन्तेय तमोद्वारैस्त्रिभिर्नरः",
+    "आचरत्यात्मनः श्रेयस्ततो याति परां गतिम्"
+   ],
+   "words": [
+    [
+     "एतैः विमुक्तः",
+     "freed from these"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "तमः-द्वारैः त्रिभिः नरः",
+     "a person, from the three gates of darkness"
+    ],
+    [
+     "आचरति आत्मनः श्रेयः",
+     "does what is good for the soul"
+    ],
+    [
+     "ततः याति परां गतिम्",
+     "and so reaches the highest goal"
+    ]
+   ],
+   "tr": "A person who is freed from these three gates of darkness, Arjuna, does what is good for the soul and so reaches the highest goal."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः",
+    "न स सिद्धिमवाप्नोति न सुखं न परां गतिम्"
+   ],
+   "words": [
+    [
+     "यः शास्त्र-विधिम् उत्सृज्य",
+     "whoever sets aside the guidance of the scriptures"
+    ],
+    [
+     "वर्तते काम-कारतः",
+     "and acts as desire drives him"
+    ],
+    [
+     "न सः सिद्धिम् अवाप्नोति",
+     "does not reach perfection"
+    ],
+    [
+     "न सुखं न परां गतिम्",
+     "nor happiness, nor the highest goal"
+    ]
+   ],
+   "tr": "Whoever sets aside the guidance of the scriptures and acts as desire drives them reaches neither perfection, nor happiness, nor the highest goal."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ",
+    "ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि"
+   ],
+   "words": [
+    [
+     "तस्मात् शास्त्रं प्रमाणं ते",
+     "so let the scriptures be your guide"
+    ],
+    [
+     "कार्य-अकार्य-व्यवस्थितौ",
+     "in deciding what to do and what not to do"
+    ],
+    [
+     "ज्ञात्वा शास्त्र-विधान-उक्तम्",
+     "knowing what the scriptures teach"
+    ],
+    [
+     "कर्म कर्तुम् इह अर्हसि",
+     "you should do your work in this world"
+    ]
+   ],
+   "tr": "So let the scriptures be your guide in deciding what to do and what not to do. Knowing what the scriptures teach, do your work in this world."
+  }
+ ]
+}

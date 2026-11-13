@@ -49,12 +49,19 @@ Chapters 1 to 6 were written straight into their pages. From chapter 7 on, each 
 - `tools/gita/content/cNN.py` holds what was written for the site: the chapter's name and outline, and for each verse the
   speaker, the word-by-word list and the translation. Edit a meaning or a translation here.
 - `tools/gita/chNN.json` is that content joined with the Sanskrit. The Sanskrit is never typed by hand. It comes from an
-  open public-domain copy and is used only where three copies agree (see `tools/gita/sources.py` for which copies, and
-  `tools/gita/make_data.py` for the two typing faults it repairs). `--check-words` is a spelling check on the word lists.
+  open copy of the public-domain text and is checked against two more (see `tools/gita/sources.py` for which copies,
+  and for the typing faults it repairs). In chapters 7 to 18 the three copies agree letter for letter in 398 of the
+  420 verses. For the other 22 the content file says which copy is followed and why (`SETTLED`): mostly a typing slip
+  in one copy; in 8.7, 14.23 and 18.68 two readings exist in print and the one two copies share is used; in 9.21,
+  11.54, 16.1, 17.23 and 17.25 one copy is followed against the other two, for the reason given there.
+  `LINES` in a content file sets line breaks or spacing for a verse; the tool refuses it if any letter changes.
+  `--check-words` is a spelling check on the word lists.
 - `python3 tools/gita/build.py N`, then `python3 tools/split_languages.py`, writes `gita-N.html` and one page per verse,
-  links them from the chapter before, the Gita hub, the search index and the sitemap. Safe to run again.
+  links them from the chapter before, the Gita hub, the search index, the sitemap and `llms.txt`. Safe to run again.
 - The site follows the 700-verse numbering, in which chapter 13 has 34 verses. The three copies count 35 there, so
   site verse 13.n is their 13.(n+1).
+- Verses that already had a page with a full explanation (two in most chapters, listed as `featured`) keep that page;
+  only its previous/next links are updated.
 - New chapters are in English only. Their pages list no other languages, and the language buttons leave the reader on
   the English page.
 - To rebuild the data you need the three copies in one folder: `verse.json` from github.com/gita/gita (data/),
