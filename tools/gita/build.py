@@ -126,7 +126,7 @@ def verse_page(tpl, c, meta, v):
     headline = 'Bhagavad Gita %d.%d: %s' % (c, n, first)
     desc = shorten(v['tr']) + ' Sanskrit, pronunciation, word meanings and a simple explanation.'
     chap = 'Gita chapter %d: %s' % (c, meta['name'])
-    image = SITE + 'og/gita.png'
+    image = SITE + 'og/gita-%d.png?v=2' % c
     s = tpl
     s = sub1(r'<title>.*?</title>', '<title>%s</title>' % e(title), s, 'title')
     s = sub1(r'<meta name="description" content="[^"]*">', '<meta name="description" content="%s">' % html.escape(desc), s, 'description')
@@ -166,7 +166,7 @@ def chapter_page(tpl, c, meta, verses, featured):
     s = tpl
     s = s.replace('Bhagavad Gita Chapter 6 in English: All 47 Verses Explained', title)
     s = s.replace('All 47 verses of Bhagavad Gita Chapter 6 (Dhyana Yoga) in Sanskrit with transliteration, English translation and a simple explanation of each verse.', desc)
-    s = s.replace(SITE + 'gita-6.html', url).replace(SITE + 'og/gita-6.png', SITE + 'og/gita.png')
+    s = s.replace(SITE + 'gita-6.html', url).replace(SITE + 'og/gita-6.png?v=2', SITE + 'og/gita-%d.png?v=2' % c)
     s = sub1(r'"inLanguage":\[[^\]]*\]', '"inLanguage":["en"]', s, 'inLanguage')
     s = sub1(r'"dateModified":"[^"]*"', '"dateModified":"%s"' % datetime.date.today().isoformat(), s, 'dateModified')
     s = hreflang_en(s, url)

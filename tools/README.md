@@ -67,3 +67,11 @@ Chapters 1 to 6 were written straight into their pages. From chapter 7 on, each 
 - To rebuild the data you need the three copies in one folder: `verse.json` from github.com/gita/gita (data/),
   `B/<chapter>-<verse>.json` from github.com/vedicscriptures/bhagavad-gita (slok/), and `C/<chapter>.json` from
   github.com/bhavykhatri/DharmicData (SrimadBhagvadGita/).
+
+## Sharing pictures (og/)
+
+`python3 tools/og_images.py` remakes every picture in `og/` from its page's own top line and title (English, with
+the Hindi page's title under it); `python3 tools/og_images.py gita-7 kids` remakes only those. Run it after changing
+a page title. Pages link to the pictures as `og/<name>.png?v=2`: apps such as WhatsApp keep an old picture for a long
+time, so after remaking pictures that are already shared, raise that number in all pages so the apps fetch the new ones.
+The fonts it uses are in `tools/og-fonts` (SIL Open Font License).
