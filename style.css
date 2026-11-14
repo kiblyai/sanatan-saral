@@ -405,3 +405,15 @@ a.src{color:inherit;text-decoration:none}a.src:hover{text-decoration:underline}.
 #epics .sec-head,#read .sec-head,[id^="r-"] .sec-head,#map-india .sec-head,#etiquette .sec-head{--ico:var(--ico-temple)}
 .sec-head .eyebrow{color:var(--saffron)}
 @media print{.sec-head::before{display:none}}
+/* Tap targets: on touch screens every shared button and link is at least 44px tall (WCAG 2.5.5 / Google's
+   mobile guidance). Desktop pointers are unchanged. */
+@media (pointer:coarse){
+.topnav a,.bar nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px}details.menu>summary{min-height:44px;display:flex;align-items:center}.k-won-more a{display:inline-flex;align-items:center;min-height:44px}
+.menu-group a{display:flex;align-items:center;min-height:44px}
+.menu-size button{min-width:44px;min-height:44px}
+.lang button{min-height:44px}
+button.print-btn,button.sp-btn{min-width:44px;min-height:44px}
+footer a{display:inline-flex;align-items:center;min-height:44px}
+a.more{display:inline-flex;align-items:center;min-height:44px}
+.k-btn{min-height:44px}
+}
