@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="ml" data-lang="ml" data-page-lang="ml">
+<head>
+<base href="/">
+<script>/*lang-page*/(function(){var L="ml",P="ask.html",A=["hi", "gu", "te", "mr", "ta", "bn", "kn", "ml"],d=document.documentElement;d.setAttribute("data-lang",L);d.classList.add("lm");var q=P==="index.html"?"":P;function U(M){var h=M!=="en"&&A.indexOf(M)>=0,s=location.search.replace(/^\?/,"").split("&").filter(function(x){return x&&x.indexOf("lang=")!==0});if(M!=="en"&&!h)s.push("lang="+M);return(h?"/"+M+"/":"/")+q+(s.length?"?"+s.join("&"):"")+location.hash}if(L==="en"){var w=null;try{w=(new URLSearchParams(location.search).get("lang")||"").toLowerCase()||localStorage.getItem("sd-lang")}catch(e){}if(!w){var n=(navigator.language||"").toLowerCase().slice(0,2);if(A.indexOf(n)>=0)w=n}if(w&&w!=="en"&&A.indexOf(w)>=0){location.replace(U(w));return}}else{try{localStorage.setItem("sd-lang",L)}catch(e){}}document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(a&&document.querySelector("base")){var h=a.getAttribute("href")||"";if(h.charAt(0)==="#"&&h.length>1){e.preventDefault();var t=document.getElementById(decodeURIComponent(h.slice(1)));if(t){t.scrollIntoView();history.replaceState(null,"",location.pathname+h)}return}}var b=e.target.closest&&e.target.closest(".lang button[data-set]");if(!b)return;var M=b.getAttribute("data-set");if(M===L)return;e.preventDefault();e.stopImmediatePropagation();try{localStorage.setItem("sd-lang",M)}catch(x){}location.href=U(M)},true)})();</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="cover" name="claude:viewport-fit-sides"/>
+<title>ചോദ്യം ചോദിക്കൂ | സനാതന ധർമ്മം, ലളിതമായി</title>
+<meta name="description" content="ഹിന്ദുധർമ്മത്തെക്കുറിച്ച് ഇംഗ്ലീഷിലോ ഹിന്ദിയിലോ എന്തും ചോദിക്കൂ, സ്രോതസ്സ് പേജുകളുടെ ലിങ്കുകളോടെ ലളിതമായ ഉത്തരം നേടൂ.">
+<meta content="Hinduism, Hindu religion, Hindu dharma, Sanatan Dharma, Sanatana Dharma, Vedas, Upanishads, Bhagavad Gita, Ramayana, Mahabharata, Puranas, Hindu scriptures, Hindu philosophy, mantras, हिन्दू धर्म, सनातन धर्म, वेद, उपनिषद, भगवद्गीता" name="keywords"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&amp;family=Nunito:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600&amp;family=Tiro+Devanagari+Hindi&amp;family=Tiro+Devanagari+Sanskrit:ital@0;1&amp;family=Hind+Vadodara:wght@400;500;600;700&amp;family=Hind+Guntur:wght@400;500;600;700&amp;family=Hind+Madurai:wght@400;500;600;700&amp;family=Hind+Siliguri:wght@400;500;600;700&amp;family=Noto+Sans+Kannada:wght@400;500;600;700&amp;family=Noto+Serif+Kannada:wght@500;600;700&amp;family=Noto+Sans+Malayalam:wght@400;500;600;700&amp;family=Noto+Serif+Malayalam:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css?v=3" rel="stylesheet"/>
+<style>
+.sr{position:absolute;left:-9999px}
+.chat{display:flex;flex-direction:column;gap:.9rem}
+.chat-log{display:flex;flex-direction:column;gap:.8rem}
+.msg{display:flex}
+.msg.user{justify-content:flex-end}
+.bubble{max-width:88%;border-radius:20px;padding:.8rem 1rem;line-height:1.65;font-size:1rem;overflow-wrap:anywhere}
+.msg.bot .bubble{background:var(--paper-2);border-bottom-left-radius:6px}
+.msg.user .bubble{background:var(--indigo);color:var(--paper);border-bottom-right-radius:6px}
+.bubble p{margin:0 0 .55rem}.bubble p:last-child{margin:0}
+.bubble ul{margin:.2rem 0 .6rem;padding-left:1.2rem}
+.bubble .skt{font-family:var(--f-skt);font-size:1.15rem}
+.bubble .refs{margin-top:.6rem;padding-top:.5rem;border-top:1px dashed var(--line);font-size:.88rem;display:flex;flex-wrap:wrap;gap:.35rem}
+.bubble .refs a{border:1px solid var(--line);border-radius:99px;padding:.05rem .6rem;text-decoration:none;background:var(--paper)}
+.thinking{color:var(--ink-2);font-style:italic}
+.thinking::after{content:"";display:inline-block;width:1.2em;text-align:left;animation:dots 1.2s steps(4) infinite}
+@keyframes dots{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}
+.suggs{display:flex;flex-wrap:wrap;gap:.4rem}
+.sugg{font:inherit;font-size:.9rem;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);border-radius:99px;padding:.3rem .85rem;cursor:pointer}
+.sugg:hover{border-color:var(--sattva)}
+.chat-form{display:flex;flex-direction:column;gap:.5rem;background:var(--paper-2);border-radius:20px;padding:.7rem}
+.chat-form textarea{font:inherit;font-size:1rem;resize:vertical;min-height:3.2rem;border:1.5px solid var(--line);border-radius:14px;padding:.6rem .8rem;background:var(--paper);color:var(--ink)}
+.chat-actions{display:flex;gap:.5rem;justify-content:flex-end;align-items:center;flex-wrap:wrap}
+.send{font:inherit;font-weight:700;border:0;border-radius:99px;padding:.5rem 1.4rem;background:var(--indigo);color:var(--paper);cursor:pointer}
+.send:disabled{opacity:.5;cursor:default}
+.chip-btn{font:inherit;font-size:.9rem;border:1.5px solid var(--line);background:var(--paper);color:var(--ink-2);border-radius:99px;padding:.35rem .9rem;cursor:pointer}
+.chat-note{font-size:.85rem;color:var(--ink-2)}
+@media (prefers-reduced-motion:reduce){.thinking::after{animation:none;content:"..."}}
+</style>
+<style id="ml-css">
+:root:not([data-lang="ml"]) .ml{display:none!important}
+:root[data-lang="ml"] .xl{display:none!important}
+:root[data-lang="ml"] .menu summary .hi{display:none!important}
+:root[data-lang="ml"]{--f-body:"Noto Sans Malayalam","Nunito",system-ui,sans-serif;--f-display:"Noto Serif Malayalam","Noto Sans Malayalam","Cormorant Garamond",Georgia,serif}
+:root[data-lang="ml"] .ml,:root[data-lang="ml"] .ml *{font-family:"Noto Sans Malayalam",system-ui,sans-serif}
+:root[data-lang="ml"] h1 .ml,:root[data-lang="ml"] h2 .ml,:root[data-lang="ml"] h1.ml,:root[data-lang="ml"] h2.ml{font-family:"Noto Serif Malayalam","Noto Sans Malayalam",serif}
+:root[data-lang="ml"] .ml{letter-spacing:0!important;overflow-wrap:anywhere}
+:root[data-lang="ml"] .src{white-space:normal}
+@media (max-width:400px){:root[data-lang="ml"] h1{font-size:min(2rem,8.4vw)!important}:root[data-lang="ml"] h2{font-size:min(1.5rem,6.8vw)}}
+</style>
+<style id="lang-top-css">
+.hero{position:relative}
+.hero>.lang{position:absolute;left:auto;right:max(12px,env(safe-area-inset-right,0px));top:12px;transform:none;margin:0;z-index:5;
+  background:var(--paper);border:1px solid var(--line);box-shadow:0 2px 10px rgba(30,20,60,.14)}
+.hero>.lang button{font-weight:600}
+.hero>.lang .lf{display:inline}.hero>.lang .ls{display:none}
+@media (max-width:560px){.hero{padding-top:3.4rem}.hero>.lang{top:10px}.hero>.lang button{padding:.2rem .6rem}}
+.hero>.lang{max-width:calc(100vw - 24px);overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}.hero>.lang::-webkit-scrollbar{display:none}.hero>.lang button{flex:0 0 auto}
+@media (max-width:760px){.hero>.lang .lf{display:none}.hero>.lang .ls{display:inline}.hero>.lang button{padding:.2rem .55rem}}
+.hero>.lang.lang-short .lf{display:none}.hero>.lang.lang-short .ls{display:inline}
+@media (max-width:360px){.hero>.lang button{padding:.2rem .45rem}}
+@media print{.hero>.lang{display:none}}
+main [id],section[id]{scroll-margin-top:5.5rem}
+@media (max-width:560px){main [id],section[id]{scroll-margin-top:7.6rem}}
+.bar .topnav a{font-size:1.06rem;font-weight:650;color:var(--ink)}
+.bar .topnav a[aria-current="page"]{font-weight:800}
+.bar .menu summary{font-size:1.02rem;font-weight:700}
+@media (max-width:560px){.topnav .nav-home .gu{display:none!important}.bar .topnav .nav-home{display:inline-flex;align-items:center;justify-content:center;background:var(--paper-2);border:1.5px solid var(--line);border-radius:99px;padding:.2rem .45rem!important;margin-right:.1rem}.topnav .nav-home .home-ic{width:24px;height:24px;stroke-width:2.4;color:var(--ink);vertical-align:middle}.bar .topnav a{font-size:.97rem;padding:.3rem .12rem}.bar .menu summary{font-size:.98rem}}
+@media (max-width:380px){.bar .topnav a{font-size:.9rem;padding:.3rem .08rem}}
+@media (max-width:340px){.bar .topnav a{font-size:.8rem;padding:.3rem .05rem}.topnav .nav-home .home-ic{width:20px;height:20px}}
+</style>
+<link rel="canonical" href="https://sanatan.space/ml/ask.html">
+<meta property="og:url" content="https://sanatan.space/ml/ask.html">
+<meta content="website" property="og:type"/>
+<meta content="Sanatan Dharma Saral" property="og:site_name"/>
+<meta property="og:title" content="ചോദ്യം ചോദിക്കൂ | സനാതന ധർമ്മം, ലളിതമായി">
+<meta property="og:description" content="ഹിന്ദുധർമ്മത്തെക്കുറിച്ച് ഇംഗ്ലീഷിലോ ഹിന്ദിയിലോ എന്തും ചോദിക്കൂ, സ്രോതസ്സ് പേജുകളുടെ ലിങ്കുകളോടെ ലളിതമായ ഉത്തരം നേടൂ.">
+<meta content="https://sanatan.space/og/ask.png?v=2" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta property="og:locale" content="ml_IN">
+<meta content="ml_IN" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sanatan.space/og/ask.png?v=2" name="twitter:image"/>
+<link href="/manifest.webmanifest" rel="manifest"/>
+<meta content="#3C6C72" name="theme-color"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="Sanatan Saral" name="apple-mobile-web-app-title"/>
+<script>try{var q=location.search;if(/[?&]notrack=1/.test(q))localStorage.setItem('sd-notrack','1');if(/[?&]notrack=0/.test(q))localStorage.removeItem('sd-notrack');var m=q.match(/[?&]lang=(en|hi|gu|te|mr|ta|bn|kn|ml)\b/);if(m)localStorage.setItem('sd-lang',m[1]);if(localStorage.getItem('sd-notrack'))window['ga-disable-G-4CG3165QMS']=true}catch(e){}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4CG3165QMS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-4CG3165QMS',{site_language:(function(){try{return localStorage.getItem('sd-lang')||'en'}catch(e){return 'en'}})()});
+document.addEventListener('click',function(e){
+  var t=e.target.closest('button,a');if(!t)return;
+  var v=t.closest('.verse,[id^="v-"]'),vid=v&&v.id||'';
+  var ev=function(n,p){try{gtag('event',n,p||{})}catch(_){}};
+  if(t.classList.contains('v-say'))ev('listen_verse',{verse_id:vid});
+  else if(t.classList.contains('v-save'))ev('save_verse',{verse_id:vid});
+  else if(t.classList.contains('v-img'))ev('picture_card',{verse_id:vid});
+  else if(t.classList.contains('print-btn'))ev('print_page');
+  else if(t.dataset&&t.dataset.set&&t.closest('.lang'))ev('switch_language',{language:t.dataset.set});
+  else if(t.tagName==='A'&&/wa\.me\//.test(t.href))ev('share',{method:'whatsapp'});
+  else if(t.tagName==='A'&&/contact\.html\?topic=correction/.test(t.getAttribute('href')||''))ev('report_mistake',{verse_id:vid});
+  else if(t.classList.contains('ct-send'))ev('contact_open_email');
+},true);
+</script>
+<meta content="noindex" name="robots"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sanatan.space/"},{"@type":"ListItem","position":2,"name":"Ask Any Question About Hinduism, Get a Simple Answer","item":"https://sanatan.space/ask.html"}]}</script>
+<link rel="alternate" hreflang="en" href="https://sanatan.space/ask.html">
+<link rel="alternate" hreflang="hi" href="https://sanatan.space/hi/ask.html">
+<link rel="alternate" hreflang="gu" href="https://sanatan.space/gu/ask.html">
+<link rel="alternate" hreflang="te" href="https://sanatan.space/te/ask.html">
+<link rel="alternate" hreflang="mr" href="https://sanatan.space/mr/ask.html">
+<link rel="alternate" hreflang="ta" href="https://sanatan.space/ta/ask.html">
+<link rel="alternate" hreflang="bn" href="https://sanatan.space/bn/ask.html">
+<link rel="alternate" hreflang="kn" href="https://sanatan.space/kn/ask.html">
+<link rel="alternate" hreflang="ml" href="https://sanatan.space/ml/ask.html">
+<link rel="alternate" hreflang="x-default" href="https://sanatan.space/ask.html">
+</head>
+<body>
+<header class="hero">
+<div aria-label="Language" class="lang" role="group">
+<button aria-label="English" data-set="en" id="btn-en" type="button"><span class="lf">English</span><span class="ls">EN</span></button>
+<button aria-label="हिन्दी" data-set="hi" id="btn-hi" type="button"><span class="lf">हिन्दी</span><span class="ls">हिं</span></button>
+<button aria-label="ગુજરાતી" data-set="gu" id="btn-gu" type="button"><span class="lf">ગુજરાતી</span><span class="ls">ગુ</span></button>
+<button aria-label="తెలుగు" data-set="te" id="btn-te" type="button"><span class="lf">తెలుగు</span><span class="ls">తె</span></button>
+<button aria-label="मराठी" data-set="mr" id="btn-mr" type="button"><span class="lf">मराठी</span><span class="ls">मरा</span></button>
+<button aria-label="தமிழ்" data-set="ta" id="btn-ta" type="button"><span class="lf">தமிழ்</span><span class="ls">த</span></button>
+<button aria-label="বাংলা" data-set="bn" id="btn-bn" type="button"><span class="lf">বাংলা</span><span class="ls">বাং</span></button>
+<button aria-label="ಕನ್ನಡ" data-set="kn" id="btn-kn" type="button"><span class="lf">ಕನ್ನಡ</span><span class="ls">ಕ</span></button>
+<button aria-label="മലയാളം" data-set="ml" id="btn-ml" type="button"><span class="lf">മലയാളം</span><span class="ls">മ</span></button>
+</div>
+<div class="wrap has-art">
+<div>
+<p class="kicker">प्रश्न पूछें · Ask</p>
+<h1><span class="ml">ചോദ്യം ചോദിക്കൂ</span></h1>
+
+<p class="lede ml">ഹിന്ദുധർമ്മത്തെക്കുറിച്ച് ഇംഗ്ലീഷിലോ ഹിന്ദിയിലോ എന്തും ചോദിക്കൂ, സ്രോതസ്സ് പേജുകളുടെ ലിങ്കുകളോടെ ലളിതമായ ഉത്തരം നേടൂ.</p>
+</div>
+<div class="hero-art"><svg aria-label="Speech bubble" role="img" viewbox="0 0 200 200"><g fill="none" stroke="var(--hero-gold)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+<circle cx="100" cy="100" r="88"></circle><path d="M52 66 h96 a12 12 0 0 1 12 12 v40 a12 12 0 0 1 -12 12 h-50 l-22 18 v-18 h-24 a12 12 0 0 1 -12 -12 v-40 a12 12 0 0 1 12 -12 z"></path>
+<text fill="var(--hero-gold)" font-family="Tiro Devanagari Sanskrit, serif" font-size="34" stroke="none" text-anchor="middle" x="100" y="114">?</text></g></svg></div>
+</div>
+</header>
+<div class="bar">
+<div class="wrap">
+<nav aria-label="Main" class="topnav"><a aria-label="Home" class="nav-home" href="/ml/"><svg aria-hidden="true" class="home-ic" fill="none" height="18" stroke="currentColor" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M3 11 12 4l9 7"></path><path d="M5.5 9.5V20h13V9.5"></path><path d="M10 20v-5h4v5"></path></svg><span class="ml">പ്രധാനം</span></a><a href="/ml/#vedas"><span class="ml">വേദം</span></a><a aria-current="page" href="/ml/gita.html"><span class="ml">ഗീത</span></a><a href="ayurveda.html"><span class="ml">ആയുർവേദം</span></a><a href="/ml/meditate.html"><span class="ml">ധ്യാനം</span></a><a href="/ml/kids.html"><span class="ml">കുട്ടികൾ</span></a></nav><details class="menu"><summary aria-label="All pages"><span aria-hidden="true" class="menu-ic"></span><span class="ml">എല്ലാ പേജുകളും</span><span aria-label="New pages" class="nb-dot" data-until="2027-03-23"></span></summary><div class="menu-panel"><div class="menu-group feat"><p class="menu-h"><span class="ml">വിശേഷം</span></p><a href="gita-jayanti.html"><span class="ml">ഗീതാജയന്തി</span><span class="nb" data-until="2026-12-21"><span class="ml">പുതിയത്</span></span></a><a href="ancient-science.html"><span class="ml">പ്രാചീന ശാസ്ത്രം</span><span class="nb" data-until="2026-12-31"><span class="ml">പുതിയത്</span></span></a><a href="yoga.html"><span class="ml">യോഗ</span><span class="nb" data-until="2026-12-01"><span class="ml">പുതിയത്</span></span></a><a href="ayurveda.html"><span class="ml">ആയുർവേദം</span><span class="nb" data-until="2026-12-01"><span class="ml">പുതിയത്</span></span></a><a href="/ml/meditate.html"><span class="ml">ധ്യാനം</span></a></div><div class="menu-group"><p class="menu-h"><span class="ml">ഗ്രന്ഥങ്ങൾ</span></p><a href="/ml/#vedas"><span class="ml">നാല് വേദങ്ങൾ</span></a><a href="rigveda.html"><span class="ml">ഋഗ്വേദം</span></a><a href="yajurveda.html"><span class="ml">യജുർവേദം</span></a><a href="samaveda.html"><span class="ml">സാമവേദം</span></a><a href="atharvaveda.html"><span class="ml">അഥർവവേദം</span></a><a href="upanishads.html"><span class="ml">ഉപനിഷത്തുകൾ</span></a><a aria-current="page" href="/ml/gita.html"><span class="ml">ഭഗവദ്ഗീത</span></a><a href="epics.html"><span class="ml">രാമായണം-മഹാഭാരതം</span></a><a href="puranas.html"><span class="ml">പുരാണങ്ങളും അവതാരങ്ങളും</span></a></div><div class="menu-group"><p class="menu-h"><span class="ml">അറിയാം</span></p><a href="ancient-science.html"><span class="ml">പ്രാചീന ഭാരതത്തിലെ ശാസ്ത്രം</span><span class="nb" data-until="2026-12-31"><span class="ml">പുതിയത്</span></span></a><a href="temples.html"><span class="ml">ക്ഷേത്രങ്ങൾ</span></a><a href="tirthas.html"><span class="ml">തീർത്ഥ പരിക്രമം</span></a><a href="maps.html"><span class="ml">ഭൂപടങ്ങൾ</span></a><a href="/ml/symbols.html"><span class="ml">പ്രതീകങ്ങൾ</span></a><a href="/ml/calendar.html"><span class="ml">ഉത്സവ പഞ്ചാംഗം</span></a><a href="/ml/diwali-card.html"><span class="ml">ദീപാവലി കാർഡ്</span></a><a href="/ml/diwali-colouring.html"><span class="ml">ദീപാവലി നിറം കൊടുക്കാം</span></a><a href="/ml/#ideas"><span class="ml">അടിസ്ഥാന ആശയങ്ങൾ</span></a></div><div class="menu-group"><p class="menu-h"><span class="ml">ഉത്സവം</span></p><a href="gita-jayanti.html"><span class="ml">ഗീതാജയന്തി</span><span class="nb" data-until="2026-12-21"><span class="ml">പുതിയത്</span></span></a><a href="makar-sankranti.html"><span class="en">Makar Sankranti &amp; Pongal</span><span class="nb" data-until="2027-01-17"><span class="ml">പുതിയത്</span></span></a><a href="vasant-panchami.html"><span class="ml">വസന്തപഞ്ചമി</span><span class="nb" data-until="2027-02-12"><span class="ml">പുതിയത്</span></span></a><a href="maha-shivaratri.html"><span class="ml">മഹാശിവരാത്രി</span><span class="nb" data-until="2027-03-07"><span class="ml">പുതിയത്</span></span></a><a href="holi.html"><span class="ml">ഹോളി</span><span class="nb" data-until="2027-03-23"><span class="ml">പുതിയത്</span></span></a><a href="/ml/diwali.html"><span class="ml">ദീപാവലി</span></a><a href="festival-card.html"><span class="en">Greeting cards</span><span class="nb" data-until="2027-01-31"><span class="ml">പുതിയത്</span></span></a></div><div class="menu-group"><p class="menu-h"><span class="ml">പഠിക്കാം</span></p><a href="/ml/kids.html"><span class="ml">കുട്ടികളുടെ കഥകൾ</span></a><a href="/ml/plans.html"><span class="ml">ദൈനംദിന പാഠ പദ്ധതി</span></a><a href="saved.html"><span class="ml">ഞാൻ സൂക്ഷിച്ച മന്ത്രങ്ങൾ</span></a><a href="learn.html"><span class="ml">ക്വിസ്</span></a><a href="search.html"><span class="ml">തിരയുക</span></a><a href="booklet.pdf"><span class="ml">മന്ത്ര പുസ്തിക (PDF)</span></a><a href="/ml/about.html"><span class="ml">ഞങ്ങളെക്കുറിച്ച്</span></a><a href="/ml/contact.html"><span class="ml">ഞങ്ങൾക്ക് എഴുതൂ</span></a></div><div class="menu-size"><span class="ml">അക്ഷര വലുപ്പം</span><button aria-label="Small text" data-size="s" style="font-size:.85rem" type="button">A</button><button aria-label="Normal text" data-size="m" type="button">A</button><button aria-label="Large text" data-size="l" style="font-size:1.15rem" type="button">A</button><button aria-label="Extra large text" data-size="xl" style="font-size:1.3rem" type="button">A</button></div></div></details><style id="nb-css">.nb{display:inline-block;margin-left:.35rem;padding:.02rem .42rem;border-radius:99px;background:var(--kumkum,#c0392b);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.04em;vertical-align:.12em;line-height:1.4}.nb-dot{position:absolute;top:-.15rem;right:-.15rem;width:.6rem;height:.6rem;border-radius:50%;background:var(--kumkum,#c0392b);box-shadow:0 0 0 2px var(--paper,#fff)}.menu summary{position:relative}</style><script>(function(){var n=new Date(),k='nb-seen',v=Object.keys({"gita-jayanti.html": "2026-12-21", "makar-sankranti.html": "2027-01-17", "vasant-panchami.html": "2027-02-12", "maha-shivaratri.html": "2027-03-07", "holi.html": "2027-03-23", "festival-card.html": "2027-01-31", "yoga.html": "2026-12-01", "ayurveda.html": "2026-12-01", "ancient-science.html": "2026-12-31"}).sort().join(',');[].forEach.call(document.querySelectorAll('[data-until]'),function(e){if(n>new Date(e.getAttribute('data-until')+'T23:59:59'))e.parentNode.removeChild(e)});var dot=document.querySelector('.nb-dot'),m=document.querySelector('details.menu');try{if(dot&&localStorage.getItem(k)===v)dot.parentNode.removeChild(dot)}catch(e){}if(m)m.addEventListener('toggle',function(){if(!m.open)return;try{localStorage.setItem(k,v)}catch(e){}var d=document.querySelector('.nb-dot');if(d)d.parentNode.removeChild(d)})})();</script><style id="feat-css">.menu-group.feat{grid-column:1/-1;grid-row:auto!important;flex-direction:row;flex-wrap:wrap;align-items:center;gap:.1rem 1rem;padding-bottom:.6rem;margin-bottom:.3rem;border-bottom:1px solid var(--line)}.menu-group.feat .menu-h{width:100%}.menu-group.feat a{font-weight:700}@media (max-width:620px){.menu-group.feat+.menu-group{grid-row:span 2}}@media (max-width:380px){.menu-group.feat+.menu-group{grid-row:auto}}</style>
+</div>
+</div>
+<main class="wrap">
+<section id="chat">
+<div class="sec-head">
+<p class="eyebrow"><span class="ml">എന്തും ചോദിക്കൂ</span></p>
+<h2><span class="ml">സനാതനധർമ്മത്തെക്കുറിച്ച് ചോദ്യം ചോദിക്കൂ</span></h2>
+<p class="ml">ഇംഗ്ലീഷിലോ ഹിന്ദിയിലോ ചോദിക്കൂ. ഈ സൈറ്റിലെ പേജുകളെ ആധാരമാക്കി Claude ലളിതമായ ഭാഷയിൽ ഉത്തരം എഴുതുന്നു, കൂടുതൽ വായിക്കാനുള്ള ലിങ്കുകളോടെ. ഉത്തരങ്ങളിൽ തെറ്റുകൾ ഉണ്ടാകാം: പൂജാവിധി, വ്രതം അല്ലെങ്കിൽ വ്യക്തിപരമായ തീരുമാനങ്ങൾക്കായി യോഗ്യനായ ഗുരുവിനോടോ പണ്ഡിതനോടോ കൂടി ചോദിക്കൂ.</p>
+</div>
+<div class="chat">
+<div aria-live="polite" class="chat-log" id="log">
+<div class="msg bot"><div class="bubble"><span class="ml">നമസ്തേ! നിങ്ങൾക്ക് എന്താണ് അറിയേണ്ടത്? ഇവയിലൊന്ന് തിരഞ്ഞെടുക്കൂ, അല്ലെങ്കിൽ നിങ്ങളുടെ ചോദ്യം എഴുതൂ.</span></div></div>
+</div>
+<div class="suggs" id="suggs"><button class="sugg" data-en="What is karma, simply?" data-hi="कर्म क्या है, सरल शब्दों में?" type="button"><span class="ml">കർമ്മം എന്താണ്, ലളിതമായ വാക്കുകളിൽ?</span></button><button class="sugg" data-en="Why do we light a diya?" data-hi="हम दीया क्यों जलाते हैं?" type="button"><span class="ml">നാം എന്തിനാണ് വിളക്ക് കൊളുത്തുന്നത്?</span></button><button class="sugg" data-en="What does the Gayatri Mantra mean?" data-hi="गायत्री मन्त्र का अर्थ क्या है?" type="button"><span class="ml">ഗായത്രീമന്ത്രത്തിന്റെ അർത്ഥമെന്ത്?</span></button><button class="sugg" data-en="What is the difference between the Vedas and the Puranas?" data-hi="वेदों और पुराणों में क्या अन्तर है?" type="button"><span class="ml">വേദങ്ങളും പുരാണങ്ങളും തമ്മിലുള്ള വ്യത്യാസമെന്ത്?</span></button><button class="sugg" data-en="Explain Gita 2.47 for a 10-year-old" data-hi="गीता 2.47 को 10 साल के बच्चे के लिए समझाइए" type="button"><span class="ml">ഗീത 2.47 പത്തുവയസ്സുള്ള കുട്ടിക്ക് വിശദീകരിക്കൂ</span></button><button class="sugg" data-en="Why is Diwali celebrated?" data-hi="दीपावली क्यों मनाई जाती है?" type="button"><span class="ml">ദീപാവലി എന്തിന് ആഘോഷിക്കുന്നു?</span></button></div>
+<form class="chat-form" id="form">
+<label class="sr" for="q">Your question</label>
+<textarea id="q" maxlength="800" placeholder="Type your question… / अपना प्रश्न लिखें…" rows="2"></textarea>
+<div class="chat-actions">
+<button class="chip-btn" id="clear" type="button"><span class="ml">പുതിയ സംഭാഷണം</span></button>
+<button class="chip-btn" hidden="" id="stop" type="button"><span class="ml">നിർത്തൂ</span></button>
+<button class="send" id="send" type="submit"><span class="ml">ചോദിക്കൂ</span></button>
+</div>
+</form>
+<p class="chat-note" hidden="" id="unavail"><span class="ml">ഈ സൈറ്റ് Claude ആപ്പിലോ claude.ai-ലോ സൈൻ ഇൻ ചെയ്ത് തുറക്കുമ്പോഴാണ് ചോദ്യം ചോദിക്കാനുള്ള സൗകര്യം പ്രവർത്തിക്കുന്നത്. അതുവരെ തിരയൽ പേജ് പരീക്ഷിക്കൂ.</span> <a href="/search.html"><span class="ml">തിരയൂ →</span></a></p>
+<p class="chat-note"><span class="ml">ഓരോ ചോദ്യവും നിങ്ങളുടെ സ്വന്തം Claude അക്കൗണ്ട് ഉപയോഗിക്കുന്നു; ആദ്യതവണ Claude നിങ്ങളുടെ അനുമതി ചോദിക്കും.</span></p>
+</div>
+</section>
+</main>
+<footer class="wrap">
+<p class="aka"><span class="ml"><b>സനാതനധർമ്മം</b> <b>ഹിന്ദുധർമ്മം</b> (Hinduism) എന്നും അറിയപ്പെടുന്നു. ഈ സൈറ്റ് ഹിന്ദുധർമ്മത്തിലേക്കുള്ള ലളിതമായ വഴികാട്ടിയാണ്: അതിന്റെ ഗ്രന്ഥങ്ങൾ, വിശ്വാസങ്ങൾ, ആചാരങ്ങൾ, ഉത്സവങ്ങൾ.</span></p>
+<p class="ml">പരിഭാഷകൾ മനസ്സിലാക്കാൻ ലളിതമാക്കിയവയാണ്. പൂജയ്ക്കും പഠനത്തിനും ശരിയായ ഉച്ചാരണം യോഗ്യനായ ഒരു ഗുരുവിൽ നിന്ന് പഠിക്കുക, മുഴുവൻ ഭാഷ്യവും വായിക്കുക.</p>
+<p class="foot-mantra">सर्वे भवन्तु सुखिनः । सर्वे सन्तु निरामयाः ॥</p>
+<p class="foot-write"><span class="ml">ഒരു തെറ്റ് കണ്ടോ, ചോദ്യമുണ്ടോ, ചിത്രം അയയ്ക്കണോ?</span> <a href="/ml/contact.html"><span class="ml">✉ ഞങ്ങൾക്ക് എഴുതൂ</span></a> · <a href="/ml/about.html"><span class="ml">ഞങ്ങളെക്കുറിച്ച്</span></a> · <a href="https://www.youtube.com/@SanatanDharmaSaral" rel="me noopener" target="_blank"><span class="ml">▶ YouTube-ൽ കഥകൾ</span></a></p>
+<p class="foot-nav"><a href="/ml/"><span class="ml">← പ്രധാന വഴികാട്ടിയിലേക്ക് മടങ്ങുക</span></a></p>
+</footer>
+<script src="lang.js?v=2"></script><script src="search-index.js"></script>
+<script>
+(function(){
+  var IDX=window.SEARCH_INDEX||{verses:[],blocks:[],pages:{}};
+  function $(i){return document.getElementById(i)}
+  function L(){return document.documentElement.getAttribute('data-lang')==='hi'?1:0}
+  function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+  function norm(s){return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase()}
+  var STOP={the:1,a:1,an:1,is:1,are:1,of:1,to:1,in:1,and:1,what:1,why:1,how:1,do:1,does:1,we:1,i:1,for:1,me:1,it:1,this:1,that:1,with:1,on:1,be:1,can:1,you:1,my:1,our:1,who:1,which:1,'क्या':1,'है':1,'हैं':1,'के':1,'की':1,'का':1,'में':1,'और':1,'हम':1,'क्यों':1,'कैसे':1,'को':1,'से':1,'पर':1};
+  /* find the most relevant passages on the site for a question */
+  function retrieve(q,k){
+    var terms=norm(q).split(/[^a-z0-9ऀ-ॿ.]+/).filter(function(t){return t.length>1&&!STOP[t]});
+    if(!terms.length)return [];
+    var out=[];
+    IDX.verses.forEach(function(v){
+      var head=norm([v.t_en,v.t_hi,v.r_en,v.r_hi].join(' ')), body=norm([v.skt,v.iast,v.tr_en,v.tr_hi,v.s_en,v.s_hi].join(' ')), s=0;
+      terms.forEach(function(t){if(head.indexOf(t)>=0)s+=4;var c=body.split(t).length-1;s+=Math.min(c,4)});
+      if(s>0)out.push({s:s+1,kind:'verse',page:v.page,id:v.id,title:v.t_en+' ('+v.r_en+')',text:'Sanskrit: '+v.skt+'\nTranslation: '+v.tr_en+'\nHindi: '+v.tr_hi+'\nExplanation: '+v.s_en});
+    });
+    IDX.blocks.forEach(function(b){
+      var head=norm(b.h_en+' '+b.h_hi), body=norm(b.en+' '+b.hi), s=0;
+      terms.forEach(function(t){if(head.indexOf(t)>=0)s+=3;var c=body.split(t).length-1;s+=Math.min(c,4)});
+      if(s>0)out.push({s:s,kind:'section',page:b.page,id:b.id,title:b.h_en,text:(b.en||'').slice(0,1800)});
+    });
+    out.sort(function(a,b){return b.s-a.s});
+    var seen={},res=[];
+    for(var i=0;i<out.length&&res.length<k;i++){var key=out[i].page+'#'+out[i].id;if(!seen[key]){seen[key]=1;res.push(out[i])}}
+    return res;
+  }
+  var RULES=[
+    'You are the friendly guide of "Sanatan Dharma Saral", a website that explains Hinduism (Sanatan Dharma) in simple language for ordinary families, including children.',
+    'Rules:',
+    '- Answer in LANG. Use short, warm, simple sentences; explain any Sanskrit term you use. Keep answers under about 180 words unless the person asks for more.',
+    '- Base your answer on the SITE PASSAGES given with each question. You may add widely accepted general knowledge, but never invent verses, verse numbers or quotes. If you quote Sanskrit, copy it exactly from a passage.',
+    '- When you use a passage, cite it right after the sentence as [[n]] using the passage number. Cite at most 3 passages.',
+    '- Where Hindu traditions differ (Vaishnava, Shaiva, Shakta, Smarta, Arya Samaj, Advaita, Dvaita and others), say so briefly and fairly; do not take sides. Be respectful of every faith.',
+    '- For detailed rituals, vows, astrology, medical, legal or personal decisions, give the general idea and suggest asking a qualified teacher, pandit or professional.',
+    '- If a question is unrelated to Hinduism, Indian scriptures, festivals, philosophy or practice, say kindly that this guide only answers those, and suggest a related question.',
+    '- Do not give political opinions, and do not write anything hateful about any group.',
+    '- Format: plain paragraphs; a short bulleted list with "- " only when it really helps. No headings, no tables.'
+  ].join('\n');
+  var turns=[], ctl=null, sample=null, busy=false, lastRefs=[];
+  function setBusy(b){busy=b;$('send').disabled=b;$('stop').hidden=!b}
+  function addMsg(role,html){
+    var m=document.createElement('div');m.className='msg '+role;var b=document.createElement('div');b.className='bubble';b.innerHTML=html;m.appendChild(b);$('log').appendChild(m);
+    m.scrollIntoView({block:'end',behavior:'smooth'});return b;
+  }
+  function render(text,refs){
+    var t=esc(text);
+    t=t.replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+    var used={};
+    t=t.replace(/\[\[(\d+)\]\]/g,function(_,n){var r=refs[+n-1];if(!r)return '';used[n]=1;return '<sup><a href="'+r.page+'#'+r.id+'">'+n+'</a></sup>'});
+    var blocks=t.split(/\n{2,}/).map(function(p){
+      var lines=p.split('\n');
+      if(lines.every(function(l){return /^\s*[-•]\s+/.test(l)})) return '<ul>'+lines.map(function(l){return '<li>'+l.replace(/^\s*[-•]\s+/,'')+'</li>'}).join('')+'</ul>';
+      return '<p>'+lines.join('<br>')+'</p>';
+    }).join('');
+    var r=Object.keys(used).map(function(n){var x=refs[+n-1];var pg=(IDX.pages[x.page]||[x.page,x.page])[L()];return '<a href="'+x.page+'#'+x.id+'">'+n+'. '+esc(x.title)+' · '+esc(pg)+'</a>'}).join('');
+    return blocks+(r?'<div class="refs">'+r+'</div>':'');
+  }
+  function copyFor(code){
+    var l=L();
+    var M={rate_limited:['Too many questions right now. Please wait a minute and try again.','अभी बहुत सारे प्रश्न आ गए। एक मिनट रुककर फिर पूछें।'],
+      session_expired:['Please sign in to Claude again, then ask.','कृपया Claude में फिर से साइन-इन करें, फिर पूछें।'],
+      refused:['Sorry, I can\'t answer that one. Try asking it a different way.','क्षमा करें, इसका उत्तर नहीं दे सकता। प्रश्न दूसरे ढंग से पूछें।'],
+      empty_completion:['No answer came back. Try a shorter question.','कोई उत्तर नहीं आया। छोटा प्रश्न आज़माएँ।'],
+      prompt_too_large:['That was too long. Start a new chat or shorten the question.','यह बहुत लम्बा हो गया। नई बातचीत शुरू करें या प्रश्न छोटा करें।']};
+    return (M[code]||['Something went wrong. Please try again.','कुछ गड़बड़ हुई। कृपया फिर से कोशिश करें।'])[l];
+  }
+  function unavailable(){$('unavail').hidden=false;$('form').hidden=true;$('suggs').hidden=true}
+  async function ask(q){
+    q=(q||'').trim(); if(!q||busy)return;
+    if(!sample){unavailable();return}
+    $('suggs').hidden=true; addMsg('user',esc(q)); $('q').value='';
+    var refs=retrieve(q,6); lastRefs=refs;
+    var ctx=refs.length?refs.map(function(r,i){return '['+(i+1)+'] '+r.title+'\n'+r.text}).join('\n\n'):'(no matching passage on the site)';
+    var lang=L()?'Hindi (Devanagari script)':'English';
+    var bubble=addMsg('bot','<span class="thinking">'+(L()?'सोच रहा हूँ':'Thinking')+'</span>');
+    var input=[{role:'user',content:RULES.replace('LANG',lang)}].concat(turns.slice(-6));
+    input.push({role:'user',content:'SITE PASSAGES:\n'+ctx+'\n\nQUESTION: '+q});
+    ctl=new AbortController(); setBusy(true);
+    try{
+      var res=await sample(input,{cache:false,signal:ctl.signal,onText:function(u){bubble.innerHTML=render(u.text,refs)}});
+      bubble.innerHTML=render(res.text,refs);
+      if(res.truncated)bubble.insertAdjacentHTML('beforeend','<p class="chat-note">'+(L()?'उत्तर बीच में कट गया।':'The answer was cut short.')+'</p>');
+      turns.push({role:'user',content:q},{role:'assistant',content:res.text});
+    }catch(e){
+      var code=e&&e.code;
+      if(code==='not_granted'||code==='sampling_disabled'||code==='not_declared'||code==='capability_disabled'||code==='capability_removed'){bubble.parentNode.remove();unavailable()}
+      else if(code==='cancelled'){bubble.innerHTML=e.text?render(e.text,refs):'<span class="chat-note">'+(L()?'रोक दिया।':'Stopped.')+'</span>'}
+      else{bubble.innerHTML=(e.text&&code!=='refused'?render(e.text,refs):'')+'<p class="chat-note">'+copyFor(code)+'</p>'}
+    }finally{setBusy(false);ctl=null}
+  }
+  $('form').addEventListener('submit',function(e){e.preventDefault();ask($('q').value)});
+  $('q').addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();ask($('q').value)}});
+  $('stop').addEventListener('click',function(){if(ctl)ctl.abort()});
+  $('clear').addEventListener('click',function(){if(ctl)ctl.abort();turns=[];var log=$('log');while(log.children.length>1)log.removeChild(log.lastChild);$('suggs').hidden=false});
+  document.querySelectorAll('.sugg').forEach(function(b){b.addEventListener('click',function(){ask(L()?b.dataset.hi:b.dataset.en)})});
+  if(!(window.claude&&claude.use)){unavailable()}
+  if(window.claude&&claude.use){claude.use('sample').then(function(s){sample=s;if(!s)unavailable()}).catch(function(){unavailable()})}
+  else unavailable();
+  var pre=(location.hash||'').slice(1);
+})();
+</script>
+<script src="share.js"></script>
+<script src="interactive.js"></script>
+<script src="verse-tools.js"></script>
+<script defer="" src="/install.js"></script>
+<script defer="" src="/push.js"></script>
+<script defer="" src="/engage.js"></script>
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})}</script>
+</body>
+</html>
