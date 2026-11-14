@@ -104,12 +104,14 @@ def vback(c, n):
     return '<p class="vback"><a class="more" href="gita-%d.html#v-gita-%d-%d">%s</a></p>' % (c, c, n, span('See it in context →'))
 
 
-def hreflang_en(s, url, hi_url=None):
-    """English (and, where there is one, Hindi) alternates; any others the template had are removed."""
+def hreflang_en(s, url, alts=None):
+    """English plus the other languages the page exists in; any alternates the template had are removed."""
+    if isinstance(alts, str):
+        alts = {'hi': alts}
     s = re.sub(r'<link rel="alternate" hreflang="[^"]+" href="[^"]+">\n', '', s)
     block = '<link rel="alternate" hreflang="en" href="%s">\n' % url
-    if hi_url:
-        block += '<link rel="alternate" hreflang="hi" href="%s">\n' % hi_url
+    for l, u in (alts or {}).items():
+        block += '<link rel="alternate" hreflang="%s" href="%s">\n' % (l, u)
     block += '<link rel="alternate" hreflang="x-default" href="%s">\n' % url
     return s.replace('</head>', block + '</head>', 1)
 
@@ -120,7 +122,7 @@ def shorten(t, limit=150):
     return t[:limit].rsplit(' ', 1)[0].rstrip(',;:') + '…'
 
 
-def verse_page(tpl, c, meta, v, hindi=False):
+def verse_page(tpl, c, meta, v, present=()):
     n = v['v']
     url = '%sgita-%d-%d.html' % (SITE, c, n)
     il = iast_lines(v)
@@ -152,7 +154,7 @@ def verse_page(tpl, c, meta, v, hindi=False):
              '<script type="application/ld+json">%s</script>' % js(art), s, 'article data')
     s = sub1(r'<script type="application/ld\+json">\{"@context": "https://schema.org", "@type": "BreadcrumbList".*?</script>',
              '<script type="application/ld+json">%s</script>' % js(crumbs), s, 'breadcrumb data')
-    s = hreflang_en(s, url, (SITE + 'hi/gita-%d-%d.html' % (c, n)) if hindi else None)
+    s = hreflang_en(s, url, alternates(c, n, present)[1])
     s = sub1(r'<p class="kicker">.*?</p>', '<p class="kicker"><a href="gita-%d.html#v-gita-%d-%d" style="color:inherit">%s</a></p>' % (c, c, n, span(chap)), s, 'kicker')
     s = sub1(r'<h1>.*?</h1>', '<h1>%s</h1>' % span(headline), s, 'h1')
     s = sub1(r'<p class="lede[^"]*">.*?</p>', '<p class="lede %s">%s</p>' % (EN, e(v['tr'])), s, 'lede')
@@ -161,7 +163,7 @@ def verse_page(tpl, c, meta, v, hindi=False):
     return sub1(r'<main class="wrap vpage">.*?</main>', main, s, 'main')
 
 
-def chapter_page(tpl, c, meta, verses, featured, hindi=False):
+def chapter_page(tpl, c, meta, verses, featured, present=()):
     n = len(verses)
     url = '%sgita-%d.html' % (SITE, c)
     title = 'Bhagavad Gita Chapter %d in English: All %d Verses Explained' % (c, n)
@@ -171,9 +173,9 @@ def chapter_page(tpl, c, meta, verses, featured, hindi=False):
     s = s.replace('Bhagavad Gita Chapter 6 in English: All 47 Verses Explained', title)
     s = s.replace('All 47 verses of Bhagavad Gita Chapter 6 (Dhyana Yoga) in Sanskrit with transliteration, English translation and a simple explanation of each verse.', desc)
     s = s.replace(SITE + 'gita-6.html', url).replace(SITE + 'og/gita-6.png?v=2', SITE + 'og/gita-%d.png?v=2' % c)
-    s = sub1(r'"inLanguage":\[[^\]]*\]', '"inLanguage":["en", "hi"]' if hindi else '"inLanguage":["en"]', s, 'inLanguage')
+    s = sub1(r'"inLanguage":\[[^\]]*\]', '"inLanguage":%s' % json.dumps(['en'] + list(present)), s, 'inLanguage')
     s = sub1(r'"dateModified":"[^"]*"', '"dateModified":"%s"' % datetime.date.today().isoformat(), s, 'dateModified')
-    s = hreflang_en(s, url, (SITE + 'hi/gita-%d.html' % c) if hindi else None)
+    s = hreflang_en(s, url, alternates(c, None, present)[1])
     s = sub1(r'<p class="kicker">.*?</p>', '<p class="kicker">श्रीमद्भगवद्गीता · अध्याय %d</p>' % c, s, 'kicker')
     s = sub1(r'<h1>.*?</h1>', '<h1>%s</h1>' % span('Gita chapter %d: %s' % (c, meta['name'])), s, 'h1')
     s = sub1(r'<p class="lede[^"]*">.*?</p>', '<p class="lede %s">%s</p>' % (EN, e('All %d verses of chapter %d, each with Sanskrit, pronunciation, word meanings and a translation.' % (n, c))), s, 'lede')
@@ -248,7 +250,7 @@ def update_search(c, verses, featured, trs=None):
         il = iast_lines(v)
         d['verses'].append({
             'page': page, 'id': 'v-gita-%d-%d' % (c, v['v']),
-            't_en': '%d.%d · %s' % (c, v['v'], v['speaker']), 't_hi': ('%d.%d · %s' % (c, v['v'], HI_WHO[v['speaker']])) if trs else '',
+            't_en': '%d.%d · %s' % (c, v['v'], v['speaker']), 't_hi': ('%d.%d · %s' % (c, v['v'], LG.L['hi']['who'][v['speaker']])) if trs else '',
             'r_en': 'Gita %d.%d' % (c, v['v']), 'r_hi': 'गीता %d.%d' % (c, v['v']),
             'skt': skt_html(v).replace('<br/>', '\n').replace(' ', ' '), 'iast': ' '.join(il),
             'tr_en': v['tr'], 'tr_hi': trs[v['v']] if trs else '', 's_en': '', 's_hi': '', 'words': []})
@@ -288,76 +290,110 @@ def update_llms(c, meta, n):
     open(path, 'w', encoding='utf-8').write('\n'.join(out))
 
 
-# ---------- Hindi ----------
-# A chapter gets Hindi pages when tools/gita/content/hNN.py exists: META (name, outline) and T, a Hindi translation
-# for every verse that has no page of its own yet. Verses that already had a Hindi page keep it, and their Hindi
-# translation is read from that page. Like chapters 1 to 6, the Hindi pages carry the Sanskrit, pronunciation and
-# translation; the word-by-word list stays on the English page, which each Hindi chapter page links to.
+# ---------- Other languages ----------
+# A chapter gets pages in a language when its content file exists (see langs.py): META (outline, and for Hindi the
+# chapter name) and T, a translation for every verse that has no page of its own in that language yet. Verses that
+# already had a page keep it, and their translation is read from that page. Like chapters 1 to 6 in these languages,
+# the pages carry the Sanskrit, pronunciation and translation; the word-by-word list stays on the English page, which
+# each chapter page links to. The chapter name comes from the language's own Gita hub.
 
-HI_WHO = {'Krishna': 'श्रीकृष्ण', 'Arjuna': 'अर्जुन', 'Sanjaya': 'संजय', 'Dhritarashtra': 'धृतराष्ट्र'}
-
-
-def hspan(t):
-    return '<span class="hi">%s</span>' % e(t)
+import langs as LG
 
 
-def load_hindi(c, verses, featured):
-    path = os.path.join(HERE, 'content', 'h%02d.py' % c)
-    if not os.path.exists(path):
-        return None, None
+def num(lang, x):
+    d = LG.L[lang].get('digits')
+    x = str(x)
+    return ''.join(d[int(ch)] if d and ch.isdigit() else ch for ch in x)
+
+
+def fmt(lang, key, **kw):
+    return LG.L[lang][key].format(**{k: (num(lang, v) if isinstance(v, int) else v) for k, v in kw.items()})
+
+
+def lspan(lang, t):
+    return '<span class="%s">%s</span>' % (lang, e(t))
+
+
+def langs_for(c):
+    """The languages that have a content file for chapter c."""
+    return [l for l in LG.ORDER if l in LG.L and os.path.exists(os.path.join(HERE, 'content', LG.L[l]['file'] % c))]
+
+
+def hub_name(lang, c):
+    s = open('%s/gita.html' % lang, encoding='utf-8').read()
+    i = s.find('id="ch%d"' % c)
+    m = re.search(r'<h2[^>]*><span class="%s">(.*?)</span>' % lang, s[i:i + 3000], re.S)
+    if i < 0 or not m:
+        raise SystemExit('%s/gita.html: no name for chapter %d' % (lang, c))
+    return html.unescape(m.group(1)).strip()
+
+
+def load_lang(lang, c, verses, featured):
+    path = os.path.join(HERE, 'content', LG.L[lang]['file'] % c)
     ns = {}
     exec(open(path, encoding='utf-8').read(), ns)
+    meta = dict(ns['META'])
+    meta.setdefault('name', hub_name(lang, c))
     tr = {}
+    prev = None
     for v in verses:
         n = v['v']
         if n in featured:
-            page = open('hi/gita-%d-%d.html' % (c, n), encoding='utf-8').read()
-            m = re.search(r'<span class="label"><span class="hi">अनुवाद</span></span><p class="hi">(.*?)</p>', page, re.S)
+            page = open('%s/gita-%d-%d.html' % (lang, c, n), encoding='utf-8').read()
+            m = re.search(r'<span class="label"><span class="%s">[^<]*</span></span><p class="%s">(.*?)</p>' % (lang, lang), page, re.S)
             if not m:
-                raise SystemExit('no Hindi translation found on hi/gita-%d-%d.html' % (c, n))
+                raise SystemExit('no translation found on %s/gita-%d-%d.html' % (lang, c, n))
             tr[n] = html.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
             if n in ns['T']:
-                raise SystemExit('h%02d.py: verse %d already has a Hindi page; leave it out of T' % (c, n))
+                raise SystemExit('%s: verse %d already has its own page; leave it out of T' % (path, n))
         elif n not in ns['T']:
-            raise SystemExit('h%02d.py: no Hindi translation for verse %d' % (c, n))
+            raise SystemExit('%s: no translation for verse %d' % (path, n))
         else:
             tr[n] = ns['T'][n].strip()
+            said = LG.L[lang]['said'][v['speaker']]
+            if prev != v['speaker'] and not tr[n].startswith(said):
+                print('  %s %d.%d: the speaker changes, so the translation should start with "%s"' % (lang, c, n, said))
+            if prev == v['speaker'] and any(tr[n].startswith(x) for x in LG.L[lang]['said'].values()):
+                print('  %s %d.%d: starts with "... said:" but the speaker has not changed' % (lang, c, n))
+        prev = v['speaker']
     extra = set(ns['T']) - {v['v'] for v in verses}
     if extra:
-        raise SystemExit('h%02d.py: verses that do not exist: %s' % (c, sorted(extra)))
-    return ns['META'], tr
+        raise SystemExit('%s: verses that do not exist: %s' % (path, sorted(extra)))
+    return meta, tr
 
 
-def article_hi(c, v, tr, own_page, featured):
+def article_l(lang, c, v, tr, own_page, featured):
+    W = LG.L[lang]
     n = v['v']
-    ref = 'गीता %d.%d' % (c, n)
-    head = '%d.%d · %s' % (c, n, HI_WHO[v['speaker']])
-    src = ('<span class="src">%s</span>' % hspan(ref)) if own_page else ('<a class="src" href="/hi/gita-%d-%d.html">%s</a>' % (c, n, hspan(ref)))
-    more = ('<p class="hi"><a class="more" href="/hi/gita.html#v-gita-%d-%d">पूरी व्याख्या पढ़ें →</a></p>' % (c, n)) if featured else ''
+    ref = '%s %s' % (W['gita'], num(lang, '%d.%d' % (c, n)))
+    head = '%s · %s' % (num(lang, '%d.%d' % (c, n)), W['who'][v['speaker']])
+    src = ('<span class="src">%s</span>' % lspan(lang, ref)) if own_page else ('<a class="src" href="/%s/gita-%d-%d.html">%s</a>' % (lang, c, n, lspan(lang, ref)))
+    more = ('<p class="%s"><a class="more" href="/%s/gita.html#v-gita-%d-%d">%s</a></p>' % (lang, lang, c, n, W['more'])) if featured else ''
     q = urllib.parse.quote_plus('Gita %d.%d %d.%d · %s chanting' % (c, n, c, n, v['speaker']))
     return ('<article class="verse" id="v-gita-%d-%d">\n' % (c, n)
-            + '<div class="v-head"><h3>%s</h3>%s</div>\n' % (hspan(head), src)
+            + '<div class="v-head"><h3>%s</h3>%s</div>\n' % (lspan(lang, head), src)
             + '<p class="skt">%s</p>\n' % skt_html(v)
             + '<p class="iast">%s</p>\n' % e('\n'.join(iast_lines(v)))
-            + '<div><span class="label">%s</span><p class="hi">%s</p>%s</div>\n' % (hspan('अनुवाद'), e(tr), more)
-            + '<p class="listen"><a href="https://www.youtube.com/results?search_query=%s" rel="noopener" target="_blank">%s</a>' % (q, hspan('▶ पाठ सुनें'))
-            + '<a class="share-wa" href="https://wa.me/" rel="noopener" target="_blank">%s</a>' % hspan('WhatsApp पर भेजें')
-            + '<button class="share-copy" type="button">%s</button><button class="v-save" type="button">%s</button>' % (hspan('कॉपी करें'), hspan('☆ सहेजें'))
-            + '<button class="v-img" type="button">%s</button></p></article>' % hspan('🖼 चित्र'))
+            + '<div><span class="label">%s</span><p class="%s">%s</p>%s</div>\n' % (lspan(lang, W['tr']), lang, e(tr), more)
+            + '<p class="listen"><a href="https://www.youtube.com/results?search_query=%s" rel="noopener" target="_blank">%s</a>' % (q, lspan(lang, W['listen']))
+            + '<a class="share-wa" href="https://wa.me/" rel="noopener" target="_blank">%s</a>' % lspan(lang, W['wa'])
+            + '<button class="share-copy" type="button">%s</button><button class="v-save" type="button">%s</button>' % (lspan(lang, W['copy']), lspan(lang, W['save']))
+            + '<button class="v-img" type="button">%s</button></p></article>' % lspan(lang, W['img']))
 
 
-def vnav_hi(c, n):
-    prev, nxt = neighbours(c, n, 'hi/')
+def vnav_l(lang, c, n):
+    W = LG.L[lang]
+    prev, nxt = neighbours(c, n, lang + '/')
     a = ''
     if prev:
-        a += '<a class="vnav-prev" href="/hi/gita-%d-%d.html">%s</a>' % (prev[0], prev[1], hspan('← गीता %d.%d' % prev))
+        a += '<a class="vnav-prev" href="/%s/gita-%d-%d.html">%s</a>' % (lang, prev[0], prev[1], lspan(lang, '← %s %s' % (W['gita'], num(lang, '%d.%d' % prev))))
     if nxt:
-        a += '<a class="vnav-next" href="/hi/gita-%d-%d.html">%s</a>' % (nxt[0], nxt[1], hspan('गीता %d.%d →' % nxt))
+        a += '<a class="vnav-next" href="/%s/gita-%d-%d.html">%s</a>' % (lang, nxt[0], nxt[1], lspan(lang, '%s %s →' % (W['gita'], num(lang, '%d.%d' % nxt))))
     return '<nav class="vnav" aria-label="More verses">%s</nav>' % a
 
 
-def vback_hi(c, n):
-    return '<p class="vback"><a class="more" href="/hi/gita-%d.html#v-gita-%d-%d">%s</a></p>' % (c, c, n, hspan('पूरे प्रसंग में पढ़ें →'))
+def vback_l(lang, c, n):
+    return '<p class="vback"><a class="more" href="/%s/gita-%d.html#v-gita-%d-%d">%s</a></p>' % (lang, c, c, n, lspan(lang, LG.L[lang]['vback']))
 
 
 def head_tags(s, title, desc, url, image):
@@ -378,119 +414,133 @@ def ld(s, kind, data):
                 '<script type="application/ld+json">%s</script>' % js, s, kind + ' data')
 
 
-def verse_page_hi(tpl, c, meta, mhi, v, tr):
+def alternates(c, n, present):
+    """hreflang links for a chapter page (n None) or verse page, in every language it has."""
+    path = ('gita-%d.html' % c) if n is None else ('gita-%d-%d.html' % (c, n))
+    return SITE + path, {l: '%s%s/%s' % (SITE, l, path) for l in present}
+
+
+def verse_page_l(lang, tpl, c, meta, mloc, v, tr, present):
+    W = LG.L[lang]
     n = v['v']
-    url = '%shi/gita-%d-%d.html' % (SITE, c, n)
+    url = '%s%s/gita-%d-%d.html' % (SITE, lang, c, n)
     first = v['skt'][0]
-    title = 'गीता %d.%d: %s | सनातन धर्म सरल' % (c, n, first)
-    headline = 'गीता %d.%d: %s' % (c, n, first)
-    chap = 'गीता अध्याय %d: %s' % (c, mhi['name'])
+    headline = '%s %s: %s' % (W['gita'], num(lang, '%d.%d' % (c, n)), first)
+    title = '%s | %s' % (headline, W['site'])
+    chap = '%s: %s' % (fmt(lang, 'chapter', c=c), mloc['name'])
     image = SITE + 'og/gita-%d.png?v=2' % c
     s = head_tags(tpl, title, shorten(tr, 160), url, image)
     s = ld(s, 'Article', {"@context": "https://schema.org", "@type": "Article", "headline": headline, "description": shorten(tr, 160),
-                          "url": url, "inLanguage": "hi", "image": image,
+                          "url": url, "inLanguage": lang, "image": image,
                           "isPartOf": {"@type": "WebSite", "name": "Sanatan Dharma Saral", "url": SITE}, "mainEntityOfPage": url})
     s = ld(s, 'BreadcrumbList', {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "सनातन धर्म सरल", "item": SITE + 'hi/'},
-        {"@type": "ListItem", "position": 2, "name": chap, "item": '%shi/gita-%d.html' % (SITE, c)},
+        {"@type": "ListItem", "position": 1, "name": W['site'], "item": SITE + lang + '/'},
+        {"@type": "ListItem", "position": 2, "name": chap, "item": '%s%s/gita-%d.html' % (SITE, lang, c)},
         {"@type": "ListItem", "position": 3, "name": headline, "item": url}]})
-    s = hreflang_en(s, '%sgita-%d-%d.html' % (SITE, c, n), url)
-    s = sub1(r'<p class="kicker">.*?</p>', '<p class="kicker"><a href="/hi/gita-%d.html#v-gita-%d-%d" style="color:inherit">%s</a></p>' % (c, c, n, hspan(chap)), s, 'kicker')
-    s = sub1(r'<h1>.*?</h1>', '<h1>%s</h1>' % hspan(headline), s, 'h1')
-    s = sub1(r'<p class="lede[^"]*">.*?</p>', '<p class="lede hi">%s</p>' % e(tr), s, 'lede')
-    main = ('<main class="wrap vpage">\n<section class="stack">\n' + article_hi(c, v, tr, True, False) + '\n</section>\n'
-            + vnav_hi(c, n) + '\n' + vback_hi(c, n) + '\n</main>')
+    en, alts = alternates(c, n, present)
+    s = hreflang_en(s, en, alts)
+    s = sub1(r'<p class="kicker">.*?</p>', '<p class="kicker"><a href="/%s/gita-%d.html#v-gita-%d-%d" style="color:inherit">%s</a></p>' % (lang, c, c, n, lspan(lang, chap)), s, 'kicker')
+    s = sub1(r'<h1>.*?</h1>', '<h1>%s</h1>' % lspan(lang, headline), s, 'h1')
+    s = sub1(r'<p class="lede[^"]*">.*?</p>', '<p class="lede %s">%s</p>' % (lang, e(tr)), s, 'lede')
+    main = ('<main class="wrap vpage">\n<section class="stack">\n' + article_l(lang, c, v, tr, True, False) + '\n</section>\n'
+            + vnav_l(lang, c, n) + '\n' + vback_l(lang, c, n) + '\n</main>')
     return sub1(r'<main class="wrap vpage">.*?</main>', main, s, 'main')
 
 
-def chapter_page_hi(tpl, c, meta, mhi, verses, trs, featured):
+def chapter_page_l(lang, tpl, c, meta, mloc, verses, trs, featured, present):
+    W = LG.L[lang]
     n = len(verses)
-    url = '%shi/gita-%d.html' % (SITE, c)
-    name = 'गीता अध्याय %d: %s' % (c, mhi['name'])
-    title = '%s | सनातन धर्म सरल' % name
-    desc = 'अध्याय %d के सभी %d श्लोक, हर एक संस्कृत, उच्चारण और सरल हिन्दी अनुवाद के साथ।' % (c, n)
+    url = '%s%s/gita-%d.html' % (SITE, lang, c)
+    name = '%s: %s' % (fmt(lang, 'chapter', c=c), mloc['name'])
+    title = '%s | %s' % (name, W['site'])
+    desc = fmt(lang, 'desc', c=c, n=n)
     image = SITE + 'og/gita-%d.png?v=2' % c
     s = head_tags(tpl, title, desc, url, image)
     s = sub1(r'<script type="application/ld\+json">\{"@context":"https://schema.org","@type":"BreadcrumbList".*?</script>',
              '<script type="application/ld+json">%s</script>' % json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-                 {"@type": "ListItem", "position": 1, "name": "सनातन धर्म सरल", "item": SITE + 'hi/'},
-                 {"@type": "ListItem", "position": 2, "name": "भगवद्गीता", "item": SITE + 'hi/gita.html'},
+                 {"@type": "ListItem", "position": 1, "name": W['site'], "item": SITE + lang + '/'},
+                 {"@type": "ListItem", "position": 2, "name": W['hub'], "item": SITE + lang + '/gita.html'},
                  {"@type": "ListItem", "position": 3, "name": name, "item": url}]}, ensure_ascii=False), s, 'breadcrumb data')
     s = sub1(r'<script type="application/ld\+json">\{"@context":"https://schema.org","@type":"Article".*?</script>',
              '<script type="application/ld+json">%s</script>' % json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": name,
-                 "description": desc, "image": image, "inLanguage": "hi", "url": url, "mainEntityOfPage": url,
+                 "description": desc, "image": image, "inLanguage": lang, "url": url, "mainEntityOfPage": url,
                  "dateModified": datetime.date.today().isoformat(),
                  "isPartOf": {"@type": "WebSite", "name": "Sanatan Dharma Saral", "url": SITE}}, ensure_ascii=False), s, 'article data')
-    s = hreflang_en(s, '%sgita-%d.html' % (SITE, c), url)
-    s = sub1(r'<p class="kicker">.*?</p>', '<p class="kicker">श्रीमद्भगवद्गीता · अध्याय %d</p>' % c, s, 'kicker')
-    s = sub1(r'<h1>.*?</h1>', '<h1>%s</h1>' % hspan(name), s, 'h1')
-    s = sub1(r'<p class="lede[^"]*">.*?</p>', '<p class="lede hi">%s</p>' % e(desc), s, 'lede')
+    en, alts = alternates(c, None, present)
+    s = hreflang_en(s, en, alts)
+    s = sub1(r'<p class="kicker">.*?</p>', '<p class="kicker">श्रीमद्भगवद्गीता · अध्याय %d</p>' % c, s, 'kicker')  # the same on every language's chapter pages
+    s = sub1(r'<h1>.*?</h1>', '<h1>%s</h1>' % lspan(lang, name), s, 'h1')
+    s = sub1(r'<p class="lede[^"]*">.*?</p>', '<p class="lede %s">%s</p>' % (lang, e(desc)), s, 'lede')
     s = sub1(r'<svg aria-label="Chapter 6"', '<svg aria-label="Chapter %d"' % c, s, 'hero number label')
-    s = sub1(r'(text-anchor="middle" x="100" y="128">)6(</text>)', 'text-anchor="middle" x="100" y="128">%d</text>' % c, s, 'hero number')
-    nxt = os.path.exists('hi/gita-%d.html' % (c + 1))
+    s = sub1(r'(text-anchor="middle" x="100" y="128">)[^<]*(</text>)', 'text-anchor="middle" x="100" y="128">%d</text>' % c, s, 'hero number')
+    nxt = os.path.exists('%s/gita-%d.html' % (lang, c + 1))
     row = ('<div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:1.4rem">'
-           + '<a class="more" href="/hi/gita-%d.html">%s</a>' % (c - 1, hspan('← अध्याय %d' % (c - 1)))
-           + '<a class="more" href="/hi/gita.html#ch%d">%s</a>' % (c, hspan('अध्याय का सार'))
-           + ('<a class="more" href="/hi/gita-%d.html">%s</a>' % (c + 1, hspan('अध्याय %d →' % (c + 1))) if nxt
-              else '<span class="ix-hint">%s</span>' % hspan('और अध्याय जोड़े जा रहे हैं।' if c < 18 else 'यह अन्तिम अध्याय है।'))
+           + '<a class="more" href="/%s/gita-%d.html">%s</a>' % (lang, c - 1, lspan(lang, fmt(lang, 'prev', p=c - 1)))
+           + '<a class="more" href="/%s/gita.html#ch%d">%s</a>' % (lang, c, lspan(lang, W['summary']))
+           + ('<a class="more" href="/%s/gita-%d.html">%s</a>' % (lang, c + 1, lspan(lang, fmt(lang, 'next', c=c + 1))) if nxt
+              else '<span class="ix-hint">%s</span>' % lspan(lang, W['hint'] if c < 18 else W['last']))
            + '</div>')
-    intro = ('अध्याय %d, <i>%s</i>, का हर श्लोक: संस्कृत, उच्चारण और सरल हिन्दी में अनुवाद। हर शब्द का अर्थ '
-             '<a href="/gita-%d.html">अंग्रेज़ी पृष्ठ</a> पर है।' % (c, e(meta['skt_name']), c))
+    intro = fmt(lang, 'intro', c=c, skt=e(meta['skt_name'])).replace('/gita-%s.html' % num(lang, c), '/gita-%d.html' % c)
     if featured:
-        intro += ' जिन श्लोकों के साथ लिंक है, उनकी विस्तृत व्याख्या मुख्य गीता पृष्ठ पर है।'
+        intro += ' ' + W['featured_note']
     main = ('<main class="wrap">\n<section id="verses">\n<div class="sec-head">\n'
-            + '<p class="eyebrow">%s</p>\n' % hspan('अध्याय %d · %d श्लोक' % (c, n))
-            + '<h2>%s</h2>\n' % hspan(mhi['name'])
-            + '<p class="hi">%s</p><p class="hi">%s</p>\n</div>\n' % (intro, e(mhi['outline']))
-            + '<div class="toc">%s</div>' % ''.join('<a href="/hi/gita-%d.html#v-gita-%d-%d">%d</a>' % (c, c, v['v'], v['v']) for v in verses)
+            + '<p class="eyebrow">%s</p>\n' % lspan(lang, fmt(lang, 'eyebrow', c=c, n=n))
+            + '<h2>%s</h2>\n' % lspan(lang, mloc['name'])
+            + '<p class="%s">%s</p><p class="%s">%s</p>\n</div>\n' % (lang, intro, lang, e(mloc['outline']))
+            + '<div class="toc">%s</div>' % ''.join('<a href="/%s/gita-%d.html#v-gita-%d-%d">%d</a>' % (lang, c, c, v['v'], v['v']) for v in verses)
             + row + '<div class="stack" style="margin-top:1.2rem">\n'
-            + '\n'.join(article_hi(c, v, trs[v['v']], False, v['v'] in featured) for v in verses)
+            + '\n'.join(article_l(lang, c, v, trs[v['v']], False, v['v'] in featured) for v in verses)
             + '</div>' + row
-            + '<p class="note" style="margin-top:1.4rem">%s</p>\n</section>\n</main>' % hspan(
-                'संस्कृत पाठ तीन सार्वजनिक संस्करणों से मिलाकर; उच्चारण IAST में; अनुवाद इस साइट के लिए सरल भाषा में लिखे गए। '
-                'कोई त्रुटि दिखे तो बताएँ।'))
+            + '<p class="note" style="margin-top:1.4rem">%s</p>\n</section>\n</main>' % lspan(lang, W['note']))
     return sub1(r'<main class="wrap">.*?</main>', main, s, 'main')
 
 
-
-def build_hindi(c, meta, mhi, verses, trs, featured):
-    vtpl = open('hi/gita-6-10.html', encoding='utf-8').read()
-    ctpl = open('hi/gita-6.html', encoding='utf-8').read()
+def build_lang(lang, c, meta, mloc, verses, trs, featured, present):
+    W = LG.L[lang]
+    vtpl = open('%s/gita-6-10.html' % lang, encoding='utf-8').read()
+    ctpl = open('%s/gita-6.html' % lang, encoding='utf-8').read()
     for v in verses:
-        path = 'hi/gita-%d-%d.html' % (c, v['v'])
+        path = '%s/gita-%d-%d.html' % (lang, c, v['v'])
         if v['v'] not in featured and not os.path.exists(path):
             open(path, 'w', encoding='utf-8').write('')
     made = 0
     for v in verses:
         n = v['v']
-        path = 'hi/gita-%d-%d.html' % (c, n)
+        path = '%s/gita-%d-%d.html' % (lang, c, n)
         if n in featured:
             s = open(path, encoding='utf-8').read()
-            s = sub1(r'<nav class="vnav"[^>]*>.*?</nav>', vnav_hi(c, n), s, 'verse links in ' + path)
-            s = sub1(r'<p class="vback">.*?</p>', vback_hi(c, n), s, 'context link in ' + path)
+            s = sub1(r'<nav class="vnav"[^>]*>.*?</nav>', vnav_l(lang, c, n), s, 'verse links in ' + path)
+            s = sub1(r'<p class="vback">.*?</p>', vback_l(lang, c, n), s, 'context link in ' + path)
             open(path, 'w', encoding='utf-8').write(s)
         else:
-            open(path, 'w', encoding='utf-8').write(verse_page_hi(vtpl, c, meta, mhi, v, trs[n]))
+            open(path, 'w', encoding='utf-8').write(verse_page_l(lang, vtpl, c, meta, mloc, v, trs[n], present))
             made += 1
-    open('hi/gita-%d.html' % c, 'w', encoding='utf-8').write(chapter_page_hi(ctpl, c, meta, mhi, verses, trs, featured))
+    open('%s/gita-%d.html' % (lang, c), 'w', encoding='utf-8').write(chapter_page_l(lang, ctpl, c, meta, mloc, verses, trs, featured, present))
     # the chapter before: its last verse and its chapter page now lead here
-    last = 'hi/gita-%d-%d.html' % (c - 1, COUNTS[c - 1])
+    last = '%s/gita-%d-%d.html' % (lang, c - 1, COUNTS[c - 1])
     if os.path.exists(last):
         s = open(last, encoding='utf-8').read()
-        s = sub1(r'<nav class="vnav"[^>]*>.*?</nav>', vnav_hi(c - 1, COUNTS[c - 1]), s, 'verse links in ' + last)
+        s = sub1(r'<nav class="vnav"[^>]*>.*?</nav>', vnav_l(lang, c - 1, COUNTS[c - 1]), s, 'verse links in ' + last)
         open(last, 'w', encoding='utf-8').write(s)
-    prev = 'hi/gita-%d.html' % (c - 1)
+    prev = '%s/gita-%d.html' % (lang, c - 1)
     s = open(prev, encoding='utf-8').read()
-    s2 = s.replace('<span class="ix-hint"><span class="hi">और अध्याय जोड़े जा रहे हैं।</span></span>',
-                   '<a class="more" href="/hi/gita-%d.html">%s</a>' % (c, hspan('अध्याय %d →' % c)))
+    s2 = s.replace('<span class="ix-hint">%s</span>' % lspan(lang, W['hint']),
+                   '<a class="more" href="/%s/gita-%d.html">%s</a>' % (lang, c, lspan(lang, fmt(lang, 'next', c=c))))
     if s2 != s:
         open(prev, 'w', encoding='utf-8').write(s2)
-    # the Hindi Gita hub sent readers to the English chapter; send them to the Hindi one
-    s = open('hi/gita.html', encoding='utf-8').read()
-    s2 = re.sub(r'(<p style="margin-top:1rem"><a class="more" href=")gita-%d\.html(">)' % c, r'\g<1>/hi/gita-%d.html\2' % c, s)
-    if s2 == s and 'href="/hi/gita-%d.html"' % c not in s:
-        print('  Hindi hub link not changed')
-    open('hi/gita.html', 'w', encoding='utf-8').write(s2)
+    # the language's Gita hub sent readers to the English chapter; send them to this one, with the right numbers
+    s = open('%s/gita.html' % lang, encoding='utf-8').read()
+    m6 = re.search(r'<p style="margin-top:1rem"><a class="more" href="/%s/gita-6\.html"><span class="%s">([^<]*)</span></a></p>' % (lang, lang), s)
+    if m6:
+        text = m6.group(1).replace(num(lang, 47), num(lang, len(verses)))
+        text = re.sub(r'%s(?![%s0-9])' % (re.escape(num(lang, 6)), re.escape(num(lang, '0123456789'))), num(lang, c), text)
+        s2 = re.sub(r'<p style="margin-top:1rem"><a class="more" href="(?:/%s/)?gita-%d\.html">.*?</a></p>' % (lang, c),
+                    lambda m: '<p style="margin-top:1rem"><a class="more" href="/%s/gita-%d.html">%s</a></p>' % (lang, c, lspan(lang, text)), s, count=1)
+        if s2 == s and 'href="/%s/gita-%d.html"' % (lang, c) not in s:
+            print('  %s hub link not changed' % lang)
+        open('%s/gita.html' % lang, 'w', encoding='utf-8').write(s2)
+    else:
+        print('  %s hub: chapter 6 link not found' % lang)
     return made
 
 
@@ -500,8 +550,9 @@ def main():
     meta, verses = data['meta'], data['verses']
     assert len(verses) == COUNTS[c], 'chapter %d should have %d verses' % (c, COUNTS[c])
     featured = set(meta.get('featured', []))
-    mhi, trs = load_hindi(c, verses, featured)
-    hindi = mhi is not None
+    present = langs_for(c)
+    loc = {l: load_lang(l, c, verses, featured) for l in present}
+    trs = loc['hi'][1] if 'hi' in loc else None
     vtpl = open('gita-6-10.html', encoding='utf-8').read()
     ctpl = open('gita-6.html', encoding='utf-8').read()
     # First pass: every verse page must exist before previous/next links are worked out.
@@ -518,9 +569,9 @@ def main():
             s = sub1(r'<p class="vback">.*?</p>', vback(c, v['v']), s, 'context link in ' + path)
             open(path, 'w', encoding='utf-8').write(s)
         else:
-            open(path, 'w', encoding='utf-8').write(verse_page(vtpl, c, meta, v, hindi))
+            open(path, 'w', encoding='utf-8').write(verse_page(vtpl, c, meta, v, present))
             made += 1
-    open('gita-%d.html' % c, 'w', encoding='utf-8').write(chapter_page(ctpl, c, meta, verses, featured, hindi))
+    open('gita-%d.html' % c, 'w', encoding='utf-8').write(chapter_page(ctpl, c, meta, verses, featured, present))
     # The last verse of the chapter before now has a next verse.
     last = 'gita-%d-%d.html' % (c - 1, COUNTS[c - 1])
     if c > 1 and os.path.exists(last):
@@ -532,10 +583,10 @@ def main():
     update_search(c, verses, featured, trs)
     update_llms(c, meta, len(verses))
     update_sitemap([SITE + 'gita-%d.html' % c] + ['%sgita-%d-%d.html' % (SITE, c, v['v']) for v in verses])
-    if hindi:
-        made_hi = build_hindi(c, meta, mhi, verses, trs, featured)
-        update_sitemap([SITE + 'hi/gita-%d.html' % c] + ['%shi/gita-%d-%d.html' % (SITE, c, v['v']) for v in verses])
-        print('chapter %d in Hindi: %d verse pages written, chapter page written' % (c, made_hi))
+    for l in present:
+        made_l = build_lang(l, c, meta, loc[l][0], verses, loc[l][1], featured, present)
+        update_sitemap(['%s%s/gita-%d.html' % (SITE, l, c)] + ['%s%s/gita-%d-%d.html' % (SITE, l, c, v['v']) for v in verses])
+        print('chapter %d in %s: %d verse pages written, chapter page written' % (c, l, made_l))
     print('chapter %d: %d verse pages written, %d featured pages relinked, chapter page written' % (c, made, len(featured)))
 
 
