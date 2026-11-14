@@ -464,12 +464,12 @@ def chapter_page_l(lang, tpl, c, meta, mloc, verses, trs, featured, present):
     desc = fmt(lang, 'desc', c=c, n=n)
     image = SITE + 'og/gita-%d.png?v=2' % c
     s = head_tags(tpl, title, desc, url, image)
-    s = sub1(r'<script type="application/ld\+json">\{"@context":"https://schema.org","@type":"BreadcrumbList".*?</script>',
+    s = sub1(r'<script type="application/ld\+json">\{"@context": ?"https://schema.org", ?"@type": ?"BreadcrumbList".*?</script>',
              '<script type="application/ld+json">%s</script>' % json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
                  {"@type": "ListItem", "position": 1, "name": W['site'], "item": SITE + lang + '/'},
                  {"@type": "ListItem", "position": 2, "name": W['hub'], "item": SITE + lang + '/gita.html'},
                  {"@type": "ListItem", "position": 3, "name": name, "item": url}]}, ensure_ascii=False), s, 'breadcrumb data')
-    s = sub1(r'<script type="application/ld\+json">\{"@context":"https://schema.org","@type":"Article".*?</script>',
+    s = sub1(r'<script type="application/ld\+json">\{"@context": ?"https://schema.org", ?"@type": ?"Article".*?</script>',
              '<script type="application/ld+json">%s</script>' % json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": name,
                  "description": desc, "image": image, "inLanguage": lang, "url": url, "mainEntityOfPage": url,
                  "dateModified": datetime.date.today().isoformat(),

@@ -62,11 +62,19 @@ Chapters 1 to 6 were written straight into their pages. From chapter 7 on, each 
   site verse 13.n is their 13.(n+1).
 - Verses that already had a page with a full explanation (two in most chapters, listed as `featured`) keep that page;
   only its previous/next links are updated.
-- Chapters 7 to 18 are in English and Hindi. The Hindi translation of each verse is in `tools/gita/content/hNN.py`
-  (`T`, with the chapter's Hindi name and outline in `META`); a verse that already had a Hindi page keeps it and is left
-  out of `T`. When `hNN.py` exists, `build.py` also writes `hi/gita-N.html` and `hi/gita-N-V.html`, like chapters 1 to 6
-  in Hindi: Sanskrit, pronunciation and translation, with the word-by-word list on the English page. The other seven
-  languages have no pages for these chapters yet, and their language buttons leave the reader on the English page.
+- Chapters 7 to 18 are in all nine languages. Each language's translation is in `tools/gita/content/<file>NN.py`
+  (`hNN.py` for Hindi, `guNN.py`, `teNN.py`, `mrNN.py`, `taNN.py`, `bnNN.py`, `knNN.py`, `mlNN.py`): `T` holds one line
+  per verse and `META` the chapter outline; a verse that already had a page in that language keeps it and is left out of
+  `T` (its translation is read back from that page). The words each language uses on its pages (site name, buttons,
+  "Krishna said:" and so on) are in `tools/gita/langs.py`. For each content file, `build.py` writes `xx/gita-N.html` and
+  `xx/gita-N-V.html`: Sanskrit, pronunciation and translation, with the word-by-word list on the English page. Where the
+  speaker changes, the translation must open with that language's "... said:"; the build warns if it does not.
+- Chapters 1 to 6 were made by hand in English and in the first languages. Kannada and Malayalam got them later from
+  the same tool: `tools/gita/make_early.py` reads the Sanskrit back from the English pages into `ch01.json` to
+  `ch06.json` (checking that it would print identically), and for chapters 1 to 6 `build.py` writes only the languages
+  that have a content file, then rewrites the hreflang lines on every language's copy of each page. It never rewrites
+  the hand-made pages otherwise. A new language's first build needs `xx/gita-6.html` and `xx/gita-6-10.html` to copy
+  from; for Kannada and Malayalam these were made from the Telugu pages with that language's header and footer.
 - To rebuild the data you need the three copies in one folder: `verse.json` from github.com/gita/gita (data/),
   `B/<chapter>-<verse>.json` from github.com/vedicscriptures/bhagavad-gita (slok/), and `C/<chapter>.json` from
   github.com/bhavykhatri/DharmicData (SrimadBhagvadGita/).
