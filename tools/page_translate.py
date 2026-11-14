@@ -13,6 +13,7 @@ tools/pages/<page>/<lang>.py:
     S = ['...', ...]     # one entry per Hindi text piece, in the order `extract` prints them; None = reuse the
                          # translation the site already has for that exact text (extract <page> <lang> shows them)
     JS = {'Hindi string in a script': 'translation', ...}   # optional: strings inside the page's own scripts
+    TIPS = {'Hindi label': '...'}  # optional: tap-to-learn diagram/map labels without this language yet (extract lists them as TIP)
     EXTRA = [('old', 'new'), ...]                            # optional: any other exact replacement in the body
     COUNT = ['... {n} days to go', '... tomorrow!', '... today!']   # optional: the countdown line (date from the Hindi page)
     KICKER = '...'       # optional: the small line above the title (it has no language class on the Hindi page)
@@ -53,6 +54,38 @@ def body_pieces(body):
     return out
 
 
+TIP = re.compile(r'<[a-z]+ [^>]*data-[it]hi="[^"]*"[^>]*>')
+
+
+def tip_slots(body, lang):
+    """Tap-to-learn diagram and map labels (data-thi / data-ihi) that have no text in this language yet, in order."""
+    out = []
+    for m in TIP.finditer(body):
+        e = m.group(0)
+        for k in 'ti':
+            h = re.search(r'data-%shi="([^"]*)"' % k, e)
+            if h and 'data-%s%s="' % (k, lang) not in e:
+                out.append((m.start(), k, H.unescape(h.group(1))))
+    return out
+
+
+def add_tips(body, lang, texts):
+    slots = tip_slots(body, lang)
+    if isinstance(texts, dict):  # {Hindi label: translation}
+        missing = [h for _, _, h in slots if h not in texts]
+        if missing:
+            raise SystemExit('TIPS has no translation for: %s' % missing[0])
+        texts = [texts[h] for _, _, h in slots]
+    if len(slots) != len(texts):
+        raise SystemExit('%d diagram labels need text, TIPS has %d' % (len(slots), len(texts)))
+    for (pos, k, _), t in sorted(zip(slots, texts), key=lambda x: -x[0][0]):
+        e = TIP.match(body, pos).group(0)
+        h = re.search(r'data-%shi="[^"]*"' % k, e)
+        new = e[:h.end()] + ' data-%s%s="%s"' % (k, lang, esc(t)) + e[h.end():]
+        body = body[:pos] + new + body[pos + len(e):]
+    return body
+
+
 def script_strings(tail):
     """Hindi strings inside the page's own scripts after the footer (shared scripts are files, not inline)."""
     found = []
@@ -74,6 +107,8 @@ def extract(page, lang=None):
         h = m.group(6)
         t = COMMON.get(h, {}).get(lang) or known.get(h) if lang else None
         print(i, '= ' + t if t else h)
+    for i, (_, k, h) in enumerate(tip_slots(body, 'xx')):
+        print('TIP %d %s %s' % (i, 'title' if k == 't' else 'info', h))
     js = script_strings(tail)
     if js:
         print('JS:')
@@ -228,6 +263,10 @@ def build(page, lang):
         pos = m.end()
     out.append(body[pos:])
     body = ''.join(out)
+    if getattr(d, 'TIPS', None):
+        body = add_tips(body, lang, d.TIPS)
+    elif tip_slots(body, lang):
+        print('%s/%s: %d diagram labels stay in English (no TIPS)' % (page, lang, len(tip_slots(body, lang))))
     if hasattr(d, 'KICKER'):
         body = re.sub(r'<p class="kicker">[^<]*</p>', lambda m: '<p class="kicker">%s</p>' % d.KICKER, body, count=1)
     for a, b in getattr(d, 'EXTRA', []):
