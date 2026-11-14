@@ -75,12 +75,66 @@ def extract(page):
             print('  ', t)
 
 
+# lines that recur on the small prayer pages
+COMMON = {
+    'पूरे प्रसंग में पढ़ें →': {'gu': 'પૂરા સંદર્ભમાં વાંચો →', 'te': 'పూర్తి సందర్భంలో చదవండి →', 'mr': 'संपूर्ण संदर्भात वाचा →',
+                              'ta': 'முழுச் சூழலில் படியுங்கள் →', 'bn': 'পুরো প্রসঙ্গে পড়ুন →', 'kn': 'ಪೂರ್ಣ ಸಂದರ್ಭದಲ್ಲಿ ಓದಿ →',
+                              'ml': 'പൂർണ്ണ സന്ദർഭത്തിൽ വായിക്കൂ →'},
+}
+
+
 def load(page, lang):
     p = os.path.join(ROOT, 'tools', 'pages', page, lang + '.py')
     spec = importlib.util.spec_from_file_location('%s_%s' % (page, lang), p)
     d = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(d)
+    if hasattr(d, 'FROM') and not hasattr(d, 'S'):
+        derive(page, lang, d)
     return d
+
+
+def derive(page, lang, d):
+    """A page whose text all appears on another page (a prayer page and its festival page): take the translations from
+    that page's content file. FROM = 'festival-page'; MORE = {'Hindi text': 'translation'} for anything not there."""
+    src = load(d.FROM, lang)
+    known = {}
+    for m, t in zip(body_pieces(parts(d.FROM)[2]), src.S):
+        known.setdefault(m.group(6), t)
+    more = dict(getattr(d, 'MORE', {}))
+
+    def tr(h):
+        if h in more:
+            return more[h]
+        if h in COMMON:
+            return COMMON[h][lang]
+        if h in known:
+            return known[h]
+        if h.endswith(' →') and tr(h[:-2]):
+            return tr(h[:-2]) + ' →'
+        if h.startswith('← ') and tr(h[2:]):
+            return '← ' + tr(h[2:])
+        m = re.fullmatch(r'(.+) \((.+)\)', h)
+        if m and tr(m.group(1)) and tr(m.group(2)):
+            return '%s (%s)' % (tr(m.group(1)), tr(m.group(2)))
+        for sep in (' · ', ': '):
+            if sep in h:
+                bits = [tr(x) for x in h.split(sep)]
+                if None not in bits:
+                    return sep.join(bits)
+        return None
+    S, missing = [], []
+    for m in body_pieces(parts(page)[2]):
+        t = tr(m.group(6))
+        if t is None:
+            missing.append(m.group(6))
+        S.append(t)
+    if missing:
+        raise SystemExit('%s/%s: no translation for:\n  ' % (page, lang) + '\n  '.join(missing))
+    d.S = S
+    if not hasattr(d, 'TITLE'):
+        d.TITLE = S[1]
+    if not hasattr(d, 'DESC'):
+        d.DESC = S[2]
 
 
 def site_name(lang):
