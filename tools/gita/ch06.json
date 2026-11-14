@@ -1,0 +1,485 @@
+{
+ "meta": {
+  "n": 6,
+  "featured": [
+   5,
+   17,
+   35
+  ],
+  "name": "The Yoga of Meditation",
+  "skt_name": "आत्मसंयमयोगः",
+  "roman_name": "Dhyana Yoga"
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "अनाश्रितः कर्मफलं कार्यं कर्म करोति यः",
+    "स संन्यासी च योगी च न निरग्निर्न चाक्रियः"
+   ],
+   "tr": "Krishna said: One who does the work that should be done without depending on its results is a renunciant and a yogi, not one who merely gives up the sacred fire or all activity."
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव",
+    "न ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन"
+   ],
+   "tr": "What people call renunciation, know that to be yoga, Arjuna. No one becomes a yogi without giving up selfish plans."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते",
+    "योगारूढस्य तस्यैव शमः कारणमुच्यते"
+   ],
+   "tr": "For the sage who wishes to climb to yoga, action is said to be the means. For the same person, once they have reached yoga, calm is said to be the means."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते",
+    "सर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते"
+   ],
+   "tr": "When a person is attached neither to sense objects nor to actions, and has given up all selfish plans, they are said to have reached yoga."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्",
+    "आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः"
+   ],
+   "tr": "Lift yourself up by your own effort; do not let yourself sink. You alone are your own friend, and you alone are your own enemy."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः",
+    "अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्"
+   ],
+   "tr": "For one who has mastered themselves, the self is a friend. For one who has not, the self acts like an enemy."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "जितात्मनः प्रशान्तस्य परमात्मा समाहितः",
+    "शीतोष्णसुखदुःखेषु तथा मानापमानयोः"
+   ],
+   "tr": "For one who has mastered themselves and is at peace, the Supreme Self stays steady through cold and heat, pleasure and pain, honour and insult."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः",
+    "युक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः"
+   ],
+   "tr": "The yogi who is satisfied with knowledge and experience, unshaken, master of the senses, and who sees a lump of earth, a stone and gold as the same, is called steady."
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु",
+    "साधुष्वपि च पापेषु समबुद्धिर्विशिष्यते"
+   ],
+   "tr": "Even better is one who looks equally on well-wishers, friends, enemies, strangers, neutral people, the hateful, relatives, the good and the wicked."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "योगी युञ्जीत सततमात्मानं रहसि स्थितः",
+    "एकाकी यतचित्तात्मा निराशीरपरिग्रहः"
+   ],
+   "tr": "The yogi should keep the mind steadily on the Self, staying in a quiet place, alone, with mind and body controlled, expecting nothing and holding on to nothing."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः",
+    "नात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम्"
+   ],
+   "tr": "In a clean place, set up a steady seat for yourself, neither too high nor too low, covered with kusha grass, a deerskin and a cloth, one over the other."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः",
+    "उपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये"
+   ],
+   "tr": "Sitting there, making the mind one-pointed and controlling thoughts and senses, practise yoga to purify yourself."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः",
+    "संप्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन्"
+   ],
+   "tr": "Holding the body, head and neck straight and still, steady, gaze at the tip of your nose without looking around in any direction."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः",
+    "मनः संयम्य मच्चित्तो युक्त आसीत मत्परः"
+   ],
+   "tr": "Calm and fearless, firm in self-discipline, controlling the mind, sit with your thoughts on me, making me your goal."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "युञ्जन्नेवं सदाऽऽत्मानं योगी नियतमानसः",
+    "शान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति"
+   ],
+   "tr": "Always practising like this, with the mind controlled, the yogi reaches the peace that rests in me, the supreme stillness of nirvana."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः",
+    "न चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन"
+   ],
+   "tr": "Yoga is not for one who eats too much or too little, Arjuna, nor for one who sleeps too much or stays awake too much."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु",
+    "युक्तस्वप्नावबोधस्य योगो भवति दुःखहा"
+   ],
+   "tr": "For one who is balanced in eating and recreation, balanced in effort at work, and balanced in sleep and waking, yoga removes all sorrow."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदा विनियतं चित्तमात्मन्येवावतिष्ठते",
+    "निःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा"
+   ],
+   "tr": "When the disciplined mind rests in the Self alone, free from longing for any pleasure, then one is said to be steady in yoga."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता",
+    "योगिनो यतचित्तस्य युञ्जतो योगमात्मनः"
+   ],
+   "tr": "\"Like a lamp in a windless place that does not flicker\": that is the image used for the yogi whose mind is controlled and who is absorbed in meditation."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यत्रोपरमते चित्तं निरुद्धं योगसेवया",
+    "यत्र चैवात्मनाऽऽत्मानं पश्यन्नात्मनि तुष्यति"
+   ],
+   "tr": "When the mind, held still by yoga practice, comes to rest, and seeing the Self by the self, one is content in the Self,"
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सुखमात्यन्तिकं यत्तद्बुद्धिग्राह्यमतीन्द्रियम्",
+    "वेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः"
+   ],
+   "tr": "when one knows that boundless joy which is grasped by the intellect and lies beyond the senses, and resting there never moves from the truth,"
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः",
+    "यस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते"
+   ],
+   "tr": "having gained which one thinks no other gain is greater, and resting in which one is not shaken even by great sorrow,"
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तं विद्याद्दुःखसंयोगवियोगं योगसंज्ञितम्",
+    "स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा"
+   ],
+   "tr": "know that to be yoga: freedom from all union with sorrow. This yoga should be practised with determination and without losing heart."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः",
+    "मनसैवेन्द्रियग्रामं विनियम्य समन्ततः"
+   ],
+   "tr": "Giving up completely all desires born of selfish plans, and drawing in the senses from every side by the mind,"
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया",
+    "आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत्"
+   ],
+   "tr": "little by little become still, with an intellect held firm by patience. Settling the mind in the Self, think of nothing else."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम्",
+    "ततस्ततो नियम्यैतदात्मन्येव वशं नयेत्"
+   ],
+   "tr": "Wherever the restless, unsteady mind wanders off, bring it back from there and place it under the control of the Self."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम्",
+    "उपैति शान्तरजसं ब्रह्मभूतमकल्मषम्"
+   ],
+   "tr": "Supreme joy comes to the yogi whose mind is at peace, whose restlessness is calmed, who is free from fault and has become one with Brahman."
+  },
+  {
+   "v": 28,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "युञ्जन्नेवं सदाऽऽत्मानं योगी विगतकल्मषः",
+    "सुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते"
+   ],
+   "tr": "Practising like this always, the yogi, free from fault, easily enjoys the boundless joy of contact with Brahman."
+  },
+  {
+   "v": 29,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि",
+    "ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः"
+   ],
+   "tr": "One who is united in yoga sees the Self in all beings and all beings in the Self, and sees the same everywhere."
+  },
+  {
+   "v": 30,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति",
+    "तस्याहं न प्रणश्यामि स च मे न प्रणश्यति"
+   ],
+   "tr": "One who sees me everywhere and sees everything in me is never lost to me, and I am never lost to them."
+  },
+  {
+   "v": 31,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः",
+    "सर्वथा वर्तमानोऽपि स योगी मयि वर्तते"
+   ],
+   "tr": "The yogi who, established in oneness, worships me as dwelling in all beings lives in me, however they may be living."
+  },
+  {
+   "v": 32,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन",
+    "सुखं वा यदि वा दुःखं स योगी परमो मतः"
+   ],
+   "tr": "One who sees, by comparing with themselves, that pleasure and pain are the same for all, Arjuna, is considered the highest yogi."
+  },
+  {
+   "v": 33,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "योऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन",
+    "एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम्"
+   ],
+   "tr": "Arjuna said: Krishna, this yoga of evenness you have described: because the mind is so restless, I do not see how it can last."
+  },
+  {
+   "v": 34,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्",
+    "तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्"
+   ],
+   "tr": "The mind is restless, Krishna: turbulent, strong and stubborn. Controlling it seems to me as hard as controlling the wind."
+  },
+  {
+   "v": 35,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "असंशयं महाबाहो मनो दुर्निग्रहं चलम्",
+    "अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते"
+   ],
+   "tr": "Krishna said: Without doubt, Arjuna, the mind is restless and hard to control. But it can be held by practice and by letting go of attachment."
+  },
+  {
+   "v": 36,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "असंयतात्मना योगो दुष्प्राप इति मे मतिः",
+    "वश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः"
+   ],
+   "tr": "In my view, yoga is hard to reach for one who has not mastered themselves. But one who is self-controlled and keeps trying can reach it by the right means."
+  },
+  {
+   "v": 37,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "अयतिः श्रद्धयोपेतो योगाच्चलितमानसः",
+    "अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति"
+   ],
+   "tr": "Arjuna said: What happens, Krishna, to one who has faith but does not try hard enough, whose mind wanders from yoga before reaching its goal?"
+  },
+  {
+   "v": 38,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति",
+    "अप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि"
+   ],
+   "tr": "Fallen from both, does he not perish like a scattered cloud, without support, Krishna, lost on the path to Brahman?"
+  },
+  {
+   "v": 39,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः",
+    "त्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते"
+   ],
+   "tr": "Krishna, please remove this doubt of mine completely. There is no one but you who can remove it."
+  },
+  {
+   "v": 40,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "पार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते",
+    "नहि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति"
+   ],
+   "tr": "Krishna said: Arjuna, there is no ruin for such a person, either in this world or the next. No one who does good ever comes to a bad end, my friend."
+  },
+  {
+   "v": 41,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः",
+    "शुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते"
+   ],
+   "tr": "Having reached the worlds of the virtuous and lived there for many years, the one who fell from yoga is born into a pure and prosperous family."
+  },
+  {
+   "v": 42,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अथवा योगिनामेव कुले भवति धीमताम्",
+    "एतद्धि दुर्लभतरं लोके जन्म यदीदृशम्"
+   ],
+   "tr": "Or they are born into a family of wise yogis. Such a birth is very rare in this world."
+  },
+  {
+   "v": 43,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम्",
+    "यतते च ततो भूयः संसिद्धौ कुरुनन्दन"
+   ],
+   "tr": "There they regain the understanding they had in their previous life, and from there they strive again, even harder, for perfection, Arjuna."
+  },
+  {
+   "v": 44,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः",
+    "जिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते"
+   ],
+   "tr": "By that earlier practice they are carried forward, even without trying. Even one who only wishes to know yoga goes beyond mere ritual."
+  },
+  {
+   "v": 45,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः",
+    "अनेकजन्मसंसिद्धस्ततो याति परां गतिम्"
+   ],
+   "tr": "But the yogi who strives with effort, cleansed of faults and perfected over many births, then reaches the supreme goal."
+  },
+  {
+   "v": 46,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः",
+    "कर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन"
+   ],
+   "tr": "The yogi is greater than those who practise austerities, greater even than the learned, and greater than those who perform rituals. So be a yogi, Arjuna."
+  },
+  {
+   "v": 47,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना",
+    "श्रद्धावान्भजते यो मां स मे युक्ततमो मतः"
+   ],
+   "tr": "And of all yogis, the one who worships me with faith, with their inner self absorbed in me, I consider the most united with me."
+  }
+ ]
+}

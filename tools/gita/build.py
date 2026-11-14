@@ -328,6 +328,11 @@ def hub_name(lang, c):
     return html.unescape(m.group(1)).strip()
 
 
+# Verses where the speaker changes inside the narration, with no "... said:" in the English either: 1.12 (Sanjaya again
+# after Duryodhana), 1.21 and 1.28 (Sanjaya tells what Arjuna said).
+NARRATED = {(1, 12), (1, 21), (1, 28)}
+
+
 def load_lang(lang, c, verses, featured):
     path = os.path.join(HERE, 'content', LG.L[lang]['file'] % c)
     ns = {}
@@ -340,7 +345,7 @@ def load_lang(lang, c, verses, featured):
         n = v['v']
         if n in featured:
             page = open('%s/gita-%d-%d.html' % (lang, c, n), encoding='utf-8').read()
-            m = re.search(r'<span class="label"><span class="%s">[^<]*</span></span><p class="%s">(.*?)</p>' % (lang, lang), page, re.S)
+            m = re.search(r'<span class="label"><span class="%s">[^<]*</span></span>\s*<p class="%s">(.*?)</p>' % (lang, lang), page, re.S)
             if not m:
                 raise SystemExit('no translation found on %s/gita-%d-%d.html' % (lang, c, n))
             tr[n] = html.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
@@ -350,10 +355,13 @@ def load_lang(lang, c, verses, featured):
             raise SystemExit('%s: no translation for verse %d' % (path, n))
         else:
             tr[n] = ns['T'][n].strip()
-            said = LG.L[lang]['said'][v['speaker']]
-            if prev != v['speaker'] and not tr[n].startswith(said):
-                print('  %s %d.%d: the speaker changes, so the translation should start with "%s"' % (lang, c, n, said))
-            if prev == v['speaker'] and any(tr[n].startswith(x) for x in LG.L[lang]['said'].values()):
+            # "... said:" opens the translation where the speaker changes (or the Sanskrit says "... uvaca"), and nowhere
+            # else; chapter 1 has narrated speech (Duryodhana, told by Sanjaya) that has no such opening
+            said = LG.L[lang]['said']
+            change = (prev != v['speaker'] or bool(v['opens'])) and (c, n) not in NARRATED
+            if change and v['speaker'] in said and not tr[n].startswith(said[v['speaker']]):
+                print('  %s %d.%d: the speaker changes, so the translation should start with "%s"' % (lang, c, n, said[v['speaker']]))
+            if not change and any(tr[n].startswith(x) for x in said.values()):
                 print('  %s %d.%d: starts with "... said:" but the speaker has not changed' % (lang, c, n))
         prev = v['speaker']
     extra = set(ns['T']) - {v['v'] for v in verses}
@@ -475,7 +483,7 @@ def chapter_page_l(lang, tpl, c, meta, mloc, verses, trs, featured, present):
     s = sub1(r'(text-anchor="middle" x="100" y="128">)[^<]*(</text>)', 'text-anchor="middle" x="100" y="128">%d</text>' % c, s, 'hero number')
     nxt = os.path.exists('%s/gita-%d.html' % (lang, c + 1))
     row = ('<div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:1.4rem">'
-           + '<a class="more" href="/%s/gita-%d.html">%s</a>' % (lang, c - 1, lspan(lang, fmt(lang, 'prev', p=c - 1)))
+           + ('<a class="more" href="/%s/gita-%d.html">%s</a>' % (lang, c - 1, lspan(lang, fmt(lang, 'prev', p=c - 1))) if c > 1 else '')
            + '<a class="more" href="/%s/gita.html#ch%d">%s</a>' % (lang, c, lspan(lang, W['summary']))
            + ('<a class="more" href="/%s/gita-%d.html">%s</a>' % (lang, c + 1, lspan(lang, fmt(lang, 'next', c=c + 1))) if nxt
               else '<span class="ix-hint">%s</span>' % lspan(lang, W['hint'] if c < 18 else W['last']))
@@ -511,26 +519,32 @@ def build_lang(lang, c, meta, mloc, verses, trs, featured, present):
             s = open(path, encoding='utf-8').read()
             s = sub1(r'<nav class="vnav"[^>]*>.*?</nav>', vnav_l(lang, c, n), s, 'verse links in ' + path)
             s = sub1(r'<p class="vback">.*?</p>', vback_l(lang, c, n), s, 'context link in ' + path)
+            k = re.search(r'<p class="kicker">.*?</p>', s, re.S)
+            if k and re.search(r'href="(?:/)?gita-%d\.html' % c, k.group(0)):
+                # a page made before this language had the chapter pointed at the English one
+                chap = '%s: %s' % (fmt(lang, 'chapter', c=c), mloc['name'])
+                s = s.replace(k.group(0), '<p class="kicker"><a href="/%s/gita-%d.html#v-gita-%d-%d" style="color:inherit">%s</a></p>'
+                              % (lang, c, c, n, lspan(lang, chap)), 1)
             open(path, 'w', encoding='utf-8').write(s)
         else:
             open(path, 'w', encoding='utf-8').write(verse_page_l(lang, vtpl, c, meta, mloc, v, trs[n], present))
             made += 1
     open('%s/gita-%d.html' % (lang, c), 'w', encoding='utf-8').write(chapter_page_l(lang, ctpl, c, meta, mloc, verses, trs, featured, present))
     # the chapter before: its last verse and its chapter page now lead here
-    last = '%s/gita-%d-%d.html' % (lang, c - 1, COUNTS[c - 1])
-    if os.path.exists(last):
+    last = '%s/gita-%d-%d.html' % (lang, c - 1, COUNTS[c - 1]) if c > 1 else ''
+    if c > 1 and os.path.exists(last):
         s = open(last, encoding='utf-8').read()
         s = sub1(r'<nav class="vnav"[^>]*>.*?</nav>', vnav_l(lang, c - 1, COUNTS[c - 1]), s, 'verse links in ' + last)
         open(last, 'w', encoding='utf-8').write(s)
     prev = '%s/gita-%d.html' % (lang, c - 1)
-    s = open(prev, encoding='utf-8').read()
+    s = open(prev, encoding='utf-8').read() if c > 1 else ''
     s2 = s.replace('<span class="ix-hint">%s</span>' % lspan(lang, W['hint']),
                    '<a class="more" href="/%s/gita-%d.html">%s</a>' % (lang, c, lspan(lang, fmt(lang, 'next', c=c))))
     if s2 != s:
         open(prev, 'w', encoding='utf-8').write(s2)
     # the language's Gita hub sent readers to the English chapter; send them to this one, with the right numbers
     s = open('%s/gita.html' % lang, encoding='utf-8').read()
-    m6 = re.search(r'<p style="margin-top:1rem"><a class="more" href="/%s/gita-6\.html"><span class="%s">([^<]*)</span></a></p>' % (lang, lang), s)
+    m6 = re.search(r'<p style="margin-top:1rem"><a class="more" href="(?:/%s/)?gita-6\.html"><span class="%s">([^<]*)</span></a></p>' % (lang, lang), s)
     if m6:
         text = m6.group(1).replace(num(lang, 47), num(lang, len(verses)))
         text = re.sub(r'%s(?![%s0-9])' % (re.escape(num(lang, 6)), re.escape(num(lang, '0123456789'))), num(lang, c), text)
@@ -544,14 +558,45 @@ def build_lang(lang, c, meta, mloc, verses, trs, featured, present):
     return made
 
 
+def fix_alternates(c, n):
+    """Chapters 1 to 6: the pages made by hand list the languages they had then. Rewrite the hreflang lines on every
+    language's copy of one page so they list every language that now has it, in the usual order."""
+    page = ('gita-%d.html' % c) if n is None else ('gita-%d-%d.html' % (c, n))
+    have = [l for l in LG.ORDER if os.path.exists('%s/%s' % (l, page))]
+    block = '<link rel="alternate" hreflang="en" href="%s%s">\n' % (SITE, page)
+    block += ''.join('<link rel="alternate" hreflang="%s" href="%s%s/%s">\n' % (l, SITE, l, page) for l in have)
+    block += '<link rel="alternate" hreflang="x-default" href="%s%s">\n' % (SITE, page)
+    for path in [page] + ['%s/%s' % (l, page) for l in have]:
+        s = open(path, encoding='utf-8').read()
+        s2 = re.sub(r'(?:<link rel="alternate" hreflang="[^"]+" href="[^"]+">\n)+', lambda m: block, s, count=1)
+        if s2 != s:
+            open(path, 'w', encoding='utf-8').write(s2)
+
+
 def main():
     c = int(sys.argv[1])
     data = json.load(open(os.path.join(HERE, 'ch%02d.json' % c), encoding='utf-8'))
     meta, verses = data['meta'], data['verses']
     assert len(verses) == COUNTS[c], 'chapter %d should have %d verses' % (c, COUNTS[c])
     featured = set(meta.get('featured', []))
-    present = langs_for(c)
-    loc = {l: load_lang(l, c, verses, featured) for l in present}
+    # Chapters 1 to 6 were made by hand in English and in the first languages; only languages with a content file
+    # are built for them, and the English pages are left as they are (their data comes from them: make_early.py).
+    english = c >= 7
+    build = langs_for(c)
+    present = build if english else [l for l in LG.ORDER if l in build or os.path.exists('%s/gita-%d.html' % (l, c))]
+    loc = {l: load_lang(l, c, verses, featured) for l in build}
+    if english:
+        build_english(c, meta, verses, featured, present, loc)
+    for l in build:
+        made_l = build_lang(l, c, meta, loc[l][0], verses, loc[l][1], featured, present)
+        update_sitemap(['%s%s/gita-%d.html' % (SITE, l, c)] + ['%s%s/gita-%d-%d.html' % (SITE, l, c, v['v']) for v in verses])
+        print('chapter %d in %s: %d verse pages written, chapter page written' % (c, l, made_l))
+    if not english:
+        for n in [None] + [v['v'] for v in verses]:
+            fix_alternates(c, n)
+
+
+def build_english(c, meta, verses, featured, present, loc):
     trs = loc['hi'][1] if 'hi' in loc else None
     vtpl = open('gita-6-10.html', encoding='utf-8').read()
     ctpl = open('gita-6.html', encoding='utf-8').read()
@@ -583,10 +628,6 @@ def main():
     update_search(c, verses, featured, trs)
     update_llms(c, meta, len(verses))
     update_sitemap([SITE + 'gita-%d.html' % c] + ['%sgita-%d-%d.html' % (SITE, c, v['v']) for v in verses])
-    for l in present:
-        made_l = build_lang(l, c, meta, loc[l][0], verses, loc[l][1], featured, present)
-        update_sitemap(['%s%s/gita-%d.html' % (SITE, l, c)] + ['%s%s/gita-%d-%d.html' % (SITE, l, c, v['v']) for v in verses])
-        print('chapter %d in %s: %d verse pages written, chapter page written' % (c, l, made_l))
     print('chapter %d: %d verse pages written, %d featured pages relinked, chapter page written' % (c, made, len(featured)))
 
 

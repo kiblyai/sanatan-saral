@@ -1,0 +1,444 @@
+{
+ "meta": {
+  "n": 3,
+  "featured": [
+   21,
+   35
+  ],
+  "name": "The Yoga of Action",
+  "skt_name": "कर्मयोगः",
+  "roman_name": "Karma Yoga"
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन",
+    "तत्किं कर्मणि घोरे मां नियोजयसि केशव"
+   ],
+   "tr": "Arjuna said: Janardana, if you think knowledge is better than action, then why do you push me into this terrible action, Keshava?"
+  },
+  {
+   "v": 2,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे",
+    "तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम्"
+   ],
+   "tr": "Your words seem mixed and confuse my mind. Tell me clearly the one way by which I can reach the highest good."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "लोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ",
+    "ज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम्"
+   ],
+   "tr": "The Lord said: As I said before, there are two paths in this world: the path of knowledge for those who reflect, and the path of action for those who work."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते",
+    "न च संन्यसनादेव सिद्धिं समधिगच्छति"
+   ],
+   "tr": "A person does not become free from action just by not starting any work, nor reach perfection just by giving things up."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्",
+    "कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः"
+   ],
+   "tr": "No one can stay without acting even for a moment; everyone is made to act, whether they like it or not, by the qualities of nature."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन्",
+    "इन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते"
+   ],
+   "tr": "One who holds back the body from action but keeps thinking about pleasures in the mind is fooling himself and is called a hypocrite."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन",
+    "कर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते"
+   ],
+   "tr": "But one who controls the senses with the mind and, without attachment, uses the body for selfless action, is far better, Arjuna."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः",
+    "शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः"
+   ],
+   "tr": "Do your duty, for action is better than inaction. Without action you could not even keep your body alive."
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः",
+    "तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर"
+   ],
+   "tr": "Action binds people, except action done as an offering (yajna). So, son of Kunti, work in that spirit, free from attachment."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः",
+    "अनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक्"
+   ],
+   "tr": "In the beginning, the Creator made beings along with yajna and said: \"Through this you will flourish; let it give you all you wish for.\""
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "देवान्भावयतानेन ते देवा भावयन्तु वः",
+    "परस्परं भावयन्तः श्रेयः परमवाप्स्यथ"
+   ],
+   "tr": "Nourish the gods with this, and let the gods nourish you. Caring for each other, you will reach the highest good."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः",
+    "तैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः"
+   ],
+   "tr": "Pleased by yajna, the gods will give you what you need. One who enjoys their gifts without giving anything back is really a thief."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः",
+    "भुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात्"
+   ],
+   "tr": "Good people who eat what is left after offering are freed from all wrongs; but those who cook only for themselves are eating sin."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः",
+    "यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः"
+   ],
+   "tr": "Living beings come from food, food comes from rain, rain comes from yajna, and yajna comes from action."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम्",
+    "तस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम्"
+   ],
+   "tr": "Know that action comes from the Veda, and the Veda comes from the Imperishable. So the all-pervading Brahman is always present in yajna."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः",
+    "अघायुरिन्द्रियारामो मोघं पार्थ स जीवति"
+   ],
+   "tr": "One who does not keep this wheel turning, living selfishly and only for the senses, lives in vain, Arjuna."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः",
+    "आत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते"
+   ],
+   "tr": "But one who delights in the Self, is satisfied in the Self and content in the Self alone, has nothing more that must be done."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन",
+    "न चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः"
+   ],
+   "tr": "Such a person gains nothing by acting and loses nothing by not acting, and does not depend on anyone for anything."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तस्मादसक्तः सततं कार्यं कर्म समाचर",
+    "असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः"
+   ],
+   "tr": "So always do the work that needs to be done, without attachment. By working without attachment, a person reaches the Supreme."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कर्मणैव हि संसिद्धिमास्थिता जनकादयः",
+    "लोकसंग्रहमेवापि संपश्यन्कर्तुमर्हसि"
+   ],
+   "tr": "King Janaka and others reached perfection through action. You too should act, if only for the good of the world."
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः",
+    "स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते"
+   ],
+   "tr": "Whatever a great person does, others follow. Whatever standard they set, the world goes by it."
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन",
+    "नानवाप्तमवाप्तव्यं वर्त एव च कर्मणि"
+   ],
+   "tr": "Arjuna, there is nothing in the three worlds that I have to do, and nothing I lack or need to gain; yet I keep working."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः",
+    "मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः"
+   ],
+   "tr": "For if I ever stopped working tirelessly, people everywhere would follow my example."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम्",
+    "सङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः"
+   ],
+   "tr": "If I did not act, these worlds would fall apart; I would cause confusion and ruin all these beings."
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत",
+    "कुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसंग्रहम्"
+   ],
+   "tr": "As the ignorant work with attachment, Arjuna, so should the wise work without attachment, wishing for the good of the world."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम्",
+    "जोषयेत्सर्वकर्माणि विद्वान् युक्तः समाचरन्"
+   ],
+   "tr": "The wise should not unsettle people who are attached to their work. Instead, working steadily themselves, they should inspire others to do their work well."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः",
+    "अहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते"
+   ],
+   "tr": "All actions are carried out by the qualities of nature, but a person confused by ego thinks, \"I am the doer.\""
+  },
+  {
+   "v": 28,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः",
+    "गुणा गुणेषु वर्तन्त इति मत्वा न सज्जते"
+   ],
+   "tr": "But one who knows the truth about the gunas and their work, strong-armed one, sees that \"the gunas are acting on the gunas\" and does not get attached."
+  },
+  {
+   "v": 29,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु",
+    "तानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत्"
+   ],
+   "tr": "People confused by nature's qualities become attached to their workings. Those who understand fully should not unsettle those who understand only in part."
+  },
+  {
+   "v": 30,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा",
+    "निराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः"
+   ],
+   "tr": "Offering all your actions to me, with your mind on the Self, free from desire and from \"mine,\" fight without the fever of grief."
+  },
+  {
+   "v": 31,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः",
+    "श्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः"
+   ],
+   "tr": "Those who always follow this teaching of mine with faith, without finding fault, are also freed from the bonds of action."
+  },
+  {
+   "v": 32,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम्",
+    "सर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः"
+   ],
+   "tr": "But those who find fault with my teaching and do not follow it are confused about all knowledge; know them to be lost and without understanding."
+  },
+  {
+   "v": 33,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि",
+    "प्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति"
+   ],
+   "tr": "Even the wise act according to their own nature. All beings follow their nature; what can forcing it achieve?"
+  },
+  {
+   "v": 34,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ",
+    "तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ"
+   ],
+   "tr": "Liking and disliking for the things of the senses are natural; but do not fall under their control, for they are obstacles on your path."
+  },
+  {
+   "v": 35,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्",
+    "स्वधर्मे निधनं श्रेयः परधर्मो भयावहः"
+   ],
+   "tr": "Better is your own duty, even done imperfectly, than someone else's duty done well. Better to die doing your own duty; another's duty is full of danger."
+  },
+  {
+   "v": 36,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "अथ केन प्रयुक्तोऽयं पापं चरति पूरुषः",
+    "अनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः"
+   ],
+   "tr": "Arjuna said: Then what drives a person to do wrong, Krishna, even against their will, as if forced?"
+  },
+  {
+   "v": 37,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "काम एष क्रोध एष रजोगुणसमुद्भवः",
+    "महाशनो महापाप्मा विद्ध्येनमिह वैरिणम्"
+   ],
+   "tr": "The Lord said: It is desire, and it is anger, born of rajas. It can never be satisfied and leads to great wrong. Know it as the enemy here."
+  },
+  {
+   "v": 38,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "धूमेनाव्रियते वह्निर्यथाऽऽदर्शो मलेन च",
+    "यथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम्"
+   ],
+   "tr": "As fire is covered by smoke, a mirror by dust, and an unborn child by the womb, so is knowledge covered by desire."
+  },
+  {
+   "v": 39,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा",
+    "कामरूपेण कौन्तेय दुष्पूरेणानलेन च"
+   ],
+   "tr": "Knowledge is covered by this constant enemy of the wise, desire, which burns like a fire that is never satisfied, Arjuna."
+  },
+  {
+   "v": 40,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते",
+    "एतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम्"
+   ],
+   "tr": "The senses, the mind and the intellect are where desire lives. Through them it hides knowledge and confuses the soul."
+  },
+  {
+   "v": 41,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ",
+    "पाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम्"
+   ],
+   "tr": "So, best of the Bharatas, first bring your senses under control, and then destroy this troublemaker that ruins knowledge and wisdom."
+  },
+  {
+   "v": 42,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः",
+    "मनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः"
+   ],
+   "tr": "The senses are said to be higher than the body; higher than the senses is the mind; higher than the mind is the intellect; and higher than the intellect is the Self."
+  },
+  {
+   "v": 43,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना",
+    "जहि शत्रुं महाबाहो कामरूपं दुरासदम्"
+   ],
+   "tr": "Knowing the Self to be higher than the intellect, and steadying the mind by the Self, strong-armed one, defeat this enemy called desire, so hard to conquer."
+  }
+ ]
+}

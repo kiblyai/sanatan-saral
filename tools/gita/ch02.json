@@ -1,0 +1,752 @@
+{
+ "meta": {
+  "n": 2,
+  "featured": [
+   20,
+   22,
+   47,
+   48
+  ],
+  "name": "The Yoga of Knowledge",
+  "skt_name": "सांख्ययोगः",
+  "roman_name": "Sankhya Yoga"
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Sanjaya",
+   "opens": "",
+   "skt": [
+    "तं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम्",
+    "विषीदन्तमिदं वाक्यमुवाच मधुसूदनः"
+   ],
+   "tr": "Sanjaya said: To Arjuna, overcome with pity, his eyes full of tears and his heart heavy, Krishna spoke these words."
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्",
+    "अनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन"
+   ],
+   "tr": "The Lord said: Where has this weakness come from at such a crucial moment, Arjuna? It does not suit a noble person, does not lead to heaven, and brings dishonour."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते",
+    "क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप"
+   ],
+   "tr": "Do not give in to cowardice, Arjuna; it is not worthy of you. Shake off this small weakness of heart and stand up, conqueror of enemies."
+  },
+  {
+   "v": 4,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "कथं भीष्ममहं संख्ये द्रोणं च मधुसूदन",
+    "इषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन"
+   ],
+   "tr": "Arjuna said: How can I fight back with arrows against Bhishma and Drona, Madhusudana? They deserve my worship."
+  },
+  {
+   "v": 5,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "गुरूनहत्वा हि महानुभावान्",
+    "श्रेयो भोक्तुं भैक्ष्यमपीह लोके",
+    "हत्वार्थकामांस्तु गुरूनिहैव",
+    "भुञ्जीय भोगान् रुधिरप्रदिग्धान्"
+   ],
+   "tr": "It would be better to live in this world by begging than to kill these great teachers. Even if they want gain, by killing them I would enjoy only pleasures stained with blood."
+  },
+  {
+   "v": 6,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "न चैतद्विद्मः कतरन्नो गरीयो",
+    "यद्वा जयेम यदि वा नो जयेयुः",
+    "यानेव हत्वा न जिजीविषाम",
+    "स्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः"
+   ],
+   "tr": "We do not even know which is better: that we defeat them or that they defeat us. The sons of Dhritarashtra stand before us, and after killing them we would not even want to live."
+  },
+  {
+   "v": 7,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "कार्पण्यदोषोपहतस्वभावः",
+    "पृच्छामि त्वां धर्मसंमूढचेताः",
+    "यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे",
+    "शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्"
+   ],
+   "tr": "My nature is overcome by weakness and pity, and my mind is confused about what is right. Tell me clearly what is best for me. I am your student; I take refuge in you; teach me."
+  },
+  {
+   "v": 8,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "न हि प्रपश्यामि ममापनुद्या",
+    "द्यच्छोकमुच्छोषणमिन्द्रियाणाम्",
+    "अवाप्य भूमावसपत्नमृद्धम्",
+    "राज्यं सुराणामपि चाधिपत्यम्"
+   ],
+   "tr": "I see nothing that could take away this grief that is drying up my senses, not even an unrivalled, rich kingdom on earth or rule over the gods."
+  },
+  {
+   "v": 9,
+   "speaker": "Sanjaya",
+   "opens": "",
+   "skt": [
+    "एवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप",
+    "न योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह"
+   ],
+   "tr": "Sanjaya said: Having said this to Krishna, Arjuna declared, \"Govinda, I will not fight,\" and fell silent."
+  },
+  {
+   "v": 10,
+   "speaker": "Sanjaya",
+   "opens": "",
+   "skt": [
+    "तमुवाच हृषीकेशः प्रहसन्निव भारत",
+    "सेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः"
+   ],
+   "tr": "Then, between the two armies, Krishna, as if smiling, spoke these words to the grieving Arjuna."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे",
+    "गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः"
+   ],
+   "tr": "The Lord said: You grieve for those who should not be grieved for, yet you speak words that sound wise. The wise grieve neither for the dead nor for the living."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः",
+    "न चैव न भविष्यामः सर्वे वयमतः परम्"
+   ],
+   "tr": "There was never a time when I did not exist, nor you, nor these kings; nor will any of us ever stop existing in the future."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा",
+    "तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति"
+   ],
+   "tr": "Just as the soul in this body passes through childhood, youth and old age, so it passes on to another body. The wise are not confused by this."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः",
+    "आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत"
+   ],
+   "tr": "When the senses meet their objects, they bring cold and heat, pleasure and pain. These come and go and do not last. Learn to bear them, Arjuna."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ",
+    "समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते"
+   ],
+   "tr": "The person who is not shaken by these, who stays the same in pain and pleasure and is steady, is fit for immortality."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नासतो विद्यते भावो नाभावो विद्यते सतः",
+    "उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः"
+   ],
+   "tr": "What is unreal never truly exists, and what is real never stops existing. Those who see the truth have understood both."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्",
+    "विनाशमव्ययस्यास्य न कश्चित् कर्तुमर्हति"
+   ],
+   "tr": "Know that what pervades all this is indestructible. No one can destroy what cannot perish."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः",
+    "अनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत"
+   ],
+   "tr": "These bodies come to an end, but the soul within them is eternal, indestructible and beyond measure. So fight, Arjuna."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्",
+    "उभौ तौ न विजानीतो नायं हन्ति न हन्यते"
+   ],
+   "tr": "One who thinks the soul kills, and one who thinks it is killed, both fail to understand. It neither kills nor is killed."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न जायते म्रियते वा कदाचि",
+    "न्नायं भूत्वा भविता वा न भूयः",
+    "अजो नित्यः शाश्वतोऽयं पुराणो",
+    "न हन्यते हन्यमाने शरीरे"
+   ],
+   "tr": "The soul is never born, nor does it ever die. It did not come into being and will not stop being. It is unborn, eternal, everlasting and ancient; it is not killed when the body is killed."
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "वेदाविनाशिनं नित्यं य एनमजमव्ययम्",
+    "कथं स पुरुषः पार्थ कं घातयति हन्ति कम्"
+   ],
+   "tr": "Arjuna, how can someone who knows the soul to be indestructible, eternal, unborn and unchanging kill anyone, or make anyone kill?"
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "वासांसि जीर्णानि यथा विहाय",
+    "नवानि गृह्णाति नरोऽपराणि",
+    "तथा शरीराणि विहाय जीर्णा",
+    "न्यन्यानि संयाति नवानि देही"
+   ],
+   "tr": "Just as a person throws away worn-out clothes and puts on new ones, the soul leaves worn-out bodies and enters new ones."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः",
+    "न चैनं क्लेदयन्त्यापो न शोषयति मारुतः"
+   ],
+   "tr": "Weapons cannot cut it, fire cannot burn it, water cannot wet it, and wind cannot dry it."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च",
+    "नित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः"
+   ],
+   "tr": "It cannot be cut, burned, wetted or dried. It is eternal, everywhere, steady, unmoving and ever the same."
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते",
+    "तस्मादेवं विदित्वैनं नानुशोचितुमर्हसि"
+   ],
+   "tr": "It is said to be invisible, beyond thought and unchanging. Knowing it to be so, you should not grieve."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम्",
+    "तथापि त्वं महाबाहो नैवं शोचितुमर्हसि"
+   ],
+   "tr": "And even if you think the soul is born and dies again and again, still, strong-armed one, you should not grieve."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च",
+    "तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि"
+   ],
+   "tr": "For death is certain for whoever is born, and birth is certain for whoever dies. So do not grieve over what cannot be avoided."
+  },
+  {
+   "v": 28,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत",
+    "अव्यक्तनिधनान्येव तत्र का परिदेवना"
+   ],
+   "tr": "Beings are unseen before birth, seen in between, and unseen again after death. What is there to grieve about, Arjuna?"
+  },
+  {
+   "v": 29,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आश्चर्यवत्पश्यति कश्चिदेन",
+    "माश्चर्यवद्वदति तथैव चान्यः",
+    "आश्चर्यवच्चैनमन्यः शृणोति",
+    "श्रुत्वाप्येनं वेद न चैव कश्चित्"
+   ],
+   "tr": "Some see the soul as a wonder, some speak of it as a wonder, some hear of it as a wonder; yet even after hearing, no one truly understands it."
+  },
+  {
+   "v": 30,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "देही नित्यमवध्योऽयं देहे सर्वस्य भारत",
+    "तस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि"
+   ],
+   "tr": "The soul in every body can never be killed, Arjuna. So you should not grieve for any living being."
+  },
+  {
+   "v": 31,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि",
+    "धर्म्याद्धि युद्धाच्छ्रेयोऽन्यत्क्षत्रियस्य न विद्यते"
+   ],
+   "tr": "And considering your own duty, you should not hesitate; for a warrior there is nothing better than a fight for what is right."
+  },
+  {
+   "v": 32,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम्",
+    "सुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्"
+   ],
+   "tr": "Fortunate are the warriors, Arjuna, who get such a righteous battle, coming on its own like an open door to heaven."
+  },
+  {
+   "v": 33,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अथ चेत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि",
+    "ततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि"
+   ],
+   "tr": "But if you refuse this righteous battle, you will abandon your duty and your honour, and you will do wrong."
+  },
+  {
+   "v": 34,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम्",
+    "संभावितस्य चाकीर्तिर्मरणादतिरिच्यते"
+   ],
+   "tr": "People will talk of your disgrace forever, and for an honoured person, disgrace is worse than death."
+  },
+  {
+   "v": 35,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः",
+    "येषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्"
+   ],
+   "tr": "The great warriors will think you ran from battle out of fear, and those who respected you will think little of you."
+  },
+  {
+   "v": 36,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अवाच्यवादांश्च बहून् वदिष्यन्ति तवाहिताः",
+    "निन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्"
+   ],
+   "tr": "Your enemies will say many hurtful things and mock your strength. What could be more painful than that?"
+  },
+  {
+   "v": 37,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम्",
+    "तस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः"
+   ],
+   "tr": "If you are killed, you will reach heaven; if you win, you will enjoy the earth. So stand up, son of Kunti, determined to fight."
+  },
+  {
+   "v": 38,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ",
+    "ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि"
+   ],
+   "tr": "Treat pleasure and pain, gain and loss, victory and defeat as the same, and then get ready to fight. That way you will not do wrong."
+  },
+  {
+   "v": 39,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां शृणु",
+    "बुद्ध्यायुक्तो यया पार्थ कर्मबन्धं प्रहास्यसि"
+   ],
+   "tr": "I have explained this to you through knowledge (Sankhya). Now hear it through the path of yoga; joined with this understanding you will break free from the bonds of action."
+  },
+  {
+   "v": 40,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते",
+    "स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्"
+   ],
+   "tr": "On this path no effort is ever wasted and nothing goes against you. Even a little of this practice protects you from great fear."
+  },
+  {
+   "v": 41,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन",
+    "बहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्"
+   ],
+   "tr": "On this path the determined mind is focused on one aim, Arjuna; the thoughts of the undecided are scattered in countless directions."
+  },
+  {
+   "v": 42,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः",
+    "वेदवादरताः पार्थ नान्यदस्तीति वादिनः"
+   ],
+   "tr": "Unwise people who delight in the literal words of the Vedas, saying \"there is nothing more,\""
+  },
+  {
+   "v": 43,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम्",
+    "क्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति"
+   ],
+   "tr": "full of desires and aiming for heaven, speak flowery words about rituals that promise rebirth, pleasure and power as rewards."
+  },
+  {
+   "v": 44,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम्",
+    "व्यवसायात्मिका बुद्धिः समाधौ न विधीयते"
+   ],
+   "tr": "Those attached to pleasure and power, whose minds are carried away by such talk, cannot develop a steady, focused mind."
+  },
+  {
+   "v": 45,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन",
+    "निर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्"
+   ],
+   "tr": "The Vedas deal with the three gunas. Rise above the three gunas, Arjuna: be free from pairs of opposites, always steady, unconcerned with getting and keeping, and centred in the Self."
+  },
+  {
+   "v": 46,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यावानर्थ उदपाने सर्वतः संप्लुतोदके",
+    "तावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः"
+   ],
+   "tr": "As much use as a small well has when water floods everywhere, that much use do all the Vedas have for a wise person who knows the truth."
+  },
+  {
+   "v": 47,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन",
+    "मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि"
+   ],
+   "tr": "You have a right to your work, but never to its fruits. Do not make the result your motive, and do not become attached to doing nothing."
+  },
+  {
+   "v": 48,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय",
+    "सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते"
+   ],
+   "tr": "Steady in yoga, do your work, Arjuna, giving up attachment. Be the same in success and failure; this evenness is called yoga."
+  },
+  {
+   "v": 49,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय",
+    "बुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः"
+   ],
+   "tr": "Work done for selfish gain is far lower than work done with this wise, steady mind, Arjuna. Take refuge in this wisdom. Those who work only for results are to be pitied."
+  },
+  {
+   "v": 50,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते",
+    "तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्"
+   ],
+   "tr": "One who has this wisdom lets go of both good and bad results here. So commit yourself to yoga: yoga is skill in action."
+  },
+  {
+   "v": 51,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः",
+    "जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्"
+   ],
+   "tr": "The wise, joined with this understanding, give up the fruits of their actions, are freed from the cycle of birth, and reach a state beyond all sorrow."
+  },
+  {
+   "v": 52,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति",
+    "तदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च"
+   ],
+   "tr": "When your mind crosses the swamp of confusion, you will no longer care about what you have heard or what you are yet to hear."
+  },
+  {
+   "v": 53,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला",
+    "समाधावचला बुद्धिस्तदा योगमवाप्स्यसि"
+   ],
+   "tr": "When your mind, now confused by so many opinions, becomes still and steady in meditation, then you will reach yoga."
+  },
+  {
+   "v": 54,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "स्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव",
+    "स्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्"
+   ],
+   "tr": "Arjuna said: Keshava, what is a person of steady wisdom like, one who is settled in meditation? How does such a person speak, sit and walk?"
+  },
+  {
+   "v": 55,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "प्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान्",
+    "आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते"
+   ],
+   "tr": "The Lord said: When a person gives up all the desires of the mind, Arjuna, and is content in the Self alone, then that person is said to have steady wisdom."
+  },
+  {
+   "v": 56,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः",
+    "वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते"
+   ],
+   "tr": "One whose mind is not shaken by sorrow, who does not crave pleasures, and who is free from attachment, fear and anger, is called a sage of steady mind."
+  },
+  {
+   "v": 57,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्",
+    "नाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता"
+   ],
+   "tr": "One who is attached to nothing, who neither celebrates good things nor hates bad things that come, has steady wisdom."
+  },
+  {
+   "v": 58,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः",
+    "इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता"
+   ],
+   "tr": "When, like a tortoise drawing in its limbs, a person can fully withdraw the senses from their objects, that person's wisdom is steady."
+  },
+  {
+   "v": 59,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "विषया विनिवर्तन्ते निराहारस्य देहिनः",
+    "रसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते"
+   ],
+   "tr": "When a person stops feeding the senses, the objects fall away, but the craving remains. Even the craving disappears once the Supreme is seen."
+  },
+  {
+   "v": 60,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः",
+    "इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः"
+   ],
+   "tr": "The restless senses, Arjuna, can forcefully carry away the mind even of a wise person who is trying hard."
+  },
+  {
+   "v": 61,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तानि सर्वाणि संयम्य युक्त आसीत मत्परः",
+    "वशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता"
+   ],
+   "tr": "Keeping all the senses in check, one should sit in yoga, with the mind on me. One whose senses are under control has steady wisdom."
+  },
+  {
+   "v": 62,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते",
+    "सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते"
+   ],
+   "tr": "When a person keeps thinking about things, attachment to them grows; from attachment comes desire, and from desire comes anger."
+  },
+  {
+   "v": 63,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः",
+    "स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति"
+   ],
+   "tr": "From anger comes confusion; from confusion, loss of memory; from loss of memory, the ruin of good judgement; and when judgement is ruined, the person is lost."
+  },
+  {
+   "v": 64,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्",
+    "आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति"
+   ],
+   "tr": "But a self-controlled person who moves among things with senses under control, free from liking and disliking, finds inner peace."
+  },
+  {
+   "v": 65,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रसादे सर्वदुःखानां हानिरस्योपजायते",
+    "प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते"
+   ],
+   "tr": "In that peace all sorrows come to an end, and the mind of a peaceful person soon becomes steady."
+  },
+  {
+   "v": 66,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना",
+    "न चाभावयतः शान्तिरशान्तस्य कुतः सुखम्"
+   ],
+   "tr": "One who is not disciplined has no wisdom and no deep focus. Without focus there is no peace, and without peace, how can there be happiness?"
+  },
+  {
+   "v": 67,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते",
+    "तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि"
+   ],
+   "tr": "When the mind follows the wandering senses, it carries away a person's judgement, just as the wind carries away a boat on the water."
+  },
+  {
+   "v": 68,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः",
+    "इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता"
+   ],
+   "tr": "So, strong-armed one, a person whose senses are fully held back from their objects has steady wisdom."
+  },
+  {
+   "v": 69,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "या निशा सर्वभूतानां तस्यां जागर्ति संयमी",
+    "यस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः"
+   ],
+   "tr": "What is night for all beings, the self-controlled sage is awake to; and what all beings are awake to is night for the sage who sees."
+  },
+  {
+   "v": 70,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आपूर्यमाणमचलप्रतिष्ठं",
+    "समुद्रमापः प्रविशन्ति यद्वत्",
+    "तद्वत्कामा यं प्रविशन्ति सर्वे",
+    "स शान्तिमाप्नोति न कामकामी"
+   ],
+   "tr": "Just as rivers pour into the ocean, which stays full and unmoved, so the person into whom all desires flow without disturbing them finds peace, not the one who chases desires."
+  },
+  {
+   "v": 71,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः",
+    "निर्ममो निरहंकारः स शान्तिमधिगच्छति"
+   ],
+   "tr": "One who gives up all desires and lives without longing, without the sense of \"mine\" and without ego, finds peace."
+  },
+  {
+   "v": 72,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति",
+    "स्थित्वाऽस्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति"
+   ],
+   "tr": "This is the state of oneness with Brahman, Arjuna. Reaching it, one is never confused again. Settled in it even at the moment of death, one reaches the peace of Brahman."
+  }
+ ]
+}

@@ -1,0 +1,304 @@
+{
+ "meta": {
+  "n": 5,
+  "featured": [
+   10,
+   18
+  ],
+  "name": "Renunciation of Action",
+  "skt_name": "कर्मसंन्यासयोगः",
+  "roman_name": "Karma Sannyasa Yoga"
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "संन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि",
+    "यच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम्"
+   ],
+   "tr": "Arjuna said: Krishna, you praise giving up action, and then again you praise the yoga of action. Tell me for certain which of the two is better."
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "संन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ",
+    "तयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते"
+   ],
+   "tr": "Krishna said: Renouncing action and the yoga of action both lead to the highest good. But of the two, the yoga of action is better than renouncing action."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति",
+    "निर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते"
+   ],
+   "tr": "Know that person as a true renunciant who neither hates nor craves. Free from opposites, Arjuna, they are easily released from bondage."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सांख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः",
+    "एकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्"
+   ],
+   "tr": "Only the immature say that the path of knowledge and the path of action are different, not the wise. One who truly follows either gets the fruit of both."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यत्सांख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते",
+    "एकं सांख्यं च योगं च यः पश्यति स पश्यति"
+   ],
+   "tr": "The goal reached by the path of knowledge is also reached by the path of action. One who sees that the two are one truly sees."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः",
+    "योगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति"
+   ],
+   "tr": "But renunciation is hard to reach without the yoga of action, Arjuna. The sage who practises yoga soon reaches Brahman."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः",
+    "सर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते"
+   ],
+   "tr": "Steady in yoga, pure in heart, master of mind and senses, seeing their own Self in all beings, such a person is not stained even while acting."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नैव किंचित्करोमीति युक्तो मन्येत तत्त्ववित्",
+    "पश्यन् शृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपन् श्वसन्"
+   ],
+   "tr": "One who knows the truth, steady in yoga, thinks: \"I am not doing anything at all,\" even while seeing, hearing, touching, smelling, eating, walking, sleeping and breathing,"
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि",
+    "इन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्"
+   ],
+   "tr": "while talking, letting go, taking hold, and opening and closing the eyes, understanding that it is only the senses moving among their objects."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः",
+    "लिप्यते न स पापेन पद्मपत्रमिवाम्भसा"
+   ],
+   "tr": "One who acts while offering all actions to Brahman and giving up attachment is not touched by wrong, just as a lotus leaf is not touched by water."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि",
+    "योगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वाऽऽत्मशुद्धये"
+   ],
+   "tr": "Yogis act with body, mind, intellect and even the senses alone, giving up attachment, to purify themselves."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम्",
+    "अयुक्तः कामकारेण फले सक्तो निबध्यते"
+   ],
+   "tr": "The steady person, giving up the fruit of action, reaches lasting peace. The unsteady person, driven by desire and attached to results, is bound."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी",
+    "नवद्वारे पुरे देही नैव कुर्वन्न कारयन्"
+   ],
+   "tr": "Letting go of all actions in the mind, the self-controlled soul lives happily in the city of nine gates, the body, neither acting nor causing action."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः",
+    "न कर्मफलसंयोगं स्वभावस्तु प्रवर्तते"
+   ],
+   "tr": "The Lord does not create people's sense of being the doer, nor their actions, nor the link between action and result. It is nature that does all this."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः",
+    "अज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः"
+   ],
+   "tr": "The all-pervading Lord does not take on anyone's wrong or good deeds. Knowledge is covered by ignorance, and that is why beings are confused."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः",
+    "तेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम्"
+   ],
+   "tr": "But for those whose ignorance is destroyed by knowledge of the Self, that knowledge shines like the sun and reveals the Supreme."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः",
+    "गच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः"
+   ],
+   "tr": "With their mind on That, their self in That, devoted to That and making That their goal, their faults washed away by knowledge, they reach the state from which there is no return."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि",
+    "शुनि चैव श्वपाके च पण्डिताः समदर्शिनः"
+   ],
+   "tr": "The wise see with an equal eye a learned and humble Brahmin, a cow, an elephant, a dog and one who eats dogs."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः",
+    "निर्दोषं हि समं ब्रह्म तस्माद्ब्रह्मणि ते स्थिताः"
+   ],
+   "tr": "Those whose minds rest in equality have conquered this world of birth even here. Brahman is flawless and the same in all, so they rest in Brahman."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम्",
+    "स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः"
+   ],
+   "tr": "One should not rejoice too much on getting what is pleasant, nor be upset on getting what is unpleasant. Steady in mind and free from confusion, the knower of Brahman rests in Brahman."
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम्",
+    "स ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते"
+   ],
+   "tr": "Unattached to outer pleasures, one finds happiness within. United with Brahman through yoga, that person enjoys happiness that never ends."
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते",
+    "आद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः"
+   ],
+   "tr": "Pleasures born of contact with the senses are sources of sorrow. They have a beginning and an end, Arjuna; the wise do not delight in them."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात्",
+    "कामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः"
+   ],
+   "tr": "One who can bear the force of desire and anger here, before leaving the body, is a yogi and a happy person."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः",
+    "स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति"
+   ],
+   "tr": "One whose happiness is within, whose joy is within and whose light is within, that yogi becomes one with Brahman and reaches the peace of Brahman."
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः",
+    "छिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः"
+   ],
+   "tr": "Sages whose faults are worn away, whose doubts are cut, who are self-controlled and who delight in the good of all beings reach the peace of Brahman."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कामक्रोधवियुक्तानां यतीनां यतचेतसाम्",
+    "अभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्"
+   ],
+   "tr": "For those free from desire and anger, who have mastered their minds and know the Self, the peace of Brahman is near on every side."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः",
+    "प्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ"
+   ],
+   "tr": "Shutting out outer contacts, fixing the gaze between the eyebrows, making the outgoing and incoming breaths even as they move through the nostrils,"
+  },
+  {
+   "v": 28,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः",
+    "विगतेच्छाभयक्रोधो यः सदा मुक्त एव सः"
+   ],
+   "tr": "with senses, mind and intellect controlled, the sage intent on freedom, free from desire, fear and anger, is truly free forever."
+  },
+  {
+   "v": 29,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम्",
+    "सुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति"
+   ],
+   "tr": "Knowing me as the one who receives all sacrifices and austerities, the great Lord of all worlds and the friend of all beings, one reaches peace."
+  }
+ ]
+}
