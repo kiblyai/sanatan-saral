@@ -2,6 +2,7 @@
 """Make a language's copy of a page from its Hindi page.
 
     python3 -I tools/page_translate.py extract makar-sankranti       # print what needs translating, numbered
+    python3 -I tools/page_translate.py extract rigveda kn            # same, showing what the site already has in Kannada
     python3 -I tools/page_translate.py build makar-sankranti te kn   # write te/makar-sankranti.html, kn/...
 
 The Hindi page (hi/<page>.html) is the pattern: same sections, same Sanskrit, same scripts. Each language's text is in
@@ -9,7 +10,8 @@ tools/pages/<page>/<lang>.py:
 
     TITLE = '...'        # <title> and og:title, before " | site name"
     DESC = '...'         # meta description and og:description
-    S = ['...', ...]     # one entry per Hindi text piece, in the order `extract` prints them
+    S = ['...', ...]     # one entry per Hindi text piece, in the order `extract` prints them; None = reuse the
+                         # translation the site already has for that exact text (extract <page> <lang> shows them)
     JS = {'Hindi string in a script': 'translation', ...}   # optional: strings inside the page's own scripts
     EXTRA = [('old', 'new'), ...]                            # optional: any other exact replacement in the body
     COUNT = ['... {n} days to go', '... tomorrow!', '... today!']   # optional: the countdown line (date from the Hindi page)
@@ -62,12 +64,16 @@ def script_strings(tail):
     return found
 
 
-def extract(page):
+def extract(page, lang=None):
+    """With a language, pieces that already have a translation on the site are shown as "= ..." (write None for them)."""
+    known = harvest(lang) if lang else {}
     s, head, body, tail = parts(page)
     print('TITLE:', H.unescape(re.search(r'<title>(.*?)</title>', head).group(1)))
     print('DESC:', H.unescape(re.search(r'<meta name="description" content="([^"]*)"', head).group(1)))
     for i, m in enumerate(body_pieces(body)):
-        print(i, m.group(6))
+        h = m.group(6)
+        t = COMMON.get(h, {}).get(lang) or known.get(h) if lang else None
+        print(i, '= ' + t if t else h)
     js = script_strings(tail)
     if js:
         print('JS:')
@@ -90,7 +96,58 @@ def load(page, lang):
     spec.loader.exec_module(d)
     if hasattr(d, 'FROM') and not hasattr(d, 'S'):
         derive(page, lang, d)
+    elif hasattr(d, 'S') and None in d.S:
+        # None = "already translated elsewhere on the site": take it from pages that exist in Hindi and this language
+        known = harvest(lang)
+        pieces = body_pieces(parts(page)[2])
+        if len(pieces) != len(d.S):
+            raise SystemExit('%s/%s: %d pieces on the Hindi page, %d in S' % (page, lang, len(pieces), len(d.S)))
+        for i, (m, t) in enumerate(zip(pieces, d.S)):
+            if t is None:
+                h = m.group(6)
+                t = COMMON.get(h, {}).get(lang) or known.get(h)
+                if t is None:
+                    raise SystemExit('%s/%s: piece %d has no existing translation: %s' % (page, lang, i, h[:100]))
+                d.S[i] = t
+    if hasattr(d, 'S') and not (hasattr(d, 'TITLE') and hasattr(d, 'DESC')):
+        # default: the title and description are pieces of the page itself (as on the Hindi page)
+        head = parts(page)[1]
+        htitle = H.unescape(re.search(r'<title>(.*?)</title>', head).group(1)).rsplit(' | ', 1)[0]
+        hdesc = H.unescape(re.search(r'<meta name="description" content="([^"]*)"', head).group(1))
+        texts = [H.unescape(re.sub(r'<[^>]+>', '', m.group(6))) for m in body_pieces(parts(page)[2])]
+        for attr, h in (('TITLE', htitle), ('DESC', hdesc)):
+            if not hasattr(d, attr):
+                if h not in texts:
+                    raise SystemExit('%s/%s: set %s (the Hindi one is not a piece of the page)' % (page, lang, attr))
+                setattr(d, attr, H.unescape(re.sub(r'<[^>]+>', '', d.S[texts.index(h)])))
     return d
+
+
+_HARVEST = {}
+
+
+def lang_pieces(path, lang):
+    s = open(path, encoding='utf-8').read()
+    b = s[s.index('<body'):s.index('<footer')]
+    m = re.search(r'<div class="bar">.*?(?=<main)', b, re.S)
+    a, e = (m.start(), m.end()) if m else (0, 0)
+    seg = re.compile(r'<(span|p|li|tspan|ul)\b([^>]*?)\bclass="([^"]*?)\b%s\b([^"]*)"([^>]*)>(.*?)</\1>' % lang, re.S)
+    return [x.group(6) for x in seg.finditer(b) if not a <= x.start() < e]
+
+
+def harvest(lang):
+    """Hindi text -> this language's text, from every page that exists in both with the same pieces in the same order."""
+    if lang not in _HARVEST:
+        import collections
+        pairs = collections.defaultdict(collections.Counter)
+        for f in sorted(os.listdir(lang)):
+            if f.endswith('.html') and os.path.exists('hi/' + f):
+                h, k = lang_pieces('hi/' + f, 'hi'), lang_pieces('%s/%s' % (lang, f), lang)
+                if h and len(h) == len(k):
+                    for a, b in zip(h, k):
+                        pairs[a][b] += 1
+        _HARVEST[lang] = {a: c.most_common(1)[0][0] for a, c in pairs.items()}
+    return _HARVEST[lang]
 
 
 def derive(page, lang, d):
@@ -255,7 +312,7 @@ def sitemap(page, langs):
 if __name__ == '__main__':
     cmd, page = sys.argv[1], sys.argv[2]
     if cmd == 'extract':
-        extract(page)
+        extract(page, sys.argv[3] if len(sys.argv) > 3 else None)
     elif cmd == 'build':
         langs = [a for a in sys.argv[3:] if not a.startswith('-')]
         for l in langs:
