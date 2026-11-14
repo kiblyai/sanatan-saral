@@ -118,7 +118,8 @@ def lang_script(lang, page, available):
             % (json.dumps(lang), json.dumps(page), json.dumps(available)))
 
 
-ASSET_V = '2'
+# Raise a number when that file changes, so phones that cached the old copy fetch the new one (also in sw.js).
+ASSET_V = {'style.css': '3', 'lang.js': '2'}
 STYLESHEET = re.compile(r'<link\b[^>]*href="/?style\.css(?:\?v=\d+)?"')
 ASSET = re.compile(r'\b(href|src)="(/?)(style\.css|lang\.js)(?:\?v=\d+)?"')
 VOTD = re.compile(r'(var V=)(\[\{.*?\}\])(;\s*var day=)', re.S)
@@ -159,7 +160,7 @@ def process(path, lang, page, available):
     has_css = bool(STYLESHEET.search(html))
     new, removed = strip_hidden(html, lang, drop_lang_css=has_css)
     # style.css and lang.js changed with the split: a new address keeps old cached copies away from new pages
-    new = ASSET.sub(lambda m: '%s="%s%s?v=%s"' % (m.group(1), m.group(2), m.group(3), ASSET_V), new)
+    new = ASSET.sub(lambda m: '%s="%s%s?v=%s"' % (m.group(1), m.group(2), m.group(3), ASSET_V[m.group(3)]), new)
     if page == 'index.html':
         new = patch_home(new, lang)
     # <html lang data-lang data-page-lang>
