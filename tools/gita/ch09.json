@@ -1,0 +1,1179 @@
+{
+ "meta": {
+  "n": 9,
+  "featured": [
+   22,
+   26
+  ],
+  "name": "The Royal Knowledge and Royal Secret",
+  "skt_name": "राजविद्याराजगुह्ययोगः",
+  "roman_name": "Raja Vidya Raja Guhya Yoga",
+  "outline": "Verses 1–3: the king of knowledge and the king of secrets; 4–10: how Krishna fills and supports the world without being bound by it; 11–15: the foolish who look down on him, and the great souls who worship him; 16–19: “I am the ritual, the father, the goal”; 20–25: heaven does not last, and each worshipper reaches what they worship; 26–28: a leaf, a flower, a fruit, and offering everything; 29–34: Krishna is the same to all, and no devotee of his is ever lost."
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "इदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे",
+    "ज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात्"
+   ],
+   "words": [
+    [
+     "इदं तु ते गुह्यतमम्",
+     "this most secret thing, to you"
+    ],
+    [
+     "प्रवक्ष्यामि",
+     "I shall tell"
+    ],
+    [
+     "अनसूयवे",
+     "who do not find fault"
+    ],
+    [
+     "ज्ञानं विज्ञान-सहितम्",
+     "knowledge together with direct experience"
+    ],
+    [
+     "यत् ज्ञात्वा",
+     "knowing which"
+    ],
+    [
+     "मोक्ष्यसे अशुभात्",
+     "you will be freed from what is harmful"
+    ]
+   ],
+   "tr": "Krishna said: Since you do not find fault, I shall tell you this deepest secret: knowledge together with direct experience. Knowing it, you will be freed from all that is harmful."
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम्",
+    "प्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम्"
+   ],
+   "words": [
+    [
+     "राज-विद्या",
+     "the king of knowledge"
+    ],
+    [
+     "राज-गुह्यम्",
+     "the king of secrets"
+    ],
+    [
+     "पवित्रम् इदम् उत्तमम्",
+     "this is the greatest purifier"
+    ],
+    [
+     "प्रत्यक्ष-अवगमम्",
+     "understood by direct experience"
+    ],
+    [
+     "धर्म्यम्",
+     "in keeping with dharma"
+    ],
+    [
+     "सु-सुखं कर्तुम्",
+     "very easy to practise"
+    ],
+    [
+     "अव्ययम्",
+     "and lasting"
+    ]
+   ],
+   "tr": "This is the king of knowledge and the king of secrets, the greatest purifier. It can be known by direct experience, it is in keeping with dharma, it is very easy to practise, and it lasts for ever."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप",
+    "अप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि"
+   ],
+   "words": [
+    [
+     "अश्रद्दधानाः पुरुषाः",
+     "people who have no faith"
+    ],
+    [
+     "धर्मस्य अस्य",
+     "in this dharma"
+    ],
+    [
+     "परन्तप",
+     "O scorcher of foes (Arjuna)"
+    ],
+    [
+     "अप्राप्य माम्",
+     "not reaching me"
+    ],
+    [
+     "निवर्तन्ते",
+     "return"
+    ],
+    [
+     "मृत्यु-संसार-वर्त्मनि",
+     "to the path of death and rebirth"
+    ]
+   ],
+   "tr": "People who have no faith in this teaching, Arjuna, do not reach me. They return to the path of death and rebirth."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना",
+    "मत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः"
+   ],
+   "words": [
+    [
+     "मया ततम् इदं सर्वं जगत्",
+     "this whole world is pervaded by me"
+    ],
+    [
+     "अव्यक्त-मूर्तिना",
+     "in my unseen form"
+    ],
+    [
+     "मत्-स्थानि सर्व-भूतानि",
+     "all beings rest in me"
+    ],
+    [
+     "न च अहं तेषु अवस्थितः",
+     "but I do not rest in them"
+    ]
+   ],
+   "tr": "This whole world is filled by me in my unseen form. All beings rest in me, but I do not rest in them."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम्",
+    "भूतभृन्न च भूतस्थो ममात्मा भूतभावनः"
+   ],
+   "words": [
+    [
+     "न च मत्-स्थानि भूतानि",
+     "and yet beings do not rest in me"
+    ],
+    [
+     "पश्य मे योगम् ऐश्वरम्",
+     "see my divine power"
+    ],
+    [
+     "भूत-भृत्",
+     "supporting beings"
+    ],
+    [
+     "न च भूत-स्थः",
+     "yet not resting in beings"
+    ],
+    [
+     "मम आत्मा",
+     "my self"
+    ],
+    [
+     "भूत-भावनः",
+     "brings beings into existence"
+    ]
+   ],
+   "tr": "And yet beings do not rest in me. See my divine power! My self brings all beings into existence and supports them, yet does not rest in them."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यथाऽऽकाशस्थितो नित्यं वायुः सर्वत्रगो महान्",
+    "तथा सर्वाणि भूतानि मत्स्थानीत्युपधारय"
+   ],
+   "words": [
+    [
+     "यथा आकाश-स्थितः नित्यम्",
+     "just as, always resting in space"
+    ],
+    [
+     "वायुः सर्वत्र-गः महान्",
+     "the mighty wind goes everywhere"
+    ],
+    [
+     "तथा सर्वाणि भूतानि",
+     "so all beings"
+    ],
+    [
+     "मत्-स्थानि",
+     "rest in me"
+    ],
+    [
+     "इति उपधारय",
+     "understand this"
+    ]
+   ],
+   "tr": "Just as the mighty wind, which goes everywhere, always rests in space, so all beings rest in me. Understand this."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम्",
+    "कल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम्"
+   ],
+   "words": [
+    [
+     "सर्व-भूतानि",
+     "all beings"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "प्रकृतिं यान्ति मामिकाम्",
+     "go into my nature"
+    ],
+    [
+     "कल्प-क्षये",
+     "at the end of an age of creation (kalpa)"
+    ],
+    [
+     "पुनः तानि",
+     "them again"
+    ],
+    [
+     "कल्प-आदौ",
+     "at the start of the next age"
+    ],
+    [
+     "विसृजामि अहम्",
+     "I send forth"
+    ]
+   ],
+   "tr": "At the end of an age of creation, Arjuna, all beings pass into my nature. At the start of the next age, I send them forth again."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः",
+    "भूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात्"
+   ],
+   "words": [
+    [
+     "प्रकृतिं स्वाम् अवष्टभ्य",
+     "controlling my own nature"
+    ],
+    [
+     "विसृजामि पुनः पुनः",
+     "I send forth again and again"
+    ],
+    [
+     "भूत-ग्रामम् इमं कृत्स्नम्",
+     "this whole multitude of beings"
+    ],
+    [
+     "अवशम्",
+     "which is helpless"
+    ],
+    [
+     "प्रकृतेः वशात्",
+     "under the power of nature"
+    ]
+   ],
+   "tr": "Controlling my own nature, I send forth again and again this whole multitude of beings, which is helpless under nature's power."
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "न च मां तानि कर्माणि निबध्नन्ति धनञ्जय",
+    "उदासीनवदासीनमसक्तं तेषु कर्मसु"
+   ],
+   "words": [
+    [
+     "न च मां तानि कर्माणि निबध्नन्ति",
+     "and those actions do not bind me"
+    ],
+    [
+     "धनञ्जय",
+     "O Dhananjaya (Arjuna)"
+    ],
+    [
+     "उदासीनवत् आसीनम्",
+     "seated like one who is not involved"
+    ],
+    [
+     "असक्तं तेषु कर्मसु",
+     "unattached to those actions"
+    ]
+   ],
+   "tr": "These actions do not bind me, Arjuna. I remain like one who is not involved, unattached to them."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मयाऽध्यक्षेण प्रकृतिः सूयते सचराचरम्",
+    "हेतुनाऽनेन कौन्तेय जगद्विपरिवर्तते"
+   ],
+   "words": [
+    [
+     "मया अध्यक्षेण",
+     "with me watching over it"
+    ],
+    [
+     "प्रकृतिः सूयते",
+     "nature gives birth to"
+    ],
+    [
+     "स-चर-अचरम्",
+     "all that moves and does not move"
+    ],
+    [
+     "हेतुना अनेन",
+     "for this reason"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "जगत् विपरिवर्तते",
+     "the world keeps turning"
+    ]
+   ],
+   "tr": "Under my watch, nature gives birth to everything that moves and everything that does not. This, Arjuna, is why the world keeps turning."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम्",
+    "परं भावमजानन्तो मम भूतमहेश्वरम्"
+   ],
+   "words": [
+    [
+     "अवजानन्ति मां मूढाः",
+     "the foolish look down on me"
+    ],
+    [
+     "मानुषीं तनुम् आश्रितम्",
+     "when I take a human body"
+    ],
+    [
+     "परं भावम् अजानन्तः मम",
+     "not knowing my higher nature"
+    ],
+    [
+     "भूत-महेश्वरम्",
+     "as the great Lord of all beings"
+    ]
+   ],
+   "tr": "The foolish look down on me when I take a human form. They do not know my higher nature as the great Lord of all beings."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः",
+    "राक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः"
+   ],
+   "words": [
+    [
+     "मोघ-आशाः",
+     "their hopes are empty"
+    ],
+    [
+     "मोघ-कर्माणः",
+     "their actions are empty"
+    ],
+    [
+     "मोघ-ज्ञानाः",
+     "their knowledge is empty"
+    ],
+    [
+     "विचेतसः",
+     "they have lost their good sense"
+    ],
+    [
+     "राक्षसीम् आसुरीं च एव प्रकृतिम्",
+     "a fierce and demonic nature"
+    ],
+    [
+     "मोहिनीं श्रिताः",
+     "that deludes, they have taken up"
+    ]
+   ],
+   "tr": "Their hopes, their actions and their knowledge all come to nothing. They have lost their good sense and taken up a fierce and demonic nature that deludes them."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः",
+    "भजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम्"
+   ],
+   "words": [
+    [
+     "महात्मानः तु",
+     "but the great souls"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "दैवीं प्रकृतिम् आश्रिताः",
+     "sheltered in the divine nature"
+    ],
+    [
+     "मां भजन्ति अनन्य-मनसः",
+     "worship me with undivided minds"
+    ],
+    [
+     "ज्ञात्वा भूत-आदिम् अव्ययम्",
+     "knowing me as the unchanging source of beings"
+    ]
+   ],
+   "tr": "But the great souls, Arjuna, take shelter in the divine nature. Knowing me as the unchanging source of all beings, they worship me with undivided minds."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः",
+    "नमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते"
+   ],
+   "words": [
+    [
+     "सततं कीर्तयन्तः माम्",
+     "always singing my praise"
+    ],
+    [
+     "यतन्तः च दृढ-व्रताः",
+     "striving, with firm vows"
+    ],
+    [
+     "नमस्यन्तः च मां भक्त्या",
+     "and bowing to me with devotion"
+    ],
+    [
+     "नित्य-युक्ताः उपासते",
+     "they worship, always united with me"
+    ]
+   ],
+   "tr": "Always singing my praise, striving with firm resolve and bowing to me with devotion, they worship me, always united with me."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते",
+    "एकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम्"
+   ],
+   "words": [
+    [
+     "ज्ञान-यज्ञेन च अपि अन्ये",
+     "others too, by the sacrifice of knowledge"
+    ],
+    [
+     "यजन्तः माम् उपासते",
+     "worship me"
+    ],
+    [
+     "एकत्वेन",
+     "as the One"
+    ],
+    [
+     "पृथक्त्वेन",
+     "as distinct from themselves"
+    ],
+    [
+     "बहुधा",
+     "in many forms"
+    ],
+    [
+     "विश्वतः-मुखम्",
+     "facing in every direction"
+    ]
+   ],
+   "tr": "Others worship me through the sacrifice of knowledge: as the One, as distinct from themselves, or in my many forms that face in every direction."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अहं क्रतुरहं यज्ञः स्वधाऽहमहमौषधम्",
+    "मन्त्रोऽहमहमेवाज्यमहमग्निरहं हुतम्"
+   ],
+   "words": [
+    [
+     "अहं क्रतुः",
+     "I am the ritual"
+    ],
+    [
+     "अहं यज्ञः",
+     "I am the sacrifice"
+    ],
+    [
+     "स्वधा अहम्",
+     "I am the offering to the ancestors"
+    ],
+    [
+     "अहम् औषधम्",
+     "I am the healing herb"
+    ],
+    [
+     "मन्त्रः अहम्",
+     "I am the mantra"
+    ],
+    [
+     "अहम् एव आज्यम्",
+     "I am the ghee"
+    ],
+    [
+     "अहम् अग्निः",
+     "I am the fire"
+    ],
+    [
+     "अहं हुतम्",
+     "I am the act of offering"
+    ]
+   ],
+   "tr": "I am the ritual and the sacrifice, the offering to the ancestors and the healing herb. I am the mantra, the ghee, the fire and the act of offering."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "पिताऽहमस्य जगतो माता धाता पितामहः",
+    "वेद्यं पवित्रमोंकार ऋक् साम यजुरेव च"
+   ],
+   "words": [
+    [
+     "पिता अहम् अस्य जगतः",
+     "I am the father of this world"
+    ],
+    [
+     "माता धाता पितामहः",
+     "its mother, supporter and grandfather"
+    ],
+    [
+     "वेद्यम्",
+     "what is to be known"
+    ],
+    [
+     "पवित्रम्",
+     "the purifier"
+    ],
+    [
+     "ओंकारः",
+     "the syllable Om"
+    ],
+    [
+     "ऋक् साम यजुः एव च",
+     "and the Rig, Sama and Yajur Vedas"
+    ]
+   ],
+   "tr": "I am the father of this world, its mother, its supporter and its grandfather. I am what is to be known, the purifier, the syllable Om, and the Rig, Sama and Yajur Vedas."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत्",
+    "प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्"
+   ],
+   "words": [
+    [
+     "गतिः",
+     "the goal"
+    ],
+    [
+     "भर्ता",
+     "the supporter"
+    ],
+    [
+     "प्रभुः",
+     "the master"
+    ],
+    [
+     "साक्षी",
+     "the witness"
+    ],
+    [
+     "निवासः",
+     "the home"
+    ],
+    [
+     "शरणम्",
+     "the refuge"
+    ],
+    [
+     "सुहृत्",
+     "the friend"
+    ],
+    [
+     "प्रभवः प्रलयः",
+     "the beginning and the end"
+    ],
+    [
+     "स्थानम्",
+     "the foundation"
+    ],
+    [
+     "निधानम्",
+     "the storehouse"
+    ],
+    [
+     "बीजम् अव्ययम्",
+     "the seed that never perishes"
+    ]
+   ],
+   "tr": "I am the goal, the supporter, the master, the witness, the home, the refuge and the friend. I am the beginning and the end, the foundation, the storehouse and the seed that never perishes."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च",
+    "अमृतं चैव मृत्युश्च सदसच्चाहमर्जुन"
+   ],
+   "words": [
+    [
+     "तपामि अहम्",
+     "I give heat"
+    ],
+    [
+     "अहं वर्षं निगृह्णामि उत्सृजामि च",
+     "I hold back the rain and send it down"
+    ],
+    [
+     "अमृतं च एव मृत्युः च",
+     "I am immortality and also death"
+    ],
+    [
+     "सत् असत् च अहम्",
+     "I am what is and what is not"
+    ],
+    [
+     "अर्जुन",
+     "O Arjuna"
+    ]
+   ],
+   "tr": "I give heat. I hold back the rain and I send it down. I am immortality and I am death, Arjuna. I am both what is and what is not."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "त्रैविद्या मां सोमपाः पूतपापा",
+    "यज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते",
+    "ते पुण्यमासाद्य सुरेन्द्रलोक",
+    "मश्नन्ति दिव्यान्दिवि देवभोगान्"
+   ],
+   "words": [
+    [
+     "त्रैविद्याः",
+     "those who follow the three Vedas"
+    ],
+    [
+     "सोम-पाः",
+     "who drink the soma juice"
+    ],
+    [
+     "पूत-पापाः",
+     "and are cleansed of wrong"
+    ],
+    [
+     "यज्ञैः माम् इष्ट्वा",
+     "worshipping me with sacrifices"
+    ],
+    [
+     "स्वर्गतिं प्रार्थयन्ते",
+     "pray to go to heaven"
+    ],
+    [
+     "ते पुण्यम् आसाद्य सुरेन्द्र-लोकम्",
+     "reaching the pure world of Indra, king of the gods"
+    ],
+    [
+     "अश्नन्ति दिव्यान् दिवि देव-भोगान्",
+     "they enjoy in heaven the divine pleasures of the gods"
+    ]
+   ],
+   "tr": "Those who follow the three Vedas, who drink the soma juice and are cleansed of wrong, worship me with sacrifices and pray to go to heaven. They reach the world of Indra, king of the gods, and there they enjoy the pleasures of the gods."
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ते तं भुक्त्वा स्वर्गलोकं विशालं",
+    "क्षीणे पुण्ये मर्त्यलोकं विशन्ति",
+    "एवं त्रयीधर्ममनुप्रपन्ना",
+    "गतागतं कामकामा लभन्ते"
+   ],
+   "words": [
+    [
+     "ते तं भुक्त्वा स्वर्ग-लोकं विशालम्",
+     "having enjoyed that wide world of heaven"
+    ],
+    [
+     "क्षीणे पुण्ये",
+     "when their merit is used up"
+    ],
+    [
+     "मर्त्य-लोकं विशन्ति",
+     "they enter the world of mortals"
+    ],
+    [
+     "एवं त्रयी-धर्मम् अनुप्रपन्नाः",
+     "so those who follow the way of the three Vedas"
+    ],
+    [
+     "गत-आगतम्",
+     "going and coming"
+    ],
+    [
+     "काम-कामाः लभन्ते",
+     "wanting pleasures, is what they get"
+    ]
+   ],
+   "tr": "After enjoying that wide world of heaven, they return to the world of mortals when their merit is used up. So those who follow the rituals of the three Vedas out of a wish for pleasure only keep going and coming."
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते",
+    "तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्"
+   ],
+   "words": [
+    [
+     "अनन्याः चिन्तयन्तः माम्",
+     "thinking of me and nothing else"
+    ],
+    [
+     "ये जनाः पर्युपासते",
+     "the people who worship"
+    ],
+    [
+     "तेषां नित्य-अभियुक्तानाम्",
+     "for those who are always united with me"
+    ],
+    [
+     "योग-क्षेमं वहामि अहम्",
+     "I carry what they lack and protect what they have"
+    ]
+   ],
+   "tr": "For those who worship me thinking of nothing else, and who are always united with me, I bring what they lack and I protect what they have."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयाऽन्विताः",
+    "तेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम्"
+   ],
+   "words": [
+    [
+     "ये अपि अन्य-देवताः भक्ताः",
+     "even those devoted to other gods"
+    ],
+    [
+     "यजन्ते श्रद्धया अन्विताः",
+     "who worship them full of faith"
+    ],
+    [
+     "ते अपि माम् एव यजन्ति",
+     "they too worship me alone"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "अविधि-पूर्वकम्",
+     "though not in the right way"
+    ]
+   ],
+   "tr": "Even those who are devoted to other gods and worship them with faith are really worshipping me alone, Arjuna, though not in the right way."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च",
+    "न तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते"
+   ],
+   "words": [
+    [
+     "अहं हि सर्व-यज्ञानाम्",
+     "for I am, of all sacrifices"
+    ],
+    [
+     "भोक्ता च प्रभुः एव च",
+     "the receiver and the lord"
+    ],
+    [
+     "न तु माम् अभिजानन्ति तत्त्वेन",
+     "but they do not know me as I truly am"
+    ],
+    [
+     "अतः च्यवन्ति ते",
+     "so they fall"
+    ]
+   ],
+   "tr": "For I am the one who receives every sacrifice, and I am its lord. But they do not know me as I truly am, and so they fall back."
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यान्ति देवव्रता देवान् पितॄन्यान्ति पितृव्रताः",
+    "भूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम्"
+   ],
+   "words": [
+    [
+     "यान्ति देव-व्रताः देवान्",
+     "those devoted to the gods go to the gods"
+    ],
+    [
+     "पितॄन् यान्ति पितृ-व्रताः",
+     "those devoted to the ancestors go to the ancestors"
+    ],
+    [
+     "भूतानि यान्ति भूत-इज्याः",
+     "those who worship spirits go to the spirits"
+    ],
+    [
+     "यान्ति मत्-याजिनः अपि माम्",
+     "and those who worship me come to me"
+    ]
+   ],
+   "tr": "Those who are devoted to the gods go to the gods. Those devoted to the ancestors go to the ancestors. Those who worship spirits go to the spirits. And those who worship me come to me."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति",
+    "तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः"
+   ],
+   "words": [
+    [
+     "पत्रं पुष्पं फलं तोयम्",
+     "a leaf, a flower, a fruit or water"
+    ],
+    [
+     "यः मे भक्त्या प्रयच्छति",
+     "whoever offers me with devotion"
+    ],
+    [
+     "तत् अहम् अश्नामि",
+     "that I accept"
+    ],
+    [
+     "भक्ति-उपहृतम्",
+     "offered with love"
+    ],
+    [
+     "प्रयत-आत्मनः",
+     "from one whose heart is pure"
+    ]
+   ],
+   "tr": "If someone offers me a leaf, a flower, a fruit or a little water with devotion, I accept that offering of love from a pure heart."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत्",
+    "यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम्"
+   ],
+   "words": [
+    [
+     "यत् करोषि",
+     "whatever you do"
+    ],
+    [
+     "यत् अश्नासि",
+     "whatever you eat"
+    ],
+    [
+     "यत् जुहोषि",
+     "whatever you offer in sacrifice"
+    ],
+    [
+     "ददासि यत्",
+     "whatever you give"
+    ],
+    [
+     "यत् तपस्यसि",
+     "whatever discipline you practise"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "तत् कुरुष्व मत्-अर्पणम्",
+     "do that as an offering to me"
+    ]
+   ],
+   "tr": "Whatever you do, whatever you eat, whatever you offer in sacrifice, whatever you give and whatever discipline you practise, Arjuna, do it as an offering to me."
+  },
+  {
+   "v": 28,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः",
+    "संन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि"
+   ],
+   "words": [
+    [
+     "शुभ-अशुभ-फलैः",
+     "with their good and bad results"
+    ],
+    [
+     "एवं मोक्ष्यसे कर्म-बन्धनैः",
+     "in this way you will be freed from the bonds of action"
+    ],
+    [
+     "संन्यास-योग-युक्त-आत्मा",
+     "with your mind steady in the yoga of letting go"
+    ],
+    [
+     "विमुक्तः माम् उपैष्यसि",
+     "set free, you will come to me"
+    ]
+   ],
+   "tr": "In this way you will be freed from the bonds of action and from its good and bad results. With your mind steady in this yoga of letting go, you will be set free and will come to me."
+  },
+  {
+   "v": 29,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः",
+    "ये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्"
+   ],
+   "words": [
+    [
+     "समः अहं सर्व-भूतेषु",
+     "I am the same to all beings"
+    ],
+    [
+     "न मे द्वेष्यः अस्ति न प्रियः",
+     "no one is hateful to me, no one is dear"
+    ],
+    [
+     "ये भजन्ति तु मां भक्त्या",
+     "but those who worship me with devotion"
+    ],
+    [
+     "मयि ते",
+     "they are in me"
+    ],
+    [
+     "तेषु च अपि अहम्",
+     "and I am in them"
+    ]
+   ],
+   "tr": "I am the same to all beings. I hate no one and I favour no one. But those who worship me with devotion are in me, and I am in them."
+  },
+  {
+   "v": 30,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अपि चेत्सुदुराचारो भजते मामनन्यभाक्",
+    "साधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः"
+   ],
+   "words": [
+    [
+     "अपि चेत् सु-दुराचारः",
+     "even if someone of very bad conduct"
+    ],
+    [
+     "भजते माम् अनन्य-भाक्",
+     "worships me and no one else"
+    ],
+    [
+     "साधुः एव सः मन्तव्यः",
+     "he must be counted as good"
+    ],
+    [
+     "सम्यक् व्यवसितः हि सः",
+     "for he has made the right decision"
+    ]
+   ],
+   "tr": "Even if a person of very bad conduct worships me with undivided devotion, that person must be counted as good, for they have made the right decision."
+  },
+  {
+   "v": 31,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति",
+    "कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति"
+   ],
+   "words": [
+    [
+     "क्षिप्रं भवति धर्म-आत्मा",
+     "he quickly becomes a person of dharma"
+    ],
+    [
+     "शश्वत् शान्तिं निगच्छति",
+     "and finds lasting peace"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "प्रतिजानीहि",
+     "declare it boldly"
+    ],
+    [
+     "न मे भक्तः प्रणश्यति",
+     "my devotee is never lost"
+    ]
+   ],
+   "tr": "Such a person quickly becomes good and finds lasting peace. Arjuna, declare it boldly: my devotee is never lost."
+  },
+  {
+   "v": 32,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः",
+    "स्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्"
+   ],
+   "words": [
+    [
+     "मां हि व्यपाश्रित्य",
+     "by taking refuge in me"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "ये अपि स्युः पाप-योनयः",
+     "even those who may be of low birth"
+    ],
+    [
+     "स्त्रियः वैश्याः तथा शूद्राः",
+     "women, traders and also labourers"
+    ],
+    [
+     "ते अपि यान्ति परां गतिम्",
+     "they too reach the highest goal"
+    ]
+   ],
+   "tr": "Arjuna, all who take refuge in me reach the highest goal: even those thought to be of low birth, and women, traders and labourers too."
+  },
+  {
+   "v": 33,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा",
+    "अनित्यमसुखं लोकमिमं प्राप्य भजस्व माम्"
+   ],
+   "words": [
+    [
+     "किं पुनः",
+     "how much more then"
+    ],
+    [
+     "ब्राह्मणाः पुण्याः",
+     "the pure brahmins"
+    ],
+    [
+     "भक्ताः राजर्षयः तथा",
+     "and the devoted royal sages"
+    ],
+    [
+     "अनित्यम् असुखं लोकम् इमं प्राप्य",
+     "having come to this passing, joyless world"
+    ],
+    [
+     "भजस्व माम्",
+     "worship me"
+    ]
+   ],
+   "tr": "How much more, then, the pure brahmins and the devoted royal sages! Having come into this passing and joyless world, worship me."
+  },
+  {
+   "v": 34,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु",
+    "मामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः"
+   ],
+   "words": [
+    [
+     "मत्-मनाः भव",
+     "fix your mind on me"
+    ],
+    [
+     "मत्-भक्तः",
+     "be devoted to me"
+    ],
+    [
+     "मत्-याजी",
+     "worship me"
+    ],
+    [
+     "मां नमस्कुरु",
+     "bow to me"
+    ],
+    [
+     "माम् एव एष्यसि",
+     "you will come to me alone"
+    ],
+    [
+     "युक्त्वा एवम् आत्मानम्",
+     "having united yourself with me in this way"
+    ],
+    [
+     "मत्-परायणः",
+     "with me as your highest goal"
+    ]
+   ],
+   "tr": "Fix your mind on me, be devoted to me, worship me and bow to me. Uniting yourself with me in this way, with me as your highest goal, you will come to me."
+  }
+ ]
+}

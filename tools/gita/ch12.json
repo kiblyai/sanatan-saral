@@ -1,0 +1,631 @@
+{
+ "meta": {
+  "n": 12,
+  "featured": [
+   13,
+   15
+  ],
+  "name": "The Yoga of Devotion",
+  "skt_name": "भक्तियोगः",
+  "roman_name": "Bhakti Yoga",
+  "outline": "Verses 1–7: is it better to worship Krishna in a form, or the formless? Both reach him, but the first way is easier; 8–12: four steps, from fixing the mind on him down to giving up the results of action; 13–20: the qualities of the devotee who is dear to Krishna."
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Arjuna",
+   "opens": "अर्जुन उवाच",
+   "skt": [
+    "एवं सततयुक्ता ये भक्तास्त्वां पर्युपासते",
+    "ये चाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः"
+   ],
+   "words": [
+    [
+     "एवं सतत-युक्ताः ये भक्ताः",
+     "the devotees who are always united with you in this way"
+    ],
+    [
+     "त्वां पर्युपासते",
+     "and worship you"
+    ],
+    [
+     "ये च अपि अक्षरम् अव्यक्तम्",
+     "and those who worship the imperishable, the unseen"
+    ],
+    [
+     "तेषां के योग-वित्तमाः",
+     "which of them know yoga best"
+    ]
+   ],
+   "tr": "Arjuna asked: Some devotees worship you, always united with you in this way. Others worship the imperishable and unseen. Which of them know yoga best?"
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "मय्यावेश्य मनो ये मां नित्ययुक्ता उपासते",
+    "श्रद्धया परयोपेतास्ते मे युक्ततमा मताः"
+   ],
+   "words": [
+    [
+     "मयि आवेश्य मनः",
+     "fixing their minds on me"
+    ],
+    [
+     "ये मां नित्य-युक्ताः उपासते",
+     "those who worship me, always united with me"
+    ],
+    [
+     "श्रद्धया परया उपेताः",
+     "full of the highest faith"
+    ],
+    [
+     "ते मे युक्ततमाः मताः",
+     "I consider them the best in yoga"
+    ]
+   ],
+   "tr": "Krishna said: Those who fix their minds on me and worship me, always united with me and full of the highest faith, I consider the best in yoga."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ये त्वक्षरमनिर्देश्यमव्यक्तं पर्युपासते",
+    "सर्वत्रगमचिन्त्यं च कूटस्थमचलं ध्रुवम्"
+   ],
+   "words": [
+    [
+     "ये तु अक्षरम्",
+     "but those who, the imperishable"
+    ],
+    [
+     "अनिर्देश्यम्",
+     "that cannot be defined"
+    ],
+    [
+     "अव्यक्तं पर्युपासते",
+     "worship the unseen"
+    ],
+    [
+     "सर्वत्र-गम्",
+     "present everywhere"
+    ],
+    [
+     "अचिन्त्यं च",
+     "beyond thought"
+    ],
+    [
+     "कूट-स्थम्",
+     "unchanging"
+    ],
+    [
+     "अचलं ध्रुवम्",
+     "unmoving and constant"
+    ]
+   ],
+   "tr": "But those who worship the imperishable, which cannot be defined or seen, which is everywhere and beyond thought, unchanging, unmoving and constant,"
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "संनियम्येन्द्रियग्रामं सर्वत्र समबुद्धयः",
+    "ते प्राप्नुवन्ति मामेव सर्वभूतहिते रताः"
+   ],
+   "words": [
+    [
+     "संनियम्य इन्द्रिय-ग्रामम्",
+     "controlling all the senses"
+    ],
+    [
+     "सर्वत्र सम-बुद्धयः",
+     "even-minded everywhere"
+    ],
+    [
+     "ते प्राप्नुवन्ति माम् एव",
+     "they too reach me"
+    ],
+    [
+     "सर्व-भूत-हिते रताः",
+     "delighting in the good of all beings"
+    ]
+   ],
+   "tr": "who control all their senses, are even-minded everywhere and delight in the good of all beings: they too reach me."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम्",
+    "अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते"
+   ],
+   "words": [
+    [
+     "क्लेशः अधिकतरः तेषाम्",
+     "the difficulty is greater for those"
+    ],
+    [
+     "अव्यक्त-आसक्त-चेतसाम्",
+     "whose minds are set on the unseen"
+    ],
+    [
+     "अव्यक्ता हि गतिः",
+     "for the path of the unseen"
+    ],
+    [
+     "दुःखं देहवद्भिः अवाप्यते",
+     "is hard for those with a body to reach"
+    ]
+   ],
+   "tr": "The difficulty is greater for those whose minds are set on the unseen, for the path of the unseen is hard for people who live in a body."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः",
+    "अनन्येनैव योगेन मां ध्यायन्त उपासते"
+   ],
+   "words": [
+    [
+     "ये तु सर्वाणि कर्माणि मयि संन्यस्य",
+     "but those who give up all their actions to me"
+    ],
+    [
+     "मत्-पराः",
+     "holding me as the highest"
+    ],
+    [
+     "अनन्येन एव योगेन",
+     "with a yoga that has no other object"
+    ],
+    [
+     "मां ध्यायन्तः उपासते",
+     "worship me, meditating on me"
+    ]
+   ],
+   "tr": "But those who offer all their actions to me, hold me as their highest goal, and worship me, meditating on me with undivided yoga,"
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तेषामहं समुद्धर्ता मृत्युसंसारसागरात्",
+    "भवामि न चिरात्पार्थ मय्यावेशितचेतसाम्"
+   ],
+   "words": [
+    [
+     "तेषाम् अहं समुद्धर्ता भवामि",
+     "I become the one who lifts them out"
+    ],
+    [
+     "मृत्यु-संसार-सागरात्",
+     "of the ocean of death and rebirth"
+    ],
+    [
+     "न चिरात्",
+     "before long"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "मयि आवेशित-चेतसाम्",
+     "whose minds are fixed on me"
+    ]
+   ],
+   "tr": "whose minds are fixed on me: I soon lift them out of the ocean of death and rebirth, Arjuna."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय",
+    "निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः"
+   ],
+   "words": [
+    [
+     "मयि एव मनः आधत्स्व",
+     "fix your mind on me alone"
+    ],
+    [
+     "मयि बुद्धिं निवेशय",
+     "let your intellect rest in me"
+    ],
+    [
+     "निवसिष्यसि मयि एव",
+     "you will live in me alone"
+    ],
+    [
+     "अतः ऊर्ध्वम्",
+     "from then on"
+    ],
+    [
+     "न संशयः",
+     "there is no doubt"
+    ]
+   ],
+   "tr": "Fix your mind on me alone and let your understanding rest in me. From then on you will live in me. There is no doubt of this."
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम्",
+    "अभ्यासयोगेन ततो मामिच्छाप्तुं धनञ्जय"
+   ],
+   "words": [
+    [
+     "अथ चित्तं समाधातुं न शक्नोषि",
+     "if you cannot fix your mind"
+    ],
+    [
+     "मयि स्थिरम्",
+     "steadily on me"
+    ],
+    [
+     "अभ्यास-योगेन",
+     "by the yoga of regular practice"
+    ],
+    [
+     "ततः माम् इच्छ आप्तुम्",
+     "then seek to reach me"
+    ],
+    [
+     "धनञ्जय",
+     "O Dhananjaya (Arjuna)"
+    ]
+   ],
+   "tr": "If you cannot fix your mind steadily on me, Arjuna, then seek to reach me through regular practice."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अभ्यासेऽप्यसमर्थोऽसि मत्कर्मपरमो भव",
+    "मदर्थमपि कर्माणि कुर्वन् सिद्धिमवाप्स्यसि"
+   ],
+   "words": [
+    [
+     "अभ्यासे अपि असमर्थः असि",
+     "if you are not able to practise either"
+    ],
+    [
+     "मत्-कर्म-परमः भव",
+     "be devoted to working for me"
+    ],
+    [
+     "मत्-अर्थम् अपि कर्माणि कुर्वन्",
+     "even by doing actions for my sake"
+    ],
+    [
+     "सिद्धिम् अवाप्स्यसि",
+     "you will reach perfection"
+    ]
+   ],
+   "tr": "If you are not able to practise either, then devote yourself to working for me. Even by doing actions for my sake, you will reach perfection."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः",
+    "सर्वकर्मफलत्यागं ततः कुरु यतात्मवान्"
+   ],
+   "words": [
+    [
+     "अथ एतत् अपि अशक्तः असि कर्तुम्",
+     "if you cannot do even this"
+    ],
+    [
+     "मत्-योगम् आश्रितः",
+     "taking refuge in union with me"
+    ],
+    [
+     "सर्व-कर्म-फल-त्यागं ततः कुरु",
+     "then give up the results of all your actions"
+    ],
+    [
+     "यत-आत्मवान्",
+     "with self-control"
+    ]
+   ],
+   "tr": "If you cannot do even this, then take refuge in me and, with self-control, give up the results of all your actions."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते",
+    "ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम्"
+   ],
+   "words": [
+    [
+     "श्रेयः हि ज्ञानम् अभ्यासात्",
+     "knowledge is better than practice"
+    ],
+    [
+     "ज्ञानात् ध्यानं विशिष्यते",
+     "meditation is better than knowledge"
+    ],
+    [
+     "ध्यानात् कर्म-फल-त्यागः",
+     "giving up the results of action is better than meditation"
+    ],
+    [
+     "त्यागात् शान्तिः अनन्तरम्",
+     "from giving up, peace follows at once"
+    ]
+   ],
+   "tr": "Knowledge is better than mere practice, and meditation is better than knowledge. Giving up the results of action is better than meditation, for peace follows at once from giving up."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च",
+    "निर्ममो निरहङ्कारः समदुःखसुखः क्षमी"
+   ],
+   "words": [
+    [
+     "अद्वेष्टा सर्व-भूतानाम्",
+     "who hates no being"
+    ],
+    [
+     "मैत्रः करुणः एव च",
+     "friendly and kind"
+    ],
+    [
+     "निर्ममः",
+     "free from “mine”"
+    ],
+    [
+     "निरहङ्कारः",
+     "free from “I”"
+    ],
+    [
+     "सम-दुःख-सुखः",
+     "the same in pain and pleasure"
+    ],
+    [
+     "क्षमी",
+     "forgiving"
+    ]
+   ],
+   "tr": "One who hates no being, who is friendly and kind, free from the sense of “I” and “mine”, the same in pain and pleasure, and forgiving;"
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः",
+    "मय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः"
+   ],
+   "words": [
+    [
+     "सन्तुष्टः सततम्",
+     "always content"
+    ],
+    [
+     "योगी यत-आत्मा",
+     "a self-controlled yogi"
+    ],
+    [
+     "दृढ-निश्चयः",
+     "firm in resolve"
+    ],
+    [
+     "मयि अर्पित-मनः-बुद्धिः",
+     "with mind and intellect given to me"
+    ],
+    [
+     "यः मत्-भक्तः सः मे प्रियः",
+     "that devotee of mine is dear to me"
+    ]
+   ],
+   "tr": "who is always content, a self-controlled yogi, firm in resolve, with mind and understanding given to me: that devotee of mine is dear to me."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः",
+    "हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः"
+   ],
+   "words": [
+    [
+     "यस्मात् न उद्विजते लोकः",
+     "by whom the world is not disturbed"
+    ],
+    [
+     "लोकात् न उद्विजते च यः",
+     "and who is not disturbed by the world"
+    ],
+    [
+     "हर्ष-अमर्ष-भय-उद्वेगैः मुक्तः",
+     "free from excitement, envy, fear and worry"
+    ],
+    [
+     "यः सः च मे प्रियः",
+     "that person is dear to me"
+    ]
+   ],
+   "tr": "One who does not disturb the world and is not disturbed by the world, who is free from excitement, envy, fear and worry: that person is dear to me."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः",
+    "सर्वारम्भपरित्यागी यो मद्भक्तः स मे प्रियः"
+   ],
+   "words": [
+    [
+     "अनपेक्षः",
+     "expecting nothing"
+    ],
+    [
+     "शुचिः दक्षः",
+     "pure, capable"
+    ],
+    [
+     "उदासीनः",
+     "impartial"
+    ],
+    [
+     "गत-व्यथः",
+     "free from anxiety"
+    ],
+    [
+     "सर्व-आरम्भ-परित्यागी",
+     "who has given up all selfish undertakings"
+    ],
+    [
+     "यः मत्-भक्तः सः मे प्रियः",
+     "that devotee of mine is dear to me"
+    ]
+   ],
+   "tr": "One who expects nothing, who is pure, capable, impartial and free from anxiety, and who has given up all selfish undertakings: that devotee of mine is dear to me."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति",
+    "शुभाशुभपरित्यागी भक्तिमान्यः स मे प्रियः"
+   ],
+   "words": [
+    [
+     "यः न हृष्यति न द्वेष्टि",
+     "who neither rejoices nor hates"
+    ],
+    [
+     "न शोचति न काङ्क्षति",
+     "neither grieves nor craves"
+    ],
+    [
+     "शुभ-अशुभ-परित्यागी",
+     "who has let go of good and bad alike"
+    ],
+    [
+     "भक्तिमान् यः सः मे प्रियः",
+     "who is full of devotion: that person is dear to me"
+    ]
+   ],
+   "tr": "One who neither rejoices nor hates, neither grieves nor craves, who has let go of both good and bad fortune and is full of devotion: that person is dear to me."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "समः शत्रौ च मित्रे च तथा मानापमानयोः",
+    "शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः"
+   ],
+   "words": [
+    [
+     "समः शत्रौ च मित्रे च",
+     "the same to enemy and friend"
+    ],
+    [
+     "तथा मान-अपमानयोः",
+     "and in honour and insult"
+    ],
+    [
+     "शीत-उष्ण-सुख-दुःखेषु समः",
+     "the same in cold and heat, pleasure and pain"
+    ],
+    [
+     "सङ्ग-विवर्जितः",
+     "free from attachment"
+    ]
+   ],
+   "tr": "One who is the same to enemy and friend, in honour and insult, in cold and heat, in pleasure and pain, and who is free from attachment;"
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येन केनचित्",
+    "अनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः"
+   ],
+   "words": [
+    [
+     "तुल्य-निन्दा-स्तुतिः",
+     "to whom blame and praise are equal"
+    ],
+    [
+     "मौनी",
+     "who is quiet"
+    ],
+    [
+     "सन्तुष्टः येन केनचित्",
+     "content with whatever comes"
+    ],
+    [
+     "अनिकेतः",
+     "not tied to any home"
+    ],
+    [
+     "स्थिर-मतिः",
+     "steady in mind"
+    ],
+    [
+     "भक्तिमान् मे प्रियः नरः",
+     "full of devotion: that person is dear to me"
+    ]
+   ],
+   "tr": "to whom blame and praise are equal, who is quiet, content with whatever comes, not tied to any home, steady in mind and full of devotion: that person is dear to me."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते",
+    "श्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः"
+   ],
+   "words": [
+    [
+     "ये तु धर्म्य-अमृतम् इदम्",
+     "but those who, this nectar of dharma"
+    ],
+    [
+     "यथा उक्तं पर्युपासते",
+     "follow as I have taught it"
+    ],
+    [
+     "श्रद्दधानाः",
+     "full of faith"
+    ],
+    [
+     "मत्-परमाः",
+     "holding me as the highest"
+    ],
+    [
+     "भक्ताः ते अतीव मे प्रियाः",
+     "those devotees are very dear to me"
+    ]
+   ],
+   "tr": "But those who follow this nectar of dharma as I have taught it, full of faith and holding me as their highest goal: those devotees are very dear to me."
+  }
+ ]
+}

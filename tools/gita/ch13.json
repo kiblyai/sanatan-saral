@@ -1,0 +1,1051 @@
+{
+ "meta": {
+  "n": 13,
+  "featured": [
+   2,
+   27
+  ],
+  "name": "The Field and the Knower of the Field",
+  "skt_name": "क्षेत्रक्षेत्रज्ञविभागयोगः",
+  "roman_name": "Kshetra Kshetrajna Vibhaga Yoga",
+  "outline": "Verses 1–6: the body is the field, and the one who knows it is the knower of the field; 7–11: twenty qualities that together are called knowledge; 12–18: Brahman, the thing to be known; 19–23: nature and the spirit; 24–26: different ways of seeing the Self; 27–34: the one Lord, the same in all beings, who does not act and is not stained. Some editions begin this chapter with a question from Arjuna and count 35 verses; the numbering here follows the 34-verse count."
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते",
+    "एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः"
+   ],
+   "words": [
+    [
+     "इदं शरीरम्",
+     "this body"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "क्षेत्रम् इति अभिधीयते",
+     "is called the field"
+    ],
+    [
+     "एतत् यः वेत्ति",
+     "the one who knows it"
+    ],
+    [
+     "तं प्राहुः क्षेत्रज्ञः इति",
+     "is called the knower of the field"
+    ],
+    [
+     "तत्-विदः",
+     "by those who understand these things"
+    ]
+   ],
+   "tr": "Krishna said: This body, Arjuna, is called the field. The one who knows it is called the knower of the field by those who understand these things."
+  },
+  {
+   "v": 2,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत",
+    "क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम"
+   ],
+   "words": [
+    [
+     "क्षेत्रज्ञं च अपि मां विद्धि",
+     "know me also as the knower of the field"
+    ],
+    [
+     "सर्व-क्षेत्रेषु",
+     "in all fields"
+    ],
+    [
+     "भारत",
+     "O descendant of Bharata (Arjuna)"
+    ],
+    [
+     "क्षेत्र-क्षेत्रज्ञयोः ज्ञानम्",
+     "knowledge of the field and its knower"
+    ],
+    [
+     "यत् तत् ज्ञानं मतं मम",
+     "that, in my view, is true knowledge"
+    ]
+   ],
+   "tr": "Know me, Arjuna, as the knower of the field in every field. Knowledge of the field and of its knower is, in my view, true knowledge."
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तत्क्षेत्रं यच्च यादृक् च यद्विकारि यतश्च यत्",
+    "स च यो यत्प्रभावश्च तत्समासेन मे शृणु"
+   ],
+   "words": [
+    [
+     "तत् क्षेत्रं यत् च",
+     "what that field is"
+    ],
+    [
+     "यादृक् च",
+     "and what it is like"
+    ],
+    [
+     "यत्-विकारि",
+     "what its changes are"
+    ],
+    [
+     "यतः च यत्",
+     "and where it comes from"
+    ],
+    [
+     "सः च यः",
+     "and who he, the knower, is"
+    ],
+    [
+     "यत्-प्रभावः च",
+     "and what his powers are"
+    ],
+    [
+     "तत् समासेन मे शृणु",
+     "hear that from me in brief"
+    ]
+   ],
+   "tr": "Hear from me in brief what the field is, what it is like, how it changes and where it comes from, and also who the knower is and what his powers are."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक्",
+    "ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितैः"
+   ],
+   "words": [
+    [
+     "ऋषिभिः बहुधा गीतम्",
+     "it has been sung by the sages in many ways"
+    ],
+    [
+     "छन्दोभिः विविधैः पृथक्",
+     "in various separate Vedic hymns"
+    ],
+    [
+     "ब्रह्म-सूत्र-पदैः च एव",
+     "and in the words of the Brahma Sutras"
+    ],
+    [
+     "हेतुमद्भिः विनिश्चितैः",
+     "which are well reasoned and certain"
+    ]
+   ],
+   "tr": "The sages have sung of this in many ways, in various Vedic hymns, and also in the well-reasoned and certain words of the Brahma Sutras."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च",
+    "इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः"
+   ],
+   "words": [
+    [
+     "महा-भूतानि",
+     "the five great elements"
+    ],
+    [
+     "अहङ्कारः",
+     "the sense of “I”"
+    ],
+    [
+     "बुद्धिः",
+     "the intellect"
+    ],
+    [
+     "अव्यक्तम् एव च",
+     "and unseen nature"
+    ],
+    [
+     "इन्द्रियाणि दश एकं च",
+     "the ten senses and the one, the mind"
+    ],
+    [
+     "पञ्च च इन्द्रिय-गोचराः",
+     "and the five objects of the senses"
+    ]
+   ],
+   "tr": "The five great elements, the sense of “I”, the intellect and unseen nature; the ten senses and the mind, and the five objects of the senses;"
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः",
+    "एतत्क्षेत्रं समासेन सविकारमुदाहृतम्"
+   ],
+   "words": [
+    [
+     "इच्छा द्वेषः",
+     "desire, dislike"
+    ],
+    [
+     "सुखं दुःखम्",
+     "pleasure, pain"
+    ],
+    [
+     "सङ्घातः",
+     "the body as a whole"
+    ],
+    [
+     "चेतना धृतिः",
+     "consciousness, steadiness"
+    ],
+    [
+     "एतत् क्षेत्रं समासेन",
+     "this, in brief, is the field"
+    ],
+    [
+     "स-विकारम् उदाहृतम्",
+     "described with its changes"
+    ]
+   ],
+   "tr": "desire and dislike, pleasure and pain, the body as a whole, consciousness and steadiness: this, in brief, is the field, together with its changes."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्",
+    "आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः"
+   ],
+   "words": [
+    [
+     "अमानित्वम्",
+     "humility"
+    ],
+    [
+     "अदम्भित्वम्",
+     "freedom from pretence"
+    ],
+    [
+     "अहिंसा",
+     "non-violence"
+    ],
+    [
+     "क्षान्तिः",
+     "patience"
+    ],
+    [
+     "आर्जवम्",
+     "honesty"
+    ],
+    [
+     "आचार्य-उपासनम्",
+     "service to the teacher"
+    ],
+    [
+     "शौचम्",
+     "purity"
+    ],
+    [
+     "स्थैर्यम्",
+     "steadiness"
+    ],
+    [
+     "आत्म-विनिग्रहः",
+     "self-control"
+    ]
+   ],
+   "tr": "Humility, freedom from pretence, non-violence, patience, honesty, service to the teacher, purity, steadiness and self-control;"
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च",
+    "जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम्"
+   ],
+   "words": [
+    [
+     "इन्द्रिय-अर्थेषु वैराग्यम्",
+     "detachment from the objects of the senses"
+    ],
+    [
+     "अनहङ्कारः एव च",
+     "and freedom from ego"
+    ],
+    [
+     "जन्म-मृत्यु-जरा-व्याधि-दुःख-दोष-अनुदर्शनम्",
+     "seeing the suffering in birth, death, old age and illness"
+    ]
+   ],
+   "tr": "detachment from the objects of the senses, freedom from ego, and seeing clearly the suffering in birth, death, old age and illness;"
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "असक्तिरनभिष्वङ्गः पुत्रदारगृहादिषु",
+    "नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु"
+   ],
+   "words": [
+    [
+     "असक्तिः",
+     "non-attachment"
+    ],
+    [
+     "अनभिष्वङ्गः",
+     "not clinging"
+    ],
+    [
+     "पुत्र-दार-गृह-आदिषु",
+     "to children, spouse, home and the rest"
+    ],
+    [
+     "नित्यं च सम-चित्तत्वम्",
+     "and a mind that is always even"
+    ],
+    [
+     "इष्ट-अनिष्ट-उपपत्तिषु",
+     "when wanted or unwanted things happen"
+    ]
+   ],
+   "tr": "non-attachment, and not clinging to children, spouse, home and the rest; a mind that stays even whether wanted or unwanted things happen;"
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मयि चानन्ययोगेन भक्तिरव्यभिचारिणी",
+    "विविक्तदेशसेवित्वमरतिर्जनसंसदि"
+   ],
+   "words": [
+    [
+     "मयि च अनन्य-योगेन",
+     "and for me, with undivided yoga"
+    ],
+    [
+     "भक्तिः अव्यभिचारिणी",
+     "devotion that never strays"
+    ],
+    [
+     "विविक्त-देश-सेवित्वम्",
+     "living in quiet places"
+    ],
+    [
+     "अरतिः जन-संसदि",
+     "no taste for crowds"
+    ]
+   ],
+   "tr": "devotion to me that never strays, with undivided yoga; a liking for quiet places and no taste for crowds;"
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम्",
+    "एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा"
+   ],
+   "words": [
+    [
+     "अध्यात्म-ज्ञान-नित्यत्वम्",
+     "constancy in knowledge of the Self"
+    ],
+    [
+     "तत्त्व-ज्ञान-अर्थ-दर्शनम्",
+     "seeing the purpose of knowing the truth"
+    ],
+    [
+     "एतत् ज्ञानम् इति प्रोक्तम्",
+     "this is declared to be knowledge"
+    ],
+    [
+     "अज्ञानं यत् अतः अन्यथा",
+     "and what is other than this is ignorance"
+    ]
+   ],
+   "tr": "constancy in knowledge of the Self, and seeing what knowledge of the truth is for: this is declared to be knowledge. Whatever is otherwise is ignorance."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वाऽमृतमश्नुते",
+    "अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते"
+   ],
+   "words": [
+    [
+     "ज्ञेयं यत् तत् प्रवक्ष्यामि",
+     "I shall tell you what is to be known"
+    ],
+    [
+     "यत् ज्ञात्वा अमृतम् अश्नुते",
+     "knowing which one reaches immortality"
+    ],
+    [
+     "अनादिमत् परं ब्रह्म",
+     "the supreme Brahman, which has no beginning"
+    ],
+    [
+     "न सत् तत् न असत् उच्यते",
+     "it is said to be neither being nor non-being"
+    ]
+   ],
+   "tr": "I shall tell you what is to be known, knowing which a person reaches immortality. It is the supreme Brahman, which has no beginning. It is said to be neither being nor non-being."
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम्",
+    "सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति"
+   ],
+   "words": [
+    [
+     "सर्वतः पाणि-पादं तत्",
+     "it has hands and feet everywhere"
+    ],
+    [
+     "सर्वतः अक्षि-शिरः-मुखम्",
+     "eyes, heads and faces everywhere"
+    ],
+    [
+     "सर्वतः श्रुतिमत्",
+     "ears everywhere"
+    ],
+    [
+     "लोके सर्वम् आवृत्य तिष्ठति",
+     "it stands, covering everything in the world"
+    ]
+   ],
+   "tr": "It has hands and feet everywhere, eyes, heads and faces everywhere, and ears everywhere. It stands in the world, covering everything."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम्",
+    "असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च"
+   ],
+   "words": [
+    [
+     "सर्व-इन्द्रिय-गुण-आभासम्",
+     "it shines through the working of all the senses"
+    ],
+    [
+     "सर्व-इन्द्रिय-विवर्जितम्",
+     "yet has no senses"
+    ],
+    [
+     "असक्तम्",
+     "unattached"
+    ],
+    [
+     "सर्व-भृत् च एव",
+     "yet supporting all"
+    ],
+    [
+     "निर्गुणम्",
+     "free from the gunas"
+    ],
+    [
+     "गुण-भोक्तृ च",
+     "yet experiencing the gunas"
+    ]
+   ],
+   "tr": "It shines through the working of all the senses, yet it has no senses. It is unattached, yet it supports everything. It is free from the gunas, yet it experiences them."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "बहिरन्तश्च भूतानामचरं चरमेव च",
+    "सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत्"
+   ],
+   "words": [
+    [
+     "बहिः अन्तः च भूतानाम्",
+     "outside and inside beings"
+    ],
+    [
+     "अचरं चरम् एव च",
+     "unmoving and also moving"
+    ],
+    [
+     "सूक्ष्मत्वात् तत् अविज्ञेयम्",
+     "because it is subtle it cannot be grasped"
+    ],
+    [
+     "दूर-स्थं च अन्तिके च तत्",
+     "it is far away and also near"
+    ]
+   ],
+   "tr": "It is outside beings and inside them. It does not move, and yet it moves. It is too subtle to be grasped. It is far away, and it is also near."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अविभक्तं च भूतेषु विभक्तमिव च स्थितम्",
+    "भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च"
+   ],
+   "words": [
+    [
+     "अविभक्तं च भूतेषु",
+     "undivided among beings"
+    ],
+    [
+     "विभक्तम् इव च स्थितम्",
+     "yet standing as if divided"
+    ],
+    [
+     "भूत-भर्तृ च तत् ज्ञेयम्",
+     "it is to be known as the supporter of beings"
+    ],
+    [
+     "ग्रसिष्णु प्रभविष्णु च",
+     "which takes them back and brings them forth"
+    ]
+   ],
+   "tr": "It is undivided, yet it seems to be divided among beings. Know it as the supporter of all beings, which takes them back into itself and brings them forth again."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते",
+    "ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम्"
+   ],
+   "words": [
+    [
+     "ज्योतिषाम् अपि तत् ज्योतिः",
+     "it is the light of all lights"
+    ],
+    [
+     "तमसः परम् उच्यते",
+     "said to be beyond darkness"
+    ],
+    [
+     "ज्ञानं ज्ञेयं ज्ञान-गम्यम्",
+     "it is knowledge, what is to be known, and what knowledge leads to"
+    ],
+    [
+     "हृदि सर्वस्य विष्ठितम्",
+     "it is seated in the heart of everyone"
+    ]
+   ],
+   "tr": "It is the light of all lights, and is said to be beyond darkness. It is knowledge, the thing to be known and the goal of knowledge, and it is seated in the heart of everyone."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः",
+    "मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते"
+   ],
+   "words": [
+    [
+     "इति क्षेत्रं तथा ज्ञानं ज्ञेयं च",
+     "so the field, knowledge and what is to be known"
+    ],
+    [
+     "उक्तं समासतः",
+     "have been described in brief"
+    ],
+    [
+     "मत्-भक्तः एतत् विज्ञाय",
+     "my devotee, understanding this"
+    ],
+    [
+     "मत्-भावाय उपपद्यते",
+     "becomes fit for my state"
+    ]
+   ],
+   "tr": "So the field, knowledge and what is to be known have been described in brief. My devotee who understands this becomes fit to reach my state."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि",
+    "विकारांश्च गुणांश्चैव विद्धि प्रकृतिसंभवान्"
+   ],
+   "words": [
+    [
+     "प्रकृतिं पुरुषं च एव",
+     "nature (prakriti) and the spirit (purusha)"
+    ],
+    [
+     "विद्धि अनादी उभौ अपि",
+     "know that both have no beginning"
+    ],
+    [
+     "विकारान् च गुणान् च एव",
+     "and all changes and the gunas"
+    ],
+    [
+     "विद्धि प्रकृति-सम्भवान्",
+     "know to be born of nature"
+    ]
+   ],
+   "tr": "Know that nature and the spirit both have no beginning. Know also that all changes and the gunas are born of nature."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते",
+    "पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते"
+   ],
+   "words": [
+    [
+     "कार्य-कारण-कर्तृत्वे",
+     "in producing the body and the senses and their work"
+    ],
+    [
+     "हेतुः प्रकृतिः उच्यते",
+     "nature is said to be the cause"
+    ],
+    [
+     "पुरुषः सुख-दुःखानां भोक्तृत्वे",
+     "the spirit, in the experiencing of pleasure and pain"
+    ],
+    [
+     "हेतुः उच्यते",
+     "is said to be the cause"
+    ]
+   ],
+   "tr": "Nature is said to be the cause behind the body and the senses and what they do. The spirit is said to be the cause behind the experience of pleasure and pain."
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान्",
+    "कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु"
+   ],
+   "words": [
+    [
+     "पुरुषः प्रकृति-स्थः हि",
+     "for the spirit, seated in nature"
+    ],
+    [
+     "भुङ्क्ते प्रकृति-जान् गुणान्",
+     "experiences the gunas born of nature"
+    ],
+    [
+     "कारणं गुण-सङ्गः अस्य",
+     "its attachment to the gunas is the cause"
+    ],
+    [
+     "सत्-असत्-योनि-जन्मसु",
+     "of its births in good and bad wombs"
+    ]
+   ],
+   "tr": "The spirit, seated in nature, experiences the gunas born of nature. Its attachment to the gunas is the cause of its birth in good and bad conditions."
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "उपद्रष्टाऽनुमन्ता च भर्ता भोक्ता महेश्वरः",
+    "परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः"
+   ],
+   "words": [
+    [
+     "उपद्रष्टा",
+     "the witness"
+    ],
+    [
+     "अनुमन्ता च",
+     "the one who permits"
+    ],
+    [
+     "भर्ता भोक्ता",
+     "the supporter, the experiencer"
+    ],
+    [
+     "महेश्वरः",
+     "the great Lord"
+    ],
+    [
+     "परमात्मा इति च अपि उक्तः",
+     "and also called the supreme Self"
+    ],
+    [
+     "देहे अस्मिन् पुरुषः परः",
+     "is the supreme spirit in this body"
+    ]
+   ],
+   "tr": "The supreme spirit in this body is called the witness, the one who permits, the supporter, the experiencer, the great Lord and the supreme Self."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैः सह",
+    "सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते"
+   ],
+   "words": [
+    [
+     "यः एवं वेत्ति पुरुषम्",
+     "whoever knows the spirit in this way"
+    ],
+    [
+     "प्रकृतिं च गुणैः सह",
+     "and nature along with the gunas"
+    ],
+    [
+     "सर्वथा वर्तमानः अपि",
+     "however he may be living"
+    ],
+    [
+     "न सः भूयः अभिजायते",
+     "is not born again"
+    ]
+   ],
+   "tr": "Whoever knows the spirit in this way, and nature with its gunas, is not born again, however that person may be living now."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना",
+    "अन्ये सांख्येन योगेन कर्मयोगेन चापरे"
+   ],
+   "words": [
+    [
+     "ध्यानेन आत्मनि पश्यन्ति केचित् आत्मानम् आत्मना",
+     "some see the Self within themselves by meditation, through the mind"
+    ],
+    [
+     "अन्ये सांख्येन योगेन",
+     "others by the yoga of knowledge (sankhya)"
+    ],
+    [
+     "कर्म-योगेन च अपरे",
+     "and others by the yoga of action"
+    ]
+   ],
+   "tr": "Some see the Self within themselves through meditation. Others see it through the yoga of knowledge, and others through the yoga of action."
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते",
+    "तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः"
+   ],
+   "words": [
+    [
+     "अन्ये तु एवम् अजानन्तः",
+     "but others, who do not know in this way"
+    ],
+    [
+     "श्रुत्वा अन्येभ्यः उपासते",
+     "hear from others and worship"
+    ],
+    [
+     "ते अपि च अतितरन्ति एव मृत्युम्",
+     "they too cross beyond death"
+    ],
+    [
+     "श्रुति-परायणाः",
+     "devoted to what they have heard"
+    ]
+   ],
+   "tr": "Others, who do not know it in these ways, hear of it from others and worship. They too cross beyond death, through their devotion to what they have heard."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम्",
+    "क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ"
+   ],
+   "words": [
+    [
+     "यावत् सञ्जायते किञ्चित् सत्त्वम्",
+     "whatever being is born"
+    ],
+    [
+     "स्थावर-जङ्गमम्",
+     "unmoving or moving"
+    ],
+    [
+     "क्षेत्र-क्षेत्रज्ञ-संयोगात्",
+     "from the union of the field and its knower"
+    ],
+    [
+     "तत् विद्धि",
+     "know that it comes"
+    ],
+    [
+     "भरतर्षभ",
+     "O best of the Bharatas (Arjuna)"
+    ]
+   ],
+   "tr": "Whatever is born, Arjuna, whether it moves or not, know that it comes from the union of the field and the knower of the field."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्",
+    "विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति"
+   ],
+   "words": [
+    [
+     "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्",
+     "the supreme Lord living equally in all beings"
+    ],
+    [
+     "विनश्यत्सु अविनश्यन्तम्",
+     "not perishing when they perish"
+    ],
+    [
+     "यः पश्यति सः पश्यति",
+     "whoever sees this truly sees"
+    ]
+   ],
+   "tr": "Whoever sees the supreme Lord living equally in all beings, and not perishing when they perish, truly sees."
+  },
+  {
+   "v": 28,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्",
+    "न हिनस्त्यात्मनाऽऽत्मानं ततो याति परां गतिम्"
+   ],
+   "words": [
+    [
+     "समं पश्यन् हि सर्वत्र",
+     "for seeing equally, everywhere"
+    ],
+    [
+     "समवस्थितम् ईश्वरम्",
+     "the Lord present"
+    ],
+    [
+     "न हिनस्ति आत्मना आत्मानम्",
+     "one does not harm the Self by the self"
+    ],
+    [
+     "ततः याति परां गतिम्",
+     "and so reaches the highest goal"
+    ]
+   ],
+   "tr": "Seeing the same Lord present everywhere, a person does no harm to their own Self, and so reaches the highest goal."
+  },
+  {
+   "v": 29,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः",
+    "यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति"
+   ],
+   "words": [
+    [
+     "प्रकृत्या एव च कर्माणि क्रियमाणानि सर्वशः",
+     "that all actions are done by nature alone"
+    ],
+    [
+     "यः पश्यति",
+     "whoever sees"
+    ],
+    [
+     "तथा आत्मानम् अकर्तारम्",
+     "and that the Self does nothing"
+    ],
+    [
+     "सः पश्यति",
+     "truly sees"
+    ]
+   ],
+   "tr": "Whoever sees that all actions are done by nature alone, and that the Self does nothing, truly sees."
+  },
+  {
+   "v": 30,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदा भूतपृथग्भावमेकस्थमनुपश्यति",
+    "तत एव च विस्तारं ब्रह्म सम्पद्यते तदा"
+   ],
+   "words": [
+    [
+     "यदा भूत-पृथक्-भावम्",
+     "when the many separate states of beings"
+    ],
+    [
+     "एक-स्थम् अनुपश्यति",
+     "one sees as resting in the One"
+    ],
+    [
+     "ततः एव च विस्तारम्",
+     "and as spreading out from that alone"
+    ],
+    [
+     "ब्रह्म सम्पद्यते तदा",
+     "then one reaches Brahman"
+    ]
+   ],
+   "tr": "When a person sees that the many separate forms of beings rest in the One, and spread out from it alone, that person reaches Brahman."
+  },
+  {
+   "v": 31,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः",
+    "शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते"
+   ],
+   "words": [
+    [
+     "अनादित्वात्",
+     "because it has no beginning"
+    ],
+    [
+     "निर्गुणत्वात्",
+     "and is free from the gunas"
+    ],
+    [
+     "परमात्मा अयम् अव्ययः",
+     "this unchanging supreme Self"
+    ],
+    [
+     "शरीर-स्थः अपि",
+     "though living in the body"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "न करोति न लिप्यते",
+     "does not act and is not stained"
+    ]
+   ],
+   "tr": "Because it has no beginning and is free from the gunas, Arjuna, this unchanging supreme Self does not act and is not stained, though it lives in the body."
+  },
+  {
+   "v": 32,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते",
+    "सर्वत्रावस्थितो देहे तथाऽऽत्मा नोपलिप्यते"
+   ],
+   "words": [
+    [
+     "यथा सर्व-गतम् आकाशम्",
+     "as space, which is everywhere"
+    ],
+    [
+     "सौक्ष्म्यात् न उपलिप्यते",
+     "is not stained, because it is subtle"
+    ],
+    [
+     "सर्वत्र अवस्थितः देहे",
+     "present everywhere in the body"
+    ],
+    [
+     "तथा आत्मा न उपलिप्यते",
+     "so the Self is not stained"
+    ]
+   ],
+   "tr": "As space is everywhere and yet, being subtle, is stained by nothing, so the Self is present everywhere in the body and yet is not stained."
+  },
+  {
+   "v": 33,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः",
+    "क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत"
+   ],
+   "words": [
+    [
+     "यथा प्रकाशयति एकः रविः",
+     "as the one sun lights up"
+    ],
+    [
+     "कृत्स्नं लोकम् इमम्",
+     "this whole world"
+    ],
+    [
+     "क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति",
+     "so the lord of the field lights up the whole field"
+    ],
+    [
+     "भारत",
+     "O descendant of Bharata (Arjuna)"
+    ]
+   ],
+   "tr": "As the one sun lights up this whole world, Arjuna, so the lord of the field lights up the whole field."
+  },
+  {
+   "v": 34,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा",
+    "भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम्"
+   ],
+   "words": [
+    [
+     "क्षेत्र-क्षेत्रज्ञयोः एवम् अन्तरम्",
+     "the difference between the field and its knower"
+    ],
+    [
+     "ज्ञान-चक्षुषा",
+     "with the eye of knowledge"
+    ],
+    [
+     "भूत-प्रकृति-मोक्षं च",
+     "and the freeing of beings from nature"
+    ],
+    [
+     "ये विदुः",
+     "those who know"
+    ],
+    [
+     "यान्ति ते परम्",
+     "they reach the supreme"
+    ]
+   ],
+   "tr": "Those who see with the eye of knowledge the difference between the field and its knower, and how beings are set free from nature, reach the supreme."
+  }
+ ]
+}

@@ -1,0 +1,991 @@
+{
+ "meta": {
+  "n": 8,
+  "featured": [
+   5,
+   7
+  ],
+  "name": "The Imperishable Brahman",
+  "skt_name": "अक्षरब्रह्मयोगः",
+  "roman_name": "Akshara Brahma Yoga",
+  "outline": "Verses 1–4: Arjuna's seven questions, and Krishna's short answers; 5–8: what a person remembers at death decides where they go, so remember Krishna always; 9–13: how the yogi leaves the body, with Om; 14–16: Krishna is easy to reach for the devoted, and for them there is no rebirth; 17–22: the day and night of Brahma, and what lies beyond them; 23–28: the two paths, of light and of smoke."
+ },
+ "verses": [
+  {
+   "v": 1,
+   "speaker": "Arjuna",
+   "opens": "अर्जुन उवाच",
+   "skt": [
+    "किं तद्ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम",
+    "अधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते"
+   ],
+   "words": [
+    [
+     "किं तत् ब्रह्म",
+     "what is that Brahman"
+    ],
+    [
+     "किम् अध्यात्मम्",
+     "what is the inner self"
+    ],
+    [
+     "किं कर्म",
+     "what is karma"
+    ],
+    [
+     "पुरुषोत्तम",
+     "O Supreme Person (Krishna)"
+    ],
+    [
+     "अधिभूतं च किं प्रोक्तम्",
+     "and what is called the realm of beings"
+    ],
+    [
+     "अधिदैवं किम् उच्यते",
+     "what is called the realm of the gods"
+    ]
+   ],
+   "tr": "Arjuna asked: Krishna, what is that Brahman? What is the inner self, and what is karma? What is meant by the realm of beings, and what by the realm of the gods?"
+  },
+  {
+   "v": 2,
+   "speaker": "Arjuna",
+   "opens": "",
+   "skt": [
+    "अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन",
+    "प्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः"
+   ],
+   "words": [
+    [
+     "अधियज्ञः कथं कः अत्र",
+     "who is the lord of sacrifice here, and how"
+    ],
+    [
+     "देहे अस्मिन्",
+     "in this body"
+    ],
+    [
+     "मधुसूदन",
+     "O Madhusudana (Krishna)"
+    ],
+    [
+     "प्रयाण-काले च",
+     "and at the time of death"
+    ],
+    [
+     "कथं ज्ञेयः असि",
+     "how are you to be known"
+    ],
+    [
+     "नियत-आत्मभिः",
+     "by those with self-control"
+    ]
+   ],
+   "tr": "Who is the lord of sacrifice in this body, and how is he here? And how are people with self-control to know you at the time of death?"
+  },
+  {
+   "v": 3,
+   "speaker": "Krishna",
+   "opens": "श्री भगवानुवाच",
+   "skt": [
+    "अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते",
+    "भूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः"
+   ],
+   "words": [
+    [
+     "अक्षरं ब्रह्म परमम्",
+     "Brahman is the supreme, which never perishes"
+    ],
+    [
+     "स्वभावः अध्यात्मम् उच्यते",
+     "one's own nature is called the inner self"
+    ],
+    [
+     "भूत-भाव-उद्भव-करः",
+     "which brings beings into existence"
+    ],
+    [
+     "विसर्गः",
+     "the creative act"
+    ],
+    [
+     "कर्म-संज्ञितः",
+     "is called karma"
+    ]
+   ],
+   "tr": "Krishna said: Brahman is the supreme, which never perishes. A being's own essential nature is called the inner self. The creative act that brings beings into existence is called karma."
+  },
+  {
+   "v": 4,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम्",
+    "अधियज्ञोऽहमेवात्र देहे देहभृतां वर"
+   ],
+   "words": [
+    [
+     "अधिभूतं क्षरः भावः",
+     "the realm of beings is whatever perishes"
+    ],
+    [
+     "पुरुषः च अधिदैवतम्",
+     "and the cosmic Person is the realm of the gods"
+    ],
+    [
+     "अधियज्ञः अहम् एव",
+     "I myself am the lord of sacrifice"
+    ],
+    [
+     "अत्र देहे",
+     "here in the body"
+    ],
+    [
+     "देह-भृतां वर",
+     "O best of those who have a body (Arjuna)"
+    ]
+   ],
+   "tr": "The realm of beings is everything that perishes. The realm of the gods is the cosmic Person. And the lord of sacrifice, here in this body, is I myself, Arjuna."
+  },
+  {
+   "v": 5,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्",
+    "यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः"
+   ],
+   "words": [
+    [
+     "अन्त-काले च",
+     "and at the time of the end"
+    ],
+    [
+     "माम् एव स्मरन्",
+     "remembering me alone"
+    ],
+    [
+     "मुक्त्वा कलेवरम्",
+     "leaving the body"
+    ],
+    [
+     "यः प्रयाति",
+     "whoever departs"
+    ],
+    [
+     "सः मत्-भावं याति",
+     "comes to my state"
+    ],
+    [
+     "न अस्ति अत्र संशयः",
+     "there is no doubt about this"
+    ]
+   ],
+   "tr": "Whoever leaves the body at the time of death remembering me alone comes to my state. There is no doubt about this."
+  },
+  {
+   "v": 6,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम्",
+    "तं तमेवैति कौन्तेय सदा तद्भावभावितः"
+   ],
+   "words": [
+    [
+     "यं यं वा अपि भावम्",
+     "whatever state of being"
+    ],
+    [
+     "स्मरन्",
+     "remembering"
+    ],
+    [
+     "त्यजति अन्ते कलेवरम्",
+     "one leaves the body at the end"
+    ],
+    [
+     "तं तम् एव एति",
+     "to that very state one goes"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "सदा तत्-भाव-भावितः",
+     "having always been absorbed in it"
+    ]
+   ],
+   "tr": "Whatever a person thinks of when leaving the body at the end, Arjuna, that is what the person reaches, having been absorbed in it all along."
+  },
+  {
+   "v": 7,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च",
+    "मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम्"
+   ],
+   "words": [
+    [
+     "तस्मात् सर्वेषु कालेषु",
+     "therefore, at all times"
+    ],
+    [
+     "माम् अनुस्मर",
+     "remember me"
+    ],
+    [
+     "युध्य च",
+     "and fight"
+    ],
+    [
+     "मयि अर्पित-मनः-बुद्धिः",
+     "with mind and intellect given to me"
+    ],
+    [
+     "माम् एव एष्यसि",
+     "you will come to me alone"
+    ],
+    [
+     "असंशयम्",
+     "without doubt"
+    ]
+   ],
+   "tr": "So remember me at all times, and fight. With your mind and intellect given to me, you will come to me without doubt."
+  },
+  {
+   "v": 8,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना",
+    "परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्"
+   ],
+   "words": [
+    [
+     "अभ्यास-योग-युक्तेन चेतसा",
+     "with a mind trained by steady practice"
+    ],
+    [
+     "न अन्य-गामिना",
+     "that does not wander elsewhere"
+    ],
+    [
+     "परमं पुरुषं दिव्यम्",
+     "the supreme, divine Person"
+    ],
+    [
+     "याति",
+     "one reaches"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "अनुचिन्तयन्",
+     "by constantly thinking of him"
+    ]
+   ],
+   "tr": "With a mind trained by steady practice, one that does not wander elsewhere, a person who keeps thinking of the supreme divine Person reaches him, Arjuna."
+  },
+  {
+   "v": 9,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "कविं पुराणमनुशासितार",
+    "मणोरणीयांसमनुस्मरेद्यः",
+    "सर्वस्य धातारमचिन्त्यरूप",
+    "मादित्यवर्णं तमसः परस्तात्"
+   ],
+   "words": [
+    [
+     "कविं पुराणम्",
+     "the all-knowing, ancient one"
+    ],
+    [
+     "अनुशासितारम्",
+     "the ruler"
+    ],
+    [
+     "अणोः अणीयांसम्",
+     "smaller than the smallest"
+    ],
+    [
+     "अनुस्मरेत् यः",
+     "whoever remembers"
+    ],
+    [
+     "सर्वस्य धातारम्",
+     "the supporter of all"
+    ],
+    [
+     "अचिन्त्य-रूपम्",
+     "whose form is beyond thought"
+    ],
+    [
+     "आदित्य-वर्णम्",
+     "bright as the sun"
+    ],
+    [
+     "तमसः परस्तात्",
+     "beyond darkness"
+    ]
+   ],
+   "tr": "Think of him as all-knowing and ancient, the ruler, smaller than the smallest and the supporter of all, whose form is beyond thought, bright as the sun and beyond all darkness."
+  },
+  {
+   "v": 10,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "प्रयाणकाले मनसाऽचलेन",
+    "भक्त्या युक्तो योगबलेन चैव",
+    "भ्रुवोर्मध्ये प्राणमावेश्य सम्यक्",
+    "स तं परं पुरुषमुपैति दिव्यम्"
+   ],
+   "words": [
+    [
+     "प्रयाण-काले",
+     "at the time of death"
+    ],
+    [
+     "मनसा अचलेन",
+     "with an unmoving mind"
+    ],
+    [
+     "भक्त्या युक्तः",
+     "full of devotion"
+    ],
+    [
+     "योग-बलेन च एव",
+     "and with the strength of yoga"
+    ],
+    [
+     "भ्रुवोः मध्ये",
+     "between the eyebrows"
+    ],
+    [
+     "प्राणम् आवेश्य सम्यक्",
+     "fixing the breath of life fully"
+    ],
+    [
+     "सः तं परं पुरुषम् उपैति दिव्यम्",
+     "that person reaches the supreme divine Person"
+    ]
+   ],
+   "tr": "Whoever remembers him so at the time of death, with a steady mind, full of devotion and the strength of yoga, with the breath of life held firmly between the eyebrows, reaches that supreme divine Person."
+  },
+  {
+   "v": 11,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यदक्षरं वेदविदो वदन्ति",
+    "विशन्ति यद्यतयो वीतरागाः",
+    "यदिच्छन्तो ब्रह्मचर्यं चरन्ति",
+    "तत्ते पदं संग्रहेण प्रवक्ष्ये"
+   ],
+   "words": [
+    [
+     "यत् अक्षरं वेद-विदः वदन्ति",
+     "which the knowers of the Vedas call imperishable"
+    ],
+    [
+     "विशन्ति यत् यतयः वीत-रागाः",
+     "which seekers free from attachment enter"
+    ],
+    [
+     "यत् इच्छन्तः",
+     "desiring which"
+    ],
+    [
+     "ब्रह्मचर्यं चरन्ति",
+     "they live a life of self-restraint"
+    ],
+    [
+     "तत् ते पदम्",
+     "that goal, to you"
+    ],
+    [
+     "संग्रहेण प्रवक्ष्ये",
+     "I shall describe in brief"
+    ]
+   ],
+   "tr": "I shall tell you in brief of that goal which the knowers of the Vedas call imperishable, which seekers free from attachment enter, and for which people live a life of self-restraint."
+  },
+  {
+   "v": 12,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च",
+    "मूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम्"
+   ],
+   "words": [
+    [
+     "सर्व-द्वाराणि संयम्य",
+     "closing all the gates of the body"
+    ],
+    [
+     "मनः हृदि निरुध्य च",
+     "and holding the mind in the heart"
+    ],
+    [
+     "मूर्ध्नि आधाय आत्मनः प्राणम्",
+     "placing one's breath of life in the head"
+    ],
+    [
+     "आस्थितः योग-धारणाम्",
+     "established in yogic concentration"
+    ]
+   ],
+   "tr": "Closing all the gates of the body, holding the mind in the heart, raising the breath of life to the head, and established in yogic concentration,"
+  },
+  {
+   "v": 13,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्",
+    "यः प्रयाति त्यजन्देहं स याति परमां गतिम्"
+   ],
+   "words": [
+    [
+     "ओम् इति एक-अक्षरं ब्रह्म",
+     "the one syllable Om, which is Brahman"
+    ],
+    [
+     "व्याहरन्",
+     "saying"
+    ],
+    [
+     "माम् अनुस्मरन्",
+     "remembering me"
+    ],
+    [
+     "यः प्रयाति त्यजन् देहम्",
+     "whoever departs, leaving the body"
+    ],
+    [
+     "सः याति परमां गतिम्",
+     "reaches the highest goal"
+    ]
+   ],
+   "tr": "whoever leaves the body saying the one syllable Om, which is Brahman, and remembering me, reaches the highest goal."
+  },
+  {
+   "v": 14,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अनन्यचेताः सततं यो मां स्मरति नित्यशः",
+    "तस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः"
+   ],
+   "words": [
+    [
+     "अनन्य-चेताः",
+     "with the mind on nothing else"
+    ],
+    [
+     "सततं यः मां स्मरति नित्यशः",
+     "who remembers me constantly, every day"
+    ],
+    [
+     "तस्य अहं सुलभः",
+     "for him I am easy to reach"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "नित्य-युक्तस्य योगिनः",
+     "for that yogi who is always united with me"
+    ]
+   ],
+   "tr": "For the yogi who remembers me constantly, every day, with a mind on nothing else, and who is always united with me, I am easy to reach, Arjuna."
+  },
+  {
+   "v": 15,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्",
+    "नाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः"
+   ],
+   "words": [
+    [
+     "माम् उपेत्य",
+     "having come to me"
+    ],
+    [
+     "पुनः-जन्म",
+     "rebirth"
+    ],
+    [
+     "दुःख-आलयम् अशाश्वतम्",
+     "the home of sorrow, which does not last"
+    ],
+    [
+     "न आप्नुवन्ति महात्मानः",
+     "the great souls do not get"
+    ],
+    [
+     "संसिद्धिं परमां गताः",
+     "having reached the highest perfection"
+    ]
+   ],
+   "tr": "Having come to me, the great souls are not born again into this passing home of sorrow, for they have reached the highest perfection."
+  },
+  {
+   "v": 16,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन",
+    "मामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते"
+   ],
+   "words": [
+    [
+     "आ-ब्रह्म-भुवनात् लोकाः",
+     "all the worlds, up to the world of Brahma"
+    ],
+    [
+     "पुनः-आवर्तिनः",
+     "are places of return"
+    ],
+    [
+     "अर्जुन",
+     "O Arjuna"
+    ],
+    [
+     "माम् उपेत्य तु",
+     "but on coming to me"
+    ],
+    [
+     "कौन्तेय",
+     "O son of Kunti (Arjuna)"
+    ],
+    [
+     "पुनः-जन्म न विद्यते",
+     "there is no rebirth"
+    ]
+   ],
+   "tr": "All the worlds, Arjuna, up to the world of Brahma, are places one returns from. But for one who comes to me, there is no rebirth."
+  },
+  {
+   "v": 17,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः",
+    "रात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः"
+   ],
+   "words": [
+    [
+     "सहस्र-युग-पर्यन्तम्",
+     "lasting a thousand ages (yugas)"
+    ],
+    [
+     "अहः यत् ब्रह्मणः विदुः",
+     "those who know that a day of Brahma"
+    ],
+    [
+     "रात्रिं युग-सहस्र-अन्ताम्",
+     "and his night, ending after a thousand ages"
+    ],
+    [
+     "ते अहः-रात्र-विदः जनाः",
+     "those people know day and night"
+    ]
+   ],
+   "tr": "Those who know that one day of Brahma lasts a thousand ages, and that his night lasts a thousand ages too, truly know what day and night are."
+  },
+  {
+   "v": 18,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे",
+    "रात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके"
+   ],
+   "words": [
+    [
+     "अव्यक्तात्",
+     "from the unseen"
+    ],
+    [
+     "व्यक्तयः सर्वाः प्रभवन्ति",
+     "all visible things come forth"
+    ],
+    [
+     "अहः-आगमे",
+     "when the day comes"
+    ],
+    [
+     "रात्रि-आगमे प्रलीयन्ते",
+     "when the night comes they dissolve"
+    ],
+    [
+     "तत्र एव",
+     "into that same"
+    ],
+    [
+     "अव्यक्त-संज्ञके",
+     "which is called the unseen"
+    ]
+   ],
+   "tr": "When that day comes, all visible things come forth from the unseen. When the night comes, they dissolve back into that same unseen."
+  },
+  {
+   "v": 19,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते",
+    "रात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे"
+   ],
+   "words": [
+    [
+     "भूत-ग्रामः सः एव अयम्",
+     "this very same multitude of beings"
+    ],
+    [
+     "भूत्वा भूत्वा प्रलीयते",
+     "coming into being again and again, dissolves"
+    ],
+    [
+     "रात्रि-आगमे",
+     "when night comes"
+    ],
+    [
+     "अवशः",
+     "helplessly"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "प्रभवति अहः-आगमे",
+     "and comes forth when day comes"
+    ]
+   ],
+   "tr": "This same multitude of beings comes into existence again and again, Arjuna. It dissolves helplessly when night comes, and comes forth again when day comes."
+  },
+  {
+   "v": 20,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः",
+    "यः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति"
+   ],
+   "words": [
+    [
+     "परः तस्मात् तु",
+     "but higher than that"
+    ],
+    [
+     "भावः अन्यः",
+     "there is another existence"
+    ],
+    [
+     "अव्यक्तः अव्यक्तात्",
+     "unseen, beyond this unseen"
+    ],
+    [
+     "सनातनः",
+     "eternal"
+    ],
+    [
+     "यः सः",
+     "which"
+    ],
+    [
+     "सर्वेषु भूतेषु नश्यत्सु",
+     "when all beings perish"
+    ],
+    [
+     "न विनश्यति",
+     "does not perish"
+    ]
+   ],
+   "tr": "But beyond this unseen there is another unseen existence, which is eternal. It does not perish when all beings perish."
+  },
+  {
+   "v": 21,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम्",
+    "यं प्राप्य न निवर्तन्ते तद्धाम परमं मम"
+   ],
+   "words": [
+    [
+     "अव्यक्तः अक्षरः इति उक्तः",
+     "it is called the unseen and the imperishable"
+    ],
+    [
+     "तम् आहुः परमां गतिम्",
+     "they call it the highest goal"
+    ],
+    [
+     "यं प्राप्य न निवर्तन्ते",
+     "on reaching which they do not return"
+    ],
+    [
+     "तत् धाम परमं मम",
+     "that is my supreme home"
+    ]
+   ],
+   "tr": "It is called the unseen and the imperishable, and it is said to be the highest goal. Those who reach it do not return. That is my supreme home."
+  },
+  {
+   "v": 22,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया",
+    "यस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्"
+   ],
+   "words": [
+    [
+     "पुरुषः सः परः",
+     "that supreme Person"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "भक्त्या लभ्यः तु अनन्यया",
+     "is reached by devotion to him alone"
+    ],
+    [
+     "यस्य अन्तः-स्थानि भूतानि",
+     "within whom all beings live"
+    ],
+    [
+     "येन सर्वम् इदं ततम्",
+     "by whom all this is pervaded"
+    ]
+   ],
+   "tr": "That supreme Person, Arjuna, within whom all beings live and who fills all of this, is reached by devotion given to him alone."
+  },
+  {
+   "v": 23,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः",
+    "प्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ"
+   ],
+   "words": [
+    [
+     "यत्र काले तु",
+     "the time at which"
+    ],
+    [
+     "अनावृत्तिम् आवृत्तिं च एव",
+     "non-return, and also return"
+    ],
+    [
+     "योगिनः प्रयाताः यान्ति",
+     "yogis who depart go to"
+    ],
+    [
+     "तं कालं वक्ष्यामि",
+     "that time I shall tell you"
+    ],
+    [
+     "भरतर्षभ",
+     "O best of the Bharatas (Arjuna)"
+    ]
+   ],
+   "tr": "Now I shall tell you, Arjuna, of the times at which yogis who depart do not return, and the times at which they do return."
+  },
+  {
+   "v": 24,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम्",
+    "तत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः"
+   ],
+   "words": [
+    [
+     "अग्निः ज्योतिः",
+     "fire, light"
+    ],
+    [
+     "अहः",
+     "day"
+    ],
+    [
+     "शुक्लः",
+     "the bright fortnight"
+    ],
+    [
+     "षण्मासाः उत्तरायणम्",
+     "the six months of the sun's northern course"
+    ],
+    [
+     "तत्र प्रयाताः",
+     "departing then"
+    ],
+    [
+     "गच्छन्ति ब्रह्म",
+     "go to Brahman"
+    ],
+    [
+     "ब्रह्म-विदः जनाः",
+     "people who know Brahman"
+    ]
+   ],
+   "tr": "Fire, light, day, the bright fortnight of the moon and the six months of the sun's northern course: those who know Brahman and depart by this path go to Brahman."
+  },
+  {
+   "v": 25,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम्",
+    "तत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते"
+   ],
+   "words": [
+    [
+     "धूमः रात्रिः",
+     "smoke, night"
+    ],
+    [
+     "तथा कृष्णः",
+     "and the dark fortnight"
+    ],
+    [
+     "षण्मासाः दक्षिणायनम्",
+     "the six months of the sun's southern course"
+    ],
+    [
+     "तत्र",
+     "by this path"
+    ],
+    [
+     "चान्द्रमसं ज्योतिः",
+     "the light of the moon"
+    ],
+    [
+     "योगी प्राप्य निवर्तते",
+     "the yogi reaches, and returns"
+    ]
+   ],
+   "tr": "Smoke, night, the dark fortnight and the six months of the sun's southern course: the yogi who departs by this path reaches the light of the moon, and returns."
+  },
+  {
+   "v": 26,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते",
+    "एकया यात्यनावृत्तिमन्ययाऽऽवर्तते पुनः"
+   ],
+   "words": [
+    [
+     "शुक्ल-कृष्णे गती हि एते",
+     "these two paths, the bright and the dark"
+    ],
+    [
+     "जगतः शाश्वते मते",
+     "are held to be the world's eternal paths"
+    ],
+    [
+     "एकया याति अनावृत्तिम्",
+     "by one a person goes and does not return"
+    ],
+    [
+     "अन्यया आवर्तते पुनः",
+     "by the other one returns again"
+    ]
+   ],
+   "tr": "These two paths, the bright and the dark, are held to be eternal in this world. By one a person goes and does not return; by the other, one comes back again."
+  },
+  {
+   "v": 27,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन",
+    "तस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन"
+   ],
+   "words": [
+    [
+     "एते सृती जानन्",
+     "knowing these two paths"
+    ],
+    [
+     "पार्थ",
+     "O Partha (Arjuna)"
+    ],
+    [
+     "योगी न मुह्यति कश्चन",
+     "no yogi is confused"
+    ],
+    [
+     "तस्मात् सर्वेषु कालेषु",
+     "therefore at all times"
+    ],
+    [
+     "योग-युक्तः भव",
+     "be steady in yoga"
+    ],
+    [
+     "अर्जुन",
+     "O Arjuna"
+    ]
+   ],
+   "tr": "No yogi who knows these two paths is ever confused, Arjuna. So be steady in yoga at all times."
+  },
+  {
+   "v": 28,
+   "speaker": "Krishna",
+   "opens": "",
+   "skt": [
+    "वेदेषु यज्ञेषु तपःसु चैव",
+    "दानेषु यत्पुण्यफलं प्रदिष्टम्",
+    "अत्येति तत्सर्वमिदं विदित्वा",
+    "योगी परं स्थानमुपैति चाद्यम्"
+   ],
+   "words": [
+    [
+     "वेदेषु यज्ञेषु तपःसु च एव दानेषु",
+     "in the Vedas, sacrifices, disciplines and gifts"
+    ],
+    [
+     "यत् पुण्य-फलं प्रदिष्टम्",
+     "whatever reward of merit is promised"
+    ],
+    [
+     "अत्येति तत् सर्वम्",
+     "goes beyond all that"
+    ],
+    [
+     "इदं विदित्वा",
+     "knowing this"
+    ],
+    [
+     "योगी",
+     "the yogi"
+    ],
+    [
+     "परं स्थानम् उपैति च आद्यम्",
+     "and reaches the supreme, first home"
+    ]
+   ],
+   "tr": "The yogi who knows this goes beyond all the rewards promised for studying the Vedas, for sacrifices, for self-discipline and for giving, and reaches the supreme, original home."
+  }
+ ]
+}
