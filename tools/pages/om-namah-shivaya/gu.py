@@ -1,1 +1,0 @@
-FROM = 'maha-shivaratri'

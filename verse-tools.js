@@ -237,7 +237,7 @@
     if(row.querySelector('.v-report'))return;
     var card=row.closest('.verse'), src=card&&card.querySelector('.src .en');
     var ref=(src?src.textContent.trim():'')+(card&&card.id?' ('+(location.pathname.split('/').pop()||'index.html')+'#'+card.id+')':'');
-    var a=document.createElement('a'); a.className='v-report'; a.href='contact.html?topic=correction&ref='+encodeURIComponent(ref);
+    var a=document.createElement('a'); a.className='v-report'; a.rel='nofollow'; a.href='contact.html?topic=correction&ref='+encodeURIComponent(ref);
     a.innerHTML='<span class="en xg xt xm xa xb xk xl">⚑ Report a mistake</span><span class="hi">⚑ त्रुटि बताएँ</span><span class="gu">⚑ ભૂલ જણાવો</span><span class="te">⚑ తప్పు తెలియజేయండి</span><span class="mr">⚑ चूक कळवा</span><span class="ta">⚑ பிழையைத் தெரிவியுங்கள்</span><span class="bn">⚑ ভুল জানান</span><span class="kn">⚑ ತಪ್ಪು ತಿಳಿಸಿ</span><span class="ml">⚑ തെറ്റ് അറിയിക്കൂ</span>';
     row.appendChild(a);
   });

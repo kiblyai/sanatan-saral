@@ -1,43 +1,57 @@
 User-agent: *
 Allow: /
+Disallow: /contact.html?
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /contact.html?
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /contact.html?
 
 User-agent: GPTBot
 Allow: /
+Disallow: /contact.html?
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /contact.html?
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /contact.html?
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /contact.html?
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /contact.html?
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /contact.html?
 
 User-agent: Bingbot
 Allow: /
+Disallow: /contact.html?
 
 User-agent: Applebot
 Allow: /
+Disallow: /contact.html?
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /contact.html?
 
 User-agent: DuckAssistBot
 Allow: /
+Disallow: /contact.html?
 
 User-agent: CCBot
 Allow: /
+Disallow: /contact.html?
 
 Sitemap: https://sanatan.space/sitemap.xml

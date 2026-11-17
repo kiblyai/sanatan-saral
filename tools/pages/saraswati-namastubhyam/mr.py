@@ -1,1 +1,0 @@
-FROM = 'vasant-panchami'
